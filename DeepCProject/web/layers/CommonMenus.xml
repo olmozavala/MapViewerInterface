@@ -1,0 +1,29 @@
+<MenuConf>
+	<MenuEntries>
+		<MenuEntry ID="2012" EN="2012" ES="2012"/>
+		<MenuEntry ID="2011" EN="2011" ES="2011"/>
+		<MenuEntry ID="2010" EN="2010" ES="2010"/>
+		<MenuEntry ID="Jan" EN="January" ES="Enero"/>
+		<MenuEntry ID="Feb" EN="February" ES="Febrero"/>
+		<MenuEntry ID="Mar" EN="March" ES="Marzo"/>
+		<MenuEntry ID="Apr" EN="April" ES="Abril"/>
+		<MenuEntry ID="May" EN="May" ES="Mayo"/>
+		<MenuEntry ID="Jun" EN="June" ES="Junio"/>
+		<MenuEntry ID="Jul" EN="July" ES="Julio"/>
+		<MenuEntry ID="Ago" EN="August" ES="Agosto"/>
+		<MenuEntry ID="Sep" EN="September" ES="Septiembre"/>
+		<MenuEntry ID="Oct" EN="October" ES="Octubre"/>
+		<MenuEntry ID="Nov" EN="November" ES="Noviembre"/>
+		<MenuEntry ID="Dec" EN="December" ES="Diciembre"/>
+		<MenuEntry ID="Temp" EN="Temperature" ES="Temperatura"/>
+		<MenuEntry ID="SurfTemp" EN="Temperature Trend" ES="Tendencia de Temp.`"/>
+		<MenuEntry ID="Salinity" EN="Salinity" ES="Salinidad"/>
+		<MenuEntry ID="SeaElev" EN="Elevation" ES="Elevacion"/>
+		<MenuEntry ID="SeaVel" EN="Velocity" ES="Velocidad"/>
+
+		<MenuEntry ID="mx_st" EN="Mexico States" 		ES="Estados de Mexico"/>
+		<MenuEntry ID="us_st" EN="US States" 		ES="Estados de USA"/>
+		<MenuEntry ID="deep" EN="DeepC" 		ES="DeepC"/>
+		<MenuEntry ID="test" EN="TEST" 		ES="TEST"/>
+	</MenuEntries>
+</MenuConf>

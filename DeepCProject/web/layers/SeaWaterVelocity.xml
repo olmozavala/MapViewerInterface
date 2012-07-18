@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+
+<!-- The width and height of the image affects the resolution of the animated gif it is important -->
+<!-- The featureInfo is required, if it doesn't have data then use 'none'		
+					By the default, the feature info is the same as the name of the layer -->
+
+<MenuConf>
+	<!-- Surface water velocity 2010, 2011, 2012 -->
+	<MainLayers BBOX="-98.0,18.09164810180664,-76.400024,31.960647583007812" 
+				format="image/gif"  server="http://viewer.coaps.fsu.edu/ncWMS/wms"
+				tiled="false" time="true" mincolor="-0.113" maxcolor="2.4" style="vector" trans_effect="none"
+				width="800" height="800">  
+
+			<layer Menu="SeaVel,2010" EN="Sea water velocity 2010" ES="Velocidad del mar para 2010" 
+								name="hycom2010/sea_water_velocity"/>
+			<layer Menu="SeaVel,2011" EN="Sea water velocity 2011" ES="Velocidad del mar para 2011" 
+								name="hycom2011/sea_water_velocity"/>
+			<layer Menu="SeaVel,2012" EN="Sea water velocity 2012" ES="Velocidad del mar para 2012 " 
+								name="hycom2012/sea_water_velocity"/>
+
+	</MainLayers>
+</MenuConf>

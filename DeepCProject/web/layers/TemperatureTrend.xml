@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<MenuConf>
+	<!-- Sea Surface Temperature Trend 2011 -->
+<!--
+	<MainLayers BBOX="-98.0,18.09164810180664,-76.400024,31.960647583007812" format="image/gif"  
+																				server="http://viewer.coaps.fsu.edu/ncWMS/wms" time="true">  
+		<layer Menu="SurfTemp,2011,Jan" EN="January Sea Surface Temperature Trend" ES="Tendencia de la Temperatura Superficial del mes de Enero" 
+								name="Jan/surface_temperature_trend"  featureInfo="none" />
+
+		<layer server="http://viewer.coaps.fsu.edu/thredds/wms/hycom/archv.2011_315_21_2d.nc" Menu="SurfTemp,2011,test" EN="TEST" ES="TEST"
+								name="mld" time="true" featureInfo="none"/>
+
+		<layer Menu="SurfTemp,2011,Feb"  palette="occam" EN="February Sea Surface Temperature Trend" ES="Temperatura superficial del mes de Febrero" 
+								name="Feb/surface_temperature_trend"  featureInfo="none" />
+		<layer Menu="SurfTemp,2011,Mar"  palette="redblue" EN="March Sea Surface Temperature Trend" ES="Tendencia de la Temperatura Superficial del mes de Marzo" 
+								name="Mar/surface_temperature_trend"  featureInfo="none" />
+		<layer Menu="SurfTemp,2011,Apr" EN="April Sea Surface Temperature Trend" ES="Tendencia de la Temperatura Superficial del mes de Abril" 
+								name="Apr/surface_temperature_trend"  featureInfo="none" />
+		<layer Menu="SurfTemp,2011,May" EN="May Sea Surface Temperature Trend" ES="Tendencia de la Temperatura Superficial del mes de Mayo" 
+								name="May/surface_temperature_trend"  featureInfo="none" />
+		<layer Menu="SurfTemp,2011,Jun" EN="June Sea Surface Temperature Trend" ES="Tendencia de la Temperatura Superficial del mes de Junio" 
+								name="Jun/surface_temperature_trend"  featureInfo="none" />
+		<layer Menu="SurfTemp,2011,Jul" EN="July Sea Surface Temperature Trend" ES="Tendencia de la Temperatura Superficial del mes de Julio" 
+								name="Jul/surface_temperature_trend"  featureInfo="none" />
+		<layer Menu="SurfTemp,2011,Ago" EN="August Sea Surface Temperature Trend" ES="Tendencia de la Temperatura Superficial del mes de Agosto" 
+								name="Ago/surface_temperature_trend"  featureInfo="none" />
+		<layer Menu="SurfTemp,2011,Sep" EN="September Sea Surface Temperature Trend" ES="Tendencia de la Temperatura Superficial del mes de Septiembre" 
+								name="Sep/surface_temperature_trend"  featureInfo="none" />
+		<layer Menu="SurfTemp,2011,Oct" EN="OctoberSea Surface Temperature Trend" ES="Tendencia de la Temperatura Superficial del mes de Octubre" 
+								name="Oct/surface_temperature_trend"  featureInfo="none" />
+		<layer Menu="SurfTemp,2011,Nov" EN="November Sea Surface Temperature Trend" ES="Tendencia de la Temperatura Superficial del mes de Noviembre" 
+								name="Nov/surface_temperature_trend"  featureInfo="none" />
+		<layer Menu="SurfTemp,2011,Dec" EN="December Sea Surface Temperature Trend" ES="Tendencia de la Temperatura Superficial del mes de Diciembre" 
+								name="Dec/surface_temperature_trend"  featureInfo="none" />
+
+	</MainLayers>
+-->
+</MenuConf>

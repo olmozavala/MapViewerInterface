@@ -5,7 +5,8 @@
 				tiled="true" trans_effect="none" > 
         <!-- The Language atributes (EN,ES) has to be of size 2. and none other should have this size -->
 		<layer Menu="us_st" name="comm:states" />
-		<layer Menu="deep"  name="comm:test" eatureInfo="ozex:test" />
+		<layer Menu="deep"  name="comm:test" featureInfo="ozex:test" />
+		<layer Menu="gebco"  name="comm:gebco" featureInfo="none" />
 	</VectorLayers>
 
 <!--

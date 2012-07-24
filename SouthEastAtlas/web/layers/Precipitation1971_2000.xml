@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MenuConf>
+    <MenuEntries>
+		<MenuEntry ID="cli19712000" EN="Climatology (1971-2000)"  ES="Climatologia (1971-2000)"/>
+    </MenuEntries>
+
+	<!-- Precipitation Climatology (1971-2000) -->
+	<MainLayers BBOX="-125.02083333333,24.062499999999996,-66.47916666198,49.937500002069996" 
+				format="image/jpeg" proj="EPSG:4326" server="http://viewer.coaps.fsu.edu/geoserver/wms"
+				width="764" height="330" tiled="true" 
+				time="false">  
+				<!-- The width and height of the image affects the resolution of the animated gif it is important 
+					<br>PRISM Climate Group, Oregon State University, http://prism.oregonstate.edu, created 4 Feb 2004. 
+				-->
+
+		<layer Menu="prec,cli19712000,Jan" EN="Precipitation: January Climatology (1971-2000)" ES="Climatologia del mes de Enero (1971-2000)" name="se_clim:TotPrecNormJan"/>'
+		<layer Menu="prec,cli19712000,Feb" EN="Precipitation: February Climatology (1971-2000) " ES="Climatologia del mes de Febrero (1971-2000)" name="se_clim:TotPrecNormFeb"/>'
+		<layer Menu="prec,cli19712000,Mar" EN="Precipitation: March Climatology (1971-2000) " ES="Climatologia del mes de Marzo (1971-2000)" name="se_clim:TotPrecNormMar"/>'
+		<layer Menu="prec,cli19712000,Apr" EN="Precipitation: April Climatology (1971-2000) " ES="Climatologia del mes de Abril (1971-2000)" name="se_clim:TotPrecNormApr"/>'
+		<layer Menu="prec,cli19712000,May" EN="Precipitation: May Climatology (1971-2000) " ES="Climatologia del mes de Mayo (1971-2000)" name="se_clim:TotPrecNormMay"/>'
+		<layer Menu="prec,cli19712000,Jun" EN="Precipitation: June Climatology (1971-2000) " ES="Climatologia del mes de Junio (1971-2000)" name="se_clim:TotPrecNormJun"/>'
+		<layer Menu="prec,cli19712000,Jul" EN="Precipitation: July Climatology (1971-2000) " ES="Climatologia del mes de Julio (1971-2000)" name="se_clim:TotPrecNormJul"/>'
+		<layer Menu="prec,cli19712000,Aug" EN="Precipitation: August Climatology (1971-2000) " ES="Climatologia del mes de Agosto (1971-2000)" name="se_clim:TotPrecNormAug"/>'
+		<layer Menu="prec,cli19712000,Sep" EN="Precipitation: September Climatology (1971-2000) " ES="Climatologia del mes de Septiembre (1971-2000)" name="se_clim:TotPrecNormSep"/>'
+		<layer Menu="prec,cli19712000,Oct" EN="Precipitation: October Climatology (1971-2000) " ES="Climatologia del mes de Octubre (1971-2000)" name="se_clim:TotPrecNormOct"/>'
+		<layer Menu="prec,cli19712000,Nov" EN="Precipitation: November Climatology (1971-2000) " ES="Climatologia del mes de Noviembre (1971-2000)" name="se_clim:TotPrecNormNov"/>'
+		<layer Menu="prec,cli19712000,Dec" EN="Precipitation: December Climatology (1971-2000) " ES="Climatologia del mes de Diciembre (1971-2000)" name="se_clim:TotPrecNormDec"/>'
+	</MainLayers>
+
+</MenuConf>

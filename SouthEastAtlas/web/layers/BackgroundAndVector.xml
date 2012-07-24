@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+    Document   : TreeExample.xml
+    Created on : October 17, 2011, 11:02 AM
+    Author     : Olmo Zavala Romerozavala
+    Description:
+        Purpose of the document follows.
+-->
+<MenuConf>		
+    
+	<MenuEntries>
+        <MenuEntry ID="us_st" EN="US States" 		ES="Estados de USA"/>
+		<MenuEntry ID="test" EN="Gebco Test" 		ES="Gebco Test"/>
+		<MenuEntry ID="hydunit" EN="Hydroloic Units" ES="Unidades hidrologicas"/>
+		<MenuEntry ID="count" EN="US Counties" ES="Condados de US"/>
+		<MenuEntry ID="gebco" EN="GEBCO Bathymetry" ES="Batimetria de GEBCO"/>
+    </MenuEntries>
+
+	<BackgroundLayers BBOX="-180,90,-90,180" format="image/jpeg" proj="epsg:4326" server="http://viewer.coaps.fsu.edu/geoserver/wms">
+		<layer name="comm:pyrResult512" featureInfo="comm:gebco" title="GEBCO"/>
+	</BackgroundLayers>
+
+	<VectorLayers BBOX="-120,-59.983333333333,-10,50.0166666666666" 
+				format="image/jpeg" proj="epsg:4326" server="http://viewer.coaps.fsu.edu/geoserver/wms"
+				width="512" 		height="512" tiled="true" >
+        <!-- the language atributes (en,es) has to be of size 2. and none other should have this size -->
+<!--		<layer Menu="test" style="gebco" BBOX="-180,90,-90,180" name="comm:gebco" />-->
+		<layer Menu="hydunit" BBOX="-180,90,-90,180" name="se_clim:hydrounit" />
+		<layer Menu="count" BBOX="-180,90,-90,180" name="comm:UScounties" />
+		<layer Menu="us_st" name="comm:states" selected="true" />
+		<layer Menu="gebco"  name="comm:gebco" featureInfo="ozex:test" />
+	</VectorLayers>
+</MenuConf>

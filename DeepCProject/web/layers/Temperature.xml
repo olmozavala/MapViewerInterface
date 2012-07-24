@@ -25,7 +25,7 @@ featureInfo = name
 <!-- The width and height of the image affects the resolution of the animated gif it is important, by default is 512 512 -->
 <!-- FeatureInfo by default is the same layer name, if it doesn't have data then use 'none' --> 
 <!-- Digioia, Giusj  -->
-<MenuConf>
+<MenuConf xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="schema.xsd">
 	<MainLayers BBOX="-98.0,18.09164810180664,-76.400024,31.960647583007812" 
 				format="image/gif"  server="http://viewer.coaps.fsu.edu/ncWMS/wms"
 				tiled="true" time="true" mincolor="10" maxcolor="34">  

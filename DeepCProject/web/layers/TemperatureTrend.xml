@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?> 
-<MenuConf>
+<MenuConf xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="schema.xsd">
 	<!-- Sea Surface Temperature Trend 2011 -->
 <!--
 	<MainLayers BBOX="-98.0,18.09164810180664,-76.400024,31.960647583007812" format="image/gif"  

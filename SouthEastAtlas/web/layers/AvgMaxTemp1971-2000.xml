@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MenuConf>
+    <MenuEntries>
+		<MenuEntry ID="cli19712000" EN="Climatology (1971-2000)"  ES="Climatologia (1971-2000)"/>
+    </MenuEntries>
+
+	<!-- Max Temperature Climatology (1971-2000) -->
+	<MainLayers BBOX="-125.02083333333,24.062499999999996,-66.47916666198,49.937500002069996" 
+				format="image/jpeg" proj="EPSG:4326" server="http://viewer.coaps.fsu.edu/geoserver/wms"
+				width="764" height="330" tiled="true" 
+				time="false">  
+				<!-- The width and height of the image affects the resolution of the animated gif it is important 
+					<br>PRISM Climate Group, Oregon State University, http://prism.oregonstate.edu, created 4 Feb 2004. 
+				-->
+
+		<layer Menu="temp,cli19712000,Jan" EN="Max Temperature: January Climatology (1971-2000)" ES="Climatologia del mes de Enero (1971-2000)" name="se_clim:AvgMaxTempNormJan"/>'
+		<layer Menu="temp,cli19712000,Feb" EN="Max Temperature: February Climatology (1971-2000) " ES="Climatologia del mes de Febrero (1971-2000)" name="se_clim:AvgMaxTempNormFeb"/>'
+		<layer Menu="temp,cli19712000,Mar" EN="Max Temperature: March Climatology (1971-2000) " ES="Climatologia del mes de Marzo (1971-2000)" name="se_clim:AvgMaxTempNormMar"/>'
+		<layer Menu="temp,cli19712000,Apr" EN="Max Temperature: April Climatology (1971-2000) " ES="Climatologia del mes de Abril (1971-2000)" name="se_clim:AvgMaxTempNormApr"/>'
+		<layer Menu="temp,cli19712000,May" EN="Max Temperature: May Climatology (1971-2000) " ES="Climatologia del mes de Mayo (1971-2000)" name="se_clim:AvgMaxTempNormMay"/>'
+		<layer Menu="temp,cli19712000,Jun" EN="Max Temperature: June Climatology (1971-2000) " ES="Climatologia del mes de Junio (1971-2000)" name="se_clim:AvgMaxTempNormJun"/>'
+		<layer Menu="temp,cli19712000,Jul" EN="Max Temperature: July Climatology (1971-2000) " ES="Climatologia del mes de Julio (1971-2000)" name="se_clim:AvgMaxTempNormJul"/>'
+		<layer Menu="temp,cli19712000,Aug" EN="Max Temperature: August Climatology (1971-2000) " ES="Climatologia del mes de Agosto (1971-2000)" name="se_clim:AvgMaxTempNormAug"/>'
+		<layer Menu="temp,cli19712000,Sep" EN="Max Temperature: September Climatology (1971-2000) " ES="Climatologia del mes de Septiembre (1971-2000)" name="se_clim:AvgMaxTempNormSep"/>'
+		<layer Menu="temp,cli19712000,Oct" EN="Max Temperature: October Climatology (1971-2000) " ES="Climatologia del mes de Octubre (1971-2000)" name="se_clim:AvgMaxTempNormOct"/>'
+		<layer Menu="temp,cli19712000,Nov" EN="Max Temperature: November Climatology (1971-2000) " ES="Climatologia del mes de Noviembre (1971-2000)" name="se_clim:AvgMaxTempNormNov"/>'
+		<layer Menu="temp,cli19712000,Dec" EN="Max Temperature: December Climatology (1971-2000) " ES="Climatologia del mes de Diciembre (1971-2000)" name="se_clim:AvgMaxTempNormDec"/>'
+	</MainLayers>
+
+</MenuConf>

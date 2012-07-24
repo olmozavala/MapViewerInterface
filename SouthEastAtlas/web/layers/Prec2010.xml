@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MenuConf>
+	<!-- Precipitation in 2010 for the month of -->
+	<MainLayers BBOX="-125.02083333333,24.062499999999996,-66.47916666198,49.937500002069996" 
+				format="image/jpeg" proj="EPSG:4326" server="http://viewer.coaps.fsu.edu/geoserver/wms"
+				width="764" height="330" tiled="true" 
+				time="false">  
+				<!-- The width and height of the image affects the resolution of the animated gif it is important -->
+		<layer Menu="prec,2010,Jan" EN="Precipitation in 2010 for the month of January " ES="Precipitacion 2010 del mes de Enero 2010" name="se_clim:TotPrec2010Jan"/>'
+		<layer Menu="prec,2010,Feb" EN="Precipitation in 2010 for the month of February " ES="Precipitacion 2010 del mes de Febrero 2010" name="se_clim:TotPrec2010Feb"/>'
+		<layer Menu="prec,2010,Mar" EN="Precipitation in 2010 for the month of March " ES="Precipitacion 2010 del mes de Marzo 2010" name="se_clim:TotPrec2010Mar"/>'
+		<layer Menu="prec,2010,Apr" EN="Precipitation in 2010 for the month of April " ES="Precipitacion 2010 del mes de Abril 2010" name="se_clim:TotPrec2010Apr"/>'
+		<layer Menu="prec,2010,May" EN="Precipitation in 2010 for the month of May " ES="Precipitacion 2010 del mes de Mayo 2010" name="se_clim:TotPrec2010May"/>'
+		<layer Menu="prec,2010,Jun" EN="Precipitation in 2010 for the month of June " ES="Precipitacion 2010 del mes de Junio 2010" name="se_clim:TotPrec2010Jun"/>'
+		<layer Menu="prec,2010,Jul" EN="Precipitation in 2010 for the month of July " ES="Precipitacion 2010 del mes de Julio 2010" name="se_clim:TotPrec2010Jul"/>'
+		<layer Menu="prec,2010,Aug" EN="Precipitation in 2010 for the month of August " ES="Precipitacion 2010 del mes de Agosto 2010" name="se_clim:TotPrec2010Aug"/>'
+		<layer Menu="prec,2010,Sep" EN="Precipitation in 2010 for the month of September " ES="Precipitacion 2010 del mes de Septiembre 2010" name="se_clim:TotPrec2010Sep"/>'
+		<layer Menu="prec,2010,Oct" EN="Precipitation in 2010 for the month of October " ES="Precipitacion 2010 del mes de Octubre 2010" name="se_clim:TotPrec2010Oct"/>'
+		<layer Menu="prec,2010,Nov" EN="Precipitation in 2010 for the month of November " ES="Precipitacion 2010 del mes de Noviembre 2010" name="se_clim:TotPrec2010Nov"/>'
+		<layer Menu="prec,2010,Dec" EN="Precipitation in 2010 for the month of December " ES="Precipitacion 2010 del mes de Diciembre 2010" name="se_clim:TotPrec2010Dec"/>'
+	</MainLayers>
+</MenuConf>

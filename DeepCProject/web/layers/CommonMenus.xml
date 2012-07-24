@@ -25,5 +25,6 @@
 		<MenuEntry ID="us_st" EN="US States" 		ES="Estados de USA"/>
 		<MenuEntry ID="deep" EN="DeepC" 		ES="DeepC"/>
 		<MenuEntry ID="test" EN="TEST" 		ES="TEST"/>
+		<MenuEntry ID="gebco" EN="GEBCO Bathymetry" ES="Batimetria de GEBCO"/>
 	</MenuEntries>
 </MenuConf>

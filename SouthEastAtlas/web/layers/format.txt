@@ -1,0 +1,1 @@
+<layer Menu="prec,cli19712000,RED" EN="Precipitation: ENG Climatology (1971-2000) " ES="Climatologia del mes de ESP (1971-2000)" name="se_clim:TotPrecNormRED"/>'

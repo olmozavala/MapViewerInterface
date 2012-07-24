@@ -9,12 +9,11 @@
 	<MainLayers BBOX="-98.0,18.09164810180664,-76.400024,31.960647583007812" 
 				format="image/gif"  server="http://viewer.coaps.fsu.edu/ncWMS/wms"
 				tiled="true" time="true" mincolor="-.64" maxcolor="0.95">  
-			<layer Menu="SeaElev,2010" EN="Surface Elevation 2010" ES="Elevacion del mar del 2010" 
-								name="hycom2010/ssh"/>
-			<layer Menu="SeaElev,2011" EN="Surface Elevation 2011" ES="Elevacion del mar del 2011" 
-								name="hycom2011/ssh"/>
-			<layer Menu="SeaElev,2012" EN="Surface Elevation 2012" ES="Elevacion del mar del 2012 " 
+			<layer Menu="SeaElev,2012" EN="Surface Elevation 2012 from HYCOM" ES="Elevacion del mar del 2012 usando HYCOM" 
 								name="hycom2012/ssh"/>
-
+			<layer Menu="SeaElev,2011" EN="Surface Elevation 2011 from HYCOM" ES="Elevacion del mar del 2011 usando HYCOM" 
+								name="hycom2011/ssh"/>
+			<layer Menu="SeaElev,2010" EN="Surface Elevation 2010 from HYCOM" ES="Elevacion del mar del 2010 usando HYCOM" 
+								name="hycom2010/ssh"/>
 	</MainLayers>
 </MenuConf>

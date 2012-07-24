@@ -11,12 +11,12 @@
 				tiled="false" time="true" mincolor="-0.113" maxcolor="2.4" style="vector" trans_effect="none"
 				width="800" height="800">  
 
-			<layer Menu="SeaVel,2010" EN="Sea water velocity 2010" ES="Velocidad del mar para 2010" 
-								name="hycom2010/sea_water_velocity"/>
-			<layer Menu="SeaVel,2011" EN="Sea water velocity 2011" ES="Velocidad del mar para 2011" 
-								name="hycom2011/sea_water_velocity"/>
-			<layer Menu="SeaVel,2012" EN="Sea water velocity 2012" ES="Velocidad del mar para 2012 " 
+			<layer Menu="SeaVel,2012" EN="Sea water velocity 2012 from HYCOM" ES="Velocidad del mar para 2012 " 
 								name="hycom2012/sea_water_velocity"/>
+			<layer Menu="SeaVel,2011" EN="Sea water velocity 2011 from HYCOM" ES="Velocidad del mar para 2011" 
+								name="hycom2011/sea_water_velocity"/>
+			<layer Menu="SeaVel,2010" EN="Sea water velocity 2010 from HYCOM" ES="Velocidad del mar para 2010" 
+								name="hycom2010/sea_water_velocity"/>
 
 	</MainLayers>
 </MenuConf>

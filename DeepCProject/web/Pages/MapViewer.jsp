@@ -46,6 +46,7 @@
 			var minPalVal = layerDetails.scaleRange[0];
 			var maxPalVal  = layerDetails.scaleRange[1];
 			var netcdf = ${netcdf};
+                                                       var max_time_range = '${max_time_range}';
 		</script>
 		
 		<%@include file="OpenLayersConfig.jsp" %>
@@ -62,7 +63,8 @@
 		<!--	Divs that contains the calendars	-->
 		<div class="startDateCal" id="cal-start"><p class="calTitle">Start date (Current)</p></div>
 		<div class="endDateCal" id="cal-end"><p class="calTitle">End date</p></div>
-		<div class="dispAnimation" id="p-animation">
+                
+                <div class="dispAnimation" id="p-animation" >
 			<table >
 				<tr><td style="width:140px">
 						<p class="invShadow"  onclick="dispAnimation();" onmouseover="changeShadow(this, 1);" 

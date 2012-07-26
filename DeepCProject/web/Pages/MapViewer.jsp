@@ -21,8 +21,9 @@
 		<link href="${basepath}/common/CSS/calendar/border-radius.css" rel="stylesheet" type="text/css"/>
 		<link href="${basepath}/common/CSS/calendar/reduce-spacing.css" rel="stylesheet" type="text/css"/>
 		<link href="${basepath}/common/CSS/calendar/steel/steel.css" rel="stylesheet" type="text/css"/>
+		<link href="${basepath}/common/JS/fancybox/jquery.fancybox.css" rel="stylesheet" type="text/css"/>
 		
-		<!--		<script type="text/javascript" src="http://openlayers.org/api/OpenLayers.js"></script>-->
+<!--		<script type="text/javascript" src="http://openlayers.org/api/OpenLayers.js"></script>-->
 		<script type="text/javascript" src="${basepath}/common/JS/openlayers/OpenLayers.js"> </script>
 		<script type="text/javascript" src="${basepath}/common/JS/utilities.js"> </script>
 		<script type="text/javascript" src="${basepath}/common/JS/mapDisplay/mapDisplay.js"> </script>
@@ -30,13 +31,19 @@
 		<script type="text/javascript" src="${basepath}/common/JS/validation.js"> </script>
 		<script type="text/javascript" src="${basepath}/common/JS/ajax/ajax.js"> </script>
 		<script type="text/javascript" src="${basepath}/common/JS/fecha/funciones.js"></script>
+
 		<script type="text/javascript" src="${basepath}/common/JS/calendar/jscal2.js"></script>
 		<script type="text/javascript" src="${basepath}/common/JS/calendar/lang/en.js"></script>
+		<!--	It seems that OpenLayers is already loadin the jquery library	-->
+<!--		<script type="text/javascript" src="${basepath}/common/JS/jquery/jquery.js"></script>-->
+<!--		<script type="text/javascript" src="${basepath}/common/JS/jquery/jquery.muosewheel.pack.js"></script>-->
+<!--		<script type="text/javascript" src="${basepath}/common/JS/fancybox/jquery.fancybox.pack.js"></script>-->
 		
 		<script type="text/javascript"  >
 			var layerDetails = ${layerDetails};
 			var mainLayer = '${mainLayer}';
 			var mappalette= '${palette}';
+			var paletteUrl = '${paletteUrl}';
 			var basepath= '${basepath}';
 			var style= '${style}';
 			var map;
@@ -62,6 +69,7 @@
 		<!--	Divs that contains the calendars	-->
 		<div class="startDateCal" id="cal-start"><p class="calTitle">Start date (Current)</p></div>
 		<div class="endDateCal" id="cal-end"><p class="calTitle">End date</p></div>
+		<div class="palettesDiv" id="palettesDiv"><p class="defShadow">Select new palette <table id="palettesTable"></table></p></div>
 		<div class="dispAnimation" id="p-animation">
 			<table >
 				<tr><td style="width:140px">
@@ -105,7 +113,9 @@
 						<tr><td>
 								<table border="0" class="palette" align="center">
 									<tr>
-										<td> <img id="imgPalette" src="${paletteUrl}"/></td>
+										<td> 
+											<img id="imgPalette" src="${paletteUrl}" onclick="UpdatePalette();"/>
+										</td>
 										<td class="waitBack">
 											<p class="palMinMax">
 												&nbsp; 

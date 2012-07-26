@@ -84,6 +84,17 @@ div.endDateCal{
 	visibility: hidden;
 }
 
+div.palettesDiv{
+	background-color: whitesmoke;
+	top: 60px;
+	right: 250px;
+	position:absolute;
+	z-index:1006;
+	color: white;
+/*	visibility: hidden;*/
+}
+
+
 div.dispAnimation{
 	top: 240px;
 	left: 60px;

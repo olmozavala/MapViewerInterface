@@ -85,13 +85,16 @@ div.endDateCal{
 }
 
 div.palettesDiv{
-	background-color: whitesmoke;
-	top: 60px;
-	right: 250px;
+	top: 120px;
+	right: 200px;
 	position:absolute;
 	z-index:1006;
 	color: white;
-/*	visibility: hidden;*/
+	border-radius: 10px;
+	margin-top: 2em;
+	margin-bottom: 2em;
+	background-image:url('../images/transBack.png'); 
+	visibility: hidden;
 }
 
 

@@ -45,7 +45,7 @@
 			var mappalette= '${palette}';
 			var paletteUrl = '${paletteUrl}';
 			var basepath= '${basepath}';
-			var style= '${style}';
+			var lay_style= '${style}';
 			var map;
 			var opacity = 1;//Default opacity
 			var widthNum = 0;
@@ -70,7 +70,7 @@
 		<!--	Divs that contains the calendars	-->
 		<div class="startDateCal" id="cal-start"><p class="calTitle">Start date (Current)</p></div>
 		<div class="endDateCal" id="cal-end"><p class="calTitle">End date</p></div>
-		<div class="palettesDiv" id="palettesDiv"><p class="defShadow">Select new palette <table id="palettesTable"></table></p></div>
+		<div class="palettesDiv" id="palettes-div"><p class="defShadow">Select new palette <table id="palettesTable"></table></p></div>
 		<div class="dispAnimation" id="p-animation">
 			<table >
 				<tr><td style="width:140px">
@@ -107,24 +107,28 @@
 					<!--					If the layer is a netcdf file then we show the optional and default palettes-->
 					<c:if test='${netcdf}'> 
 						<tr><td>
-								<select id="paletteSelect" name="paletteSelect" onchange="UpdatePalette();"
-										onkeyup="UpdatePalette();" onkeydown="UpdatePalette();">
-								</select>
-							</td></tr>
-						<tr><td>
+
+								<!--
+							<p class="defShadow" onmouseover="changeShadow(this,2)"
+							   					 onmouseout="changeShadow(this,1)"
+												 onclick="displayPalettes();">
+								Change palette
+							</p> -->
 								<table border="0" class="palette" align="center">
 									<tr>
 										<td> 
-											<img id="imgPalette" src="${paletteUrl}" onclick="UpdatePalette();"/>
+											<img id="imgPalette" src="${paletteUrl}" onclick="displayPalettes();" 
+												 onmouseover="this.style.cursor ='pointer';"
+												 onmouseout="this.style.cursor ='crosshair';"/>
 										</td>
 										<td class="waitBack">
 											<p class="palMinMax">
 												&nbsp; 
-												max: <input onblur="UpdatePalette(); "id="maxPal" name="maxPal" type="text" size="2" /> 
+												max: <input onblur="UpdatePalette(mappalette); "id="maxPal" name="maxPal" type="text" size="2" /> 
 												&nbsp;
 												<br><br><br><br> 
 												&nbsp;
-												min: <input onblur="UpdatePalette();" id="minPal" name="minPal" type="text" size="2" />
+												min: <input onblur="UpdatePalette(mappalette);" id="minPal" name="minPal" type="text" size="2" />
 												&nbsp;
 											</p>
 										</td>

@@ -61,6 +61,13 @@
 <!--		<div id="panZoom"></div>-->
 		
 		<!--	Divs that contains the calendars	-->
+                                    <div class="hideButtonCal">
+                                        
+                                        <p class="invShadow"   id="hide_show" onclick="hideCalendar();" onmouseover="changeShadow(this, 1);" 
+						   onmouseout="changeShadow(this,2)">Hide Calendar</p>
+                                        
+                                        
+                                    </div>
 		<div class="startDateCal" id="cal-start"><p class="calTitle">Start date (Current)</p></div>
 		<div class="endDateCal" id="cal-end"><p class="calTitle">End date</p></div>
                 

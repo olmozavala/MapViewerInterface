@@ -92,6 +92,18 @@ div.dispAnimation{
 	display:inline;
 	visibility: hidden;
 }
+
+div.hideButtonCal{
+    	top: 25px;
+	left: 70px;
+	position:absolute;
+	z-index:1008;
+	display:inline;
+	
+ 
+}
+
+
 /* This is the small Scale line in the bottom of the map */
 div.olControlScaleLine {
 	display:table;

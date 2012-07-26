@@ -47,14 +47,13 @@
 			var basepath= '${basepath}';
 			var lay_style= '${style}';
 			var map;
-			var opacity = 1;//Default opacity
 			var widthNum = 0;
 			var heightNum = 0;
 			var minPalVal = layerDetails.scaleRange[0];
 			var maxPalVal  = layerDetails.scaleRange[1];
 			var netcdf = ${netcdf};
             var max_time_range = '${max_time_range}';
-			var displayingAnimation = false;//Global variable that helps to disable the palette selection
+			var first_optional_layer = '2';//Which number correponds to the first optional layer
 		</script>
 		
 		<%@include file="OpenLayersConfig.jsp" %>
@@ -102,12 +101,12 @@
 					<!-- Transparency -->
 					<tr id="transParag"><td>
 							<p class="alphaText"> 
-								<img class="alphaText" border="0" onclick="changeTransp(.15);" 
+								<img class="alphaText" border="0" onclick="changeTransp(.15, layer1);" 
 									 onmouseover="rollImage(this,'${basepath}/common/images/Menu/MinusInv.png' )"
 									 onmouseout="rollImage(this,'${basepath}/common/images/Menu/Minus.png' )"
 									 src="${basepath}/common/images/Menu/Minus.png" alt="DecTrans" width="20" height="20" />
 								Transparency 
-								<img class="alphaText" border="0" onclick="changeTransp(-.15);"
+								<img class="alphaText" border="0" onclick="changeTransp(-.15, layer1);"
 									 onmouseover="rollImage(this,'${basepath}/common/images/Menu/PlusInv.png' )"
 									 onmouseout="rollImage(this,'${basepath}/common/images/Menu/Plus.png' )"
 									 src="${basepath}/common/images/Menu/Plus.png" alt="IncTrans" width="20" height="20" /></p>
@@ -211,7 +210,7 @@
 					</td></tr>
 				<tr><td align="center">
 						<!-- Email -->
-						<a href="mailto:olmozavala@gmail.com">
+						<a href="mailto:osz09@gmail.com">
 							<p class="defShadow" onclick="MapViewersubmitForm();" onmouseover="changeShadow(this,2)" 
 							   onmouseout="changeShadow(this,1)">
 								Email 

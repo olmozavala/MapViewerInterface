@@ -218,6 +218,19 @@
                 </xs:simpleType>
            </xs:attribute>                      
            <xs:attribute name="style" type="xs:string" /> 
+             
+             
+             <xs:attribute name="max_time_range">
+               <xs:simpleType>
+                   <xs:restriction base="xs:string">
+                       <xs:enumeration value="week" /> 
+                       <xs:enumeration value="month" />
+                       <xs:enumeration value="year" />                                                           
+                   </xs:restriction> 
+                </xs:simpleType>
+           </xs:attribute>                      
+             
+             
          </xs:complexType>
                   
       </xs:element><!-- End of Menuconf/MainLayers/layer -->
@@ -251,7 +264,25 @@
                 </xs:simpleType>
            </xs:attribute> 
        <xs:attribute name="style" type="xs:string" />  
+               <xs:attribute name="max_time_range">
+               <xs:simpleType>
+                   <xs:restriction base="xs:string">
+                       <xs:enumeration value="week" /> 
+                       <xs:enumeration value="month" />
+                       <xs:enumeration value="year" />                                                           
+                   </xs:restriction> 
+                </xs:simpleType>
+           </xs:attribute>   
+       
+       
+       
+       
        </xs:complexType>
+       
+       
+       
+       
+       
        </xs:element> <!--End of MainLayer -->
    
    

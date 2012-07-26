@@ -53,6 +53,7 @@
 			var minPalVal = layerDetails.scaleRange[0];
 			var maxPalVal  = layerDetails.scaleRange[1];
 			var netcdf = ${netcdf};
+                                                       var max_time_range = '${max_time_range}';
 		</script>
 		
 		<%@include file="OpenLayersConfig.jsp" %>

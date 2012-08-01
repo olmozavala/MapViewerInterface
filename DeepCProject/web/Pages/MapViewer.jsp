@@ -231,19 +231,18 @@
                                                         <tr><td>Edit Layers:</td><td>You can change the color of the dataset by pressing the color pallete located at the top right. You can also choose a range of max and min for the dataset.</td></tr>
                                                         <tr><td>Display Animation:</td><td>1) Choose a beginning date in the calendar as a starting date. Depending if the dataset is weekly, monthly, or yearly the end calendar will change accordingly to the maximum time range allowed. 
                                                                 <BR/>2) Choose an ending date. Note that a "Display animation" button is now showing up. Chose a frame you would like and click Display animation.
-                                                                        <BR/>3) Wait while the animation is being loaded. This might take a few seconds depending on the time range selected. 
+                                                                        <BR/>3) Wait while the animation is being loaded. This might take a few seconds depending on the time range selected.                                                
                                                             
                                                             
                                                             
-                                                            
-                                                            </td></tr>
+                                                          </td></tr>
                                                         <tr><td>Stop animation:</td><td>This button will disable the animation. You can cancel it before or after the animation is loaded.</td></tr>
                                                         <tr><td>Hide Calendar:</td><td>Toggle between this option to show/hide the calendar.</td></tr>
                                                         <tr><td>Download Data:</td><td>Click on the Kml data button to download data.</td></tr>
                                                         <tr><td>Help:</td><td>Display Instructions/Hide Instructions</td></tr>
                                                         <tr><td>Resize Window:</td><td>If you need to adjust the map size to your current window size.</td></tr>
                                                         <tr><td>Email: </td><td>If you have any questions or want to report a bug.</td></tr>
-                                                        <tr><td>Help:</td><td>Display Instructions/Hide Instructions</td></tr>
+                                                        <tr><td>Help:</td><td>Display Instructions</td></tr>
                                                         
                                                         
                                                         

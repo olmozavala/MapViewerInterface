@@ -61,19 +61,16 @@
     </head>
     <body onload="init();initNetcdf('${animationURL}');" scroll="no">
 
-        <div class="mapTitle" id="layerTitle"> <p> Deep-C Gulf of Mexico<br> ${layerTitle} </p> </div>
+        <div class="mapTitle" id="layerTitle"> <p id="pTitleText"> Deep-C Gulf of Mexico<br> ${layerTitle} </p> </div>
         <div id="map"> <!-- This div contains all the map --> 
         </div>      
         <div id="mapOverlayDiv" ><img id="mapOverlay" alt="map overlay" onload="javascript:animationLoaded();" /></div>
         <!--		<div id="panZoom"></div>-->
 
         <!--	Divs that contains the calendars	-->
-        <div class="hideButtonCal">
-
+        <div class="hideButtonCal" id="hideButtonCal">
             <p class="invShadow"   id="hide_show" onclick="hideCalendar();" onmouseover="changeShadow(this, 1);" 
                onmouseout="changeShadow(this,2)">Hide Calendar</p>
-
-
         </div>
         <div class="startDateCal" id="cal-start"><p class="calTitle">Start date (Current)</p></div>
         <div class="endDateCal" id="cal-end"><p class="calTitle">End date</p></div>

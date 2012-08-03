@@ -80,6 +80,11 @@ img{
                   visibility: hidden;        
 }
 
+#alphaText_transminus
+{
+    cursor: pointer;
+    visibility: hidden;        
+}    
 
 div.startDateCal{
 	top: 60px;

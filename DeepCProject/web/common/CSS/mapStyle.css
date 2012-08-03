@@ -20,7 +20,6 @@
 	text-align: center;
 	display: inline; 
 	margin: auto;
-    z-index:1010;
 }
 
 #panZoom{
@@ -98,6 +97,7 @@ div.palettesDiv{
 	visibility: hidden;
 }
 
+
 div.dispAnimation{
 	top: 240px;
 	left: 60px;
@@ -117,6 +117,7 @@ div.hideButtonCal{
 
 }
 
+
 /* This is the small Scale line in the bottom of the map */
 div.olControlScaleLine {
 	display:table;
@@ -129,8 +130,6 @@ div.olControlScaleLine {
 
 	font-weight: bold;
 	text-align:left;
-	z-index: 1;
-	visibility : hidden;
 }
 
 /* Div to display latitude and longitude*/
@@ -299,8 +298,7 @@ table#helpInstructions
     z-index:1011;
     right:200px;
     top:5px;
-    
-    
+
     border-radius: 10px;
 	margin-top: 2em;
 	margin-bottom: 2em;
@@ -309,7 +307,7 @@ table#helpInstructions
 	font-size: 12px;
 	color:black;
 
-    font-size:13px;
+    background-color: white;
 }
 
 
@@ -317,6 +315,8 @@ table#helpInstructions tr td:first-child{
     color:red;
     font-weight: bold;
 }
+
+
 .helpTitle{
 	text-decoration: underline;
 	text-align:center;
@@ -326,6 +326,8 @@ table#helpInstructions tr td:first-child{
     margin:7px;
     color:black;
 }
+
+
 .cancelButton{   
     float:right;   
 }
@@ -334,7 +336,7 @@ table#helpInstructions tr td:first-child{
 /*Hide the draw polygon button*/
 .olControlEditingToolbar .olControlDrawFeaturePolygonItemInactive{
     background-position: -26px -1px;
-visibility: hidden;    
+	visibility: hidden;    
 }
 .olControlEditingToolbar .olControlDrawFeaturePolygonItemActive {
     background-position: -26px -24px;
@@ -343,11 +345,20 @@ visibility: hidden;
 
 .olControlEditingToolbar .olControlDrawFeaturePointItemInactive {
     background-position: -77px -1px;
-       visibility: hidden;    
+	visibility: hidden;    
 }
 .olControlEditingToolbar .olControlDrawFeaturePointItemActive {
     background-position: -77px -24px;
-       visibility: hidden;    
+	visibility: hidden;    
 }
 
 
+#hieght_tool
+{
+	border:solid red;
+	position:absolute;
+	width:200px;
+	height:300px;
+	z-index:1000;
+	top:250px;
+}

@@ -22,6 +22,7 @@
         <link href="${basepath}/common/CSS/calendar/reduce-spacing.css" rel="stylesheet" type="text/css"/>
         <link href="${basepath}/common/CSS/calendar/steel/steel.css" rel="stylesheet" type="text/css"/>
 
+
         <!--		<script type="text/javascript" src="http://openlayers.org/api/OpenLayers.js"></script>-->
         <script type="text/javascript" src="${basepath}/common/JS/openlayers/OpenLayers.js"> </script>
         <script type="text/javascript" src="${basepath}/common/JS/utilities.js"> </script>
@@ -100,15 +101,17 @@
                 <c:if test='${netcdf}'>
                 <tr id="transParag"><td>
                         <p class="alphaText"> 
-                            <img class="alphaText" border="0" onclick="changeElevation('+', layer1);" 
+
+                            <img id="alphaText_elevminus" border="0" onclick="changeElevation('-', layer1);" 
                                  onmouseover="rollImage(this,'${basepath}/common/images/Menu/MinusInv.png' )"
                                  onmouseout="rollImage(this,'${basepath}/common/images/Menu/Minus.png' )"
-                                 src="${basepath}/common/images/Menu/Minus.png" alt="DecTrans" width="20" height="20" />
+                                 src="${basepath}/common/images/Menu/Minus.png" alt="DecElevation" width="20" height="20" />
                             Elevation 
-                            <img class="alphaText" border="0" onclick="changeElevation('-', layer1);"
+                            <img id="alphaText_elevplus" border="0" onclick="changeElevation('+', layer1);"
                                  onmouseover="rollImage(this,'${basepath}/common/images/Menu/PlusInv.png' )"
                                  onmouseout="rollImage(this,'${basepath}/common/images/Menu/Plus.png' )"
-                                 src="${basepath}/common/images/Menu/Plus.png" alt="IncTrans" width="20" height="20" /></p>
+                                 src="${basepath}/common/images/Menu/Plus.png" alt="IncElevation" width="20" height="20" /></p>
+
                     </td></tr>
  
                     
@@ -120,12 +123,12 @@
                 <!-- Transparency -->
                 <tr id="transParag"><td>
                         <p class="alphaText"> 
-                            <img class="alphaText" border="0" onclick="changeTransp(.15, layer1);" 
+                            <img class="alphaText" id="alphaText_transminus" border="0" onclick="changeTransp(.15, layer1);" 
                                  onmouseover="rollImage(this,'${basepath}/common/images/Menu/MinusInv.png' )"
                                  onmouseout="rollImage(this,'${basepath}/common/images/Menu/Minus.png' )"
                                  src="${basepath}/common/images/Menu/Minus.png" alt="DecTrans" width="20" height="20" />
                             Transparency 
-                            <img class="alphaText" border="0" onclick="changeTransp(-.15, layer1);"
+                            <img class="alphaText" id="alphaText_transplus" border="0" onclick="changeTransp(-.15, layer1);"
                                  onmouseover="rollImage(this,'${basepath}/common/images/Menu/PlusInv.png' )"
                                  onmouseout="rollImage(this,'${basepath}/common/images/Menu/Plus.png' )"
                                  src="${basepath}/common/images/Menu/Plus.png" alt="IncTrans" width="20" height="20" /></p>
@@ -312,4 +315,6 @@
             </p>
     </div>
 </body>
+
 </html>
+

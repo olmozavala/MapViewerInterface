@@ -348,6 +348,7 @@ table#helpInstructions tr td:first-child{
 
 
 .cancelButton{   
+	font-size: 11px;
     float:right;   
 }
 

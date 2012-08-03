@@ -4,11 +4,11 @@
 <jsp:useBean id="names" class="com.mapviewer.model.PagesNames" scope="page"> </jsp:useBean>
 <jsp:useBean id="globals" class="com.mapviewer.model.Globals" scope="page"> </jsp:useBean>
 
-    <!DOCTYPE HTML PUBLIC "-//W3C//Dtd HTML 4.01 Transitional//EN"
-        "http://www.w3.org/tr/html4/loose.dtd">
-    <html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/Atlas Open Layers.dwt" codeOutsideHTMLIsLocked="false" -->
-        <head>
-            <link rel="icon" href="${basepath}/common/images/icon/Gulf.ico" type="image/x-icon" />
+<!DOCTYPE HTML PUBLIC "-//W3C//Dtd HTML 4.01 Transitional//EN"
+	"http://www.w3.org/tr/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/Atlas Open Layers.dwt" codeOutsideHTMLIsLocked="false" -->
+	<head>
+		<link rel="icon" href="${basepath}/common/images/icon/Gulf.ico" type="image/x-icon" />
         <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
         <meta name="Description" content="Atlas template description" />
         <meta name="Keywords" content="Climatic atlas" />
@@ -62,32 +62,40 @@
     </head>
     <body onload="init();initNetcdf('${animationURL}');" scroll="no">
 
+		<!-- Map title -->
         <div class="mapTitle" id="layerTitle"> <p id="pTitleText"> Deep-C Gulf of Mexico<br> ${layerTitle} </p> </div>
-        <div id="map"> <!-- This div contains all the map --> 
-        </div>      
-        <div id="mapOverlayDiv" ><img id="mapOverlay" alt="map overlay" onload="javascript:animationLoaded();" /></div>
-        <!--		<div id="panZoom"></div>-->
 
-        <!--	Divs that contains the calendars	-->
-        <div class="hideButtonCal" id="hideButtonCal">
-            <p class="invShadow"   id="hide_show" onclick="hideCalendar();" onmouseover="changeShadow(this, 1);" 
-               onmouseout="changeShadow(this,2)">Hide Calendar</p>
-        </div>
-        <div class="startDateCal" id="cal-start"><p class="calTitle">Start date (Current)</p></div>
-        <div class="endDateCal" id="cal-end"><p class="calTitle">End date</p></div>
-        <div class="palettesDiv" id="palettes-div"><p class="defShadow">Select new palette <table id="palettesTable"></table></p></div>
-    <div class="dispAnimation" id="p-animation">
-        <table >
-            <tr><td style="width:140px">
-                    <p class="invShadow"  onclick="dispAnimation();" onmouseover="changeShadow(this, 1);" 
-                       onmouseout="changeShadow(this,2)"> Display animation </p> </td>
-                <td style="width:190px; text-align: center" >
-                    <select id="timeSelect" name="timeSelect">
-                    </select>
-                </td>
-            </tr>
-        </table>
-    </div>
+		<!-- This div contains all the map --> 
+        <div id="map"> </div>      
+
+        <!-- Hold the gif of the animation, it is called by OpenLayers -->
+        <div id="mapOverlayDiv" ><img id="mapOverlay" alt="map overlay" onload="javascript:animationLoaded();" /></div>
+
+		<!-- Holds the optional palettes -->
+        <div class="palettesDiv" id="palettes-div">
+			<p class="defShadow">Select new palette <button type="button" class="cancelButton" onclick="displayPalettes()">x</button>
+			<table id="palettesTable"></table></p>
+	</div>
+
+	<!-- Divs that hold the start and end calendar plus the related texts -->
+	<div class="hideButtonCal" id="hideButtonCal">
+		<p class="invShadow"   id="hide_show" onclick="hideCalendar();" onmouseover="changeShadow(this, 1);" 
+		   onmouseout="changeShadow(this,2)">Hide Calendar</p>
+	</div>
+	<div class="startDateCal" id="cal-start"><p class="calTitle">Start date (Current)</p></div>
+	<div class="endDateCal" id="cal-end"><p class="calTitle">End date</p></div>
+	<div class="dispAnimation" id="p-animation">
+		<table >
+			<tr><td style="width:140px">
+					<p class="invShadow"  onclick="dispAnimation();" onmouseover="changeShadow(this, 1);" 
+					   onmouseout="changeShadow(this,2)"> Display animation </p> </td>
+				<td style="width:190px; text-align: center" >
+					<select id="timeSelect" name="timeSelect">
+					</select>
+				</td>
+			</tr>
+		</table>
+	</div>
 
     <!-- This is the div that contains all of the user options, drop down of
                       main layers, vector layers, kml data, etc. -->
@@ -96,27 +104,27 @@
             <table class="menus" border="0">
                 <!-- Creates the menus from the static function createMenu inside HtmlMenuBuilder -->
                 ${menuHelper:createMainMenu(MenuDelUsuario,language)} 
-                
+
                 <!-- Elevation -->
                 <c:if test='${netcdf}'>
-                <tr id="transParag"><td>
-                        <p class="alphaText"> 
+					<tr id="transParag"><td>
+							<p class="alphaText"> 
 
-                            <img id="alphaText_elevminus" border="0" onclick="changeElevation('-', layer1);" 
-                                 onmouseover="rollImage(this,'${basepath}/common/images/Menu/MinusInv.png' )"
-                                 onmouseout="rollImage(this,'${basepath}/common/images/Menu/Minus.png' )"
-                                 src="${basepath}/common/images/Menu/Minus.png" alt="DecElevation" width="20" height="20" />
-                            Elevation 
-                            <img id="alphaText_elevplus" border="0" onclick="changeElevation('+', layer1);"
-                                 onmouseover="rollImage(this,'${basepath}/common/images/Menu/PlusInv.png' )"
-                                 onmouseout="rollImage(this,'${basepath}/common/images/Menu/Plus.png' )"
-                                 src="${basepath}/common/images/Menu/Plus.png" alt="IncElevation" width="20" height="20" /></p>
+								<img id="alphaText_elevminus" border="0" onclick="changeElevation('-', layer1);" 
+									 onmouseover="rollImage(this,'${basepath}/common/images/Menu/MinusInv.png' )"
+									 onmouseout="rollImage(this,'${basepath}/common/images/Menu/Minus.png' )"
+									 src="${basepath}/common/images/Menu/Minus.png" alt="DecElevation" width="20" height="20" />
+								Elevation 
+								<img id="alphaText_elevplus" border="0" onclick="changeElevation('+', layer1);"
+									 onmouseover="rollImage(this,'${basepath}/common/images/Menu/PlusInv.png' )"
+									 onmouseout="rollImage(this,'${basepath}/common/images/Menu/Plus.png' )"
+									 src="${basepath}/common/images/Menu/Plus.png" alt="IncElevation" width="20" height="20" /></p>
 
-                    </td></tr>
- 
-                    
-                    
-                    
+						</td></tr>
+
+
+
+
                 </c:if>
 
 
@@ -133,16 +141,10 @@
                                  onmouseout="rollImage(this,'${basepath}/common/images/Menu/Plus.png' )"
                                  src="${basepath}/common/images/Menu/Plus.png" alt="IncTrans" width="20" height="20" /></p>
                     </td></tr>
-                <!--					If the layer is a netcdf file then we show the optional and default palettes-->
+                <!-- If the layer is a netcdf file then we show the optional and default palettes-->
                 <c:if test='${netcdf}'> 
-                    <tr><td>
-
-                            <!--
-                    <p class="defShadow" onmouseover="changeShadow(this,2)"
-                                                             onmouseout="changeShadow(this,1)"
-                                                             onclick="displayPalettes();">
-                            Change palette
-                    </p> -->
+                    <tr>
+						<td>
                             <table border="0" class="palette" align="center">
                                 <tr>
                                     <td> 
@@ -162,10 +164,9 @@
                                         </p>
                                     </td>
                                 </tr>
-                    </tr>
-                </table>
-
-                </td></tr>
+							</table>
+						</td>
+					</tr>
             </c:if>
 
             <tr style="display: none;"><td align="center">
@@ -189,8 +190,7 @@
                 <tr id="s-animation" ><td><p class="defShadow"  onclick="stopAnimation();" onmouseover="changeShadow(this, 2);" 
                                              onmouseout="changeShadow(this,1)"> Stop animation </p></td></tr>
 
-                <tr id="l-animation" ><td><p class="defShadow" onmouseover="changeShadow(this, 2);" 
-                                             onmouseout="changeShadow(this,1)"> Loading 
+                <tr id="l-animation" ><td><p class="defShadow" > Loading 
                             <img src="${basepath}/common/images/load.gif" height="12" border="0" alt="loading"></A>
                         </p></td></tr>
                     </c:if>
@@ -203,7 +203,7 @@
                                     <input id="checkBox${indice.count}" type="checkbox" name="vectorLayersSelected"
                                            value="${vectorLayer.node.id}" onclick="manageOptionalLayers(layer${totalLayers - sizeVectLayers + indice.count - 1},this.checked)"
                                            <c:if test='${vectorLayer.selected}'> checked </c:if>
-                                               /> 
+										   /> 
                                     ${menuHelper:transName(vectorLayer,language)} 
                                 </td>
                                 <td align="RIGHT">

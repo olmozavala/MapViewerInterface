@@ -20,6 +20,7 @@
 	text-align: center;
 	display: inline; 
 	margin: auto;
+    z-index:1010;
 }
 
 #panZoom{
@@ -97,7 +98,6 @@ div.palettesDiv{
 	visibility: hidden;
 }
 
-
 div.dispAnimation{
 	top: 240px;
 	left: 60px;
@@ -108,15 +108,14 @@ div.dispAnimation{
 }
 
 div.hideButtonCal{
-    	top: 25px;
+	top: 25px;
 	left: 70px;
 	position:absolute;
 	z-index:1008;
 	display:inline;
-	
- 
-}
 
+
+}
 
 /* This is the small Scale line in the bottom of the map */
 div.olControlScaleLine {
@@ -130,6 +129,8 @@ div.olControlScaleLine {
 
 	font-weight: bold;
 	text-align:left;
+	z-index: 1;
+	visibility : hidden;
 }
 
 /* Div to display latitude and longitude*/
@@ -225,8 +226,8 @@ table.palette{
 	height: 100px;
 }
 td.waitBack{
-/*	border-radius: 10px;*/
-/*	background-image:url('../images/transBack.png'); */
+	/*	border-radius: 10px;*/
+	/*	background-image:url('../images/transBack.png'); */
 	valign: up;
 }
 
@@ -278,9 +279,9 @@ p /* This is the default font type for the letters in the page */
 	margin:.5em 0 .5em 0;
 
 	/* The next lines are for IE */
-/*	zoom: 1;*/
-/*	filter:progid:DXImageTransform.Microsoft.Chroma(Color=#000000)*/
-/*		progid:DXImageTransform.Microsoft.Glow(Strength=5, Color=#000000);*/
+	/*	zoom: 1;*/
+	/*	filter:progid:DXImageTransform.Microsoft.Chroma(Color=#000000)*/
+	/*		progid:DXImageTransform.Microsoft.Glow(Strength=5, Color=#000000);*/
 }
 .footNote{
 	font-size:12px;    
@@ -288,15 +289,13 @@ p /* This is the default font type for the letters in the page */
 	padding-bottom: 5px;
 }
 
-
-
 table#helpInstructions
 {
     overflow:scroll;
     border:solid black;
     position:absolute;
     width:600px;
-   visibility:hidden;
+	visibility:hidden;
     z-index:1011;
     right:200px;
     top:10px;
@@ -304,40 +303,29 @@ table#helpInstructions
     border-radius: 10px;
 	margin-top: 2em;
 	margin-bottom: 2em;
-	
+
 	background-image:url('../images/transBack.png'); 
 	font-size: 12px;
 	color:black;
-    
+
     font-size:13px;
     background-color: white;
-    
-    
 }
 
 
 table#helpInstructions tr td:first-child{
-    
     color:red;
     font-weight: bold;
-    
-    
 }
-
-
 .helpTitle{
-  text-decoration: underline;
-  text-align:center;
-  font-size:16px;
+	text-decoration: underline;
+	text-align:center;
+	font-size:16px;
     font-weight: bold;
     padding:7px;
     margin:7px;
     color:black;
-    
-    
 }
-
-
 .cancelButton{   
     float:right;   
 }

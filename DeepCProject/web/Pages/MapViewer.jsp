@@ -21,7 +21,10 @@
         <link href="${basepath}/common/CSS/calendar/border-radius.css" rel="stylesheet" type="text/css"/>
         <link href="${basepath}/common/CSS/calendar/reduce-spacing.css" rel="stylesheet" type="text/css"/>
         <link href="${basepath}/common/CSS/calendar/steel/steel.css" rel="stylesheet" type="text/css"/>
+<<<<<<< HEAD
       
+=======
+>>>>>>> 0c1e9241ffe8ff3d71b6f62590684f8a2d107a89
 
         <!--		<script type="text/javascript" src="http://openlayers.org/api/OpenLayers.js"></script>-->
         <script type="text/javascript" src="${basepath}/common/JS/openlayers/OpenLayers.js"> </script>
@@ -104,6 +107,7 @@
                 <c:if test='${netcdf}'>
                 <tr id="transParag"><td>
                         <p class="alphaText"> 
+
                             <img id="alphaText_elevminus" border="0" onclick="changeElevation('-', layer1);" 
                                  onmouseover="rollImage(this,'${basepath}/common/images/Menu/MinusInv.png' )"
                                  onmouseout="rollImage(this,'${basepath}/common/images/Menu/Minus.png' )"
@@ -113,6 +117,7 @@
                                  onmouseover="rollImage(this,'${basepath}/common/images/Menu/PlusInv.png' )"
                                  onmouseout="rollImage(this,'${basepath}/common/images/Menu/Plus.png' )"
                                  src="${basepath}/common/images/Menu/Plus.png" alt="IncElevation" width="20" height="20" /></p>
+
                     </td></tr>
  
                     
@@ -316,4 +321,8 @@
             </p>
     </div>
 </body>
+<<<<<<< HEAD
 </html>
+=======
+</html>
+>>>>>>> 0c1e9241ffe8ff3d71b6f62590684f8a2d107a89

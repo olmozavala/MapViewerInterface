@@ -63,9 +63,23 @@ body {
 
 img{
 }
+
 .alphaText{
 	cursor: pointer;
 }
+
+#alphaText_elevminus{
+	cursor: pointer;
+        
+}
+
+
+
+#alphaText_elevplus{
+	cursor: pointer;
+                  visibility: hidden;        
+}
+
 
 div.startDateCal{
 	top: 60px;
@@ -364,3 +378,14 @@ visibility: hidden;
 }
 
 
+#hieght_tool
+{
+border:solid red;
+position:absolute;
+width:200px;
+height:300px;
+z-index:1000;
+top:250px;
+
+
+}

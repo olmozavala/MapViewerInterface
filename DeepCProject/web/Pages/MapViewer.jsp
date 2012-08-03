@@ -21,10 +21,7 @@
         <link href="${basepath}/common/CSS/calendar/border-radius.css" rel="stylesheet" type="text/css"/>
         <link href="${basepath}/common/CSS/calendar/reduce-spacing.css" rel="stylesheet" type="text/css"/>
         <link href="${basepath}/common/CSS/calendar/steel/steel.css" rel="stylesheet" type="text/css"/>
-<<<<<<< HEAD
-      
-=======
->>>>>>> 0c1e9241ffe8ff3d71b6f62590684f8a2d107a89
+
 
         <!--		<script type="text/javascript" src="http://openlayers.org/api/OpenLayers.js"></script>-->
         <script type="text/javascript" src="${basepath}/common/JS/openlayers/OpenLayers.js"> </script>

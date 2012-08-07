@@ -25,7 +25,7 @@
                 </tr>
             
             </table>
-        </td><td><b>Zoom map:</b><BR/>- Use + and - buttons located at the top left, besides the calendar.<BR/>- Use mouse wheel to zoom in and out.</td></tr>
+        </td><td><b>Zoom map:</b><BR/>- Use <img src="${basepath}/common/JS/openlayers/img/zoom-plus-mini.png" style="padding-left:10px;"> and <img src="${basepath}/common/JS/openlayers/img/zoom-minus-mini.png" style="padding-left:10px;"> buttons located at the top left to zoom.<BR/>- Use mouse wheel to zoom in and out.</td></tr>
     <tr><td style="text-align:center;"><img src="${basepath}/common/images/icon/editing_tool_bar.png" />&nbsp;&nbsp;&nbsp;<img src="${basepath}/common/images/icon/hand_bar.png" /></td><td><b>Transect tool:</b><Br/>- With this tool you can choose different points under the map, and it will create two graphs. The first graph will show you how the variables (temperature, salinity, velocity, etc.) change as they move along the points you draw based on latitude and longitude. The second graph shows how the chosen variable changes through out different depths <br/>- First click on the <img src="${basepath}/common/images/icon/editing_tool_bar.png" /> icon to get started.
         <Br/>- Then click some point in the map to select your starting point in the transect. Keep clicking around to create more points. Once the last point is chosen, double click it to pop up the graphs. 
         <BR/>- To create another graph, simply make a new drawing and the last one will disappear.
@@ -34,7 +34,7 @@
         
         </td></tr>
     
-    <tr><td><p class="alphaText"> 
+    <tr><td style="text-align: center;"><p class="alphaText"> 
 
 	<img  src="${basepath}/common/images/Menu/Minus.png" alt="DecElevation" width="20" height="20" />
 	Elevation 
@@ -45,7 +45,7 @@
         
         </td></tr>
     
-        <tr><td><p class="alphaText"> 
+        <tr><td style="text-align: center;"><p class="alphaText"> 
 
 	<img  src="${basepath}/common/images/Menu/Minus.png" alt="DecElevation" width="20" height="20" />
 	Transparency 

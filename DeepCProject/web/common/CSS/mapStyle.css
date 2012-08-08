@@ -68,6 +68,11 @@ img{
     cursor: pointer;
 }
 
+.alphaText{
+    cursor: pointer;
+}
+
+
 #alphaText_elevminus{
     cursor: pointer;
 
@@ -316,37 +321,34 @@ p /* This is the default font type for the letters in the page */
     padding-bottom: 5px;
 }
 
-table#helpInstructions
-{
-    overflow:scroll;
+#helpInstructions
+{   
     border:solid black;
     position:absolute;
     width:800px;
     visibility:visible;
-    z-index:1011;
+    z-index:1005;
     right:200px;
     top:5px;
-
-
     border-radius: 10px;
     margin-top: 2em;
     margin-bottom: 2em;
-
     background-image:url('../images/transBack.png'); 
     font-size: 12px;
     color:black;
-
     background-color: white;
-}
-
-
-table#helpInstructions tr td:first-child{
+    height:500px;
+    overflow:scroll;
     
 }
 
-table#helpInstructions td{
+#align_left td{
+    
     text-align: left;
+    
+    
 }
+
 
 
 .helpTitle{
@@ -398,7 +400,15 @@ table#helpInstructions td{
 
 }
 
-
+.scrollable{
+    
+    overflow:scroll;
+    width:800px;
+    height:400px;
+    border:solid red;
+    
+    
+}
 
 .awesome, .awesome:visited {
     background: #444444 url('../images/overlayy.png') repeat-x;
@@ -444,7 +454,10 @@ table#helpInstructions td{
 .pink.awesome:hover                            { background-color: #c81e82; }
 
 
-
+.no_hover{    
+      background-color: #111;
+     
+}
 
 
 

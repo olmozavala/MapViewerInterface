@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+
+<!-- The width and height of the image affects the resolution of the animated gif it is important -->
+<!-- The featureInfo is required, if it doesn't have data then use 'none'		
+					By the default, the feature info is the same as the name of the layer -->
+
+<MenuConf xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="schema.xsd">
+	<!-- Surface Elevation 2011 -->
+	<MainLayers BBOX="-98.0,18.09164810180664,-76.400024,31.960647583007812" 
+				format="image/gif"  server="http://viewer.coaps.fsu.edu/ncWMS/wms"
+				tiled="true" time="true" mincolor="-.64" maxcolor="0.95" max_time_range="month">  
+			<layer Menu="SeaElev,2012" EN="Surface Elevation 2012 from HYCOM" ES="Elevacion del mar del 2012 usando HYCOM" 
+								name="hycom2012/ssh"/>
+			<layer Menu="SeaElev,2011" EN="Surface Elevation 2011 from HYCOM" ES="Elevacion del mar del 2011 usando HYCOM" 
+								name="hycom2011/ssh"/>
+			<layer Menu="SeaElev,2010" EN="Surface Elevation 2010 from HYCOM" ES="Elevacion del mar del 2010 usando HYCOM" 
+								name="hycom2010/ssh"/>
+	</MainLayers>
+</MenuConf>

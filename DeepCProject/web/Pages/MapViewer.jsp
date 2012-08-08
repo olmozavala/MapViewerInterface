@@ -39,7 +39,7 @@
                     </c:if>
 
                     <!-- Current palette and color range -->
-                    <tr <c:if test='${netcdf}'> style="display: none;" </c:if>><td> >
+                    <tr <c:if test='${netcdf}'> style="display: none;" </c:if>>
                         <td><%@include file="Options/Palettes.jsp" %></td>
                     </tr>
 

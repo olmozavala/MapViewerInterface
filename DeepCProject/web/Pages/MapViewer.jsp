@@ -43,7 +43,7 @@
                         <td><%@include file="Options/Palettes.jsp" %></td>
                     </tr>
 
-                    <!-- Link to download kml files-->
+                    <!-- Link to download kml files-->  
                     <tr  id="mainkml"> <td> <%@include file="Options/KmlLink.jsp" %></td></tr>
 
                     <!--This part shows the animation options-->

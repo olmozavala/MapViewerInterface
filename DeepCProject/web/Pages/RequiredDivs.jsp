@@ -6,9 +6,6 @@
 
 <!-- User Menu -->
 
- <%@include file="TopMenu.jsp" %>
-
-
 <!-- Map title -->
 <div class="mapTitle" id="layerTitle"> <p id="pTitleText"> Deep-C Gulf of Mexico<br> ${layerTitle} </p> </div>
 

@@ -347,7 +347,9 @@ p /* This is the default font type for the letters in the page */
 #align_left td{
     text-align: left;
 }
-
+#align_center {
+    text-align:center;
+}
 .helpTitle{
     text-align:center;
     font-size:16px;

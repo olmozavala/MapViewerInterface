@@ -23,7 +23,8 @@
 
 		<!-- Simple text that shows 'Loading...' -->
 		<c:if test='${netcdf}'>
-			<span class="loading"> <p id="l-animation" class="bigFontSize"> Loading <img src="${basepath}/common/images/load.gif" height="12" border="0" alt="loading"/> </p> </span>
+			<span class="loading"> <p id="l-animation" class="bigFontSize"> Loading 
+					<img src="${basepath}/common/images/load.gif" height="12" border="0" alt="loading"/> </p> </span>
 			<span class="hideButtonCal" id="hideButtonCal">
 				<p id="hide_show" class="small awesome" onclick="hideCalendar();" >Hide Calendar</p> <br>
 				<p id="s-animation"class="small awesome"   onclick="stopAnimation();" > Stop animation </p>
@@ -40,12 +41,14 @@
 
 
                     <!-- Transparency -->
-                    <tr id="transParag"><td><%@include file="Options/Transparency.jsp" %></td></tr>
+                    <tr id="transParag" >
+                        <td><%@include file="Options/Transparency.jsp" %> </td>
+                    </tr>
 
 					<c:choose>
 						<c:when test='${netcdf}'>
 							<!-- Elevation -->
-							<tr id="elevation" ><td><%@include file="Options/Elevation.jsp" %></td></tr>
+							<tr id="elevation"><td><%@include file="Options/Elevation.jsp" %></td></tr>
 
 							<!-- Current palette and color range -->
 							<tr > <td><%@include file="Options/Palettes.jsp" %></td> </tr>

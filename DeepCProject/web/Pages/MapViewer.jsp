@@ -20,6 +20,16 @@
 		<c:if test='${netcdf}'>
 			<%@include file="NcWMSOptions.jsp" %>
 		</c:if>
+
+		<!-- Simple text that shows 'Loading...' -->
+		<c:if test='${netcdf}'>
+			<span class="loading"> <p id="l-animation" class="bigFontSize"> Loading <img src="${basepath}/common/images/load.gif" height="12" border="0" alt="loading"/> </p> </span>
+			<span class="hideButtonCal" id="hideButtonCal">
+				<p id="hide_show" class="small awesome" onclick="hideCalendar();" >Hide Calendar</p> <br>
+				<p id="s-animation"class="small awesome"   onclick="stopAnimation();" > Stop animation </p>
+			</span>
+		</c:if>
+
         <!-- This is the div that contains all of the user options, drop down of
           main layers, vector layers, kml data, etc. -->
         <div id="layersMenu" class="layersMenu">
@@ -45,16 +55,6 @@
                     <tr  id="mainkml"> <td> <%@include file="Options/KmlLink.jsp" %></td></tr>
 
                     <!--This part shows the animation options-->
-					<c:if test='${netcdf}'>
-						<tr id="loadingAnimContainer">
-							<td>
-								<p id="s-animation"class="small awesome"  onclick="stopAnimation();" > Stop animation </p>
-								<p id="l-animation" class="defShadow" > Loading 
-									<img src="${basepath}/common/images/load.gif" height="12" border="0" alt="loading"></A>
-								</p>
-							</td>
-						</tr>
-					</c:if>
 
                     <!-- List of optional layers -->
                     <tr><td align="left"> <%@include file="Options/OptionalLayers.jsp" %></td></tr>

@@ -1,4 +1,4 @@
-/* 
+/*
     Document   : MapDefault
     Created on : Nov 7, 2011, 10:03:32 AM
     Author     : olmozavala
@@ -10,7 +10,7 @@
 {
     cursor:crosshair;
     margin-left: auto ;
-    margin-right: auto ;	
+    margin-right: auto ;
 }
 
 /* Used by open layers to display longitude and latitude */
@@ -18,7 +18,7 @@
     color: black;
     font-size: 12px;
     text-align: center;
-    display: inline; 
+    display: inline;
     margin: auto;
 }
 
@@ -26,13 +26,13 @@
     top:40%;
     position: absolute;
     background: green;
-    z-index: 1009;
+    z-index: 1008;
 }
 
 /* This is the style of the OpenLayers pop up (Layer details)
         The font size has to be defined on JavaScript (I doesn't work here)*/
 div.olPopupContent{
-    background-image:url('../images/transBack2.png'); 
+    background-image:url('../images/transBack2.png');
     border-radius: 10px;
     overflow: hidden;
     width: 190px;
@@ -43,7 +43,7 @@ div.olPopupContent{
     position: absolute;
     visibility: hidden;
     width: 10%;
-    height: 10%; 
+    height: 10%;
     top: 1%;
     left: 1%;
 }
@@ -55,11 +55,11 @@ div.olPopupContent{
 /* Default style for the page */
 body {
     font-family:Tahoma, Verdana, Arial, sans-serif;
-    margin: 0; 
+    margin: 0;
     padding: 0;
     text-align: center;
-    background-color: #296E8D;   
-}   
+    background-color: #296E8D;
+}
 
 img{
 }
@@ -82,43 +82,43 @@ img{
 
 #alphaText_elevplus{
     cursor: pointer;
-    visibility: hidden;   
+    visibility: hidden;
 
 }
 
 #alphaText_transminus
 {
     cursor: pointer;
-    visibility: hidden;        
-}    
+    visibility: hidden;
+}
 
 div.startDateCal{
-    top: 60px;
+    top: 80px;
     left: 50px;
     position:absolute;
-    z-index:1000;
+    z-index:1003;
     visibility: hidden;
 }
 
 div.endDateCal{
-    top: 60px;
+    top: 80px;
     left: 220px;
     position:absolute;
-    z-index:1000;
+    z-index:1003;
     display:inline;
     visibility: hidden;
 }
 
 div.palettesDiv{
-    top: 120px;
-    right: 200px;
+    top: 40px;
+    left: 400px;
     position:absolute;
-    z-index:1006;
+    z-index:1008;
     color: white;
     border-radius: 10px;
     margin-top: 2em;
     margin-bottom: 2em;
-    background-image:url('../images/transBack.png'); 
+    background-image:url('../images/transBack.png');
     visibility: hidden;
 }
 
@@ -127,23 +127,151 @@ div.palettesDiv{
 
 
 div.dispAnimation{
-    top: 240px;
-    left: 60px;
+    top: 250px;
+    left: 50px;
     position:absolute;
     z-index:1007;
     display:inline;
     visibility: hidden;
 }
 
-div.hideButtonCal{
-    top: 25px;
-    left: 70px;
-    position:absolute;
-    z-index:1008;
-    display:inline;
+/*These following classes are for the buttons in the menu like hide calendars, layer selection, transparency etc.. */
+.hideButtonCal{
+top:20px;
+    left: 10px;
+position:absolute;
+   
+
+  
 
 
 }
+
+
+
+
+.item_layers2
+{
+position:absolute;
+top:4px;
+left:125px;
+}
+
+
+.item_trans3
+{
+position:absolute;
+top:-1px;
+left:255px;
+}
+
+.item_elev4
+{
+position:absolute;
+top:22px;
+left:265px;
+}
+
+.item_palette5
+{
+padding:0;
+position:absolute;
+top:0px;
+left:375px;
+
+width:200px;
+}
+
+.item_kml6
+{
+padding:0;
+position:absolute;
+top:6px;
+left:580px;
+}
+
+.item_optional7
+{
+
+position:absolute;
+top:300px;
+left:10px;
+}
+
+.item_refresh8
+{
+
+position:absolute;
+top:3px;
+left:700px;
+}
+
+.item_email9
+{
+
+position:absolute;
+top:34px;
+left:715px;
+}
+
+.item_help10
+{
+padding:0;
+position:absolute;
+top:15px;
+left:930px;
+cursor:pointer;
+}
+
+
+.item_transect11
+{
+
+position:absolute;
+top:3px;
+left:810px;
+cursor:pointer;
+
+
+}
+
+.item_transect12
+{
+
+position:absolute;
+top:34px;
+left:810px;
+cursor:pointer;
+
+
+}
+
+.stop_button
+{
+position:absolute;
+top:10px;
+left:25px;
+
+cursor: pointer;
+
+}
+
+#imgPalette{
+/* for firefox, safari, chrome, etc. */
+-webkit-transform: rotate(-90deg);
+-moz-transform: rotate(-90deg);
+/* for ie */
+filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+padding:0px;
+margin:0px;
+position:absolute;
+top:-35px;
+right:90px;
+
+
+
+}
+
 
 
 /* This is the small Scale line in the bottom of the map */
@@ -168,11 +296,11 @@ div.layersLongLat{
     z-index:1000;
     display:inline;
     width: 145px;
-    height:25px; 
+    height:25px;
     padding-bottom:7px;
-    padding-left:6px;   
+    padding-left:6px;
     text-align:left;
-    background-image:url('../images/transBack.png'); 
+    background-image:url('../images/transBack.png');
     font-size: 13px;
     border-style: solid;
     border-width: thin;
@@ -184,22 +312,27 @@ div.layersData{
     z-index:1003;
     display:inline;
     width: 220px;
-    min-height:0px; 
+    min-height:0px;
     padding-bottom:2px;
-    padding-left:2px;   
+    padding-left:2px;
     text-align:left;
-    background-image:url('../images/transBack.png'); 
+    background-image:url('../images/transBack.png');
 }
-/* Main div for user menu options. Where the dropdown, vector layers etc are */
+/* Main div for user menu options. Where the dropdown, vector layers etc are now topmenu */
 div.layersMenu{
-    position:absolute;
-    top:60px;
-    right:1%;
+      background-image:url('../images/transBack.png');
+
+    top:0px;
+    left:0px;
     z-index:1002;
-    display:inline;
-    padding:3px;
-    min-width: 170px;
     opacity:0.85;
+height:65px;
+position:relative;
+border-bottom:white 1px solid;
+text-align:left;
+width:100%;
+
+
 }
 /* Left fotter */
 div.leftFoot{
@@ -212,14 +345,15 @@ div.leftFoot{
     opacity:0.7;
 }
 /* Main title */
-div.mapTitle{    
-    position:absolute;	
+div.mapTitle{
+    position:absolute;
     width: 100%;
-    top:.5%;
+    top:85px;
     left:0%;
-    z-index:1002;
+    z-index:1000;
     display:inline;
     text-align:center;
+
 }
 
 a
@@ -229,29 +363,34 @@ a
 
 /* Drop down for selection of main layer */
 select.menu{
-    width:100%;
-    font-size: 13px;
+    width:120px;
+    font-size: 12px;
+	top:0px;
 }
 /* Table that contains the optional layers */
 table.menus{
-    width: 100%;
+
 }
 /* Subtable that contains the optional layers */
 table.vectorLayer{
     border-radius: 10px;
-    margin-top: 2em;
-    margin-bottom: 2em;
+   
     width: 100%;
-    background-image:url('../images/transBack.png'); 
-    font-size: 12px;
-    color:black;
+  /*  background-image:url('../images/transBack.png');*/
+background-color:black;
+opacity:0.85;
+    font-size: 10px;
+    color:white;
 }/* Subtable that contains the optional layers */
 
 table.palette{
     font-size: 12px;
     color:black;
-    height: 100px;
+	
+    
 }
+
+
 td.waitBack{
     /*	border-radius: 10px;*/
     /*	background-image:url('../images/transBack.png'); */
@@ -265,7 +404,7 @@ input[type=text]{
 p /* This is the default font type for the letters in the page */
 {
     color:black;
-    font-size:18px;    
+    font-size:18px;
     text-shadow: 0px -1px 5px #DCDCDC,     /* north      */
         0px  1px 5px #DCDCDC,     /* south      */
         -1px  0px 5px #DCDCDC,     /* west       */
@@ -273,7 +412,7 @@ p /* This is the default font type for the letters in the page */
         -1px -1px 5px #DCDCDC,     /* north-west */
         -1px  1px 5px #DCDCDC,     /* north-east */
         1px -1px 5px #DCDCDC,     /* south-west */
-        1px  1px 5px #DCDCDC;     /* south-east */ 
+        1px  1px 5px #DCDCDC;     /* south-east */
 
     margin:.5em 0 .5em 0;
 }
@@ -289,14 +428,14 @@ p /* This is the default font type for the letters in the page */
     font-size:13px;
 }
 .palMinMax{
-    font-size:13px;
+    font-size:11px;
 }
 .defShadow{ /* This font type inverts the color of the font and the shadow */
-    font-size:13px;    
+    font-size:13px;
     margin:.5em 0 .5em 0;
 }
 .invShadow{ /* This font type inverts the color of the font and the shadow */
-    font-size:13px;    
+    font-size:13px;
     color:#DCDCDC;
     font-weight: bold;
     text-shadow: 0px -1px 5px #000000,     /* north      */
@@ -306,7 +445,7 @@ p /* This is the default font type for the letters in the page */
         -1px -1px 5px #000000,     /* north-west */
         -1px  1px 5px #000000,     /* north-east */
         1px -1px 5px #000000,     /* south-west */
-        1px  1px 5px #000000;     /* south-east */ 
+        1px  1px 5px #000000;     /* south-east */
 
     margin:.5em 0 .5em 0;
 
@@ -316,37 +455,40 @@ p /* This is the default font type for the letters in the page */
     /*		progid:DXImageTransform.Microsoft.Glow(Strength=5, Color=#000000);*/
 }
 .footNote{
-    font-size:12px;    
+    font-size:12px;
     display:inline;
     padding-bottom: 5px;
 }
 
+
+
 #helpInstructions
-{   
+{
     border:solid black;
     position:absolute;
-    width:800px;
+    width:600px;
     visibility:visible;
-    z-index:1005;
-    right:200px;
-    top:5px;
+    z-index:1009;
+  	left:500px;
+    top:50px;
     border-radius: 10px;
     margin-top: 2em;
     margin-bottom: 2em;
-    background-image:url('../images/transBack.png'); 
-    font-size: 12px;
+    background-image:url('../images/transBack.png');
+background-color: white;
+font-size: 12px;
     color:black;
-    background-color: white;
+
     height:500px;
     overflow:scroll;
-    
+
 }
 
 #align_left td{
-    
+
     text-align: left;
-    
-    
+
+
 }
 
 
@@ -362,30 +504,35 @@ p /* This is the default font type for the letters in the page */
 }
 
 
-.cancelButton{   
+.cancelButton{
     font-size: 11px;
-    float:right;   
+    float:right;
 }
 
 
 /*Hide the draw polygon button*/
 .olControlEditingToolbar .olControlDrawFeaturePolygonItemInactive{
     background-position: -26px -1px;
-    visibility: hidden;    
+    visibility: hidden;
 }
 .olControlEditingToolbar .olControlDrawFeaturePolygonItemActive {
     background-position: -26px -24px;
-    visibility: hidden;    
+    visibility: hidden;
 }
 
 .olControlEditingToolbar .olControlDrawFeaturePointItemInactive {
     background-position: -77px -1px;
-    visibility: hidden;    
+    visibility: hidden;
 }
 .olControlEditingToolbar .olControlDrawFeaturePointItemActive {
     background-position: -77px -24px;
-    visibility: hidden;    
+    visibility: hidden;
 }
+
+
+
+
+
 
 
 #hieght_tool
@@ -401,20 +548,20 @@ p /* This is the default font type for the letters in the page */
 }
 
 .scrollable{
-    
+
     overflow:scroll;
     width:800px;
     height:400px;
     border:solid red;
-    
-    
+
+
 }
 
 .awesome, .awesome:visited {
     background: #444444 url('../images/overlayy.png') repeat-x;
     display: inline-block;
     padding: 5px 10px 6px;
-    color: #fff;
+    color: #ffffff;
     text-decoration: none;
     -moz-border-radius: 5px;
     -webkit-border-radius: 5px;
@@ -430,9 +577,9 @@ p /* This is the default font type for the letters in the page */
 
 }
 
-.awesome:hover                            { background-color: #111; color: #fff; }
+.awesome:hover                            { background-color: #111; }
 .awesome:active                            { top: 1px; }
-.small.awesome, .small.awesome:visited             { font-size: 13px; padding: ; }
+.small.awesome, .small.awesome:visited             { font-size: 10px; padding: ; }
 .awesome, .awesome:visited,
 .medium.awesome, .medium.awesome:visited         { font-size: 24px; font-weight: bold; line-height: 1; text-shadow: 0 -1px 1px rgba(0,0,0,0.25); }
 .large.awesome, .large.awesome:visited             { font-size: 30px; padding: 8px 14px 9px; }
@@ -445,8 +592,8 @@ p /* This is the default font type for the letters in the page */
 .red.awesome:hover                            { background-color: #872300; }
 .magenta.awesome, .magenta.awesome:visited        { background-color: #a9014b; }
 .magenta.awesome:hover                            { background-color: #630030; }
-.orange.awesome, .orange.awesome:visited        { background-color: #ff5c00; }
-.orange.awesome:hover                            { background-color: #d45500; }
+.orange.awesome, .orange.awesome:visited        { background-color: #fff; }
+.orange.awesome:hover                            { background-color: #cccccc; }
 .yellow.awesome, .yellow.awesome:visited        { background-color: #ffb515; }
 .yellow.awesome:hover                            { background-color: #fc9200; }
 
@@ -454,7 +601,43 @@ p /* This is the default font type for the letters in the page */
 .pink.awesome:hover                            { background-color: #c81e82; }
 
 
-.no_hover{    
+.no_hover{
       background-color: #111;
-     
+
 }
+
+.top_menu
+{
+
+    background-image:url('../images/transBack.png');
+background-color: white;
+width:1366px;
+height:70px;
+display:block;
+
+position:relative;
+}
+
+.loading_area
+{
+border:solid red;
+z-index:1008;
+position:absolute;
+top:300px;
+left:300px;
+}
+
+
+.loading_msg
+{
+font-size:30px;
+position:absolute;
+top:350px;
+width:200px;
+height:100px;
+left:400px;
+
+}
+
+
+

@@ -3,7 +3,7 @@
     Created on : Aug 3, 2012, 6:45:15 PM
     Author     : olmozavala
 --%>
-<table style="z-index:1009;">
+<table>
     <tr>
         <td id="helpInstructions">
             <table border="0" cellpadding="5" cellmargin="7" align="center" id="align_left">

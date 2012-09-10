@@ -325,9 +325,10 @@ p /* This is the default font type for the letters in the page */
 
 #helpInstructions
 {   
-    border:solid black;
-    position:absolute;
+    position:absolute;	
     width:800px;
+    height:500px;
+    border:solid black;
     visibility:visible;
     z-index:1005;
     right:200px;
@@ -339,9 +340,7 @@ p /* This is the default font type for the letters in the page */
     font-size: 12px;
     color:black;
     background-color: white;
-    height:500px;
-    overflow:scroll;
-    
+    overflow-y:scroll;
 }
 
 #align_left td{

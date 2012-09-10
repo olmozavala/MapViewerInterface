@@ -269,6 +269,7 @@
                    <xs:restriction base="xs:string">
                        <xs:enumeration value="week" /> 
                        <xs:enumeration value="month" />
+                       <xs:enumeration value="bimonth" />
                        <xs:enumeration value="year" />                                                           
                    </xs:restriction> 
                 </xs:simpleType>

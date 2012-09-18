@@ -21,82 +21,13 @@
 			<%@include file="NcWMSOptions.jsp" %>
 		</c:if>
 
-		<!-- Simple text that shows 'Loading...' -->
-		<c:if test='${netcdf}'>
-			<span class="loading"> <p id="l-animation" class="bigFontSize"> Loading 
-					<img src="${basepath}/common/images/load.gif" height="12" border="0" alt="loading"/> </p> </span>
-			<span class="hideButtonCal" id="hideButtonCal">
-				<p id="hide_show" class="small awesome" onclick="hideCalendar();" >Hide Calendar</p> <br>
-				<p id="s-animation"class="small awesome"   onclick="stopAnimation();" > Stop animation </p>
-			</span>
-		</c:if>
+ 
+	
+
 
         <!-- This is the div that contains all of the user options, drop down of
           main layers, vector layers, kml data, etc. -->
-        <div id="layersMenu" class="layersMenu">
-            <form id="baseForm" name="baseForm" action="${basepath}${names.acdmServlet}" method="post">
-                <table class="menus" border="0">
-                    <!-- Creates the menus from the static function createMenu inside HtmlMenuBuilder -->
-                    ${menuHelper:createMainMenu(MenuDelUsuario,language)} 
-
-
-                    <!-- Transparency -->
-                    <tr id="transParag" >
-                        <td><%@include file="Options/Transparency.jsp" %> </td>
-                    </tr>
-
-					<c:choose>
-						<c:when test='${netcdf}'>
-							<!-- Elevation -->
-							<tr id="elevation"><td><%@include file="Options/Elevation.jsp" %></td></tr>
-
-							<!-- Current palette and color range -->
-							<tr > <td><%@include file="Options/Palettes.jsp" %></td> </tr>
-						</c:when>
-					</c:choose>
-                    <!-- Link to download kml files-->
-                    <tr  id="mainkml"> <td> <%@include file="Options/KmlLink.jsp" %></td></tr>
-
-                    <!--This part shows the animation options-->
-
-                    <!-- List of optional layers -->
-                    <tr><td align="left"> <%@include file="Options/OptionalLayers.jsp" %></td></tr>
-
-                    <tr>
-                        <td align="center">
-                            <!-- Resize window -->
-                            <p class="small awesome" onclick="refreshWindow();" >
-                                Resize window 
-                            </p>
-                        </td>
-                    </tr>
-
-                    <!-- Email -->
-                    <tr>
-                        <td align="center">
-                            <a href="mailto:osz09@gmail.com">
-                                <p class="small awesome" onclick="MapViewersubmitForm();" >
-                                    Email 
-                                </p>
-                            </a> 
-                        </td>
-                    </tr>
-
-                    <!-- Map Instructions-->
-                    <tr>
-						<%@include file="Options/MapInstructions.jsp" %>
-                        <td align="center">
-                            <div id="helpDiv">
-                                <p class="small awesome" onclick="displayHelp();" >
-                                    Help
-                                </p></div>
-                        </td>
-                    </tr>
-
-                </table>
-            </form>
-        </div>
-
+      
 
         <!-- Foot page --> 
         <div id="pieDePaginaIzq" class="leftFoot">
@@ -123,3 +54,4 @@
     </body>
 
 </html>
+

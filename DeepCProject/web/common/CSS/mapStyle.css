@@ -5,53 +5,6 @@
     Description:
         Purpose of the stylesheet follows.
 */
-/* Used by OpenLayers to display the map*/
-#map
-{
-    cursor:crosshair;
-    margin-left: auto ;
-    margin-right: auto ;	
-}
-
-/* Used by open layers to display longitude and latitude */
-#location {
-    color: black;
-    font-size: 12px;
-	
-    text-align: center;
-    display: inline; 
-    margin: auto;
-}
-
-#panZoom{
-    top:40%;
-    position: absolute;
-    background: green;
-    z-index: 1009;
-}
-
-/* This is the style of the OpenLayers pop up (Layer details)
-        The font size has to be defined on JavaScript (I doesn't work here)*/
-div.olPopupContent{
-    background-image:url('../images/transBack2.png'); 
-    border-radius: 10px;
-    overflow: hidden;
-    width: 190px;
-}
-
-/* This is the div used to put the netCDF animation */
-#mapOverlayDiv{
-    position: absolute;
-    visibility: hidden;
-    width: 10%;
-    height: 10%; 
-    top: 1%;
-    left: 1%;
-}
-
-#p-animation{ visibility: hidden; }
-#s-animation{ visibility: hidden; }
-#l-animation{ visibility: hidden; }
 
 /* Default style for the page */
 body {
@@ -62,8 +15,6 @@ body {
     background-color: #296E8D;   
 }   
 
-img{
-}
 .alphaText{
     cursor: pointer;
 }
@@ -76,7 +27,6 @@ img{
 #alphaText_elevplus{
     cursor: pointer;
     visibility: hidden;   
-
 }
 
 #alphaText_transminus
@@ -84,23 +34,6 @@ img{
     cursor: pointer;
     visibility: hidden;        
 }    
-
-div.startDateCal{
-    top: 60px;
-    left: 50px;
-    position:absolute;
-    z-index:1000;
-    visibility: hidden;
-}
-
-div.endDateCal{
-    top: 60px;
-    left: 220px;
-    position:absolute;
-    z-index:1000;
-    display:inline;
-    visibility: hidden;
-}
 
 div.palettesDiv{
     top: 120px;
@@ -115,16 +48,7 @@ div.palettesDiv{
     visibility: hidden;
 }
 
-/* This span only displays 'Loading...' when is necessary */
-span{}
-.loading{
-	position:absolute;	
-	margin:auto;
-    top:30%;
-    left:40%;
-    z-index:1009;
-	pointer-events: none;
-}
+
 
 div.dispAnimation{
     top: 240px;
@@ -133,15 +57,6 @@ div.dispAnimation{
     z-index:1007;
     display:inline;
     visibility: hidden;
-}
-
-/*Hide and show calendar button*/
-span.hideButtonCal{
-    top: 25px;
-    left: 70px;
-    position:absolute;
-    z-index:1008;
-    display:inline;
 }
 
 

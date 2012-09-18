@@ -23,11 +23,13 @@
 
 		<!-- Simple text that shows 'Loading...' -->
 		<c:if test='${netcdf}'>
-			<span class="loading"> <p id="l-animation" class="bigFontSize"> Loading 
+			<span id="l-animation"> <p  class="bigFontSize"> Loading 
 					<img src="${basepath}/common/images/load.gif" height="12" border="0" alt="loading"/> </p> </span>
-			<span class="hideButtonCal" id="hideButtonCal">
+			<span class="hideButtonCal" id="hideButtonCal" >
 				<p id="hide_show" class="small awesome" onclick="hideCalendar();" >Hide Calendar</p> <br>
-				<p id="s-animation"class="small awesome"   onclick="stopAnimation();" > Stop animation </p>
+			</span>
+			<span id="s-animation">
+				<p class="small awesome" onclick="stopAnimation();" > Stop animation </p>
 			</span>
 		</c:if>
 

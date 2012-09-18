@@ -8,7 +8,6 @@
         <meta name="Description" content="Deep-C atlas" />
         <meta name="Keywords" content="Climatic atlas" />
 
-        <link href="${basepath}/common/CSS/mapStyle.css" rel="stylesheet" type="text/css"/>
         <!--[if gte IE 6]>
         <link href="${basepath}/common/CSS/mapStyleIE.css" rel="stylesheet" type="text/css"/>
         <![endif]-->
@@ -28,5 +27,9 @@
 
         <script type="text/javascript" src="${basepath}/common/JS/calendar/jscal2.js"></script>
         <script type="text/javascript" src="${basepath}/common/JS/calendar/lang/en.js"></script>
+
+        <link href="${basepath}/common/CSS/mapStyle.css" rel="stylesheet" type="text/css"/>
+        <link href="${basepath}/common/CSS/OpenLayersRelated.css" rel="stylesheet" type="text/css"/>
+        <link href="${basepath}/common/CSS/Calendars.css" rel="stylesheet" type="text/css"/>
 
         <title>Gulf of Mexico</title>

@@ -55,7 +55,12 @@
 							<!-- Current palette and color range -->
 							<tr > <td><%@include file="Options/Palettes.jsp" %></td> </tr>
 						</c:when>
+						<c:when test='${!netcdf}'>
+							<!-- Download data-->
+							<tr id="download"><td><%@include file="Options/DownloadData.jsp" %></td></tr>
+						</c:when>
 					</c:choose>
+
                     <!-- Link to download kml files-->
                     <tr  id="mainkml"> <td> <%@include file="Options/KmlLink.jsp" %></td></tr>
 

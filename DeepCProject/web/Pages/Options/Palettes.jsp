@@ -19,7 +19,7 @@
 						id="maxPal" name="maxPal" type="text" size="2" /> 
 				&nbsp;
 			</p>
-			<p class="small awesome" style="font-size:9px;" onclick="UpdatePalette(mappalette);" > Update </p>
+			<p class="buttonStyle" style="font-size:9px;" onclick="UpdatePalette(mappalette);" > Update </p>
 			<p class="palMinMax">
 				&nbsp;
 				min: <input onblur="UpdatePalette(mappalette);" 
@@ -48,7 +48,7 @@
                     Max: <input id="maxPal" name="maxPal" type="text" size="4" /> 
                     &nbsp;
                 </p>
-                <button type="button" class="small awesome" style="font-size:11px;" onclick="UpdatePalette(mappalette);" >
+                <button type="button" class="buttonStyle" style="font-size:11px;" onclick="UpdatePalette(mappalette);" >
                     Update 
                 </button>
 

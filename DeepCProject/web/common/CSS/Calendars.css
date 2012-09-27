@@ -34,7 +34,7 @@
 }
 
 /*Hide, show span calendar */
-span.hideButtonCal{
+#hideCalendarParent{
     top: 25px;
     left: 70px;
     position:absolute;

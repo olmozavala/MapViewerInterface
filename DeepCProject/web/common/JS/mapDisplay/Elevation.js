@@ -27,15 +27,15 @@ function changeElevation(sign, layer)
     
 	//change the + sign in the menu
 	if(changeElevation.counter == 0)
-		$('alphaText_elevplus').style.visibility = 'hidden';
+		$('plusButtonElevation').disabled = true;
 	else
-		$('alphaText_elevplus').style.visibility = 'visible';
+		$('plusButtonElevation').disabled = false;
     
 	//change the - sign in the menu
 	if(changeElevation.counter == array_len -1)
-		$('alphaText_elevminus').style.visibility = 'hidden';
+		$('minusButtonElevation').disabled = true;
 	else
-		$('alphaText_elevminus').style.visibility = 'visible';
+		$('minusButtonElevation').disabled= false;
  
  
 	//add the elevation parameter to the layerDetails object. 

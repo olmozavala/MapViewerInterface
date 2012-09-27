@@ -8,7 +8,7 @@
         <td id="helpInstructions" style="visibility:hidden">
             <table border="0" cellpadding="5" cellmargin="7" align="center" id="align_left">
                 <tr><td colspan="2" height="0" class="helpTitle" valign="top" style="text-align: center;">
-						<font color="black">Map Instructions</font><span type="button" class="small awesome " style="float:right" onclick="displayHelp()">x</span>
+						<font color="black">Map Instructions</font><span type="button" class="buttonStyle " style="float:right" onclick="displayHelp()">x</span>
 					</td>
 				</tr>
                 <tr><td width="210" style="text-align:center;"><img src="${basepath}/common/images/icon/mouse_cursor.png">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -75,7 +75,7 @@
 </td></tr>
 
 
-                <tr><td style="text-align:center;"><span class="small awesome no_hover" style="cursor:default;">
+                <tr><td style="text-align:center;"><span class="buttonStyle no_hover" style="cursor:default;">
                             <img  border="0" src="${basepath}/common/images/kmz/google_earth_logo.png" width="35" height="32" alt="Descargar en KML" />
                             Kml data</span></td><td><b>Download Data:</b><BR/>- Click this button to download current dataset in a KMZ format which can be viewed with Google Earth.</td></tr>
                 <tr><td><table class="vectorLayer">
@@ -110,15 +110,15 @@
                                 </td> 
                             </tr>
                         </table></td><td><b>Optional layers:</b><Br/>You can turn them on or off. For example if you want to show the US States on the map then you check the box of US States. </td></tr>
-                <tr><td style="text-align:center;"><span class="small awesome no_hover" style="cursor:default;">Resize window</span></td><td><b>Resize window:</b><BR/>- If you need to adjust the map size to your current window size.</td></tr>
-                <tr><td style="text-align:center;"><span class="small awesome no_hover" style="cursor:default;">Email</span> </td><td><b>Contact us:</b><BR/>-If you have any questions or want to report a bug.</td></tr>
-                <tr><td style="text-align:center;"><span class="small awesome no_hover" style="cursor:default;">Help</span></td><td><b>Help menu:</b><BR/>- Display Instructions</td></tr>
-                <tr><td style="text-align:center;"><span class="small awesome no_hover" style="cursor:default;">Display Animation</span></td><td><b>Animations:</b><BR/>- Choose a beginning date in the calendar as a starting date. Depending if the dataset is weekly, monthly, or yearly the end calendar will change accordingly to the maximum time range allowed. 
+                <tr><td style="text-align:center;"><span class="buttonStyle no_hover" style="cursor:default;">Resize window</span></td><td><b>Resize window:</b><BR/>- If you need to adjust the map size to your current window size.</td></tr>
+                <tr><td style="text-align:center;"><span class="buttonStyle no_hover" style="cursor:default;">Email</span> </td><td><b>Contact us:</b><BR/>-If you have any questions or want to report a bug.</td></tr>
+                <tr><td style="text-align:center;"><span class="buttonStyle no_hover" style="cursor:default;">Help</span></td><td><b>Help menu:</b><BR/>- Display Instructions</td></tr>
+                <tr><td style="text-align:center;"><span class="buttonStyle no_hover" style="cursor:default;">Display Animation</span></td><td><b>Animations:</b><BR/>- Choose a beginning date in the calendar as a starting date. Depending if the dataset is weekly, monthly, or yearly the end calendar will change accordingly to the maximum time range allowed. 
                         <BR/>- Choose an ending date. Note that a "Display animation" button is now showing up. Chose a frame you would like and click Display animation.
                         <BR/>- Wait while the animation is being loaded. This might take a few seconds depending on the time range selected.                                                
                     </td></tr>
-                <tr><td style="text-align:center;"><span class="small awesome no_hover" style="cursor:default;">Stop animation</span></td><td><b>Stop animation:</b><BR/>-This button will disable the animation.</td></tr>
-                <tr><td style="text-align:center;"><span class="small awesome no_hover" style="cursor:default;">Hide Calendar</span></td><td><b>Hide Calendar:</b><BR/>-Toggle between this option to show/hide the calendar.</td></tr>
+                <tr><td style="text-align:center;"><span class="buttonStyle no_hover" style="cursor:default;">Stop animation</span></td><td><b>Stop animation:</b><BR/>-This button will disable the animation.</td></tr>
+                <tr><td style="text-align:center;"><span class="buttonStyle no_hover" style="cursor:default;">Hide Calendar</span></td><td><b>Hide Calendar:</b><BR/>-Toggle between this option to show/hide the calendar.</td></tr>
             </table>    
         </td>
     </tr>

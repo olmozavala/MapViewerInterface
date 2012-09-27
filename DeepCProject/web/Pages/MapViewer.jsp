@@ -24,36 +24,42 @@
 		<!-- Simple text that shows 'Loading...' -->
 		<c:if test='${netcdf}'>
 			<span id="l-animation"> <p  class="bigFontSize"> Loading 
-					<img src="${basepath}/common/images/load.gif" height="12" border="0" alt="loading"/> </p> </span>
-			<span class="hideButtonCal" id="hideButtonCal" >
-				<p id="hide_show" class="small awesome" onclick="hideCalendar();" >Hide Calendar</p> <br>
+					<img src="${basepath}/common/images/load.gif" height="12" border="0" alt="loading"/> </p> 
+			</span>
+			<span id="hideCalendarParent">
+				<p id="hideCalendar" class="buttonStyle" onclick="hideCalendarFunc();" >Hide Calendar</p> <br>
 			</span>
 			<span id="s-animation">
-				<p class="small awesome" onclick="stopAnimation();" > Stop animation </p>
+				<p class="buttonStyle" onclick="stopAnimation();" > Stop animation </p>
 			</span>
 		</c:if>
 
         <!-- This is the div that contains all of the user options, drop down of
           main layers, vector layers, kml data, etc. -->
-        <div id="layersMenu" class="layersMenu">
+        <div id="allMenuParent" >
             <form id="baseForm" name="baseForm" action="${basepath}${names.acdmServlet}" method="post">
-                <table class="menus" border="0">
+                <table id="t_allMenu" border="0">
                     <!-- Creates the menus from the static function createMenu inside HtmlMenuBuilder -->
-                    ${menuHelper:createMainMenu(MenuDelUsuario,language)} 
+                    <tr>
+						<td id="mainMenuParent">
+							${menuHelper:createMainMenu(MenuDelUsuario,language)} 
+						</td>
+					</tr>
 
 
                     <!-- Transparency -->
                     <tr id="transParag" >
+						<!-- Container should have id='transParent-->
                         <td><%@include file="Options/Transparency.jsp" %> </td>
                     </tr>
 
 					<c:choose>
 						<c:when test='${netcdf}'>
 							<!-- Elevation -->
-							<tr id="elevation"><td><%@include file="Options/Elevation.jsp" %></td></tr>
+							<tr ><td id="elevationParent"><%@include file="Options/Elevation.jsp" %></td></tr>
 
 							<!-- Current palette and color range -->
-							<tr > <td><%@include file="Options/Palettes.jsp" %></td> </tr>
+							<tr > <td id="palettesParent"><%@include file="Options/Palettes.jsp" %></td> </tr>
 						</c:when>
 						<c:when test='${!netcdf}'>
 							<!-- Download data-->
@@ -62,17 +68,24 @@
 					</c:choose>
 
                     <!-- Link to download kml files-->
-                    <tr  id="mainkml"> <td> <%@include file="Options/KmlLink.jsp" %></td></tr>
-
+                    <tr> 
+						<td id="mainKmlParent"> 
+							<%@include file="Options/KmlLink.jsp" %>
+						</td>
+					</tr>
                     <!--This part shows the animation options-->
 
                     <!-- List of optional layers -->
-                    <tr><td align="left"> <%@include file="Options/OptionalLayers.jsp" %></td></tr>
+                    <tr>
+						<td id="optionalMenuParent"> 
+							<%@include file="Options/OptionalLayers.jsp" %>
+						</td>
+					</tr>
 
                     <tr>
-                        <td align="center">
+                        <td id="resizeScreenParent">
                             <!-- Resize window -->
-                            <p class="small awesome" onclick="refreshWindow();" >
+                            <p id="resizeScreenText" class="buttonStyle" onclick="refreshWindow();" >
                                 Resize window 
                             </p>
                         </td>
@@ -80,9 +93,9 @@
 
                     <!-- Email -->
                     <tr>
-                        <td align="center">
+                        <td id="emailParent">
                             <a href="mailto:osz09@gmail.com">
-                                <p class="small awesome" onclick="MapViewersubmitForm();" >
+                                <p id="emailText" class="buttonStyle" onclick="MapViewersubmitForm();" >
                                     Email 
                                 </p>
                             </a> 
@@ -91,12 +104,10 @@
 
                     <!-- Map Instructions-->
                     <tr>
-						<%@include file="Options/MapInstructions.jsp" %>
-                        <td align="center">
-                            <div id="helpDiv">
-                                <p class="small awesome" onclick="displayHelp();" >
-                                    Help
-                                </p></div>
+                        <td id="helpParent">
+							<p id="helpText" class="buttonStyle" onclick="displayHelp();" >
+								Help
+							</p>
                         </td>
                     </tr>
 
@@ -104,6 +115,7 @@
             </form>
         </div>
 
+		<%@include file="Options/MapInstructions.jsp" %>
 
         <!-- Foot page --> 
         <div id="pieDePaginaIzq" class="leftFoot">

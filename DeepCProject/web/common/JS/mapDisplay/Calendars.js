@@ -447,9 +447,9 @@ function updateSelectedDate(newDate){
 }
 
 //this function is to hide the calendars and also show the back the calendar.
-function hideCalendar()
+function hideCalendarFunc()
 {
-    var button = $('hide_show');    
+    var button = $('hideCalendar');    
     var inner_text = button.innerHTML;  
 
     //this if handles when the calendar is hiden and we should show it

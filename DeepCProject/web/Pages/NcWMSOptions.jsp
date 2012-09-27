@@ -14,17 +14,19 @@
 			</div>
 
 			<!-- Divs that hold the start and end calendar plus the related texts -->
-			<div class="startDateCal" id="cal-start"><p class="calTitle" id="hideOneDay">Start date (Current)</p></div>
-			<div class="endDateCal" id="cal-end"><p class="calTitle"  id="hideOneDayEnd">End date</p></div>
-			<div class="dispAnimation" id="p-animation">
-				<table >
-					<tr><td style="width:140px">
-							<p class="small awesome" onclick="dispAnimation();" > Display animation </p> </td>
-						<td style="width:190px; text-align: center" >
-							<select id="timeSelect" name="timeSelect">
-							</select>
-						</td>
-					</tr>
-				</table>
+			<div id="calendarParent">
+				<div class="startDateCal" id="cal-start"><p class="calTitle" id="hideOneDay">Start date (Current)</p></div>
+				<div class="endDateCal" id="cal-end"><p class="calTitle"  id="hideOneDayEnd">End date</p></div>
+				<div class="dispAnimation" id="p-animation">
+					<table >
+						<tr><td style="width:140px">
+								<p class="buttonStyle" onclick="dispAnimation();" > Display animation </p> </td>
+							<td style="width:190px; text-align: center" >
+								<select id="timeSelect" name="timeSelect">
+								</select>
+							</td>
+						</tr>
+					</table>
+				</div>
 			</div>
 	</c:if>

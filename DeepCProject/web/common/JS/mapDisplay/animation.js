@@ -32,10 +32,9 @@ function setAnimationDivsVisibility(status){
 			$('p-animation').style.visibility = 'visible';
 			$('s-animation').style.visibility = 'hidden';
 			$('l-animation').style.visibility = 'hidden';
-			//			$('transParag').style.visibility= 'visible';
 			$('minPal').disabled = false;
 			$('maxPal').disabled = false;
-			$('hideButtonCal').style.visibility = 'visible';
+			$('hideCalendarParent').style.visibility = 'visible';
 			displayCalendars(true);
 		}
 
@@ -43,11 +42,10 @@ function setAnimationDivsVisibility(status){
 			$('p-animation').style.visibility = 'visible';
 			$('s-animation').style.visibility = 'hidden';
 			$('l-animation').style.visibility = 'hidden';
-			//			$('transParag').style.visibility= 'visible';
-			$('pElevation').style.visibility= 'visible';
+			$('elevationParent').style.visibility= 'visible';
 			$('minPal').disabled = false;
 			$('maxPal').disabled = false;
-			$('hideButtonCal').style.visibility = 'visible';
+			$('hideCalendarParent').style.visibility = 'visible';
 
 			displayingAnimation = false;
 			displayCalendars(true);
@@ -58,11 +56,10 @@ function setAnimationDivsVisibility(status){
 			$('p-animation').style.visibility = 'collapse';
 			$('s-animation').style.visibility = 'visible';
 			$('l-animation').style.visibility = 'visible';
-			//			$('transParag').style.visibility= 'visible';
 			$('minPal').disabled = true;
 			$('maxPal').disabled = true;
 			$('palettes-div').style.visibility = "hidden";
-			$('hideButtonCal').style.visibility = 'hidden';
+			$('hideCalendarParent').style.visibility = 'hidden';
 
 			displayingAnimation = true;
 			displayCalendars(false);
@@ -73,10 +70,9 @@ function setAnimationDivsVisibility(status){
 			$('p-animation').style.visibility = 'collapse';
 			$('s-animation').style.visibility = 'hidden';
 			$('l-animation').style.visibility = 'hidden';
-			//			$('transParag').style.visibility= 'visible';
 			$('minPal').disabled = false;
 			$('maxPal').disabled = false;
-			$('hideButtonCal').style.visibility = 'visible';
+			$('hideCalendarParent').style.visibility = 'visible';
 
 			displayCalendars(true);
 		}
@@ -86,12 +82,11 @@ function setAnimationDivsVisibility(status){
 			$('p-animation').style.visibility = 'collapse';
 			$('s-animation').style.visibility = 'visible';
 			$('l-animation').style.visibility = 'hidden';
-			$('pElevation').style.visibility= 'hidden';
-			//			$('transParag').style.visibility= 'hidden';
+			$('elevationParent').style.visibility= 'hidden';
 			$('minPal').disabled = true;
 			$('maxPal').disabled = true;
 			$('palettes-div').style.visibility = "hidden";
-			$('hideButtonCal').style.visibility = 'hidden';
+			$('hideCalendarParent').style.visibility = 'hidden';
 			displayCalendars(false);
 		}
 
@@ -101,18 +96,16 @@ function setAnimationDivsVisibility(status){
 			$('p-animation').style.visibility = 'collapse';
 			$('s-animation').style.visibility = 'hidden';
 			$('l-animation').style.visibility = 'hidden';
-			//			$('transParag').style.visibility= 'visible';
 			$('minPal').disabled = true;
 			$('maxPal').disabled = true;
-			$('hideButtonCal').style.visibility = 'hidden';
+			$('hideCalendarParent').style.visibility = 'hidden';
 			displayCalendars(false);
 		}
 
 	// After setting the display as inline or block the 
 	// column losses its width so we need to rese it.
 	/*
-           $('transParag').style.width= '100%';
-           $('pElevation').style.width= '100%';
+           $('elevationParent').style.width= '100%';
            */
 	}
 	// Options for non netcdf layers

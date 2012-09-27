@@ -31,14 +31,14 @@ function changeTransp(val, layer){
   
 	//make disapear the minus or plus sign in the menu
 	if(opacity != maxOpacity)
-		$("alphaText_transminus").style.visibility = 'visible';
+		$("minusButtonTrans").disabled = false;
 	else
-		$("alphaText_transminus").style.visibility = 'hidden';
+		$("minusButtonTrans").disabled = true;
   
 	if(opacity != minOpacity)
-		$("alphaText_transplus").style.visibility = 'visible';
+		$("plusButtonTrans").disabled = false;
 	else
-		$("alphaText_transplus").style.visibility = 'hidden';
+		$("plusButtonTrans").disabled = true;
 }
 
 

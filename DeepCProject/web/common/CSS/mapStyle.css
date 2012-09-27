@@ -15,25 +15,21 @@ body {
     background-color: #296E8D;   
 }   
 
-.alphaText{
-    cursor: pointer;
+.minusButton{
+    font-size:10px;
+    font-weight:bold;
+    padding:2px;
+}
+.plusButton{
+    font-size:10px;
+    font-weight:bold;
+    padding:2px;
 }
 
-#alphaText_elevminus{
-    cursor: pointer;
-
+/* Transparency text */
+#transText{
+    cursor:default;
 }
-
-#alphaText_elevplus{
-    cursor: pointer;
-    visibility: hidden;   
-}
-
-#alphaText_transminus
-{
-    cursor: pointer;
-    visibility: hidden;        
-}    
 
 div.palettesDiv{
     top: 120px;
@@ -47,8 +43,6 @@ div.palettesDiv{
     background-image:url('../images/transBack.png'); 
     visibility: hidden;
 }
-
-
 
 div.dispAnimation{
     top: 240px;
@@ -104,8 +98,8 @@ div.layersData{
     text-align:left;
     background-image:url('../images/transBack.png'); 
 }
-/* Main div for user menu options. Where the dropdown, vector layers etc are */
-div.layersMenu{
+/* Main container for user menu options. Where the dropdown, vector layers etc are */
+#allMenuParent{
     position:absolute;
     top:60px;
     right:1%;
@@ -147,10 +141,18 @@ select.menu{
     width:100%;
     font-size: 13px;
 }
-/* Table that contains the optional layers */
-table.menus{
+
+/* Table that contains all the menus */
+#t_allMenu{
     width: 100%;
+	border-style: dashed;
 }
+
+#t_mainMenu{
+    width: 100%;
+    text-align:center;
+}
+
 /* Subtable that contains the optional layers */
 table.vectorLayer{
     border-radius: 10px;
@@ -191,16 +193,13 @@ p /* This is the default font type for the letters in the page */
 
     margin:.5em 0 .5em 0;
 }
+/* This class represent default options on the menu
+ * that are not buttons, like Transparency or Elevation */
+.defaultOptions{
+    font-size:13px;
+}
 .bigFontSize{
 	font-size: 24px;
-}
-.alphaText{
-    font-size:13px;
-}
-
-.alphaText_Button{
-    font-size:13px;
-
 }
 .calTitle{
     font-size:13px;
@@ -317,7 +316,7 @@ p /* This is the default font type for the letters in the page */
     border:solid red;
 }
 
-.awesome, .awesome:visited {
+.buttonStyle, .buttonStyle:visited {
     background: #444444 url('../images/overlayy.png') repeat-x;
     display: inline-block;
     padding: 5px 10px 6px;
@@ -335,27 +334,24 @@ p /* This is the default font type for the letters in the page */
     font-family:Calibri, Arial, sans-serif;
 }
 
-.awesome:hover                            { background-color: #111; color: #fff; }
-.awesome:active                            { top: 1px; }
-.small.awesome, .small.awesome:visited             { font-size: 13px; }
-.awesome, .awesome:visited,
-.medium.awesome, .medium.awesome:visited         { font-size: 24px; font-weight: bold; line-height: 1; text-shadow: 0 -1px 1px rgba(0,0,0,0.25); }
-.large.awesome, .large.awesome:visited             { font-size: 30px; padding: 8px 14px 9px; }
-
-.green.awesome, .green.awesome:visited        { background-color: #91bd09; }
-.green.awesome:hover                        { background-color: #749a02; }
-.blue.awesome, .blue.awesome:visited        { background-color: #2daebf; }
-.blue.awesome:hover                            { background-color: #007d9a; }
-.red.awesome, .red.awesome:visited            { background-color: #e33100; }
-.red.awesome:hover                            { background-color: #872300; }
-.magenta.awesome, .magenta.awesome:visited        { background-color: #a9014b; }
-.magenta.awesome:hover                            { background-color: #630030; }
-.orange.awesome, .orange.awesome:visited        { background-color: #ff5c00; }
-.orange.awesome:hover                            { background-color: #d45500; }
-.yellow.awesome, .yellow.awesome:visited        { background-color: #ffb515; }
-.yellow.awesome:hover                            { background-color: #fc9200; }
-
-.pink.awesome, .pink.awesome:visited        { background-color: #e22092; }
-.pink.awesome:hover                            { background-color: #c81e82; }
-
-.no_hover{background-color: #111; }
+/* Defines the style of all the buttons on the menu */
+.buttonStyle, .buttonStyle:visited {
+	 background: #444444 url('../images/overlayy.png') repeat-x;
+    display: inline-block;
+    padding: 5px 10px 6px;
+    color: #fff;
+    text-decoration: none;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius:5px;
+    -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+    -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+    text-shadow: 0 -1px 1px rgba(0,0,0,0.25);
+    border-bottom: 1px solid rgba(0,0,0,0.25);
+    position: relative;
+    cursor: pointer;
+    font-family:Calibri, Arial, sans-serif;
+	font-size: 13px;
+}
+.buttonStyle:hover                            { background-color: #111; color: #fff; }
+.buttonStyle:active                            { top: 1px; }

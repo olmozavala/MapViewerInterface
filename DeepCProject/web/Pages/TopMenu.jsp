@@ -18,7 +18,7 @@
                 <c:when test='${netcdf}'>
                 <td id="hideButtonCal">
 
-                        <button type="button" class="small awesome"   id="hide_show" onclick="hideCalendar();"  >Hide Calendar</button>
+                        <button type="button" class="buttonStyle"   id="hide_show" onclick="hideCalendar();"  >Hide Calendar</button>
 
                     </td>
                     
@@ -44,7 +44,7 @@
                     </td>
 
                     <td>
-                        <button type="button" class="small awesome" onclick="showPalettes()" >
+                        <button type="button" class="buttonStyle" onclick="showPalettes()" >
                             Color Tools
                         </button>
 
@@ -58,7 +58,7 @@
                     <span  id="controlToggle">
 
 
-                        <button type="button" name="type" value="line" id="lineToggle" class="small awesome" onclick="toggleControl(this);" >Transect Tool</button>
+                        <button type="button" name="type" value="line" id="lineToggle" class="buttonStyle" onclick="toggleControl(this);" >Transect Tool</button>
                     </span>
 
             </td>
@@ -68,7 +68,7 @@
       
             <td>
                 <!-- Resize window -->
-                <button type="button" class="small awesome" onclick="refreshWindow();" >
+                <button type="button" class="buttonStyle" onclick="refreshWindow();" >
                     Refresh
                 </button>
 
@@ -77,7 +77,7 @@
 
 
                 <a href="mailto:osz09@gmail.com">
-                    <button type="button" class="small awesome" onclick="MapViewersubmitForm();" >
+                    <button type="button" class="buttonStyle" onclick="MapViewersubmitForm();" >
                         Email
                     </button>
                 </a>
@@ -89,7 +89,7 @@
 
             <td>
                 <!-- Map Instructions-->
-                <button type="button" class="small awesome"  onclick="displayHelp();" atl="Help" />Help</button>
+                <button type="button" class="buttonStyle"  onclick="displayHelp();" atl="Help" />Help</button>
 
             </td>
 
@@ -104,7 +104,7 @@
         <c:if test='${netcdf}'>
             <!--<span id="loadingAnimContainer" class="loadingAnimContainer" style="display:block;visibility:visible">-->
 
-            <span id="s-animation"  class="stop_button"> <button type="button" onclick="stopAnimation();" class="small awesome" style="font-size:12px;" >Stop Animation</button></span> 
+            <span id="s-animation"  class="stop_button"> <button type="button" onclick="stopAnimation();" class="buttonStyle" style="font-size:12px;" >Stop Animation</button></span> 
             <p id="l-animation" class="defShadow loading_msg"> Loading 
                 <img src="${basepath}/common/images/load.gif" height="12" border="0" alt="loading"></A>
             </p>

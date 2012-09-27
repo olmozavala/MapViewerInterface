@@ -7,18 +7,19 @@
         <table name="menuTable" border="0" align="center" style="padding-top:3px;" >
             <tr>
                 <td>
-                    <table border="0" cellpadding="0"><tr>
-                            <!-- Creates the menus from the static function createMenu inside HtmlMenuBuilder -->
+					<span id="mainMenuParent">
+                    
+						
                             ${menuHelper:createMainMenu(MenuDelUsuario,language)}
-                        </tr>
-                    </table>
+						
+					</span>
                 </td>
                 
                 <c:choose>
                 <c:when test='${netcdf}'>
-                <td id="hideButtonCal">
+                <td id="hideCalendarParent">
 
-                        <button type="button" class="small awesome"   id="hide_show" onclick="hideCalendar();"  >Hide Calendar</button>
+                        <button type="button" class="buttonStyle"   id="hideCalendar" onclick="hideCalendarFunc();"  >Hide Calendar</button>
 
                     </td>
                     
@@ -27,12 +28,12 @@
 
                 <td>
                     <!-- Link to download kml files-->
-
-                    <span  id="mainkml" > <%@include file="Options/KmlLink.jsp" %></span></td>
+					
+                    <span  id="mainKmlParent" > <%@include file="Options/KmlLink.jsp" %></span></td>
 
                 <td>
                     <!-- Transparency -->
-                    <span id="transParag"><%@include file="Options/Transparency.jsp" %></span></td>
+                    <span id="transParent"><%@include file="Options/Transparency.jsp" %></span></td>
 
 
 
@@ -40,44 +41,45 @@
                 <c:when test='${netcdf}'>
                     <!-- Elevation -->
                     <td>
-                        <span id="elevation"><%@include file="Options/Elevation.jsp" %></span>
+                        <span id="elevationParent"><%@include file="Options/Elevation.jsp" %></span>
                     </td>
 
                     <td>
-                        <button type="button" class="small awesome" onclick="showPalettes()" >
+                        <button type="button" class="buttonStyle" onclick="showPalettes()" >
                             Color Tools
                         </button>
 
                         <!-- Current palette and color range -->
-                        <span id="item_palette5"> <%@include file="Options/Palettes.jsp" %> </span>
+                        <span id="palettesParent"> <%@include file="Options/Palettes.jsp" %> </span>
                     </td>
                     
                     
                           <td>
-                <span id="outer_transect">
-                    <span  id="controlToggle">
+                <span id="transectParent">
+                    
 
 
-                        <button type="button" name="type" value="line" id="lineToggle" class="small awesome" onclick="toggleControl(this);" >Transect Tool</button>
-                    </span>
+                        <button type="button" name="type" value="line" id="lineToggle" class="buttonStyle" onclick="toggleControl(this);" >Transect Tool</button>
+                    
+				</span>
 
             </td>
                     
                 </c:when>
             </c:choose>
       
-            <td>
+            <td id="resizeScreenParent">
                 <!-- Resize window -->
-                <button type="button" class="small awesome" onclick="refreshWindow();" >
+                <button type="button" id="resizeScreenText" class="buttonStyle" onclick="refreshWindow();" >
                     Refresh
                 </button>
 
             </td>
-            <td> <!-- Email -->
+            <td id="emailParent"> <!-- Email -->
 
 
                 <a href="mailto:osz09@gmail.com">
-                    <button type="button" class="small awesome" onclick="MapViewersubmitForm();" >
+                    <button type="button" class="buttonStyle" id="emailText" onclick="MapViewersubmitForm();" >
                         Email
                     </button>
                 </a>
@@ -87,9 +89,9 @@
             </td>
 
 
-            <td>
+            <td id="helpParent">
                 <!-- Map Instructions-->
-                <button type="button" class="small awesome"  onclick="displayHelp();" atl="Help" />Help</button>
+                <button type="button" class="buttonStyle" id="helpText" onclick="displayHelp();" atl="Help" />Help</button>
 
             </td>
 
@@ -98,13 +100,13 @@
 
 
         <!-- List of optional layers -->
-        <span class="item_optional7"><%@include file="Options/OptionalLayers.jsp" %></span>
+        <span id="optionalMenuParent"><%@include file="Options/OptionalLayers.jsp" %></span>
 
 
         <c:if test='${netcdf}'>
             <!--<span id="loadingAnimContainer" class="loadingAnimContainer" style="display:block;visibility:visible">-->
 
-            <span id="s-animation"  class="stop_button"> <button type="button" onclick="stopAnimation();" class="small awesome" style="font-size:12px;" >Stop Animation</button></span> 
+            <span id="s-animation"  class="stop_button"> <button type="button" onclick="stopAnimation();" class="buttonStyle" style="font-size:12px;" >Stop Animation</button></span> 
             <p id="l-animation" class="defShadow loading_msg"> Loading 
                 <img src="${basepath}/common/images/load.gif" height="12" border="0" alt="loading"></A>
             </p>

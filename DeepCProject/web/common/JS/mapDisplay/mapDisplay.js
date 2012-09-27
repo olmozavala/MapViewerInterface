@@ -328,7 +328,7 @@ function displayHelp()
   
 function showPalettes()
 {       
-    var instr = document.getElementById('item_palette5');
+    var instr = document.getElementById('palettesParent');
     instr.style.visibility="visible";    
     
     var instr = document.getElementById('palette');
@@ -338,7 +338,7 @@ function showPalettes()
 
 function hidePalettes()
 {       
-    var instr = document.getElementById('item_palette5');
+    var instr = document.getElementById('palettesParent');
     instr.style.visibility="hidden";    
     
     var instr = document.getElementById('palette');
@@ -363,16 +363,16 @@ function toggleControl(element)
         if(element.value == key) 
         {
             control.activate();
-            var inner_html = document.getElementById('outer_transect');                
+            var inner_html = document.getElementById('transectParent');                
                        
-            inner_html.innerHTML = '<span  id="controlToggle">  <button type="button" name="type" value="none" id="noneToggle" onclick="toggleControl(this);"  class="small awesome">Unselect Tool</button></span> ';
+            inner_html.innerHTML = '<button type="button" name="type" value="none" id="noneToggle" onclick="toggleControl(this);"  class="buttonStyle">Unselect Tool</button>';
                          
                         
                         
         } else {
             var inner_html = document.getElementById('outer_transect');                
                        
-            inner_html.innerHTML = '<span id="controlToggle">  <button type="button" name="type" value="line" id="noneToggle" onclick="toggleControl(this);"  class="small awesome">Transect Tool</button></span> ';
+            inner_html.innerHTML = '<button type="button" name="type" value="line" id="noneToggle" onclick="toggleControl(this);"  class="buttonStyle">Transect Tool</button>';
             dlayer.destroy();
             control.deactivate();
                         

@@ -21,7 +21,7 @@
                     Max: <input id="maxPal" name="maxPal" type="text" size="4" /> 
                     &nbsp;
                 </p>
-                <button type="button" class="small awesome" style="font-size:11px;" onclick="UpdatePalette(mappalette);" >
+                <button type="button" class="buttonStyle" style="font-size:11px;" onclick="UpdatePalette(mappalette);" >
                     Update 
                 </button>
 

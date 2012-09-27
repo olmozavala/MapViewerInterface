@@ -115,7 +115,7 @@ function initMenus(animUrl){
     }
     else{//this else is in case the layer is not a netcdf layer. 
         setAnimationDivsVisibility("noanimation");
-        $('hideButtonCal').style.visibility = 'hidden';
+        $('hideCalendar').style.visibility = 'hidden';
                                    
     }
 
@@ -492,7 +492,7 @@ function setAnimationDivsVisibility(status){
             //			$('transParag').style.visibility= 'visible';
             $('minPal').disabled = false;
             $('maxPal').disabled = false;
-            $('hideButtonCal').style.visibility = 'visible';
+            $('hideCalendar').style.visibility = 'visible';
             displayCalendars(true);
                                                     
         }
@@ -505,7 +505,7 @@ function setAnimationDivsVisibility(status){
             $('elevation').style.visibility= 'visible';
             $('minPal').disabled = false;
             $('maxPal').disabled = false;
-            $('hideButtonCal').style.visibility = 'visible';
+            $('hideCalendar').style.visibility = 'visible';
 
             displayingAnimation = false;
             displayCalendars(true);
@@ -520,7 +520,7 @@ function setAnimationDivsVisibility(status){
             $('minPal').disabled = true;
             $('maxPal').disabled = true;
             $('palettes-div').style.visibility = "hidden";
-            $('hideButtonCal').style.visibility = 'hidden';
+            $('hideCalendar').style.visibility = 'hidden';
                                                     
             displayingAnimation = true;
             displayCalendars(false);
@@ -534,7 +534,7 @@ function setAnimationDivsVisibility(status){
             //			$('transParag').style.visibility= 'visible';
             $('minPal').disabled = false;
             $('maxPal').disabled = false;
-            $('hideButtonCal').style.visibility = 'visible';
+            $('hideCalendar').style.visibility = 'visible';
                                 
             displayCalendars(true);
         }
@@ -549,7 +549,7 @@ function setAnimationDivsVisibility(status){
             $('minPal').disabled = true;
             $('maxPal').disabled = true;
             $('palettes-div').style.visibility = "hidden";
-            $('hideButtonCal').style.visibility = 'hidden';
+            $('hideCalendar').style.visibility = 'hidden';
             displayCalendars(false);
         }
 
@@ -562,7 +562,7 @@ function setAnimationDivsVisibility(status){
             //			$('transParag').style.visibility= 'visible';
             $('minPal').disabled = true;
             $('maxPal').disabled = true;
-            $('hideButtonCal').style.visibility = 'hidden';
+            $('hideCalendar').style.visibility = 'hidden';
             displayCalendars(false);
         }
 
@@ -602,9 +602,9 @@ function stopAnimation(){
 }
 
 //this function is to hide the calendars and also show the back the calendar.
-function hideCalendar()
+function hideCalendarFunc()
 {
-    var button = $('hide_show');    
+    var button = $('hideCalendar');    
     var inner_text = button.innerHTML;  
        
     //this if handles when the calendar is hiden and we should show it
@@ -713,7 +713,7 @@ function hideOneDay()
 {    
     document.getElementById('hideOneDay').style.visibility = 'hidden';
     document.getElementById('hideOneDayEnd').style.visibility = 'hidden';
-         
+    //document.getElementById('hideCalendarParent').style.display = 'none'; 
              
              
              

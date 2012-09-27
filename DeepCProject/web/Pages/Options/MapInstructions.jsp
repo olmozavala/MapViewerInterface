@@ -7,7 +7,7 @@
     <tr>
         <td id="helpInstructions">
             <table border="0" cellpadding="5" cellmargin="7" align="center" id="align_left">
-                <tr><td colspan="2" height="0" class="helpTitle" valign="top" style="text-align: center;"><font color="black">Map Instructions</font><span type="button" class="small awesome " style="float:right" onclick="displayHelp()">x</span></td></tr>
+                <tr><td colspan="2" height="0" class="helpTitle" valign="top" style="text-align: center;"><font color="black">Map Instructions</font><span type="button" class="buttonStyle" style="float:right" onclick="displayHelp()">x</span></td></tr>
                 <tr><td width="210" style="text-align:center;"><img src="${basepath}/common/images/icon/mouse_cursor.png">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="${basepath}/common/images/icon/keyboard_keys.gif"></td><td><b>Move map:</b><BR/> - Click the map with the mouse, while holding the mouse button and drag around the map. <BR/> - You can also use your keyboard arrows to move the map.</td></tr>
                 <tr><td style="text-align:center;">
                         <table align="center">

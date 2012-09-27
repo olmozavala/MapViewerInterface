@@ -137,39 +137,8 @@ div.dispAnimation{
     visibility: hidden;
 }
 
-/*These following classes are for the buttons in the menu like hide calendars, layer selection, transparency etc.. */
-.hideButtonCal{
-    top:20px;
-    left: 1060px;
-    position:absolute;
-}
 
-
-
-
-.item_layers2
-{
-    
-    top:18px;
-    left:50px;
-}
-
-
-.item_trans3
-{
-    position:absolute;
-    top:10px;
-    left:580px;
-}
-
-.item_elev4
-{
-    position:absolute;
-    top:10px;
-    left:460px;
-}
-
-#item_palette5
+#palettesParent
 {
     
     position:absolute;
@@ -204,70 +173,16 @@ div.palettesDiv{
 
 
 
-.item_kml6
-{
-    padding:0;
-    position:absolute;
-    top:6px;
-    left:700px;
-}
-
-.item_optional7
+#optionalMenuParent
 {
 
     position:absolute;
     top:60px;
     right:10px;
     text-align:left;
+	
 }
 
-.item_refresh8
-{
-
-    position:absolute;
-    top:3px;
-    left:210px;
-}
-
-.item_email9
-{
-
-    position:absolute;
-    top:5px;
-    left:290px;
-}
-
-.item_help10
-{
-    padding:0;
-    position:absolute;
-    top:15px;
-    left:1050px;
-    cursor:pointer;
-}
-
-
-.item_transect11
-{
-
-    position:absolute;
-    top:3px;
-    left:360px;
-    cursor:pointer;
-
-
-}
-
-.item_transect12
-{
-
-    position:absolute;
-    top:5px;
-    left:1000px;
-    cursor:pointer;
-
-
-}
 
 .stop_button
 {
@@ -363,10 +278,13 @@ div.mapTitle{
 
 }
 
-.button_class{
-    font-size: 9px; 
-    font-weight: bold;
+.minusButton, .plusButton
+{
+   font-size: 9px; 
+   font-weight: bold;
+	
 }
+
 
 
 a
@@ -573,7 +491,7 @@ p /* This is the default font type for the letters in the page */
 
 }
 
-.awesome, .awesome:visited {
+.buttonStyle, .buttonStyle:visited {
     background: #444444 url('../images/overlayy.png') repeat-x;
     display: inline-block;
     padding: 5px 10px 6px;
@@ -590,10 +508,11 @@ p /* This is the default font type for the letters in the page */
     cursor: pointer;
     font-family:Calibri, Arial, sans-serif;
     border:solid 1px #FFFFFF ;
+	font-size: 10px;
 
 }
 
-.transparent_button, .transparent_button:visited{
+.defaultOptions, .defaultOptions:visited{
     background: #444444 url('../images/overlayy.png') repeat-x;
     display: inline-block;
     font-size: 10px;
@@ -608,14 +527,19 @@ p /* This is the default font type for the letters in the page */
     border-bottom: 1px solid rgba(0,0,0,0.25);
     position: relative;
     cursor: pointer;
-    font-family:Calibri, Arial, sans-serif;   
+    font-family:Calibri, Arial, sans-serif;
     border:solid 1px #FFFFFF ;
+	padding: 0px;
+	
 }
 
 
 
 
-.transparent_button:hover, .awesome:hover                            { background-color: #111; }
+
+
+.defaultOptions:hover, .defaultOptions:hover                            { background-color: #111; }
+
 .awesome:active                            { top: 1px; }
 .small.awesome, .small.awesome:visited             { font-size: 10px; padding: ; }
 .awesome, .awesome:visited,

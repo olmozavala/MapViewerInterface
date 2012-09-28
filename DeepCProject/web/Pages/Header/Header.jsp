@@ -21,9 +21,13 @@
         <script type="text/javascript" src="${basepath}/common/JS/openlayers/OpenLayers.js"> </script>
         <script type="text/javascript" src="${basepath}/common/JS/utilities.js"> </script>
         <script type="text/javascript" src="${basepath}/common/JS/mapDisplay/mapDisplay.js"> </script>
+		<script type="text/javascript" src="${basepath}/common/JS/mapDisplay/Calendars.js"> </script>
+		<script type="text/javascript" src="${basepath}/common/JS/mapDisplay/Elevation.js"> </script>
+		<script type="text/javascript" src="${basepath}/common/JS/mapDisplay/OpenLayersRelated.js"> </script>
         <script type="text/javascript" src="${basepath}/common/JS/mapDisplay/animation.js"> </script>
         <script type="text/javascript" src="${basepath}/common/JS/validation.js"> </script>
         <script type="text/javascript" src="${basepath}/common/JS/ajax/ajax.js"> </script>
+		<script type="text/javascript" src="${basepath}/common/JS/mapDisplay/Palettes.js"> </script>
         <script type="text/javascript" src="${basepath}/common/JS/fecha/funciones.js"></script>
 
         <script type="text/javascript" src="${basepath}/common/JS/calendar/jscal2.js"></script>

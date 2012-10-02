@@ -27,7 +27,6 @@
         <script type="text/javascript" src="${basepath}/common/JS/mapDisplay/OpenLayersRelated.js"> </script>
         <script type="text/javascript" src="${basepath}/common/JS/validation.js"> </script>
         <script type="text/javascript" src="${basepath}/common/JS/ajax/ajax.js"> </script>
-        <script type="text/javascript" src="${basepath}/common/JS/fecha/funciones.js"></script>
 
         <script type="text/javascript" src="${basepath}/common/JS/calendar/jscal2.js"></script>
         <script type="text/javascript" src="${basepath}/common/JS/calendar/lang/en.js"></script>

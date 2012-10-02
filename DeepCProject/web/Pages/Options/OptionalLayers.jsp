@@ -16,7 +16,12 @@
 			</td>
 			<td align="right">
 				<A href="${linksKmzVect[indice.count-1]}">
-					<img src="${basepath}/common/images/kmz/kmz.png" border="0" alt="Descargar KMZ"></A>
+					<img src="${basepath}/common/images/kmz/kmz.png"
+						 onmouseover="rollImage(this,'${basepath}/common/images/kmz/kmz_over.png' )"
+						 onmouseout="rollImage(this,'${basepath}/common/images/kmz/kmz.png' )"
+						 onmousedown="rollImage(this,'${basepath}/common/images/kmz/kmz_over_click.png' )"
+						 onmouseup="rollImage(this,'${basepath}/common/images/kmz/kmz_over.png' )"
+						 border="0" alt="Descargar KMZ"></A>
 				&nbsp;
 			</td> 
 		</tr>

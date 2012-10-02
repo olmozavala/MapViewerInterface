@@ -58,8 +58,12 @@
 							<!-- Elevation -->
 							<tr ><td id="elevationParent"><%@include file="Options/Elevation.jsp" %></td></tr>
 
+							<!-- Button to select transect regions -->
+							<tr > <td id="transectParent"><%@include file="Options/TransectTool.jsp" %></td> </tr>
+
 							<!-- Current palette and color range -->
 							<tr > <td id="palettesParent"><%@include file="Options/Palettes.jsp" %></td> </tr>
+
 						</c:when>
 						<c:when test='${!netcdf}'>
 							<!-- Download data-->

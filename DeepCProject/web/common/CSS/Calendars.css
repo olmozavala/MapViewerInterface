@@ -1,0 +1,24 @@
+/* These are all for the animation of the map */
+#p-animation{ visibility: hidden; }
+#s-animation{ visibility: hidden; }
+#l-animation{ visibility: hidden; }
+
+
+/*holds the start calendar  */
+div.startDateCal{
+    top: 50px;
+    left: 50px;
+    position:absolute;
+    z-index:1003;
+    visibility: hidden;
+}
+
+/*holds the end calendar  */
+div.endDateCal{
+    top: 50px;
+    left: 220px;
+    position:absolute;
+    z-index:1003;
+    display:inline;
+    visibility: hidden;
+}

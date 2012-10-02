@@ -1,59 +1,3 @@
-/*
-    Document   : MapDefault
-    Created on : Nov 7, 2011, 10:03:32 AM
-    Author     : olmozavala
-    Description:
-        Purpose of the stylesheet follows.
-*/
-/* Used by OpenLayers to display the map*/
-#map
-{
-    cursor:crosshair;
-    margin-left: auto ;
-    margin-right: auto ;
-
-}
-
-/* Used by open layers to display longitude and latitude */
-#location {
-    color: black;
-    font-size: 12px;
-    text-align: center;
-    display: inline;
-    margin: auto;
-}
-
-
-#panZoom{
-    top:40%;
-    position: absolute;
-    background: green;
-    z-index: 1008;
-}
-
-/* This is the style of the OpenLayers pop up (Layer details)
-        The font size has to be defined on JavaScript (I doesn't work here)*/
-div.olPopupContent{
-    background-image:url('../images/transBack2.png');
-    border-radius: 10px;
-    overflow: hidden;
-    width: 190px;
-}
-
-/* This is the div used to put the netCDF animation */
-#mapOverlayDiv{
-    position: absolute;
-    visibility: hidden;
-    width: 10%;
-    height: 10%;
-    top: 0%;
-    left: 1%;
-}
-
-#p-animation{ visibility: hidden; }
-#s-animation{ visibility: hidden; }
-#l-animation{ visibility: hidden; }
-
 /* Default style for the page */
 body {
     font-family:Tahoma, Verdana, Arial, sans-serif;
@@ -63,70 +7,7 @@ body {
     background-color: #296E8D;
 }
 
-img{
-}
-
-.alphaText{
-    cursor: pointer;
-}
-
-.alphaText{
-    cursor: pointer;
-}
-
-
-#alphaText_elevminus{
-    cursor: pointer;
-}
-
-#alphaText_elevminus:hover{
-    cursor: pointer;
-    border:solid red;
-
-}
-
-
-#alphaText_elevplus{
-    cursor: pointer;
-    visibility: hidden;
-
-}
-
-#alphaText_transminus
-{
-    cursor: pointer;
-
-}
-
-#alphaText_transminus:active
-{
-    cursor: pointer;
-    top:1px;
-}
-
-
-
-
-div.startDateCal{
-    top: 50px;
-    left: 50px;
-    position:absolute;
-    z-index:1003;
-    visibility: hidden;
-}
-
-div.endDateCal{
-    top: 50px;
-    left: 220px;
-    position:absolute;
-    z-index:1003;
-    display:inline;
-    visibility: hidden;
-}
-
-
-
-
+/* animation button that pops up when calendar dates have been selected */
 div.dispAnimation{
     top: 250px;
     left: 50px;
@@ -135,7 +16,6 @@ div.dispAnimation{
     display:inline;
     visibility: hidden;
 }
-
 
 #palettesParent
 {
@@ -153,6 +33,7 @@ div.dispAnimation{
 }
 
 
+/* color pallets that pops when the user clicks the colors tool in the color tool*/
 div.palettesDiv{
     top: 25px;
     left: 700px;
@@ -167,11 +48,10 @@ div.palettesDiv{
     background-color: black;
     visibility: hidden;
     padding:3px;
+
 }
 
-
-
-
+/* optional layers suck as us state, DeepC, etc*/
 #optionalMenuParent
 {
 
@@ -183,11 +63,12 @@ div.palettesDiv{
 }
 
 
+/* stop button when animation is loading or playing*/
 .stop_button
 {
-   position:absolute;
+position:absolute;
 top:250px;
-    cursor: pointer;
+cursor: pointer;
 left:60px;
 font-size:16px;
 }
@@ -312,19 +193,25 @@ table.vectorLayer{
     border: solid 1px white;
 }/* Subtable that contains the optional layers */
 
+/* table that contains the max and min temperature selection and the color chose of the color tools*/
 table#palette{
    
     color:black;
-visibility: hidden;
-
-
+	visibility: hidden;
 }
 
+/*part of the color pallete */
 td.waitBack{
     /*	border-radius: 10px;*/
     /*	background-image:url('../images/transBack.png'); */
     valign: up;
+	
 }
+
+.palMinMax{
+    font-size:13px;
+}
+
 
 input[type=text]{
     font-size: 11px;
@@ -345,24 +232,17 @@ p /* This is the default font type for the letters in the page */
 
     margin:.5em 0 .5em 0;
 }
-.alphaText{
-    font-size:13px;
-}
 
-.alphaText_Button{
-    font-size:13px;
-
-}
+/*title on top of calendar */
 .calTitle{
     font-size:13px;
 }
-.palMinMax{
-    font-size:13px;
-}
+
 .defShadow{ /* This font type inverts the color of the font and the shadow */
     font-size:13px;
     margin:.5em 0 .5em 0;
 }
+
 .invShadow{ /* This font type inverts the color of the font and the shadow */
     font-size:13px;
     color:#DCDCDC;
@@ -390,7 +270,7 @@ p /* This is the default font type for the letters in the page */
 }
 
 
-
+/* Help display container */
 #helpInstructions
 {
     border:solid black;
@@ -413,14 +293,10 @@ p /* This is the default font type for the letters in the page */
 
 }
 
+/*part of help instructions */
 #align_left td{
-
     text-align: left;
-
-
 }
-
-
 
 .helpTitle{
 
@@ -432,52 +308,19 @@ p /* This is the default font type for the letters in the page */
     color:black;
 }
 
-
+/* cancel botton of help intructions*/
 .cancelButton{
     font-size: 11px;
     float:right;
 }
 
-/*Hide the draw polygon button*/
-.olControlEditingToolbar .olControlDrawFeaturePolygonItemInactive{
-    background-position: -26px -1px;
-    visibility: hidden;
-}
-.olControlEditingToolbar .olControlDrawFeaturePolygonItemActive {
-    background-position: -26px -24px;
-    visibility: hidden;
-}
-
-.olControlEditingToolbar .olControlDrawFeaturePointItemInactive {
-    background-position: -77px -1px;
-    visibility: hidden;
-}
-.olControlEditingToolbar .olControlDrawFeaturePointItemActive {
-    background-position: -77px -24px;
-    visibility: hidden;
-}
-
-#hieght_tool
-{
-
-    border:solid red;
-    position:absolute;
-    width:200px;
-    height:300px;
-    z-index:1000;
-    top:250px;
+/* part of help instructions*/
+.no_hover{
+    background-color: #111;
 
 }
 
-.scrollable{
 
-    overflow:scroll;
-    width:800px;
-    height:400px;
-    border:solid red;
-
-
-}
 
 .buttonStyle, .buttonStyle:visited {
     background: #444444 url('../images/overlayy.png') repeat-x;
@@ -522,12 +365,7 @@ p /* This is the default font type for the letters in the page */
 }
 .defaultOptions:hover, .defaultOptions:hover                            { background-color: #111; }
 
-
-.no_hover{
-    background-color: #111;
-
-}
-
+/*top menu div */
 .top_menu
 {
 
@@ -540,6 +378,7 @@ p /* This is the default font type for the letters in the page */
     position:relative;
 }
 
+/* area that holds loading button*/
 .loading_area
 {
     border:solid red;

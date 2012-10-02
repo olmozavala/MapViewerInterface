@@ -36,7 +36,7 @@ featureInfo = name
 				format="image/jpeg" proj="EPSG:4326" server="http://viewer.coaps.fsu.edu/geoserver/wms"
 				width="764" height="330" tiled="true" 
 				time="false">  
-				<!-- The width and height of the image affects the resolution of the animated gif it is important -->
+	
 		<layer Menu="Temp,test2" EN="Precipitation in 2010 for the month of January " ES="Precipitacion 2010 del mes de Enero 2010" name="se_clim:TotPrec2010Jan"/>'
 	</MainLayers>
 

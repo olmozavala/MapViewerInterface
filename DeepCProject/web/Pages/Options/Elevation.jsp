@@ -8,22 +8,15 @@
         <tr>
             <td><button type="button" id="minusButtonElevation"   class="minusButton" onclick="changeElevation('-', layer1);">
                     -
-
                 </button></td>
 
             <td>	
-
-
                 <span style="cursor: default;" id="elevationText" >Elevation</span>
             </td>
             <td>
-
-
                 <button class="plusButton" id="plusButtonElevation"  type="button"  onclick="changeElevation('+', layer1);">
                     +
-
                 </button>
-
             </td>
         </tr>		       
     </table>

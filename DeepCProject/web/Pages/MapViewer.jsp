@@ -16,25 +16,20 @@
 
     <body onload="init();initMenus('${animationURL}')" scroll="no">
 
+		<!-- User Menu -->
+		<%@include file="TopMenu.jsp" %>
         <%@include file="RequiredDivs.jsp" %>
 		<c:if test='${netcdf}'>
 			<%@include file="NcWMSOptions.jsp" %>
 		</c:if>
 
- 
-	
-
-
         <!-- This is the div that contains all of the user options, drop down of
           main layers, vector layers, kml data, etc. -->
-      
 
         <!-- Foot page --> 
         <div id="pieDePaginaIzq" class="leftFoot">
-            <!--			<p class="footNote" align="left">-->
             &nbsp;
             <a  href="http://www.deep-c.org/">
-    <!--					<img border="0" src="${basepath}/common/images/Logos/logo-uniatmos-chi.png" alt="UNIATMOS" width="169" height="54" /> </a>-->
                 <a  href="http://www.fsu.edu/">
                     <img border="0" src="${basepath}/common/images/Logos/FSU.png" alt="FSU" width="61" height="60" /></a>
                 &nbsp;

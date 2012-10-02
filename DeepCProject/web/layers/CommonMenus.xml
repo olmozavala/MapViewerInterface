@@ -26,6 +26,7 @@
 		<MenuEntry ID="deep" EN="DeepC" 		ES="DeepC"/>
 		<MenuEntry ID="test" EN="TEST" 		ES="TEST"/>
 		<MenuEntry ID="test2" EN="TEST2" 		ES="TEST"/>
+		<MenuEntry ID="test3" EN="USGS Test" 		ES="TEST"/>
 		<MenuEntry ID="gebco" EN="GEBCO Bathymetry" ES="Batimetria de GEBCO"/>
 	</MenuEntries>
 </MenuConf>

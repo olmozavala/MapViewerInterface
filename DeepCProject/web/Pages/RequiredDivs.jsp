@@ -3,12 +3,6 @@
     Created on : Aug 3, 2012, 5:58:26 PM
     Author     : olmozavala
 --%>
-
-<!-- User Menu -->
-
- <%@include file="TopMenu.jsp" %>
-
-
 <!-- Map title -->
 <div class="mapTitle" id="layerTitle"> <p id="pTitleText"> Deep-C Gulf of Mexico<br> ${layerTitle} </p> </div>
 

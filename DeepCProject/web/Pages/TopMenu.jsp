@@ -30,8 +30,18 @@
                     <!-- Elevation -->
                     <td>
                         <span id="elevationParent"><%@include file="Options/Elevation.jsp" %></span>
-                    </td>
+                    
+						<span id="elevationSelector">
+							
+						</span>
+					
+					
+					</td>
 
+					
+					
+					
+					
                     <td>
                         <button type="button" class="buttonStyle" onclick="showPalettes()" >
                             Color Tools

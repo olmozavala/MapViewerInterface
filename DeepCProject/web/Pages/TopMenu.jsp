@@ -12,37 +12,28 @@
 
 			<c:choose>
                 <c:when test='${netcdf}'>
-					<td id="hideCalendarParent">
+					<td id="hideCalendarParent" valign="middle">
                         <button type="button" class="buttonStyle"   id="hideCalendar" onclick="hideCalendarFunc();"  >Hide Calendar</button>
                     </td>
 				</c:when>
             </c:choose>
 
-			<td>
+			<td valign="middle">
 				<!-- Link to download kml files-->
 				<span  id="mainKmlParent" > <%@include file="Options/KmlLink.jsp" %></span></td>
-			<td>
+			<td valign="middle">
 				<!-- Transparency -->
 				<span id="transParent"><%@include file="Options/Transparency.jsp" %></span></td>
 
             <c:choose>
                 <c:when test='${netcdf}'>
                     <!-- Elevation -->
-                    <td>
-                        <span id="elevationParent"><%@include file="Options/Elevation.jsp" %></span>
-                    
-						<span id="elevationSelector">
-							
-						</span>
-					
-					
-					</td>
+                    <td valign="middle">
+                        <span id="elevationParent"><%@include file="Options/Elevation.jsp" %><span id="elevationSelector">
 
-					
-					
-					
-					
-                    <td>
+							</span></span>
+					</td>
+                    <td valign="middle">
                         <button type="button" class="buttonStyle" onclick="showPalettes()" >
                             Color Tools
                         </button>
@@ -52,7 +43,7 @@
                     </td>
 
 
-					<td>
+					<td valign="middle">
 						<span id="transectParent">
 							<button type="button" name="type" value="line" id="lineToggle" class="buttonStyle" onclick="toggleControl(this);" >Transect Tool</button>
 						</span>
@@ -60,18 +51,18 @@
                 </c:when>
 				<c:when test='${!netcdf}'>
 					<!-- Download data-->
-					<td id="downloadDataParent"><%@include file="Options/DownloadData.jsp" %></td>
+					<td id="downloadDataParent" valign="middle"><%@include file="Options/DownloadData.jsp" %></td>
 				</c:when>
             </c:choose>
 
-            <td id="resizeScreenParent">
+            <td id="resizeScreenParent" valign="middle">
                 <!-- Resize window -->
                 <button type="button" id="resizeScreenText" class="buttonStyle" onclick="refreshWindow();" >
                     Refresh
                 </button>
 
             </td>
-            <td id="emailParent"> <!-- Email -->
+            <td id="emailParent" valign="middle"> <!-- Email -->
 
 
                 <a href="mailto:osz09@gmail.com">
@@ -81,7 +72,7 @@
                 </a>
             </td>
 
-            <td id="helpParent">
+            <td id="helpParent" valign="middle">
                 <!-- Map Instructions-->
                 <button type="button" class="buttonStyle" id="helpText" onclick="displayHelp();" atl="Help" />Help</button>
 

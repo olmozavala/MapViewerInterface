@@ -27,7 +27,6 @@
 				 src="${basepath}/common/images/Menu/Plus.png" alt="IncTrans" width="20" height="20" />
 		</td>
 	</tr>
-
 </table>
 
 <span id="elevationSelector"></span>

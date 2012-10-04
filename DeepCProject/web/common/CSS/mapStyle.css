@@ -33,6 +33,7 @@ body {
 /* Transparency text */
 #transText{
     cursor:default;
+	font-size:14px;
 }
 
 .elevationTable{

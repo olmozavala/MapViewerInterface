@@ -8,9 +8,11 @@
 		 onclick="changeElevation('-', getMainLayer() );" >
 		-
 	</button>
-	<span id="transText">Elevation </span>
+	<span id="transText" onclick="displayElevationSelector()">Elevation </span>
 	<button type="button" class="plusButton" id="plusButtonElevation" 
 		 onclick="changeElevation('+', getMainLayer() );" disabled>
 		+
 	</button>
 </p>
+
+<span id="elevationSelector"></span>

@@ -361,3 +361,35 @@ p /* This is the default font type for the letters in the page */
 }
 .buttonStyle:hover                            { background-color: #111; color: #fff; }
 .buttonStyle:active                            { top: 1px; }
+
+
+
+/*This is when the user click on elevation button and the new window appears */
+ #elevationSelector
+{
+	position: absolute;
+	top:50px;
+	right:200px;
+
+display:none;
+	background-image:url('../images/transBack.png');
+
+		
+	border:solid black;
+    
+	height:300px;
+    width:150px;
+    
+    z-index:1009;
+    
+    border-radius: 10px;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    background-image:url('../images/transBack.png');
+    background-color: white;
+    font-size: 12px;
+    color:black;
+  
+    overflow:scroll;
+	
+}

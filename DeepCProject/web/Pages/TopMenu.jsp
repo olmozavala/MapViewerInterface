@@ -95,7 +95,7 @@
 
             <!--</span>-->
         </c:if>
-        <span id="helpDiv">
+        <span id="helpDiv" style="border-radius: 10px;">
             <%@include file="Options/MapInstructions.jsp" %>
 
         </span> 

@@ -9,7 +9,7 @@ div.startDateCal{
     top: 50px;
     left: 50px;
     position:absolute;
-    z-index:1003;
+    z-index:1000;
     visibility: hidden;
 }
 
@@ -18,7 +18,7 @@ div.endDateCal{
     top: 50px;
     left: 220px;
     position:absolute;
-    z-index:1003;
+    z-index:1000;
     display:inline;
     visibility: hidden;
 }

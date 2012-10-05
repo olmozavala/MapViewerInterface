@@ -3,21 +3,21 @@
     Created on : Aug 3, 2012, 6:45:15 PM
     Author     : olmozavala
 --%>
-<table>
+<table align="center" >
     <tr>
-        <td id="helpInstructions">
+        <td id="helpInstructions" >
             <table border="0" cellpadding="5" cellmargin="7" align="center" id="align_left">
-                <tr><td colspan="2" height="0" class="helpTitle" valign="top" style="text-align: center;"><font color="black">Map Instructions</font><span type="button" class="buttonStyle" style="float:right" onclick="displayHelp()">x</span></td></tr>
+                <tr><td colspan="2" height="0" class="helpTitle" valign="top" style="text-align: center;"><font color="white" size="5">Instructions</font><span type="button" class="buttonStyle" style="float:right" onclick="displayHelp()">x</span></td></tr>
                 <tr><td width="210" style="text-align:center;"><img src="${basepath}/common/images/icon/mouse_cursor.png">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="${basepath}/common/images/icon/keyboard_keys.gif"></td><td><b>Move map:</b><BR/> - Click the map with the mouse, while holding the mouse button and drag around the map. <BR/> - You can also use your keyboard arrows to move the map.</td></tr>
                 <tr><td style="text-align:center;">
-                        <table align="center">
-                            <tr><td>
+                        <table align="center" >
+                            <tr><td style="border:none;">
                                     <img src="${basepath}/common/JS/openlayers/img/zoom-plus-mini.png" >
                                     <br><br>
 
                                     <img src="${basepath}/common/JS/openlayers/img/zoom-minus-mini.png">
                                 </td>
-                                <td>
+                                <td style="border:none;">
                                     <img src="${basepath}/common/images/icon/mouse_wheel.jpg" style="padding-left:30px;">
                                 </td>
                             </tr>
@@ -30,73 +30,122 @@
                         <BR/>- Use mouse wheel to zoom in and out.
                     </td>
                 </tr>
-                <tr><td style="text-align:center;"><img src="${basepath}/common/images/icon/editing_tool_bar.png" />&nbsp;&nbsp;&nbsp;<img src="${basepath}/common/images/icon/hand_bar.png" /></td><td><b>Transect tool:</b><Br/>- With this tool you can choose different points under the map, and it will create two graphs. The first graph will show you how the variables (temperature, salinity, velocity, etc.) change as they move along the points you draw based on latitude and longitude. The second graph shows how the chosen variable changes through out different depths <br/>- First click on the <img src="${basepath}/common/images/icon/editing_tool_bar.png" /> icon to get started.
+                <tr><td style="text-align:center;"><button type="button" class="buttonStyle" disabled="disabled" style="cursor: default;">Transect Tool</button></td><td><b>Transect tool:</b><Br/>- With this tool you can choose different points under the map, and it will create two graphs. The first graph will show you how the variables (temperature, salinity, velocity, etc.) change as they move along the points you draw based on latitude and longitude. The second graph shows how the chosen variable changes through out different depths <br/>- First click on the Transect tool icon to get started.
                         <Br/>- Then click some point in the map to select your starting point in the transect. Keep clicking around to create more points. Once the last point is chosen, double click it to pop up the graphs. 
                         <BR/>- To create another graph, simply make a new drawing and the last one will disappear.
-                        <BR/>- To exit the transect tool click on the <img src="${basepath}/common/images/icon/hand_bar.png" /> icon.
+                        <BR/>- To exit the transect tool click on the Unselect icon.
                     </td></tr>
 
-                <tr><td style="text-align: center;"><p class="alphaText" style="cursor: default"> 
+                <tr><td style="text-align: center;">
 
-                            <img  src="${basepath}/common/images/Menu/Minus.png" alt="DecElevation" width="20" height="20" />
-                            Elevation 
-                            <img src="${basepath}/common/images/Menu/Plus.png" alt="IncElevation" width="20" height="20" />
-                        </p></td><td><b>Change Elevation:</b><BR/>- By default the application starts with the possible highest elevation, so you see don't see the <img src="${basepath}/common/images/Menu/Plus.png" alt="IncElevation" width="20" height="20" /> sign because we are currently at the maximum possible elevation.
-                        <Br/>- If you press the <img  src="${basepath}/common/images/Menu/Minus.png" alt="DecElevation" width="20" height="20" /> sign the elevation on the map will change and it will display new data specific of that elevation. You can keep going pressing this button until you reach the maximum depth in the current data set. 
+						<table cellpadding="1" border="0" class="defaultOptions" style="cursor: default">
+							<tr>
+								<td style="border:none;"><button type="button" class="minusButton" disabled="disabled">
+										-
+									</button></td>
+
+								<td style="border:none;">	
+									<span>Elevation</span>
+								</td>
+								<td style="border:none;">
+									<button class="plusButton" disabled="disabled" type="button" >
+										+
+									</button>
+								</td>
+							</tr>		       
+						</table><BR/><BR/>
+						<table cellpadding="1" border="0" class="defaultOptions" style="cursor: default">
+							<tr>
+								<td style="border:none;"><button type="button" class="minusButton" disabled="disabled">
+										-
+									</button></td>
+
+								<td style="border:none;">	
+									<span>Precipitation</span>
+								</td>
+								<td style="border:none;">
+									<button class="plusButton" disabled="disabled" type="button" >
+										+
+									</button>
+								</td>
+							</tr>		       
+						</table>
+
+
+                        </td><td><b>Change Elevation or Precipitation:</b><BR/>- By default the application starts with the possible highest elevation/precipitation, if you click the + or - it will change the elevation/precipitation. If you click the elevation/precipitation text then a windows will pop up and will let you choose the desired elevation/precipitation. 
 
                     </td></tr>
 
-                <tr><td style="text-align: center;"><p class="alphaText" style="cursor: default"> 
+                <tr><td style="text-align: center;">
 
-                            <img  src="${basepath}/common/images/Menu/Minus.png" alt="DecElevation" width="20" height="20" />
-                            Transparency 
-                            <img src="${basepath}/common/images/Menu/Plus.png" alt="IncElevation" width="20" height="20" />
-                        </p></td><td><b>Change Transparency:</b><BR/>- If you would like to make the colors a little more dim, you can use this tool to change the transparency of the dataset. </td></tr>
+						<table cellpadding="1" border="0" class="defaultOptions" style="cursor: default;">
+							<tr>
+								<td style="border:none;"><button class="minusButton" type="button" disabled="disabled">
+										-
+
+									</button></td>
+
+								<td style="border:none;">
+									<span style="cursor: default;" class="transText">Transparency </span>
+								</td>
+								<td style="border:none;">
+
+
+									<button type="button" class="plusButton" disabled="disabled">
+										+
+
+									</button>
+
+								</td>
+							</tr>
+						</table>
+                        </td><td><b>Change Transparency:</b><BR/>- If you would like to make the colors a little more dim, you can use this tool to change the transparency of the dataset. </td></tr>
 
 
                 <tr><td style="text-align:center">
-                        <img src="${basepath}/common/images/icon/current_layer.png" />
+                        <img src="${basepath}/common/images/icon/current_layer_topMenu.png" />
 
 
 
                     </td><td><b>Current layer:</b><BR/>You can toggle between the different variable options for the layers such as temperature, salinity, velocity, etc. You can also specify the year of the data you would like to see. </td></tr>
 
-                <tr><td style="text-align:center;"> <img src="${basepath}/common/images/icon/palette_help.png" />      </td><td><b>Change color palette:</b><BR/>If you click on this icon it will pop a menu from which you can change the colors.<BR/>
-<b>Change color range:</b><BR/>You can also choose a range of maximum and minimum values for the temperature, this will change the color ranges allowed in the map. The minimum temperature must always be lower than the maximum value. Once a desired number is chosen click the update button to see the changes in the map.
+                <tr><td style="text-align:center;"><button type="button" class="buttonStyle" disabled="disabled" >
+                            Color Tools
+                        </button>  </td><td><b>Change color range:</b><BR/>You can also choose a range of maximum and minimum values for the temperature, this will change the color ranges allowed in the map. The minimum temperature must always be lower than the maximum value. Once a desired number is chosen click the update button to see the changes in the map. <BR/>If you want to select a different palette color  such as gradient then click the <img src="${basepath}/common/images/icon/palette_help_topMenu.png"  height="70px"/> icon.
 
 
-</td></tr>
+					</td></tr>
 
 
                 <tr><td style="text-align:center;"><span class="buttonStyle no_hover" style="cursor:default;">
                             <img  border="0" src="${basepath}/common/images/kmz/google_earth_logo.png" width="35" height="32" alt="Descargar en KML" />
                             Kml data</span></td><td><b>Download Data:</b><BR/>- Click this button to download current dataset in a KMZ format which can be viewed with Google Earth.</td></tr>
-                <tr><td><table class="vectorLayer">
+                <tr><td ><table class="vectorLayer" align="center">
                             <tr> 
-                                <td>
+                                <td style="border:none;">
                                     <input  type="checkbox" disabled="disabled" /> 
                                     US States                    </td>
-                                <td align="RIGHT">
+                                <td align="RIGHT" style="border:none;">
 
                                     <img src="${basepath}/common/images/kmz/kmz.png" border="0" alt="Descargar KMZ">
                                     &nbsp;
                                 </td> 
                             </tr>
                             <tr> 
-                                <td>
+                                <td style="border:none;">
                                     <input  type="checkbox" disabled="disabled" /> 
                                     DeepC                    </td>
-                                <td align="RIGHT">
+                                <td align="RIGHT" style="border:none;">
 
                                     <img src="${basepath}/common/images/kmz/kmz.png" border="0" alt="Descargar KMZ">
                                     &nbsp;
                                 </td> 
                             </tr>
                             <tr> 
-                                <td>
+                                <td style="border:none;">
                                     <input  type="checkbox" disabled="disabled" /> 
                                     GEBCO Bathymetry                  </td>
-                                <td align="RIGHT">
+                                <td align="RIGHT" style="border:none;">
 
                                     <img src="${basepath}/common/images/kmz/kmz.png" border="0" alt="Descargar KMZ">
                                     &nbsp;

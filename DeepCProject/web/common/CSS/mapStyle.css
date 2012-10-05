@@ -128,6 +128,7 @@ div.layersMenu{
     left:0px;
     z-index:1002;
     opacity:0.80;
+	filter:alpha(opacity=80);
     height:100%;
     position:absolute;
     border-bottom:white 1px solid;
@@ -183,7 +184,7 @@ select.menu{
 table.vectorLayer{
     border-radius: 10px;
 
-    width: 100%;
+  
     /*  background-image:url('../images/transBack.png');*/
     background-color:black;
     opacity:0.85;
@@ -275,20 +276,23 @@ p /* This is the default font type for the letters in the page */
 {
     border:solid black;
     position:absolute;
-    width:600px;
+	left:50px;
     visibility:hidden;
     z-index:1009;
-    left:500px;
+    
+    
+	
+    right:200px;
     top:50px;
     border-radius: 10px;
     margin-top: 2em;
     margin-bottom: 2em;
-    background-image:url('../images/transBack.png');
-    background-color: white;
-    font-size: 12px;
-    color:black;
+ border:solid white 2px;
+    background-color: black;
+    font-size: 13px;
+    color:white;
 
-    height:500px;
+    
     overflow:scroll;
 
 }
@@ -296,6 +300,7 @@ p /* This is the default font type for the letters in the page */
 /*part of help instructions */
 #align_left td{
     text-align: left;
+	border-bottom: dashed grey 1px;
 }
 
 .helpTitle{
@@ -342,6 +347,11 @@ p /* This is the default font type for the letters in the page */
 	font-size: 10px;
 
 }
+
+.buttonStyle:hover, .buttonStyle:hover                            
+{ background-color: #111; }
+
+
 
 .defaultOptions, .defaultOptions:visited{
     background: #444444 url('../images/overlayy.png') repeat-x;

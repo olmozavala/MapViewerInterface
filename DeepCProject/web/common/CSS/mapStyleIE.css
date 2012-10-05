@@ -18,24 +18,20 @@ div.mapTitle{
 	z-index:1000;
 	display:inline;
 	text-align:center;
+	left:50%;
 	
 }
 
 
 #pTitleText
-{
-	
-	
-	
-		text-align:center;
+{	
+	text-align:center;
 	margin:.5em 0 .5em 0;
 	padding-bottom: 3px;
 	padding-top: 3px;
-font-size:18px;   
-border-radius: 10px;	
+	font-size:18px;   
+	border-radius: 10px;	
 	text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
-	width:
-	
 	
 	
 }

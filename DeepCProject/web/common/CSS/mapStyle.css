@@ -428,5 +428,5 @@ p /* This is the default font type for the letters in the page */
     font-size: 12px;
     color:black;  
     overflow:scroll;
-
+	visibility: hidden;
 }

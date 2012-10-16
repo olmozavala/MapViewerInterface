@@ -14,7 +14,7 @@
 		<td class="waitBack">
 			<p class="palMinMax">
 				&nbsp; 
-				max: <input onblur="UpdatePalette(mappalette);" 
+				max: <input onblur="UpdatePalette(mappalette);" onfocus="keyboardnav.deactivate();" 
 						onkeydown="if(event.keyCode == 13) UpdatePalette(mappalette);"
 						id="maxPal" name="maxPal" type="text" size="2" /> 
 				&nbsp;
@@ -22,7 +22,7 @@
 			<p class="buttonStyle" style="font-size:9px;" onclick="UpdatePalette(mappalette);" > Update </p>
 			<p class="palMinMax">
 				&nbsp;
-				min: <input onblur="UpdatePalette(mappalette);" 
+				min: <input onblur="UpdatePalette(mappalette);" onfocus="keyboardnav.deactivate();" 
 						onkeydown="if(event.keyCode == 13) UpdatePalette(mappalette);"
 						id="minPal" name="minPal" type="text" size="2" />
 				&nbsp;

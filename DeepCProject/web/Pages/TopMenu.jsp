@@ -38,8 +38,6 @@
                             Color Tools
                         </button>
 
-                        <!-- Current palette and color range -->
-                        <span id="palettesParent"> <%@include file="Options/Palettes.jsp" %> </span>
                     </td>
 
 

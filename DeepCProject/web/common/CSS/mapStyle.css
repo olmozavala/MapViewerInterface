@@ -19,24 +19,19 @@ div.dispAnimation{
 
 #palettesParent
 {
-
     position:absolute;
-    top:60px;
-    left:700px;
-	opacity: 1.0;
-	-moz-border-radius: 10px;
-    -webkit-border-radius: 10px;
-    border-radius:10px;
+    top:55px;
+    right: 40%;
     width:200px;
-    background-color: black;
-    visibility:hidden;
+    z-index:1008;
+/*    visibility:hidden;*/
 }
 
 
-/* color pallets that pops when the user clicks the colors tool in the color tool*/
+/* Color pallets that pops with all the palettes Options */ 
 div.palettesDiv{
-    top: 25px;
-    left: 700px;
+    top: 145px;
+    right: 40%;
     position:absolute;
     z-index:1008;
     color: white;    
@@ -183,8 +178,6 @@ select.menu{
 /* Subtable that contains the optional layers */
 table.vectorLayer{
     border-radius: 10px;
-
-  
     /*  background-image:url('../images/transBack.png');*/
     background-color:black;
     opacity:0.85;
@@ -196,8 +189,9 @@ table.vectorLayer{
 
 /* table that contains the max and min temperature selection and the color chose of the color tools*/
 table#palette{
-
-    color:black;
+    border-radius: 10px;
+    background-color:black;
+    border: solid 1px white;
 	visibility: hidden;
 }
 
@@ -206,7 +200,6 @@ td.waitBack{
     /*	border-radius: 10px;*/
     /*	background-image:url('../images/transBack.png'); */
     valign: up;
-
 }
 
 .palMinMax{

@@ -21,10 +21,11 @@
         <%@include file="RequiredDivs.jsp" %>
 		<c:if test='${netcdf}'>
 			<%@include file="NcWMSOptions.jsp" %>
+
+			<!-- Current palette and color range -->
+			<div id="palettesParent"> <%@include file="Options/Palettes.jsp" %> </div>
 		</c:if>
 
-        <!-- This is the div that contains all of the user options, drop down of
-          main layers, vector layers, kml data, etc. -->
 
         <!-- Foot page --> 
         <div id="pieDePaginaIzq" class="leftFoot">

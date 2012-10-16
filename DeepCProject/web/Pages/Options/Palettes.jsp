@@ -8,7 +8,7 @@
 
 <c:if test='${netcdf}'>
 
-    <table border="0" id="palette" align="center" cellpadding="1">
+    <table border="0" id="palette" cellpadding="3">
         <tr>
             <td> 
                 <img id="imgPalette" src="${paletteUrl}" onclick="displayPalettes();" 
@@ -18,7 +18,9 @@
             <td class="waitBack">
                 <p class="palMinMax">
                     &nbsp; 
-                    Max: <input id="maxPal" name="maxPal" type="text" size="4" /> 
+                    Max:<input onblur="UpdatePalette(mappalette);" onfocus="keyboardnav.deactivate();" 
+						onkeydown="if(event.keyCode == 13) UpdatePalette(mappalette);"
+						id="maxPal" name="maxPal" type="text" size="2" />
                     &nbsp;
                 </p>
                 <button type="button" class="buttonStyle" style="font-size:11px;" onclick="UpdatePalette(mappalette);" >
@@ -28,7 +30,9 @@
 
                 <p class="palMinMax">
                     &nbsp;
-                    Min: <input  id="minPal" name="minPal" type="text" size="4" />
+                    Min: <input onblur="UpdatePalette(mappalette);" onfocus="keyboardnav.deactivate();" 
+						onkeydown="if(event.keyCode == 13) UpdatePalette(mappalette);"
+						id="minPal" name="minPal" type="text" size="2" />
                     &nbsp;
                 </p>
             </td>

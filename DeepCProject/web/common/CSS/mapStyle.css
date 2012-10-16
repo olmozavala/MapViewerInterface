@@ -404,3 +404,7 @@ display:none;
     overflow:scroll;
 	
 }
+
+#elevationSelector{
+	visibility: hidden;
+}

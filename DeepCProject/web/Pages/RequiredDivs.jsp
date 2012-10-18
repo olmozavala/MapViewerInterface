@@ -4,7 +4,7 @@
     Author     : olmozavala
 --%>
 <!-- Map title -->
-<div class="mapTitle" id="layerTitle"> <p id="pTitleText"> Deep-C Gulf of Mexico<br> ${layerTitle} </p> </div>
+<div class="mapTitle" id="layerTitle"> <p id="pTitleText">  ${layerTitle} </p> </div>
 
 <!-- This div contains all the map --> 
 <div id="map"> </div>      

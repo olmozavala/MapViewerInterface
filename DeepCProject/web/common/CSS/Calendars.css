@@ -1,7 +1,25 @@
 /* These are all for the animation of the map */
 #p-animation{ visibility: hidden; }
-#s-animation{ visibility: hidden; }
-#l-animation{ visibility: hidden; }
+#s-animation{ 
+	visibility: hidden; 
+	position:absolute;
+	top:220px;
+	cursor: pointer;
+	left:60px;
+	font-size:16px;
+    z-index:1009;
+}
+
+/* This is the Loading text */
+#l-animation{ 
+	visibility: hidden; 
+	position:absolute;	
+	margin:auto;
+    top:30%;
+    left:40%;
+    z-index:1009;
+	pointer-events: none;
+}
 
 
 /*holds the start calendar  */

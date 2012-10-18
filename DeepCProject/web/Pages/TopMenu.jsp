@@ -86,12 +86,6 @@
         <c:if test='${netcdf}'>
             <!--<span id="loadingAnimContainer" class="loadingAnimContainer" style="display:block;visibility:visible">-->
 
-            <span id="s-animation"  class="stop_button"> <button type="button" onclick="stopAnimation();" class="buttonStyle" style="font-size:12px;" >Stop Animation</button></span> 
-            <p id="l-animation" class="defShadow loading_msg"> Loading 
-                <img src="${basepath}/common/images/load.gif" height="12" border="0" alt="loading"></A>
-            </p>
-
-            <!--</span>-->
         </c:if>
         <span id="helpDiv" style="border-radius: 10px;">
             <%@include file="Options/MapInstructions.jsp" %>

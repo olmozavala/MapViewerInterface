@@ -24,8 +24,20 @@
 
 			<!-- Current palette and color range -->
 			<div id="palettesParent"> <%@include file="Options/Palettes.jsp" %> </div>
-		</c:if>
+            <!--<span id="loadingAnimContainer" class="loadingAnimContainer" style="display:block;visibility:visible">-->
 
+            <div id="s-animation" > 
+				<button type="button" onclick="stopAnimation();" 
+						class="buttonStyle" style="font-size:12px;" >Stop Animation</button>
+			</div> 
+			<div id="l-animation">
+				<p class="bigFontSize"> Loading 
+					<img src="${basepath}/common/images/load.gif" height="12" border="0" alt="loading"></A>
+				</p>
+			</div>
+
+            <!--</span>-->
+        </c:if>
 
         <!-- Foot page --> 
         <div id="pieDePaginaIzq" class="leftFoot">

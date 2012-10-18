@@ -16,26 +16,20 @@
     <!-- Divs that hold the start and end calendar plus the related texts -->
 
 	<div id="CalendarParent">
-    <div class="startDateCal" id="cal-start"><p class="calTitle" id="hideOneDay">Start date (Current)</p></div>
-    <div class="endDateCal" id="cal-end"><p class="calTitle"  id="hideOneDayEnd">End date</p></div>
-	
-	
-	
-    <div class="dispAnimation" id="p-animation">
-        <table >
-            <tr><td style="width:140px">
-                    <button type="button" class="small awesome" onclick="dispAnimation();" style="font-size:12px;" > Display animation </button> </td>
-                <td style="width:190px; text-align: center" >
-                    <select id="timeSelect" name="timeSelect">
-                    </select>
-                </td>
-            </tr>
-        </table>
+		<div class="startDateCal" id="cal-start"><p class="calTitle" id="hideOneDay">Start date (Current)</p></div>
+		<div class="endDateCal" id="cal-end"><p class="calTitle"  id="hideOneDayEnd">End date</p></div>
 
-
-
-
-    </div>
+		<div class="dispAnimation" id="p-animation">
+			<table >
+				<tr><td style="width:140px">
+						<button type="button" class="buttonStyle" onclick="dispAnimation();" style="font-size:12px;" > Display animation </button> </td>
+					<td style="width:190px; text-align: center" >
+						<select id="timeSelect" name="timeSelect">
+						</select>
+					</td>
+				</tr>
+			</table>
+		</div>
     </div>
 
 

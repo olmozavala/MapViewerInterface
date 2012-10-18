@@ -9,7 +9,7 @@ body {
 
 /* animation button that pops up when calendar dates have been selected */
 div.dispAnimation{
-    top: 250px;
+    top: 220px;
     left: 50px;
     position:absolute;
     z-index:1007;
@@ -57,20 +57,6 @@ div.palettesDiv{
 
 }
 
-
-/* stop button when animation is loading or playing*/
-.stop_button
-{
-	position:absolute;
-	top:250px;
-	cursor: pointer;
-	left:60px;
-	font-size:16px;
-}
-
-
-
-
 /* This is the small Scale line in the bottom of the map */
 div.olControlScaleLine {
     display:table;
@@ -102,6 +88,8 @@ div.layersLongLat{
     border-style: solid;
     border-width: thin;
     border-color: black;
+
+	pointer-events: none;
 }
 /* Div where the specific data of the layers are displayed */
 div.layersData{
@@ -130,7 +118,6 @@ div.layersMenu{
     height:40px;
     width:100%;
 
-
 }
 /* Left fotter */
 div.leftFoot{
@@ -151,7 +138,7 @@ div.mapTitle{
     z-index:1000;
     display:inline;
     text-align:center;
-
+	pointer-events: none;
 }
 
 /*These are the buttons of the transparency and elevation */
@@ -366,6 +353,9 @@ p /* This is the default font type for the letters in the page */
 
 }
 .defaultOptions:hover, .defaultOptions:hover                            { background-color: #111; }
+.bigFontSize{
+	font-size: 30px;
+}
 
 /*top menu div */
 .top_menu
@@ -388,18 +378,6 @@ p /* This is the default font type for the letters in the page */
     position:absolute;
     top:300px;
     left:300px;
-}
-
-
-.loading_msg
-{
-    font-size:30px;
-    position:absolute;
-    top:350px;
-    width:200px;
-    height:100px;
-    left:400px;
-
 }
 
 #elevationSelector

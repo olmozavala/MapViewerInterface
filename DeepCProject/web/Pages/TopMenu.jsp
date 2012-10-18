@@ -63,7 +63,7 @@
             <td id="emailParent" valign="middle"> <!-- Email -->
 
 
-                <a href="mailto:osz09@gmail.com">
+                <a href="mailto:osz09@fsu.edu">
                     <button type="button" class="buttonStyle" id="emailText" onclick="MapViewersubmitForm();" >
                         Email
                     </button>

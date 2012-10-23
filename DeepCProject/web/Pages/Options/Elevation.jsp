@@ -16,6 +16,7 @@
 		<td>
 			<p id="elevationText" class="buttonStyle" onclick="displayElevationSelector();" >
 				Depth	
+
 			</p>
 		</td>
 		<td>

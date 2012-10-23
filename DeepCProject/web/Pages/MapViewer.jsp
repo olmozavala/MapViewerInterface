@@ -100,7 +100,7 @@
                         <td id="emailParent">
                             <a href="mailto:osz09@gmail.com">
                                 <p id="emailText" class="buttonStyle" onclick="MapViewersubmitForm();" >
-                                    Email 
+                                    Contact
                                 </p>
                             </a> 
                         </td>

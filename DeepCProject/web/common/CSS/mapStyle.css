@@ -68,7 +68,7 @@ div.dispAnimation{
     top: 240px;
     left: 60px;
     position:absolute;
-    z-index:1007;
+    z-index:1000;
     display:inline;
     visibility: hidden;
 }

@@ -5,7 +5,7 @@
 --%>
 <table class="helpInstructions" id="helpInstructions" >
 	<tr><th colspan="2" >
-			<font color="black">Map Instructions</font><span type="button" class="buttonStyle " style="float:right" onclick="displayHelp()">x</span>
+			<font color="black">Help</font><span type="button" class="buttonStyle " style="float:right" onclick="displayHelp()">x</span>
 		</th>
 	</tr>
 	<tr><td width="210" style="text-align:center;"><img src="${basepath}/common/images/icon/mouse_cursor.png">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;

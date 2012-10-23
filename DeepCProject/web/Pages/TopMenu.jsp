@@ -65,7 +65,7 @@
 
                 <a href="mailto:osz09@gmail.com">
                     <button type="button" class="buttonStyle" id="emailText" onclick="MapViewersubmitForm();" >
-                        Email
+                        Contact
                     </button>
                 </a>
             </td>

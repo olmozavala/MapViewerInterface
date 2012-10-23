@@ -35,6 +35,9 @@
 						id="minPal" name="minPal" type="text" size="2" />
                     &nbsp;
                 </p>
+				<button type="button" class="buttonStyle" style="font-size:11px;" onclick="setColorRangeFromMinMax();" >
+                   Auto 
+                </button>
             </td>
 
             <td valign="top"><button type="button" onclick="hidePalettes()">x</button></td>

@@ -15,7 +15,7 @@
 		</td>
 		<td>
 			<p id="elevationText" class="buttonStyle" onclick="displayElevationSelector();" >
-				Elevation	
+				Depth	
 			</p>
 		</td>
 		<td>

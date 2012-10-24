@@ -5,9 +5,12 @@
         <table name="menuTable" border="0" align="center" style="padding-top:3px;" >
             <tr>
                 <td>
-					<span id="mainMenuParent">
+					<span id="mainMenuParent" onmouseover="hoverInstructions('mainMenuParentHover', '1')" onmouseout="hoverInstructions('mainMenuParentHover', '2')" >
 						${menuHelper:createMainMenu(MenuDelUsuario,language)}
+					
+					<span id="mainMenuParentHover" class="commonHover"  >&nbsp;Layer Variable and Year&nbsp;</span>
 					</span>
+					
                 </td>
 
 			<c:choose>
@@ -35,7 +38,7 @@
 					</td>
                     <td valign="middle">
                         <button type="button" class="buttonStyle" onclick="showPalettes()" >
-                            Color Tools
+                            Color Palette
                         </button>
 
                     </td>

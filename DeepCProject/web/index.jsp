@@ -10,10 +10,9 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>JSP Page</title>
-		<script type="text/javascript"  >
-			window.open ('https://viewer.coaps.fsu.edu/DeepCProject/mapviewer','_self',false)
-		</script>
- 
+	<script type="text/javascript"  >
+		window.open ('https://viewer.coaps.fsu.edu/DeepCProject/mapviewer','_self',false)
+	</script>
     </head>
     <body>
     </body>

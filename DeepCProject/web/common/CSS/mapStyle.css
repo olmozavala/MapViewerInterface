@@ -30,7 +30,7 @@ div.dispAnimation{
 
 /* Color pallets that pops with all the palettes Options */ 
 div.palettesDiv{
-    top: 145px;
+    top: 175px;
     right: 40%;
     position:absolute;
     z-index:1008;
@@ -41,9 +41,14 @@ div.palettesDiv{
     margin-top: 2em;
     margin-bottom: 2em;
     background-color: black;
-    visibility: hidden;
+ 
     padding:3px;
 
+}
+
+#palettes-div{
+
+   visibility: hidden;
 }
 
 /* optional layers suck as us state, DeepC, etc*/
@@ -383,8 +388,8 @@ p /* This is the default font type for the letters in the page */
 #elevationSelector
 {
 	position: absolute;
-	top:50px;
-	right:200px;
+	top:100px;
+	
     display:none;
 	background-image:url('../images/transBack.png');		
 	border:solid black;    
@@ -407,8 +412,44 @@ p /* This is the default font type for the letters in the page */
 #mainMenuParentHover
 {
 	display:none;
+	
+}
+
+
+#mainKmlParentHover
+{
+    
+    top:35px;
+    display:none;
+}
+
+
+#transParentHover{
+
+top:35px;
+display:none;
+}
+
+#elevationParentHover{
+
+top:35px;
+display:none;
+}
+
+#palettesHover{
+
+top:35px;
+display:none;
 
 }
+
+#transectParentHover{
+
+top:35px;
+display:none;
+
+}
+
 
 
 .commonHover
@@ -420,3 +461,5 @@ p /* This is the default font type for the letters in the page */
 	background-color: darkkhaki;
 	position:absolute;
 }
+
+

@@ -2,9 +2,9 @@
 <div id="layersMenu" class="layersMenu">
     <form id="baseForm" name="baseForm" action="${basepath}${names.acdmServlet}" method="post">
 
-        <table name="menuTable" border="0" align="center" style="padding-top:3px;" >
+        <table name="menuTable" border="0" align="center" style="padding-top:3px;" border="1" >
             <tr>
-                <td>
+                <td style="position:relative;">
 					<span id="mainMenuParent" onmouseover="hoverInstructions('mainMenuParentHover', '1')" onmouseout="hoverInstructions('mainMenuParentHover', '2')" >
 						${menuHelper:createMainMenu(MenuDelUsuario,language)}
 					
@@ -21,33 +21,59 @@
 				</c:when>
             </c:choose>
 
-			<td valign="middle">
+			<td valign="middle" style="position:relative;">
 				<!-- Link to download kml files-->
-				<span  id="mainKmlParent" > <%@include file="Options/KmlLink.jsp" %></span></td>
-			<td valign="middle">
+				<span  id="mainKmlParent" onmouseover="hoverInstructions('mainKmlParentHover', '1')" onmouseout="hoverInstructions('mainKmlParentHover', '2')"  > <%@include file="Options/KmlLink.jsp" %>
+                                
+                                <span id="mainKmlParentHover" class="commonHover" >&nbsp;Open current animation/display of map in Google Earth&nbsp;</span>
+                                
+                                
+                                </span></td>
+			<td valign="middle" style="position:relative;">
 				<!-- Transparency -->
-				<span id="transParent"><%@include file="Options/Transparency.jsp" %></span></td>
+				<span id="transParent" onmouseover="hoverInstructions('transParentHover', '1')" onmouseout="hoverInstructions('transParentHover', '2')"  ><%@include file="Options/Transparency.jsp" %>
+                                
+                                    <span id="transParentHover" class="commonHover">
+                                        
+                                        
+                                        &nbsp;Change the color transparency of current layer to view the underneath topology &nbsp;
+                                        
+                                    </span>
+                                
+                                </span></td>
 
             <c:choose>
                 <c:when test='${netcdf}'>
                     <!-- Elevation -->
-                    <td valign="middle">
-                        <span id="elevationParent"><%@include file="Options/Elevation.jsp" %><span id="elevationSelector">
+                    <td valign="middle" style="position:relative;">
+                        <span id="elevationParent" onmouseover="hoverInstructions('elevationParentHover', '1')" onmouseout="hoverInstructions('elevationParentHover', '2')"  ><%@include file="Options/Elevation.jsp" %>
+                            
+                            <span id="elevationParentHover" class="commonHover">
+                                Change the elevation/pressure level of the layer. Click the - sign to decrease and the + to increase. Press the middle button to select a level                          
+                                
+                            </span>
+                            
+                            <span id="elevationSelector">
 
 							</span></span>
 					</td>
-                    <td valign="middle">
-                        <button type="button" class="buttonStyle" onclick="showPalettes()" >
+                    <td valign="middle" style="position:relative;" onmouseover="hoverInstructions('palettesHover', '1')" onmouseout="hoverInstructions('palettesHover', '2')">
+                        <button type="button" class="buttonStyle" onclick="showPalettes()"  >
                             Color Palette
                         </button>
-
+                        
+                        <span id="palettesHover" class="commonHover">Change the color ranges displayed and choose the color pattern of your choice</span>
                     </td>
 
 
-					<td valign="middle">
+					<td valign="middle"  style="position:relative;" onmouseover="hoverInstructions('transectParentHover', '1')" onmouseout="hoverInstructions('transectParentHover', '2')">
 						<span id="transectParent">
 							<button type="button" name="type" value="line" id="lineToggle" class="buttonStyle" onclick="toggleControl(this);" >Transect Tool</button>
-						</span>
+						
+                                                
+                                                        <span id="transectParentHover" class="commonHover">Draw a line(s) by clicking on the map on different points and then double click to display graph of chosen points</span>
+                                                
+                                                </span>
 					</td>
                 </c:when>
 				<c:when test='${!netcdf}'>

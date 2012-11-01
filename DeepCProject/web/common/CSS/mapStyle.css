@@ -408,3 +408,67 @@ display:none;
 #elevationSelector{
 	visibility: hidden;
 }
+
+
+/* This are all the hover instructions of the menu options*/
+#mainMenuParentHover
+{
+	display:none;
+	top:8px;
+        right:175px;
+        width:100%;
+}
+
+
+#mainKmlParentHover
+{
+    
+    top:285px;
+        right:175px;
+        width:100%;
+    display:none;
+}
+
+
+#transParentHover{
+
+top:30px;        right:175px;        width:100%;
+display:none;
+}
+
+#elevationParentHover{
+
+top:65px;        right:175px;        width:100%;
+display:none;
+}
+
+#palettesHover{
+
+top:190px;        right:175px;        width:100%;
+display:none;
+
+}
+
+#transectParentHover{
+
+top:100px;        right:175px;        width:100%;
+display:none;
+
+}
+
+
+
+.commonHover
+{
+	border:1px solid;
+	padding:5px;
+	font-size: 11px;
+	background-image:url('../images/transBack.png');
+	background-color: darkkhaki;
+	position:absolute;
+        z-index:1002;
+        -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius:10px;
+        
+}

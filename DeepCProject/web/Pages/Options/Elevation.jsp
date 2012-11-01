@@ -14,7 +14,7 @@
 				 src="${basepath}/common/images/Menu/Minus.png" alt="DecTrans" width="20" height="20" />
 		</td>
 		<td>
-			<p id="elevationText" class="buttonStyle" onclick="displayElevationSelector();" >
+			<p id="elevationText" class="buttonStyle" onclick="displayElevationSelector();" onmouseover="hoverInstructions('elevationParentHover', '1')" onmouseout="hoverInstructions('elevationParentHover', '2')">
 				Depth	
 
 			</p>

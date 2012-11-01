@@ -4,7 +4,7 @@
 
         <table name="menuTable" border="0" align="center" style="padding-top:3px;" border="1" >
             <tr>
-                <td style="position:relative;">
+                <td>
 					<span id="mainMenuParent" onmouseover="hoverInstructions('mainMenuParentHover', '1')" onmouseout="hoverInstructions('mainMenuParentHover', '2')" >
 						${menuHelper:createMainMenu(MenuDelUsuario,language)}
 					
@@ -21,7 +21,7 @@
 				</c:when>
             </c:choose>
 
-			<td valign="middle" style="position:relative;">
+			<td valign="middle">
 				<!-- Link to download kml files-->
 				<span  id="mainKmlParent" onmouseover="hoverInstructions('mainKmlParentHover', '1')" onmouseout="hoverInstructions('mainKmlParentHover', '2')"  > <%@include file="Options/KmlLink.jsp" %>
                                 
@@ -29,7 +29,7 @@
                                 
                                 
                                 </span></td>
-			<td valign="middle" style="position:relative;">
+			<td valign="middle">
 				<!-- Transparency -->
 				<span id="transParent" onmouseover="hoverInstructions('transParentHover', '1')" onmouseout="hoverInstructions('transParentHover', '2')"  ><%@include file="Options/Transparency.jsp" %>
                                 
@@ -57,7 +57,7 @@
 
 							</span></span>
 					</td>
-                    <td valign="middle" style="position:relative;" onmouseover="hoverInstructions('palettesHover', '1')" onmouseout="hoverInstructions('palettesHover', '2')">
+                    <td valign="middle" onmouseover="hoverInstructions('palettesHover', '1')" onmouseout="hoverInstructions('palettesHover', '2')">
                         <button type="button" class="buttonStyle" onclick="showPalettes()"  >
                             Color Palette
                         </button>
@@ -66,7 +66,7 @@
                     </td>
 
 
-					<td valign="middle"  style="position:relative;" onmouseover="hoverInstructions('transectParentHover', '1')" onmouseout="hoverInstructions('transectParentHover', '2')">
+					<td valign="middle" onmouseover="hoverInstructions('transectParentHover', '1')" onmouseout="hoverInstructions('transectParentHover', '2')">
 						<span id="transectParent">
 							<button type="button" name="type" value="line" id="lineToggle" class="buttonStyle" onclick="toggleControl(this);" >Transect Tool</button>
 						

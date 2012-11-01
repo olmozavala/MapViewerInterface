@@ -388,8 +388,9 @@ p /* This is the default font type for the letters in the page */
 #elevationSelector
 {
 	position: absolute;
-	top:100px;
-	
+	top:150px;
+	right:10px;
+        
     display:none;
 	background-image:url('../images/transBack.png');		
 	border:solid black;    
@@ -405,6 +406,7 @@ p /* This is the default font type for the letters in the page */
     color:black;  
     overflow:scroll;
 	visibility: hidden;
+       
 }
 
 
@@ -460,6 +462,8 @@ display:none;
 	background-image:url('../images/transBack.png');
 	background-color: darkkhaki;
 	position:absolute;
+        z-index:1002;
+        
 }
 
 

@@ -27,6 +27,7 @@
 						id="minPal" name="minPal" type="text" size="2" />
 				&nbsp;
 			</p>
+			<p class="buttonStyle" style="font-size:9px;" onclick="setColorRangeFromMinMax();" > Auto</p>
 		</td>
 	</tr>
 </table>

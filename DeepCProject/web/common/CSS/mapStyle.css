@@ -370,6 +370,7 @@ p /* This is the default font type for the letters in the page */
 	color:black;  
 	overflow:scroll;
 	visibility: hidden;
+
 }
 
 
@@ -377,48 +378,55 @@ p /* This is the default font type for the letters in the page */
 #mainMenuParentHover
 {
 	display:none;
-
+	top:40px;
 }
 
 
 #mainKmlParentHover
 {
-
-	top:35px;
-	display:none;
+    top:40px;
+    display:none;
 }
 
 
 #transParentHover{
-
-	top:35px;
+	top:40px;
 	display:none;
 }
 
 #elevationParentHover{
 
-	top:35px;
+	top:40px;
 	display:none;
 }
 
+#palettesHover{
+
+	top:40px;
+	display:none;
+
+}
 
 #transectParentHover{
 
-	top:35px;
+	top:40px;
 	display:none;
 
 }
-
-
 
 .commonHover
 {
 	border:1px solid;
-
+	padding:5px;
 	font-size: 11px;
 	background-image:url('../images/transBack.png');
 	background-color: darkkhaki;
 	position:absolute;
+	z-index:1002;
+	-moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius:10px;
+
 }
 
 

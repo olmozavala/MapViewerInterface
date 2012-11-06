@@ -11,7 +11,7 @@
                 </button></td>
 
             <td>	
-                <span style="cursor: pointer;" id="elevationText"  onclick ="displayElevationSelector() ">Depth</span>
+                <span style="cursor: pointer;" id="elevationText"  onclick ="displayElevationSelector() " onmouseover="hoverInstructions('elevationParentHover', '1')" onmouseout="hoverInstructions('elevationParentHover', '2')" >Depth</span>
             </td>
             <td>
                 <button class="plusButton" disabled="disabled" id="plusButtonElevation" style="cursor: pointer;" type="button"  onclick="changeElevation('+', layer1);">

@@ -9,6 +9,7 @@
         <meta name="Keywords" content="Climatic atlas" />
 
         <link href="${basepath}/common/CSS/mapStyle.css" rel="stylesheet" type="text/css"/>
+        <link href="${basepath}/common/CSS/Palettes.css" rel="stylesheet" type="text/css"/>
 		<link href="${basepath}/common/CSS/Calendars.css" rel="stylesheet" type="text/css"/>
 		<link href="${basepath}/common/CSS/OpenLayersRelated.css" rel="stylesheet" type="text/css"/>
         <!--[if gte IE 6]>

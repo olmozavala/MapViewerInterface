@@ -1,0 +1,62 @@
+/* 
+    Document   : Palettes
+    Created on : Nov 6, 2012, 4:11:25 PM
+    Author     : olmozavala
+    Description:
+		Should have all the styling related with the palettes and
+		range of colors.
+*/
+
+/* table that contains current palette
+and the color range*/
+#palette{
+	border-radius: 10px;
+	background-color:black;
+	border: solid 1px white;
+	visibility: hidden;
+	/*This is the hight of the palette image*/
+	min-height: 120px;
+}
+
+/* Color paletts that pops with all the optional palettes */ 
+div.palettesDiv{
+	top: 20px;
+	right: 360px;
+	position:absolute;
+	z-index:1008;
+	color: white;    
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius:10px;
+	margin-top: 2em;
+	margin-bottom: 2em;
+	background-color: black;
+
+	padding:3px;
+
+}
+
+#palettesParent
+{
+	position:absolute;
+	top:55px;
+	right: 150px;
+	width:200px;
+	z-index:1008;
+	/*    visibility:hidden;*/
+}
+
+#palettes-div{
+	visibility: hidden;
+}
+
+
+#imgPalette{
+}
+
+#palettesHover{
+
+	top:35px;
+	display:none;
+
+}

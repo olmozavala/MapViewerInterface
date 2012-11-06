@@ -45,6 +45,7 @@
             <c:choose>
                 <c:when test='${netcdf}'>
                     <!-- Elevation -->
+					<span id="elevationSelector"> </span>
                     <td valign="middle" style="position:relative;">
                         <span id="elevationParent" onmouseover="hoverInstructions('elevationParentHover', '1')" onmouseout="hoverInstructions('elevationParentHover', '2')"  ><%@include file="Options/Elevation.jsp" %>
                             
@@ -52,10 +53,7 @@
                                 Change the elevation/pressure level of the layer. Click the - sign to decrease and the + to increase. Press the middle button to select a level                          
                                 
                             </span>
-                            
-                            <span id="elevationSelector">
-
-							</span></span>
+						</span>
 					</td>
                     <td valign="middle" style="position:relative;" onmouseover="hoverInstructions('palettesHover', '1')" onmouseout="hoverInstructions('palettesHover', '2')">
                         <button type="button" class="buttonStyle" onclick="showPalettes()"  >

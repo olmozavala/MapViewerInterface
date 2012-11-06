@@ -8,9 +8,10 @@
 			<font color="black">Help</font><span type="button" class="buttonStyle " style="float:right" onclick="displayHelp()">x</span>
 		</th>
 	</tr>
-	<tr><td width="210" style="text-align:center;"><img src="${basepath}/common/images/icon/mouse_cursor.png">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			<img src="${basepath}/common/images/icon/keyboard_keys.gif"></td><td><b>Move map:</b>
-			<BR/> - Click the map with the mouse, while holding the left mouse button and drag around the map. <BR/> - You can also use your keyboard arrows to move the map.
+	<tr><td width="210" style="text-align:center;"><img src="${basepath}/common/images/icon/mouse_cursor.png">&nbsp;&nbsp;&nbsp;
+			<!--&nbsp;&nbsp;&nbsp;<img src="${basepath}/common/images/icon/keyboard_keys.gif">--></td><td><b>Move map:</b>
+			<BR/> - Click the map with the mouse, while holding the left mouse button and drag around the map.
+			<!--<BR/> - You can also use your keyboard arrows to move the map.-->
 		</td>
 	</tr>
 	<tr><td style="text-align:center;">

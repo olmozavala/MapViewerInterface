@@ -20,6 +20,7 @@ body {
     font-size:10px;
     font-weight:bold;
     padding:2px;
+    vertical-align:top;
     cursor:pointer;
 }
 /* Plus Button used on transparency and elevation */
@@ -28,6 +29,7 @@ body {
     font-weight:bold;
     padding:2px;
     cursor:pointer;
+    vertical-align:top;
 }
 
 /* Transparency text */
@@ -191,7 +193,6 @@ table.palette{
 td.waitBack{
     /*	border-radius: 10px;*/
     /*	background-image:url('../images/transBack.png'); */
-    valign: up;
 }
 
 input[type=text]{

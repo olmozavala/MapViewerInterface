@@ -7,10 +7,10 @@
                 <td>
 					<span id="mainMenuParent" onmouseover="hoverInstructions('mainMenuParentHover', '1')" onmouseout="hoverInstructions('mainMenuParentHover', '2')" >
 						${menuHelper:createMainMenu(MenuDelUsuario,language)}
-					
-					<span id="mainMenuParentHover" class="commonHover"  >&nbsp;Layer Variable and Year&nbsp;</span>
+
+						<span id="mainMenuParentHover" class="commonHover"  >&nbsp;Layer Variable and Year&nbsp;</span>
 					</span>
-					
+
                 </td>
 
 			<c:choose>
@@ -24,13 +24,14 @@
 			<td valign="middle">
 				<!-- Link to download kml files-->
 				<span  id="mainKmlParent" onmouseover="hoverInstructions('mainKmlParentHover', '1')" onmouseout="hoverInstructions('mainKmlParentHover', '2')"  > <%@include file="Options/KmlLink.jsp" %>
-                                
-                                <span id="mainKmlParentHover" class="commonHover" >&nbsp;Open current animation/display of map in Google Earth&nbsp;</span>
-                                
-                                
-                                </span></td>
+
+					<span id="mainKmlParentHover" class="commonHover" >&nbsp;Open current animation/display of map in Google Earth&nbsp;</span>
+
+
+				</span></td>
 			<td valign="middle">
 				<!-- Transparency -->
+
 				<span id="transParent " onmouseover="hoverInstructions('transParentHover', '1')" onmouseout="hoverInstructions('transParentHover', '2')"  ><%@include file="Options/Transparency.jsp" %>
                                 
                                     <span id="transParentHover" class="commonHover">
@@ -42,26 +43,24 @@
                                 
                                 </span></td>
 
+
             <c:choose>
                 <c:when test='${netcdf}'>
                     <!-- Elevation -->
-                    <td valign="middle">
-                        <span id="elevationParent"  ><%@include file="Options/Elevation.jsp" %>
-                            
+					<span id="elevationSelector"> </span>
+                    <td valign="middle" style="position:relative;">
+                        <span id="elevationParent" onmouseover="hoverInstructions('elevationParentHover', '1')" onmouseout="hoverInstructions('elevationParentHover', '2')"  ><%@include file="Options/Elevation.jsp" %>
                             <span id="elevationParentHover" class="commonHover">
                                 Change the elevation/pressure level of the layer. Click the - sign to decrease and the + to increase. Press the middle button to select a level                          
-                                
-                            </span>
-                            
-                            <span id="elevationSelector">
 
-							</span></span>
+                            </span>
+						</span>
 					</td>
                     <td valign="middle" onmouseover="hoverInstructions('palettesHover', '1')" onmouseout="hoverInstructions('palettesHover', '2')">
                         <button type="button" class="buttonStyle" onclick="showPalettes()" id="dynamicFont_color"  >
                             Color Palette
                         </button>
-                        
+
                         <span id="palettesHover" class="commonHover">Change the color ranges displayed and choose the color pattern of your choice</span>
                     </td>
 

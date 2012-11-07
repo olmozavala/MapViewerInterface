@@ -31,7 +31,7 @@
                                 </span></td>
 			<td valign="middle">
 				<!-- Transparency -->
-				<span id="transParent" onmouseover="hoverInstructions('transParentHover', '1')" onmouseout="hoverInstructions('transParentHover', '2')"  ><%@include file="Options/Transparency.jsp" %>
+				<span id="transParent " onmouseover="hoverInstructions('transParentHover', '1')" onmouseout="hoverInstructions('transParentHover', '2')"  ><%@include file="Options/Transparency.jsp" %>
                                 
                                     <span id="transParentHover" class="commonHover">
                                         
@@ -58,7 +58,7 @@
 							</span></span>
 					</td>
                     <td valign="middle" onmouseover="hoverInstructions('palettesHover', '1')" onmouseout="hoverInstructions('palettesHover', '2')">
-                        <button type="button" class="buttonStyle" onclick="showPalettes()"  >
+                        <button type="button" class="buttonStyle" onclick="showPalettes()" id="dynamicFont_color"  >
                             Color Palette
                         </button>
                         
@@ -68,7 +68,7 @@
 
 					<td valign="middle" onmouseover="hoverInstructions('transectParentHover', '1')" onmouseout="hoverInstructions('transectParentHover', '2')">
 						<span id="transectParent">
-							<button type="button" name="type" value="line" id="lineToggle" class="buttonStyle" onclick="toggleControl(this);" >Transect Tool</button>
+							<button type="button" name="type" value="line" id="dynamicFont_transect" class="buttonStyle" onclick="toggleControl(this);" >Transect Tool</button>
 						
                                                 
                                                         <span id="transectParentHover" class="commonHover">Draw a line(s) by clicking on the map on different points and then double click to display graph of chosen points</span>
@@ -93,7 +93,7 @@
 
 
                 <a href="mailto:osz09@fsu.edu">
-                    <button type="button" class="buttonStyle" id="emailText" onclick="MapViewersubmitForm();" >
+                    <button type="button"  class="buttonStyle" id="emailText" onclick="MapViewersubmitForm();" >
                         Contact
                     </button>
                 </a>

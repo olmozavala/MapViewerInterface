@@ -247,7 +247,8 @@ p /* This is the default font type for the letters in the page */
 	width:1250px;
 
 
-	overflow:scroll;
+	overflow-x:hidden;
+        overflow-y:auto;    
 
 }
 

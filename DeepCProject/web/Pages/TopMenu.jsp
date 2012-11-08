@@ -67,7 +67,7 @@
 
 					<td valign="middle" onmouseover="hoverInstructions('transectParentHover', '1')" onmouseout="hoverInstructions('transectParentHover', '2')">
 						<span id="transectParent">
-							<button type="button" name="type" value="line" id="dynamicFont_transect" class="buttonStyle" onclick="toggleControl(this);" >Transect Tool</button>
+							<button type="button" name="type" value="line" id="lineToggle" class="buttonStyle" onclick="toggleControl(this);" >Transect Tool</button>
 						
                                                 
                                                         <span id="transectParentHover" class="commonHover">Draw a line(s) by clicking on the map on different points and then double click to display graph of chosen points</span>

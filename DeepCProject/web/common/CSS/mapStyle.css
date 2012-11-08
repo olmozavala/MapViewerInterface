@@ -231,7 +231,7 @@ p /* This is the default font type for the letters in the page */
 {
 	border:solid black;
 	position:absolute;
-	left:50px;
+	left:0px;
 	visibility:hidden;
 	z-index:1009;
 	height:700px;

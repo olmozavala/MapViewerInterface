@@ -116,4 +116,5 @@
 		</td></tr>
 	<tr><td style="text-align:center;"><span class="buttonStyle no_hover" style="cursor:default;">Stop animation</span></td><td><b>Stop animation:</b><BR/>-This button will disable the animation.</td></tr>
 	<tr><td style="text-align:center;"><span class="buttonStyle no_hover" style="cursor:default;">Hide Calendar</span></td><td><b>Hide Calendar:</b><BR/>-Toggle between this option to show/hide the calendar.</td></tr>
+        <tr><td style="text-align:center;"><span class="buttonStyle no_hover" style="cursor:default;">Ctrl +/-</span></td><td><b>Change Font Size:</b><BR/>-Change the font size by pressing Ctrl + and Ctrl - on you keyboard. If you press Ctrl 0 it will make the font the default size.</td></tr>
 </table>    

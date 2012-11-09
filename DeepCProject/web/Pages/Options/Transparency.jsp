@@ -6,7 +6,7 @@
 	<table class="elevationTable" >
 		<tr>
 			<td>
-				<img class="minusButton" id="minusButtonTrans" onclick="changeTranspManager(.15);" 
+				<img class="minusButton" id="minusButtonTrans" onclick="changeTranspManager(.15, 'master');" 
 					 onmouseover="rollImage(this,'${basepath}/common/images/Menu/MinusInv.png' )"
 					 onmouseout="rollImage(this,'${basepath}/common/images/Menu/Minus.png' )"
 					 onmousedown="rollImage(this,'${basepath}/common/images/Menu/MinusPressed.png' )"
@@ -16,7 +16,7 @@
 				<p id="transText" class="defaultOptions">Transparency </p>
 			</td>
 			<td>
-				<img class="plusButton" id="plusButtonTrans" onclick="changeTranspManager(-.15);" 
+				<img class="plusButton" id="plusButtonTrans" onclick="changeTranspManager(-.15, 'master');" 
 					 onmouseover="rollImage(this,'${basepath}/common/images/Menu/PlusInv.png' )"
 					 onmouseout="rollImage(this,'${basepath}/common/images/Menu/Plus.png' )"
 					 onmousedown="rollImage(this,'${basepath}/common/images/Menu/PlusPressed.png' )"

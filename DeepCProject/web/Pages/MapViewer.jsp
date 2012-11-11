@@ -109,9 +109,9 @@
 
                     <tr>
                         <td id="resizeScreenParent">
-                            <!-- Resize window -->
+                            <!-- Resize map -->
                             <p id="resizeScreenText" class="buttonStyle" onclick="refreshWindow();" >
-                                Resize window 
+                                Resize map 
                             </p>
                         </td>
                     </tr>

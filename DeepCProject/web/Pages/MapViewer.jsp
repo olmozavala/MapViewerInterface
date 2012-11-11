@@ -14,7 +14,7 @@
         <%@include file="OpenLayersConfig.jsp" %>
     </head>
 
-    <body onload="init();initMenus('${animationURL}')" scroll="no">
+    <body scroll="no">
 
 		<!-- User Menu -->
 		<%@include file="TopMenu.jsp" %>

@@ -7,8 +7,8 @@
     <tr>
         <td id="helpInstructions" >
             <table border="0" cellpadding="5" cellmargin="7" align="center" id="align_left">
-                <tr><td colspan="2" height="0" class="helpTitle" valign="top" style="text-align: center;"><font color="white" size="5">Help</font><span type="button" class="buttonStyle" style="float:right" onclick="displayHelp()">x</span></td></tr>
-                <tr><td width="210" style="text-align:center;"><img src="${basepath}/common/images/icon/mouse_cursor.png">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="${basepath}/common/images/icon/keyboard_keys.gif"></td><td><b>Move map:</b><BR/> - Click the map with the mouse, while holding the mouse button and drag around the map. <BR/> - You can also use your keyboard arrows to move the map.</td></tr>
+                <tr><td colspan="2" height="0" class="helpTitle" valign="top" style="text-align: center;"><font color="white" size="5">Help</font><!--<span type="button" class="buttonStyle" style="float:right" onclick="displayHelp()">x</span>--></td></tr>
+                <tr><td width="210" style="text-align:center;"><img src="${basepath}/common/images/icon/mouse_cursor.png"></td><td><b>Move map:</b><BR/> - Click the map with the mouse, while holding the mouse button and drag around the map.</td></tr>
                 <tr><td style="text-align:center;">
                         <table align="center" >
                             <tr><td style="border:none;">
@@ -161,6 +161,7 @@
                     </td></tr>
                 <tr><td style="text-align:center;"><span class="buttonStyle no_hover" style="cursor:default;">Stop animation</span></td><td><b>Stop animation:</b><BR/>-This button will disable the animation.</td></tr>
                 <tr><td style="text-align:center;"><span class="buttonStyle no_hover" style="cursor:default;">Hide Calendar</span></td><td><b>Hide Calendar:</b><BR/>-Toggle between this option to show/hide the calendar.</td></tr>
+                <tr><td style="text-align:center;"><span class="buttonStyle no_hover" style="cursor:default;">Ctrl +/-</span></td><td><b>Change Font Size:</b><BR/>-Change the font size by pressing Ctrl + and Ctrl - on you keyboard. If you press Ctrl 0 it will make the font the default size.</td></tr>
             </table>    
         </td>
     </tr>

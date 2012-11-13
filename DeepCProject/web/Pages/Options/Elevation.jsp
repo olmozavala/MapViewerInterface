@@ -4,14 +4,14 @@
     Author     : olmozavala
 --%>
 <span class="defaultOptions" style="cursor: pointer;"> 
-    <table cellpadding="1" border="0">
+    <table cellpadding="0" border="0">
         <tr>
             <td><button type="button" id="minusButtonElevation" style="cursor: pointer;"  class="minusButton" onclick="changeElevation('-', layer1);">
                     -
                 </button></td>
 
             <td>	
-                <span style="cursor: pointer;" id="elevationText"  onclick ="displayElevationSelector() " onmouseover="hoverInstructions('elevationParentHover', '1')" onmouseout="hoverInstructions('elevationParentHover', '2')" >Depth</span>
+                <span style="cursor: pointer;" id="elevationText"  class ="middleText" onclick ="displayElevationSelector() " onmouseover="hoverInstructions('elevationParentHover', '1')" onmouseout="hoverInstructions('elevationParentHover', '2')" >Depth</span>
             </td>
             <td>
                 <button class="plusButton" disabled="disabled" id="plusButtonElevation" style="cursor: pointer;" type="button"  onclick="changeElevation('+', layer1);">

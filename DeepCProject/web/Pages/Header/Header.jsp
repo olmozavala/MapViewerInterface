@@ -20,7 +20,8 @@
         <link href="${basepath}/common/CSS/calendar/reduce-spacing.css" rel="stylesheet" type="text/css"/>
         <link href="${basepath}/common/CSS/calendar/steel/steel.css" rel="stylesheet" type="text/css"/>
 
-	<script type="text/javascript" src="http://openlayers.org/api/OpenLayers.js"></script>
+        <!--<script type="text/javascript" src="${basepath}/common/JS/openlayers/OpenLayers.js"> </script>-->
+		<script type="text/javascript" src="http://openlayers.org/api/OpenLayers.js"></script>
         <script src="http://code.jquery.com/jquery-1.8.2.js" type="text/javascript"> </script>
 
         <script type="text/javascript" src="${basepath}/common/JS/utilities.js"> </script>

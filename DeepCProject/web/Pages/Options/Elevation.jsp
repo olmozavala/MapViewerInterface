@@ -29,7 +29,3 @@
 		</td>
 	</tr>
 </table>
-
-<span id="elevationSelector">
-
-</span>

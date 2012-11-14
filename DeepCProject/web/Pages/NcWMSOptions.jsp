@@ -8,7 +8,7 @@
 
         <c:if test='${netcdf}' >
 			<!-- Holds the optional palettes -->
-			<div class="palettesDiv" id="palettes-div">
+			<div class="floatingWindow" id="palettes-div">
 				<p class="defShadow">Select new palette <button type="button" class="cancelButton" onclick="displayPalettes()">x</button>
 				<table id="palettesTable"></table></p>
 			</div>

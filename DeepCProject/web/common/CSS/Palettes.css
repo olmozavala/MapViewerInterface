@@ -1,0 +1,37 @@
+/* 
+    Document   : Palettes
+    Created on : Nov 13, 2012, 2:30:01 PM
+    Author     : olmozavala
+    Description:
+		This CSS should contain most of the styles
+		related with the color ranges and the palettes
+*/
+
+#updateColorRangeButton, #autoColorRangeButton{
+	font-size: 10px;
+}
+
+/**
+	Parent of the palettes window
+*/
+#palettes-div{
+    position:absolute;
+    top: 120px;
+    left: 60%;
+    z-index:1006;
+    color: white;
+    border-radius: 10px;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    background-image:url('../images/transBack.png'); 
+    visibility: hidden;
+    cursor: move;
+}
+
+/*
+	Table that contains all the optional palettes
+	*/
+#palettesTable{
+    cursor: pointer;
+}
+

@@ -19,6 +19,7 @@
         <%@include file="RequiredDivs.jsp" %>
         <c:if test='${netcdf}'>
             <%@include file="NcWMSOptions.jsp" %>
+			<span id="elevationSelector"> </span>
         </c:if>
 
         <!-- Simple text that shows 'Loading...' -->

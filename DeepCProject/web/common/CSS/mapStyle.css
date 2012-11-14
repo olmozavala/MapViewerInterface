@@ -32,10 +32,8 @@ body {
     vertical-align:top;
 }
 
-/* Transparency text */
 #transText{
     cursor:default;
-	font-size:14px;
 }
 
 .elevationTable{
@@ -53,18 +51,6 @@ body {
 	margin-bottom:0px;
 }
 
-div.palettesDiv{
-    top: 120px;
-    right: 200px;
-    position:absolute;
-    z-index:1006;
-    color: white;
-    border-radius: 10px;
-    margin-top: 2em;
-    margin-bottom: 2em;
-    background-image:url('../images/transBack.png'); 
-    visibility: hidden;
-}
 
 div.dispAnimation{
     top: 240px;
@@ -153,6 +139,11 @@ div.mapTitle{
 	pointer-events: none;
 }
 
+/* Main title paragraph */
+#pTitleText{
+	font-size: 22px;
+}
+
 a
 {
     text-decoration: none;
@@ -202,7 +193,7 @@ input[type=text]{
 p /* This is the default font type for the letters in the page */
 {
     color:black;
-    font-size:18px;    
+    font-size:14px;    
     text-shadow: 0px -1px 5px #DCDCDC,     /* north      */
         0px  1px 5px #DCDCDC,     /* south      */
         -1px  0px 5px #DCDCDC,     /* west       */
@@ -217,23 +208,18 @@ p /* This is the default font type for the letters in the page */
 /* This class represent default options on the menu
  * that are not buttons, like Transparency or Elevation */
 .defaultOptions{
-    font-size:13px;
 }
 .bigFontSize{
 	font-size: 24px;
 }
 .calTitle{
-    font-size:13px;
 }
 .palMinMax{
-    font-size:13px;
 }
 .defShadow{ /* This font type inverts the color of the font and the shadow */
-    font-size:13px;    
     margin:.5em 0 .5em 0;
 }
 .invShadow{ /* This font type inverts the color of the font and the shadow */
-    font-size:13px;    
     color:#DCDCDC;
     font-weight: bold;
     text-shadow: 0px -1px 5px #000000,     /* north      */
@@ -379,37 +365,28 @@ p /* This is the default font type for the letters in the page */
 /*This is when the user click on elevation button and the new window appears */
  #elevationSelector
 {
+
 	position: absolute;
-	top:50px;
-	right:200px;
-
-display:none;
-	background-image:url('../images/transBack.png');
-
-		
-	border:solid black;
-    
-	height:300px;
-    width:150px;
-    
     z-index:1009;
+	top:10px;
+	left:60%;
+
+	visibility: hidden;
+		
+	background-color: white;
+	border:solid black;
+	min-height:300px;
+    min-width: 120px;
     
     border-radius: 10px;
     margin-top: 2em;
     margin-bottom: 2em;
-    background-image:url('../images/transBack.png');
-    background-color: white;
-    font-size: 12px;
     color:black;
+	font-size: 12px;
   
-    overflow:scroll;
-	
+    /*overflow-y:scroll;*/
+	cursor: move;
 }
-
-#elevationSelector{
-	visibility: hidden;
-}
-
 
 /* This are all the hover instructions of the menu options*/
 #mainMenuParentHover

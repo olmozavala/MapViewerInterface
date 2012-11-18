@@ -2,24 +2,27 @@
 <div id="layersMenu" class="layersMenu">
     <form id="baseForm" name="baseForm" action="${basepath}${names.acdmServlet}" method="post">
 
-        <table name="menuTable" border="0" align="center" style="padding-top:3px;" border="1" >
+        <table name="menuTable" border="2" align="center" cellpadding="0" >
             <tr>
-                <td>
-                    <span id="mainMenuParent" onmouseover="hoverInstructions('mainMenuParentHover', '1')" onmouseout="hoverInstructions('mainMenuParentHover', '2')" >
-                        ${menuHelper:createMainMenu(MenuDelUsuario,language)}
-
-                        <span id="mainMenuParentHover" class="commonHover"  >&nbsp;Layer Variable and Year&nbsp;</span>
-                    </span>
-
-                </td>
 
             <c:choose>
                 <c:when test='${netcdf}'>
-                    <td id="hideCalendarParent" valign="middle">
+                    <td id="hideCalendarParent" valign="center" >
                         <button type="button" class="buttonStyle"   id="hideCalendar" onclick="hideCalendarFunc();"  >Hide Calendar</button>
                     </td>
                 </c:when>
             </c:choose>
+
+            <td valign="center">
+                <span id="mainMenuParent" onmouseover="hoverInstructions('mainMenuParentHover', '1')" onmouseout="hoverInstructions('mainMenuParentHover', '2')" >
+                    ${menuHelper:createMainMenu(MenuDelUsuario,language)}
+
+                    <span id="mainMenuParentHover" class="commonHover"  >&nbsp;Layer Variable and Year&nbsp;</span>
+                </span>
+
+            </td>
+
+
 
             <td valign="middle">
                 <!-- Link to download kml files-->
@@ -34,12 +37,7 @@
 
                 <span id="transParent " onmouseover="hoverInstructions('transParentHover', '1')" onmouseout="hoverInstructions('transParentHover', '2')"  ><%@include file="Options/Transparency.jsp" %>
 
-                    <span id="transParentHover" class="commonHover">
-
-
-                        &nbsp;Change the color transparency of current layer to view the underneath topology &nbsp;
-
-                    </span>
+                    
 
                 </span></td>
 

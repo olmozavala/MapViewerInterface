@@ -2,7 +2,7 @@
 <div id="layersMenu" class="layersMenu">
     <form id="baseForm" name="baseForm" action="${basepath}${names.acdmServlet}" method="post">
 
-        <table name="menuTable" border="2" align="center" cellpadding="0" >
+        <table name="menuTable" border="0" align="center" cellpadding="2" >
             <tr>
 
             <c:choose>
@@ -32,12 +32,17 @@
 
 
                 </span></td>
-            <td valign="middle">
+            <td valign="center" border="1">
                 <!-- Transparency -->
 
                 <span id="transParent " onmouseover="hoverInstructions('transParentHover', '1')" onmouseout="hoverInstructions('transParentHover', '2')"  ><%@include file="Options/Transparency.jsp" %>
 
-                    
+                    <span id="transParentHover" class="commonHover">
+
+
+                        &nbsp;Change the color transparency of current layer to view the underneath topology &nbsp;
+
+                    </span>
 
                 </span></td>
 

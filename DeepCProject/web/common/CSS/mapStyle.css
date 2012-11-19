@@ -282,8 +282,8 @@ p /* This is the default font type for the letters in the page */
 
 .mainMenuOption{
     
-    color:#f0e7f0;
-    background-color: #471b47;
+    color:#ffffff;
+    background-color: #444444;
     
     
     
@@ -296,16 +296,16 @@ p /* This is the default font type for the letters in the page */
 	-moz-box-shadow:inset 0px 1px 0px 0px #0f020f;
 	-webkit-box-shadow:inset 0px 1px 0px 0px #0f020f;
 	box-shadow:inset 0px 1px 0px 0px #0f020f;
-	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #471b47), color-stop(1, #a396a3) );
-	background:-moz-linear-gradient( center top, #471b47 5%, #a396a3 100% );
-	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#471b47', endColorstr='#a396a3');
-	background-color:#471b47;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #444444), color-stop(1, #a396a3) );
+	background:-moz-linear-gradient( center top, #444444 5%, #a396a3 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#444444', endColorstr='#a396a3');
+	background-color:#444444;
 	-moz-border-radius:6px;
 	-webkit-border-radius:6px;
 	border-radius:6px;
 	border:1px solid #080708;
 	display:block;
-	color:#f0e7f0;
+	color:#ffffff;
 	font-family:arial;
 	font-size:13px;
 	font-weight:bold;
@@ -313,9 +313,9 @@ p /* This is the default font type for the letters in the page */
 	text-decoration:none;
 	text-shadow:1px 1px 0px #0a010a;
 }.mainMenu:hover {
-	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #a396a3), color-stop(1, #471b47) );
-	background:-moz-linear-gradient( center top, #a396a3 5%, #471b47 100% );
-	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#a396a3', endColorstr='#471b47');
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #a396a3), color-stop(1, #444444) );
+	background:-moz-linear-gradient( center top, #a396a3 5%, #444444 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#a396a3', endColorstr='#444444');
 	background-color:#a396a3;
 }
     
@@ -327,16 +327,16 @@ p /* This is the default font type for the letters in the page */
 	-moz-box-shadow:inset 0px 1px 0px 0px #0f020f;
 	-webkit-box-shadow:inset 0px 1px 0px 0px #0f020f;
 	box-shadow:inset 0px 1px 0px 0px #0f020f;
-	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #471b47), color-stop(1, #a396a3) );
-	background:-moz-linear-gradient( center top, #471b47 5%, #a396a3 100% );
-	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#471b47', endColorstr='#a396a3');
-	background-color:#471b47;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #444444), color-stop(1, #a396a3) );
+	background:-moz-linear-gradient( center top, #444444 5%, #a396a3 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#444444', endColorstr='#a396a3');
+	background-color:grey;
 	-moz-border-radius:6px;
 	-webkit-border-radius:6px;
 	border-radius:6px;
 	border:1px solid #080708;
 	display:block;
-	color:#f0e7f0;
+	color:#ffffff;
 	font-family:arial;
 	font-size:13px;
 	font-weight:bold;
@@ -344,9 +344,9 @@ p /* This is the default font type for the letters in the page */
 	text-decoration:none;
 	text-shadow:1px 1px 0px #0a010a;
 }.buttonStyle:hover {
-	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #a396a3), color-stop(1, #471b47) );
-	background:-moz-linear-gradient( center top, #a396a3 5%, #471b47 100% );
-	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#a396a3', endColorstr='#471b47');
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #a396a3), color-stop(1, #444444) );
+	background:-moz-linear-gradient( center top, #a396a3 5%, #444444 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#a396a3', endColorstr='#444444');
 	background-color:#a396a3;
 }.buttonStyle:active {
 	position:relative;
@@ -357,26 +357,26 @@ p /* This is the default font type for the letters in the page */
 	-moz-box-shadow:inset 0px 1px 0px 0px #0f020f;
 	-webkit-box-shadow:inset 0px 1px 0px 0px #0f020f;
 	box-shadow:inset 0px 1px 0px 0px #0f020f;
-	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #471b47), color-stop(1, #a396a3) );
-	background:-moz-linear-gradient( center top, #471b47 5%, #a396a3 100% );
-	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#471b47', endColorstr='#a396a3');
-	background-color:#471b47;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #444444), color-stop(1, #a396a3) );
+	background:-moz-linear-gradient( center top, #444444 5%, #a396a3 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#444444', endColorstr='#a396a3');
+	background-color:#444444;
 	-moz-border-radius:6px;
 	-webkit-border-radius:6px;
 	border-radius:6px;
 	border:1px solid #080708;
-	display:inline-block;
-	color:#f0e7f0;
+	display:block;
+	color:#ffffff;
 	font-family:arial;
 	font-size:15px;
 	font-weight:bold;
-	padding:0px 5px;
+	padding:1px 5px;
 	text-decoration:none;
 	text-shadow:1px 1px 0px #0a010a;
 }.defaultOptions:hover {
-	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #a396a3), color-stop(1, #471b47) );
-	background:-moz-linear-gradient( center top, #a396a3 5%, #471b47 100% );
-	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#a396a3', endColorstr='#471b47');
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #a396a3), color-stop(1, #444444) );
+	background:-moz-linear-gradient( center top, #a396a3 5%, #444444 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#a396a3', endColorstr='#444444');
 	background-color:#a396a3;
 }.defaultOptions:active {
 	position:relative;
@@ -467,21 +467,22 @@ p /* This is the default font type for the letters in the page */
 	left:40%;
 
 	display:none;
-	background-image:url('../images/transBack.png');		
+	
 	border:solid black;    
 	height:300px;
-	width:150px;    
+	
 	z-index:1009;    
 	border-radius: 10px;
 	margin-top: 2em;
 	margin-bottom: 2em;
-	background-image:url('../images/transBack.png');
-	background-color: white;
+	
+	background-color:#444444 ;
 	font-size: 12px;
-	color:black;  
-	overflow:scroll;
+	color:#ffffff;  
+	overflow-x:hidden;
+        overflow-y:scroll; 
 	visibility: hidden;
-
+    padding:5px;
 }
 
 

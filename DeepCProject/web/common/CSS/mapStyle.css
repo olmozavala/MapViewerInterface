@@ -543,4 +543,11 @@ p /* This is the default font type for the letters in the page */
 
 }
 
-
+.linkElevPageDef{
+	font-size: 16px;
+	color: #F9FFCB;
+}
+.linkElevPageSelected{
+	font-size: 16px;
+	color: #BBA364;
+}

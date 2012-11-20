@@ -21,7 +21,7 @@ and the color range*/
 /* Color paletts that pops with all the optional palettes */ 
 div.palettesDiv{
 	top: 20px;
-	right: 360px;
+	left: 60%;
 	position:absolute;
 	z-index:1008;
 	color: white;    
@@ -48,6 +48,7 @@ div.palettesDiv{
 
 #palettes-div{
 	visibility: hidden;
+	cursor: move;
 }
 
 
@@ -55,8 +56,13 @@ div.palettesDiv{
 }
 
 #palettesHover{
-
 	top:35px;
 	display:none;
+}
 
+/*
+Table that contains all the optional palettes
+*/
+#palettesTable{
+    cursor: pointer;
 }

@@ -375,8 +375,6 @@ p /* This is the default font type for the letters in the page */
 		
 	background-color: white;
 	border:solid black;
-	min-height:300px;
-    min-width: 120px;
     
     border-radius: 10px;
     margin-top: 2em;
@@ -434,8 +432,6 @@ display:none;
 
 }
 
-
-
 .commonHover
 {
 	border:1px solid;
@@ -449,4 +445,17 @@ display:none;
     -webkit-border-radius: 10px;
     border-radius:10px;
         
+}
+
+/* Links for the pagination
+	of the zAxis options */
+.linkElevPageDef{
+	font-size: 16px;
+	color: #850;
+}
+/* Links for the pagination
+	of the zAxis options */
+.linkElevPageSelected{
+	font-size: 16px;
+	color: #900000;
 }

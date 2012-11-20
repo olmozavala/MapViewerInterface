@@ -24,9 +24,9 @@
 		<MenuEntry ID="mx_st" EN="Mexico States" 		ES="Estados de Mexico"/>
 		<MenuEntry ID="us_st" EN="US States" 		ES="Estados de USA"/>
 		<MenuEntry ID="deep" EN="DeepC" 		ES="DeepC"/>
-		<MenuEntry ID="test" EN="TEST" 		ES="TEST"/>
-		<MenuEntry ID="test2" EN="TEST2" 		ES="TEST"/>
-		<MenuEntry ID="test3" EN="TEST3" 		ES="TEST3"/>
+		<MenuEntry ID="test" EN="Geotiff" 		ES="TEST"/>
+		<MenuEntry ID="test2" EN="Single day ncWMS" 		ES="TEST"/>
+		<MenuEntry ID="test3" EN="S. Day S zlevel" 		ES="TEST3"/>
 		<MenuEntry ID="gebco" EN="GEBCO Bathymetry" ES="Batimetria de GEBCO"/>
 	</MenuEntries>
 </MenuConf>

@@ -492,38 +492,38 @@ p /* This is the default font type for the letters in the page */
 #mainMenuParentHover
 {
 	display:none;
-	top:40px;
+	top:45px;
 }
 
 
 #mainKmlParentHover
 {
-    top:40px;
+    top:45px;
     display:none;
 }
 
 
 #transParentHover{
-	top:40px;
+	top:45px;
 	display:none;
 }
 
 #elevationParentHover{
 
-	top:40px;
+	top:45px;
 	display:none;
 }
 
 #palettesHover{
 
-	top:40px;
+	top:45px;
 	display:none;
 
 }
 
 #transectParentHover{
 
-	top:40px;
+	top:45px;
 	display:none;
 
 }

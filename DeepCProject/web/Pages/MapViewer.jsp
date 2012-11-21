@@ -31,9 +31,7 @@
 						class="buttonStyle" style="font-size:12px;" >Stop Animation</button>
 			</div> 
 			<div id="l-animation">
-				<p class="bigFontSize"> Loading 0 % 
-					<!--<img src="${basepath}/common/images/load.gif" height="12" border="0" alt="loading" />--></A>
-				</p>
+				<p class="bigFontSize"> Loading 0 % <img src="${basepath}/common/images/load.gif" height="12" border="0" alt="loading" />	</A>	</p>
 			</div>
 
             <!--</span>-->

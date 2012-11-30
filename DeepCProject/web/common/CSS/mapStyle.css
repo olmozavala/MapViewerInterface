@@ -267,6 +267,7 @@ p /* This is the default font type for the letters in the page */
     text-align: left;
 	padding: 10px;
 	margin: 7px;
+    cursor: move;
 }
 .helpInstructions td{
 }

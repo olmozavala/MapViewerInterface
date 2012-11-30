@@ -27,30 +27,30 @@ featureInfo = name
 <!-- Digioia, Giusj  -->
 
 <MenuConf xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="schema.xsd">
-    <MainLayers BBOX="-98.0,18.09164810180664,-76.400024,31.960647583007812" 
-                        				format="image/gif"  server="http://146.201.212.175:8080/ncWMS/wms"
-                        				tiled="true" time="true">  
-          		<layer Menu="Temp,test" EN="test" ES="test" name="test3/ua"  />
-   	</MainLayers>
-    <!--<MainLayers BBOX="-125.02083333333,24.062499999999996,-66.47916666198,49.937500002069996" 
-                    format="image/jpeg" proj="EPSG:4326" server="http://viewer.coaps.fsu.edu/geoserver/wms"
-                    width="764" height="330" tiled="true" 
-                    time="false">  
-	
-        <layer Menu="Temp,test2" EN="Precipitation in 2010 for the month of January " ES="Precipitacion 2010 del mes de Enero 2010" name="se_clim:TotPrec2010Jan"/>'
-    </MainLayers>
--->
 
-    <MainLayers BBOX="-98.0,18.09164810180664,-76.400024,31.960647583007812" 
-                    format="image/gif"  server="http://viewer.coaps.fsu.edu/ncWMS/wms"
-                    tiled="true" time="true" mincolor="10" maxcolor="34" max_time_range="month">  
-        <layer Menu="Temp,2012" EN="HCOM + NCODA Gulf of Mexico 1/25&#176; Analysis &#60;br&#62; Temperature 2012"
-                       ES="HCOM + NCODA Golfo de M&#180;exico 1/25&#176;&#60;br&#62; Temperatura 2012" name="hycom2012/temperature"  />
-        <layer Menu="Temp,2011" EN="HCOM + NCODA Gulf of Mexico 1/25&#176; Analysis &#60;br&#62; Temperature 2011" 
-                       ES="HCOM + NCODA Golfo de M&#180;exico 1/25&#176;&#60;br&#62; Temperatura 2011" name="hycom2011/temperature"   />
-        <layer Menu="Temp,2010" EN="HCOM + NCODA Gulf of Mexico 1/25&#176; Analysis &#60;br&#62; Temperature 2010"
-                       ES="HCOM + NCODA Golfo de M&#180;exico 1/25&#176;&#60;br&#62; Temperatura 2010" name="hycom2010/temperature"   />
-    </MainLayers>
+	<MainLayers BBOX="-125.02083333333,24.062499999999996,-66.47916666198,49.937500002069996" 
+				format="image/jpeg" proj="EPSG:4326" server="http://viewer.coaps.fsu.edu/geoserver/wms"
+				width="764" height="330" tiled="true" 
+				time="false">  
+		<layer Menu="Temp,test" EN="Precipitation in 2010 for the month of January " 
+					ES="Precipitacion 2010 del mes de Enero 2010" name="se_clim:TotPrec2010Jan"/>'
+	</MainLayers> 
+	<MainLayers BBOX="-180.0,-87.86379883923348,180.0,87.86379883923263"
+				format="image/jpeg" proj="EPSG:4326" server="http://146.201.212.175:8080/ncWMS/wms"
+				tiled="true" time="true">  
+		<layer Menu="Temp,test2" EN="Single day ncWMS" name="test3/ua" />
+		<layer Menu="Temp,test3" EN="Single day single z ncWMS" name="test1/PS" />
+	</MainLayers> 
+
+	<MainLayers BBOX="-98.0,18.09164810180664,-76.400024,31.960647583007812" 
+				format="image/gif"  server="http://viewer.coaps.fsu.edu/ncWMS/wms"
+				tiled="true" time="true" mincolor="10" maxcolor="34" max_time_range="month">  
+		<layer Menu="Temp,2012" EN="HCOM + NCODA Gulf of Mexico 1/25&#176; Analysis &#60;br&#62; Temperature 2012"
+								ES="HCOM + NCODA Golfo de M&#180;exico 1/25&#176;&#60;br&#62; Temperatura 2012" name="hycom2012/temperature"  />
+		<layer Menu="Temp,2011" EN="HCOM + NCODA Gulf of Mexico 1/25&#176; Analysis &#60;br&#62; Temperature 2011" 
+								ES="HCOM + NCODA Golfo de M&#180;exico 1/25&#176;&#60;br&#62; Temperatura 2011" name="hycom2011/temperature"   />
+		<layer Menu="Temp,2010" EN="HCOM + NCODA Gulf of Mexico 1/25&#176; Analysis &#60;br&#62; Temperature 2010"
+								ES="HCOM + NCODA Golfo de M&#180;exico 1/25&#176;&#60;br&#62; Temperatura 2010" name="hycom2010/temperature"   />
+	</MainLayers>
 
 </MenuConf>
-

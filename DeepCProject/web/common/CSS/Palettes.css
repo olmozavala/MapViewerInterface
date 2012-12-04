@@ -43,7 +43,7 @@ div.palettesDiv{
 	right: 150px;
 	width:200px;
 	z-index:1008;
-	/*    visibility:hidden;*/
+	visibility: hidden;
 }
 
 #palettes-div{

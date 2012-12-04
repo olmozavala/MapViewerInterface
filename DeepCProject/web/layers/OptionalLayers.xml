@@ -15,7 +15,10 @@
 				tiled="true" >
 		<layer Menu="Jan"  name="u"/>
 	</VectorLayers> -->
-
-
+	<VectorLayers BBOX="-88.38717,0,0,30.175405"
+				format="image/jpeg"  server="http://146.201.212.175:8080/geoserver/wms"
+				tiled="true" trans_effect="none" >
+		<layer Menu="allsites"  name="postgis:sites_events"/>
+	</VectorLayers> 
 
 </MenuConf>

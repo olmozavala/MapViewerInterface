@@ -10,11 +10,11 @@
 				format="image/gif"  server="http://viewer.coaps.fsu.edu/ncWMS/wms"
 				tiled="false" time="true" mincolor="-0.113" maxcolor="2.4" style="vector" trans_effect="none"
 				width="512" height="512" max_time_range="month">  
-		<layer Menu="SeaVel,2012" EN="HCOM + NCODA Gulf of Mexico 1/25&#176; Analysis &#60;br&#62; Sea water velocity 2012"
+		<layer Menu="omodel,hycom,2012,SeaVel" EN="HCOM + NCODA Gulf of Mexico 1/25&#176; Analysis &#60;br&#62; Sea water velocity 2012"
 								ES="HCOM + NCODA Golfo de M&#180;exico 1/25&#176;&#60;br&#62;  Velocidad 2012" name="hycom2012/sea_water_velocity"  />
-		<layer Menu="SeaVel,2011" EN="HCOM + NCODA Gulf of Mexico 1/25&#176; Analysis &#60;br&#62; Sea water velocity 2011" 
+		<layer Menu="omodel,hycom,2012,SeaVel" EN="HCOM + NCODA Gulf of Mexico 1/25&#176; Analysis &#60;br&#62; Sea water velocity 2011" 
 								ES="HCOM + NCODA Golfo de M&#180;exico 1/25&#176;&#60;br&#62;  Velocidad 2011" name="hycom2011/sea_water_velocity"   />
-		<layer Menu="SeaVel,2010" EN="HCOM + NCODA Gulf of Mexico 1/25&#176; Analysis &#60;br&#62; Sea water velocity 2010"
+		<layer Menu="omodel,hycom,2012,SeaVel" EN="HCOM + NCODA Gulf of Mexico 1/25&#176; Analysis &#60;br&#62; Sea water velocity 2010"
 								ES="HCOM + NCODA Golfo de M&#180;exico 1/25&#176;&#60;br&#62;  Velocidad 2010" name="hycom2010/sea_water_velocity"   />
 	</MainLayers>
 </MenuConf>

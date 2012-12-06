@@ -16,6 +16,7 @@ and the color range*/
 	visibility: hidden;
 	/*This is the hight of the palette image*/
 	min-height: 120px;
+    cursor:move;
 }
 
 /* Color paletts that pops with all the optional palettes */ 

@@ -63,11 +63,11 @@
                         <button type="button" class="buttonStyle" onclick="showPalettes()" id="dynamicFont_color"  >
                             Color Palette
                         </button>
-
+                        
                         <span id="palettesHover" class="commonHover">Change the color ranges displayed and choose the color pattern of your choice</span>
                     </td>
 
-
+                    
                     <td valign="middle" onmouseover="hoverInstructions('transectParentHover', '1')" onmouseout="hoverInstructions('transectParentHover', '2')">
                         <span id="transectParent">
                             <button type="button" name="type" value="line" id="lineToggle" class="buttonStyle" onclick="toggleControl(this);" >Transect Tool</button>

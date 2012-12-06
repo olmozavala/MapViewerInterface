@@ -93,6 +93,7 @@ div.layersLongLat{
     border-style: solid;
     border-width: thin;
     border-color: black;
+    pointer-events:none;
 }
 /* Div where the specific data of the layers are displayed */
 div.layersData{
@@ -267,6 +268,7 @@ p /* This is the default font type for the letters in the page */
     text-align: left;
 	padding: 10px;
 	margin: 7px;
+    cursor: move;
 }
 .helpInstructions td{
 }

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<MenuConf xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="schema.xsd">
+	<VectorLayers BBOX="-120,-59.983333333333,-10,50.0166666666666" 
+				format="image/jpeg"  server="http://viewer.coaps.fsu.edu/geoserver/wms"
+				tiled="true" trans_effect="none" > 
+        <!-- The Language atributes (EN,ES) has to be of size 2. and none other should have this size -->
+		<layer Menu="us_st" name="comm:states" />
+		<layer Menu="deep"  name="comm:test" />
+		<!--<layer Menu="gebco"  name="comm:gebco" featureInfo="none" />-->
+	</VectorLayers>
+
+	<VectorLayers BBOX="-98.0,18.09164810180664,-76.400024,31.960647583007812" 
+				format="image/jpeg"  server="http://146.201.212.175:8080/geoserver/wms"
+				tiled="true" trans_effect="none">  
+		<layer Menu="test3" name="postgis:sites"  />
+	</VectorLayers>
+<!--
+	<VectorLayers BBOX="-180,85,-85,180"
+				format="image/jpeg"  server="http://tds.hycom.org/thredds/wms/qscat06"
+				tiled="true" >
+		<layer Menu="Jan"  name="u"/>
+	</VectorLayers> -->
+
+
+
+</MenuConf>

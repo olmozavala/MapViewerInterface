@@ -93,6 +93,7 @@ div.layersLongLat{
     border-style: solid;
     border-width: thin;
     border-color: black;
+    pointer-events:none;
 }
 /* Div where the specific data of the layers are displayed */
 div.layersData{

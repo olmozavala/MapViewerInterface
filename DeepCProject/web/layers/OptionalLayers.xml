@@ -5,8 +5,10 @@
 				tiled="true" trans_effect="none" > 
         <!-- The Language atributes (EN,ES) has to be of size 2. and none other should have this size -->
 		<layer Menu="us_st" name="comm:states" />
-		<layer Menu="deep"  name="comm:test" />
+		<!--<layer Menu="deep"  name="comm:test" />-->
 		<layer Menu="gebco"  name="comm:gebco" featureInfo="none" />
+		<layer Menu="allcruises"  name="postgis:all_cruises"/>
+		<layer Menu="allsites"  name="postgis:sites_events"/>
 	</VectorLayers>
 
 <!--
@@ -15,7 +17,10 @@
 				tiled="true" >
 		<layer Menu="Jan"  name="u"/>
 	</VectorLayers> -->
-
-
+	<VectorLayers BBOX="-88.38717,0,0,30.175405"
+				format="image/jpeg"  server="http://146.201.212.175:8080/geoserver/wms"
+				tiled="true" trans_effect="none" >
+		<layer Menu="test"  name="comm:test_oz"/>
+	</VectorLayers> 
 
 </MenuConf>

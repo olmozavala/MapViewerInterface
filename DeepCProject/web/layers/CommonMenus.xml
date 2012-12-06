@@ -15,18 +15,30 @@
 		<MenuEntry ID="Oct" EN="October" ES="Octubre"/>
 		<MenuEntry ID="Nov" EN="November" ES="Noviembre"/>
 		<MenuEntry ID="Dec" EN="December" ES="Diciembre"/>
+
+		<!--Cruises related-->
+		<MenuEntry ID="cruises" EN="Cruises" ES="Cruceros"/>
+		<MenuEntry ID="etype" EN="Event type" ES="Tipo de evento"/>
+		<MenuEntry ID="allsites" EN="All sites" ES="Todos los sitios"/>
+		<MenuEntry ID="allcruises" EN="All cruises" ES="Todos los cruceros"/>
+
+		<!--Ocean models related-->
+		<MenuEntry ID="omodel" EN="Ocean models" ES="Modelos oceano"/>
+		<MenuEntry ID="hycom" EN="HYCOM" ES="HYCOM"/>
 		<MenuEntry ID="Temp" EN="Temperature" ES="Temperatura"/>
 		<MenuEntry ID="SurfTemp" EN="Temperature Trend" ES="Tendencia de Temp.`"/>
 		<MenuEntry ID="Salinity" EN="Salinity" ES="Salinidad"/>
 		<MenuEntry ID="SeaElev" EN="Elevation" ES="Elevacion"/>
 		<MenuEntry ID="SeaVel" EN="Velocity" ES="Velocidad"/>
 
+		<!--Extra titles -->
 		<MenuEntry ID="mx_st" EN="Mexico States" 		ES="Estados de Mexico"/>
 		<MenuEntry ID="us_st" EN="US States" 		ES="Estados de USA"/>
 		<MenuEntry ID="deep" EN="DeepC" 		ES="DeepC"/>
+		<MenuEntry ID="gebco" EN="GEBCO Bathymetry" ES="Batimetria de GEBCO"/>
+
 		<MenuEntry ID="test" EN="TEST" 		ES="TEST"/>
 		<MenuEntry ID="test2" EN="TEST2" 		ES="TEST"/>
 		<MenuEntry ID="test3" EN="USGS Test" 		ES="TEST"/>
-		<MenuEntry ID="gebco" EN="GEBCO Bathymetry" ES="Batimetria de GEBCO"/>
 	</MenuEntries>
 </MenuConf>

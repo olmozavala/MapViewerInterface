@@ -12,7 +12,7 @@
 			<td rowspan="3"> 
 				<img id="imgPalette" src="${paletteUrl}" onclick="displayPalettes();" 
 				     onmouseover="this.style.cursor ='pointer';"
-				     onmouseout="this.style.cursor ='crosshair';"/>
+				     onmouseout="this.style.cursor ='crosshair';" onload="getDefault()"/>
 			</td>
 			<td class="waitBack">
 				<p class="palMinMax">
@@ -45,7 +45,12 @@
 				<button type="button" class="buttonStyle" style="font-size:11px;" onclick="setColorRangeFromMinMax();" >
 					Auto 
 				</button>
-			</td>
+			               
+                <button type="button" class="buttonStyle" style="font-size:11px;" onclick="DefaultPalette();" >
+					Default
+				</button>
+                
+            </td>
 		</tr>
 		<tr>
 			<td class="waitBack">

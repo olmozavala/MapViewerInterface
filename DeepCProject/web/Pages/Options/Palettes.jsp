@@ -37,7 +37,7 @@
 		<td height="40px">
 			<p class="buttonStyle" id="updateColorRangeButton" onclick="UpdatePalette(mappalette);" > Update </p>
 			<p class="buttonStyle" id="autoColorRangeButton"  onclick="setColorRangeFromMinMax();" > Auto</p>	
-            <p class="buttonStyle" onclick="DefaultPalette();"> Default</p>	
+            <p class="buttonStyle" id="defaultColorRangeButton" onclick="DefaultPalette();"> Default</p>	
 		</td>
 	</tr>
 	<tr>

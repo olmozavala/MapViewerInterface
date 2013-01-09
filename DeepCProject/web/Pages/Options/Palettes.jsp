@@ -15,7 +15,7 @@
 			<p class="palMinMax">
 				Max:<input onblur="UpdatePalette(mappalette);" onfocus="keyboardnav.deactivate();" 
 						   onkeydown="if(event.keyCode == 13) UpdatePalette(mappalette);"
-						   id="maxPal" name="maxPal" type="text" size="2" />
+						   id="maxPal" name="maxPal" type="text" size="4" />
 				<img class="plusButton" id="plusButtonElevation" onclick="increaseMaxColorRange(1);" 
 					 onmouseover="rollImage(this,'${basepath}/common/images/Menu/PlusInv.png' )"
 					 onmouseout="rollImage(this,'${basepath}/common/images/Menu/Plus.png' )"
@@ -45,7 +45,7 @@
 			<p class="palMinMax">
 				Min: <input onblur="UpdatePalette(mappalette);" onfocus="keyboardnav.deactivate();" 
 							onkeydown="if(event.keyCode == 13) UpdatePalette(mappalette);"
-							id="minPal" name="minPal" type="text" size="2" />
+							id="minPal" name="minPal" type="text" size="4" />
 
 				<img class="plusButton" id="plusButtonElevation" onclick="decreaseMinColorRange(-1);" 
 					 onmouseover="rollImage(this,'${basepath}/common/images/Menu/PlusInv.png' )"

@@ -44,9 +44,6 @@
                     <tr>
                         <td id="mainMenuParent" onmouseover="hoverInstructions('mainMenuParentHover', '1')" onmouseout="hoverInstructions('mainMenuParentHover', '2')" >
                             ${menuHelper:createMainMenu(MenuDelUsuario,language)} 
-
-                            <span id="mainMenuParentHover" class="commonHover"  >&nbsp;Layer Variable and Year&nbsp;</span>
-
                         </td>
                     </tr>
 
@@ -55,13 +52,6 @@
                     <tr id="transParag"  onmouseover="hoverInstructions('transParentHover', '1')" onmouseout="hoverInstructions('transParentHover', '2')" >
                         <!-- Container should have id='transParent-->
                         <td><%@include file="Options/Transparency.jsp" %>
-
-                            <span id="transParentHover" class="commonHover">
-
-
-                                &nbsp;Change the color transparency of current layer to view the underneath topology &nbsp;
-
-                            </span>
                         </td>
                     </tr>
 
@@ -69,20 +59,18 @@
                         <c:when test='${netcdf}'>
                             <!-- Elevation -->
                             <tr ><td id="elevationParent"><%@include file="Options/Elevation.jsp" %>
-                                    <span id="elevationParentHover" class="commonHover">
-                                        Change the elevation/pressure level of the layer. Click the - sign to decrease and the + to increase. Press the middle button to select a level                          
-
-                                    </span></td></tr>
+							</td></tr>
 
                             <!-- Button to select transect regions -->
-                            <tr > <td id="transectParent" onmouseover="hoverInstructions('transectParentHover', '1')" onmouseout="hoverInstructions('transectParentHover', '2')"><%@include file="Options/TransectTool.jsp" %>
-                                    <span id="transectParentHover" class="commonHover">Draw a line(s) by clicking on the map on different points and then double click to display graph of chosen points</span>
-
+                            <tr > <td id="transectParent" onmouseover="hoverInstructions('transectParentHover', '1')" 
+									  onmouseout="hoverInstructions('transectParentHover', '2')"><%@include file="Options/TransectTool.jsp" %>
                                 </td> </tr>
 
                             <!-- Current palette and color range -->
-                            <tr > <td id="palettesParent"  onmouseover="hoverInstructions('palettesHover', '1')" onmouseout="hoverInstructions('palettesHover', '2')"><%@include file="Options/Palettes.jsp" %>
-                                    <span id="palettesHover" class="commonHover">Change the color ranges displayed and choose the color pattern of your choice</span></td> </tr>
+                            <tr> <td id="palettesParent"  onmouseover="hoverInstructions('palettesHover', '1')" 
+									  onmouseout="hoverInstructions('palettesHover', '2')"><%@include file="Options/Palettes.jsp" %>
+								  </td> 
+							</tr>
 
                         </c:when>
                         <c:when test='${!netcdf}'>
@@ -95,8 +83,6 @@
                     <tr> 
                         <td id="mainKmlParent" onmouseover="hoverInstructions('mainKmlParentHover', '1')" onmouseout="hoverInstructions('mainKmlParentHover', '2')"> 
                             <%@include file="Options/KmlLink.jsp" %>
-                            <span id="mainKmlParentHover" class="commonHover" >&nbsp;Open current animation/display of map in Google Earth&nbsp;</span>
-
                         </td>
                     </tr>
                     <!--This part shows the animation options-->

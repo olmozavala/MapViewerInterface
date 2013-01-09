@@ -150,11 +150,6 @@ a
     text-decoration: none;
 }
 
-/* Drop down for selection of main layer */
-select.menu{
-    width:100%;
-    font-size: 13px;
-}
 
 /* Table that contains all the menus */
 #t_allMenu{
@@ -165,6 +160,18 @@ select.menu{
 #t_mainMenu{
     width: 100%;
     text-align:center;
+}
+
+/* Style of the 'MainMenu' dropdowns */
+.mainMenu{
+	color: white;
+	width: 150px;
+	font-size: 13px;
+	padding: 2px;
+	border-radius: 8px;
+	border: 0px;
+	height: 30px;
+	background-color: #444444;
 }
 
 /* Subtable that contains the optional layers */
@@ -342,7 +349,7 @@ p /* This is the default font type for the letters in the page */
 
 /* Defines the style of all the buttons on the menu */
 .buttonStyle, .buttonStyle:visited {
-	 background: #444444 url('../images/overlayy.png') repeat-x;
+	background: #444444 url('../images/overlayy.png') repeat-x;
     display: inline-block;
     padding: 5px 10px 6px;
     color: #fff;
@@ -365,7 +372,7 @@ p /* This is the default font type for the letters in the page */
 
 
 /*This is when the user click on elevation button and the new window appears */
- #elevationSelector
+#elevationSelector
 {
 
 	position: absolute;
@@ -374,66 +381,21 @@ p /* This is the default font type for the letters in the page */
 	left:60%;
 
 	visibility: hidden;
-		
+
 	background-color: white;
 	border:solid black;
-    
+
     border-radius: 10px;
     margin-top: 2em;
     margin-bottom: 2em;
     color:black;
 	font-size: 12px;
-  
+
     /*overflow-y:scroll;*/
 	cursor: move;
 }
 
 /* This are all the hover instructions of the menu options*/
-#mainMenuParentHover
-{
-	display:none;
-	top:8px;
-        right:270px;
-        width:100%;
-}
-
-
-#mainKmlParentHover
-{
-    
-    top:285px;
-        right:270px;
-        width:100%;
-    display:none;
-}
-
-
-#transParentHover{
-
-top:30px;        right:270px;        width:100%;
-display:none;
-}
-
-#elevationParentHover{
-
-top:65px;        right:270px;        width:100%;
-display:none;
-}
-
-#palettesHover{
-
-top:190px;        right:270px;        width:100%;
-display:none;
-
-}
-
-#transectParentHover{
-
-top:100px;        right:270px;        width:100%;
-display:none;
-
-}
-
 .commonHover
 {
 	border:1px solid;
@@ -442,12 +404,21 @@ display:none;
 	background-image:url('../images/transBack.png');
 	background-color: darkkhaki;
 	position:absolute;
-        z-index:1002;
-        -moz-border-radius: 10px;
+	z-index:1002;
+	-moz-border-radius: 10px;
     -webkit-border-radius: 10px;
     border-radius:10px;
-        
+	right:220px;
+	width:200px;
+	display:none;
 }
+
+#mainMenuParentHover { top:80px; }
+#transParentHover{ top:200px; } 
+#elevationParentHover{ top:230px; } 
+#transectParentHover{ top:270px;} 
+#palettesHover{ top:350px;} 
+#mainKmlParentHover { top:480px; } 
 
 /* Links for the pagination
 	of the zAxis options */

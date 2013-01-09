@@ -393,7 +393,7 @@ p /* This is the default font type for the letters in the page */
 {
 	display:none;
 	top:8px;
-        right:185px;
+        right:270px;
         width:100%;
 }
 
@@ -402,7 +402,7 @@ p /* This is the default font type for the letters in the page */
 {
     
     top:285px;
-        right:185px;
+        right:270px;
         width:100%;
     display:none;
 }
@@ -410,26 +410,26 @@ p /* This is the default font type for the letters in the page */
 
 #transParentHover{
 
-top:30px;        right:185px;        width:100%;
+top:30px;        right:270px;        width:100%;
 display:none;
 }
 
 #elevationParentHover{
 
-top:65px;        right:185px;        width:100%;
+top:65px;        right:270px;        width:100%;
 display:none;
 }
 
 #palettesHover{
 
-top:190px;        right:185px;        width:100%;
+top:190px;        right:270px;        width:100%;
 display:none;
 
 }
 
 #transectParentHover{
 
-top:100px;        right:185px;        width:100%;
+top:100px;        right:270px;        width:100%;
 display:none;
 
 }

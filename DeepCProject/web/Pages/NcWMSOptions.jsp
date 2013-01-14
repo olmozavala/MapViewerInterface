@@ -15,22 +15,34 @@
 
     <!-- Divs that hold the start and end calendar plus the related texts -->
 
-	<div id="CalendarParent">
-		<div class="startDateCal" id="cal-start"><p class="calTitle" id="hideOneDay">Start date (Current)</p></div>
-		<div class="endDateCal" id="cal-end"><p class="calTitle"  id="hideOneDayEnd">End date</p></div>
-
-		<div class="dispAnimation" id="p-animation">
-			<table >
-				<tr><td style="width:140px">
-						<button type="button" class="buttonStyle" onclick="dispAnimation();" style="font-size:12px;" > Display animation </button> </td>
-					<td style="width:190px; text-align: center" >
+	<div id="CalendarsAndStopContainer">
+		<table id="CalendarParent">
+			<!--<tr><th colspan="2"><p class="defShadow">Dates range for Base layer</p></th></tr>-->
+			<tr>
+				<td><p id="hideOneDay" class="calTitle"> Start date (Current)</p></td>
+				<td><p id="hideOneDayEnd" class="calTitle"> End date </p></td>
+			</tr>
+			<tr>
+				<td> <div class="startDateCal" id="cal-start"> </div> </td>
+				<td> <div class="endDateCal" id="cal-end"> </div> </td>
+			</tr>
+			<tr>
+				<td colspan="2" style="text-align: center">
+					<div class="dispAnimation" id="p-animation">
+						<button type="button" style="display:inline" 
+								class="buttonStyle" onclick="dispAnimation();" > 
+							Display animation </button> 
+						&nbsp; &nbsp;
 						<select id="timeSelect" name="timeSelect">
 						</select>
-					</td>
-				</tr>
-			</table>
-		</div>
-    </div>
-
-
+					</div>
+				</td>
+			</tr>
+		</table>
+		<div id="s-animation" > 
+			<button type="button" 
+					onclick="stopAnimation();" 
+					class="buttonStyle" >Stop Animation</button>
+		</div> 
+	</div>
 </c:if>

@@ -5,28 +5,17 @@ body {
 	padding: 0;
 	text-align: center;
 	background-color: #296E8D;
+	overflow:hidden;
 }
 
-/* animation button that pops up when calendar dates have been selected */
-div.dispAnimation{
-	top: 220px;
-	left: 50px;
-	position:absolute;
-	z-index:1000;
-	display:inline;
-	visibility: hidden;
-}
-
-/* optional layers suck as us state, DeepC, etc*/
+/* optional layers such as us state, DeepC, etc*/
 #optionalMenuParent
 {
-
 	position:absolute;
-	top:275px;
+	top:430px;
 	left:48px;
 	text-align:left;
-        z-index:1009;
-
+	z-index:1009;
 }
 
 /* This is the small Scale line in the bottom of the map */
@@ -37,7 +26,7 @@ div.olControlScaleLine {
 
 	color:black;
 	left:48%;
-	bottom:80px;
+	bottom:40px;
 
 	font-weight: bold;
 	text-align:left;
@@ -60,6 +49,7 @@ div.layersLongLat{
 	border-style: solid;
 	border-width: thin;
 	border-color: black;
+	border-radius: 5px;
 
 	pointer-events: none;
 }
@@ -77,9 +67,7 @@ div.layersData{
 }
 /* Main div for user menu options. Where the dropdown, vector layers etc are now topmenu */
 div.layersMenu{
-
-    
-background-image:url('../images/transBack.png');
+	background-image:url('../images/transBack.png');
     top:0px;
     left:0px;
     z-index:1002;
@@ -121,12 +109,29 @@ elevation options.*/
 	font-weight: bold;
 	vertical-align: top;
 }
+/* This are also plus and minus buttons, but are
+smaller and doesn't have background. Currently are used
+for transparency in the optional layers. */
+.minusButtonSmall, .plusButtonSmall
+{
+	font-size: 13px; 
+	font-weight: bolder;
+	vertical-align: top;
+	margin: 0;
+	padding: 0;
+	color: white;
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
+}
+.minusButtonSmall
+{
+	color: gray;
+}
 
 .middleText
 {
-    
     font-size:12px;
-    
 }
 
 a
@@ -134,26 +139,38 @@ a
 	text-decoration: none;
 }
 
-/* Drop down for selection of main layer */
-select.menu{
-
-	font-size: 12px;
-	top:0px;
+/* The 'MainMenu'(base layers dropdowns) container */
+#mainMenuParent{
+	top: 50px;
+	left: 50px;
+	position:absolute;
+	z-index:1000;
+	display:inline;
+	border-color: white;
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 10px;
+	opacity:0.80;
 }
 
+
+
+/* Table that contains the menu for the base layers*/
+t_mainMenu{
+	margin:.5em 0 .5em 0;
+}
 
 /* Subtable that contains the optional layers */
 table.vectorLayer{
 	border-radius: 10px;
 	/*  background-image:url('../images/transBack.png');*/
 	background-color:black;
-	opacity:0.85;
+	opacity:0.65;
 	font-size: 10px;
 	color:white;
 	font-weight: bold;
 	border: solid 1px white;
 }/* Subtable that contains the optional layers */
-
 
 
 /*part of the color pallete */
@@ -247,7 +264,7 @@ p /* This is the default font type for the letters in the page */
     cursor:move;
 
 	overflow-x:hidden;
-        overflow-y:auto;    
+	overflow-y:auto;    
 
 }
 
@@ -279,57 +296,23 @@ p /* This is the default font type for the letters in the page */
 
 }
 
-
 .mainMenuOption{
-    
     color:#ffffff;
     background-color: #444444;
-    
-    
-    
-    
 }
 
-
-
-.mainMenu{
+/* Buttons style, default style for buttons (used in transparency and xasis),
+and also the mainMenu dropdown options*/
+.buttonStyle, .mainMenu, .defaultOptions, select {
 	-moz-box-shadow:inset 0px 1px 0px 0px #0f020f;
 	-webkit-box-shadow:inset 0px 1px 0px 0px #0f020f;
 	box-shadow:inset 0px 1px 0px 0px #0f020f;
-	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #444444), color-stop(1, #a396a3) );
-	background:-moz-linear-gradient( center top, #444444 5%, #a396a3 100% );
-	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#444444', endColorstr='#a396a3');
-	background-color:#444444;
-	-moz-border-radius:6px;
-	-webkit-border-radius:6px;
-	border-radius:6px;
-	border:1px solid #080708;
-	display:block;
-	color:#ffffff;
-	font-family:Calibri, Arial, sans-serif;
-	font-size:13px;
-	
-	padding:5px 5px;
-	text-decoration:none;
-	text-shadow:1px 1px 0px #0a010a;
-}.mainMenu:hover {
-	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #a396a3), color-stop(1, #444444) );
-	background:-moz-linear-gradient( center top, #a396a3 5%, #444444 100% );
-	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#a396a3', endColorstr='#444444');
-	background-color:#a396a3;
-}
-    
-  
-
-
-
-.buttonStyle {
-	-moz-box-shadow:inset 0px 1px 0px 0px #0f020f;
-	-webkit-box-shadow:inset 0px 1px 0px 0px #0f020f;
-	box-shadow:inset 0px 1px 0px 0px #0f020f;
-	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #444444), color-stop(1, #a396a3) );
-	background:-moz-linear-gradient( center top, #444444 5%, #a396a3 100% );
-	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#444444', endColorstr='#a396a3');
+	/*background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #444444), color-stop(1, #a396a3) );*/
+	/*background:-moz-linear-gradient( center top, #444444 5%, #a396a3 100% );*/
+	/*filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#444444', endColorstr='#a396a3');*/
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #555555), color-stop(1, #555555 ) );
+	background:-moz-linear-gradient( center top, #555555 5%, #555555 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#555555', endColorstr='#555555');
 	background-color:grey;
 	-moz-border-radius:6px;
 	-webkit-border-radius:6px;
@@ -339,115 +322,60 @@ p /* This is the default font type for the letters in the page */
 	color:#ffffff;
 	font-family:Calibri, Arial, sans-serif;
 	font-size:13px;
-	
+
 	padding:6px 10px;
 	text-decoration:none;
 	text-shadow:1px 1px 0px #0a010a;
-}.buttonStyle:hover {
-	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #a396a3), color-stop(1, #444444) );
-	background:-moz-linear-gradient( center top, #a396a3 5%, #444444 100% );
-	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#a396a3', endColorstr='#444444');
+}.buttonStyle:hover, .mainMenu:hover, .defaultOptions:hover, select:hover {
+	/*background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #a396a3), color-stop(1, #444444) );*/
+	/*background:-moz-linear-gradient( center top, #a396a3 5%, #444444 100% );*/
+	/*filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#444444', endColorstr='#a396a3');*/
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #333333), color-stop(1, #333333) );
+	background:-moz-linear-gradient( center top, #333333 5%, #333333 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#333333', endColorstr='#333333');
 	background-color:#a396a3;
-}.buttonStyle:active {
+}.buttonStyle:active, .mainMenu:active, .defaultOptions:active, select:active {
 	position:relative;
 	top:1px;
 }
-
+/*Extra styling for the 'transparency' and 'depth buttons'*/
 .defaultOptions{
-	-moz-box-shadow:inset 0px 1px 0px 0px #0f020f;
-	-webkit-box-shadow:inset 0px 1px 0px 0px #0f020f;
-	box-shadow:inset 0px 1px 0px 0px #0f020f;
-	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #444444), color-stop(1, #a396a3) );
-	background:-moz-linear-gradient( center top, #444444 5%, #a396a3 100% );
-	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#444444', endColorstr='#a396a3');
-	background-color:#444444;
+	font-size:15px;
+	padding:1px 5px;
+}
+
+/* Extra styling for the mainlayer dropdowns */
+.mainMenu, select {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #AAAAAA), color-stop(1, #AAAAAA ) );
+	background:-moz-linear-gradient( center top, #AAAAAA 5%, #AAAAAA 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#AAAAAA', endColorstr='#AAAAAA');
 	-moz-border-radius:6px;
 	-webkit-border-radius:6px;
-	border-radius:6px;
+	border-radius:4px;
 	border:1px solid #080708;
 	display:block;
-	color:#ffffff;
 	font-family:Calibri, Arial, sans-serif;
-	font-size:15px;
-	
-	padding:1px 5px;
-	text-decoration:none;
-	text-shadow:1px 1px 0px #0a010a;
-}.defaultOptions:hover {
-	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #a396a3), color-stop(1, #444444) );
-	background:-moz-linear-gradient( center top, #a396a3 5%, #444444 100% );
-	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#a396a3', endColorstr='#444444');
-	background-color:#a396a3;
-}.defaultOptions:active {
-	position:relative;
-	top:1px;
+	font-size:13px;
+	width: 110px;
+	color:black;
+
+	padding:3px 5px;
+	text-shadow:0px 0px 0px #FFFFFF;
+}.mainMenu:hover, select:hover{
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #DDDDDD), color-stop(1, #DDDDDD) );
+	background:-moz-linear-gradient( center top, #DDDDDD 5%, #DDDDDD 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#DDDDDD', endColorstr='#DDDDDD');
 }
 
-
-/* This imageless css button was generated by CSSButtonGenerator.com */
-/*
-
-.buttonStyle, .buttonStyle:visited {
-
-    background: #444444 url('../images/overlayy.png') repeat-x;
-    display: inline-block;
-    padding: 5px 10px 6px;
-    color: #ffffff;
-    text-decoration: none;
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
-    border-radius:5px;
-    -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
-    -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
-    text-shadow: 0 -1px 1px rgba(0,0,0,0.25);
-    border-bottom: 1px solid rgba(0,0,0,0.25);
-    position: relative;
-    cursor: pointer;
-    font-family:Calibri, Arial, sans-serif;
-    border:solid 1px #000000 ;
-    font-size: 12px;
-
-
-
-}
-
-.buttonStyle:hover, .buttonStyle:hover                            
-{ background-color: #111; }
-
-
-
-.defaultOptions, .defaultOptions:visited{
-	background: #444444 url('../images/overlayy.png') repeat-x;
-	display: inline-block;
-	font-size: 10px;
-	color: #ffffff;
-	text-decoration: none;
-	-moz-border-radius: 5px;
-	-webkit-border-radius: 5px;
-	border-radius:5px;
-	-moz-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
-	-webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
-	text-shadow: 0 -1px 1px rgba(0,0,0,0.25);
-	border-bottom: 1px solid rgba(0,0,0,0.25);
-	position: relative;
-	cursor: pointer;
-	font-family:Calibri, Arial, sans-serif;
-	border:solid 1px #000000 ;
-	padding: 0px;
-
-}
-.defaultOptions:hover, .defaultOptions:hover                            { background-color: #111; }
-*/
-
+/*It is used for normal text or paragraph (with shadows)
+but the size of the font is larger */
 .bigFontSize{
 	font-size: 30px;
 }
 
 .terco
 {
-    
     display:inline;
-    
 }
 
 /* area that holds loading button*/
@@ -467,15 +395,15 @@ p /* This is the default font type for the letters in the page */
 	left:40%;
 
 	display:none;
-	
+
 	border:solid black;    
 	/*height:300px;*/
-	
+
 	z-index:1009;    
 	border-radius: 10px;
 	margin-top: 2em;
 	margin-bottom: 2em;
-	
+
 	background-color:#444444 ;
 	font-size: 12px;
 	color:#ffffff;  
@@ -489,45 +417,6 @@ p /* This is the default font type for the letters in the page */
 
 
 /* This are all the hover instructions of the menu options*/
-#mainMenuParentHover
-{
-	display:none;
-	top:45px;
-}
-
-
-#mainKmlParentHover
-{
-    top:45px;
-    display:none;
-}
-
-
-#transParentHover{
-	top:45px;
-	display:none;
-}
-
-#elevationParentHover{
-
-	top:45px;
-	display:none;
-}
-
-#palettesHover{
-
-	top:45px;
-	display:none;
-
-}
-
-#transectParentHover{
-
-	top:45px;
-	display:none;
-
-}
-
 .commonHover
 {
 	border:1px solid;
@@ -540,8 +429,16 @@ p /* This is the default font type for the letters in the page */
 	-moz-border-radius: 10px;
     -webkit-border-radius: 10px;
     border-radius:10px;
-
+	top: 45px;
+	display: none;
+	width: 250px;
 }
+#mainMenuParentHover{ top: 50px; left: 150px;}
+#transParentHover{ }
+#elevationParentHover{ }
+#transectParentHover{}
+#palettesHover{ }
+#mainKmlParentHover { }
 
 .linkElevPageDef{
 	font-size: 16px;
@@ -550,4 +447,20 @@ p /* This is the default font type for the letters in the page */
 .linkElevPageSelected{
 	font-size: 16px;
 	color: #BBA364;
+}
+
+ /*Style for the 'contact' text. At the bottom of the page*/
+#emailText{
+	font-size: 10px;
+	color:blue;
+	text-shadow: 0px -1px 5px #DCDCDC,     /* north      */
+		0px  1px 5px #DCDCDC,     /* south      */
+		-1px  0px 5px #DCDCDC,     /* west       */
+		1px  0px 5px #DCDCDC,     /* east       */
+		-1px -1px 5px #DCDCDC,     /* north-west */
+		-1px  1px 5px #DCDCDC,     /* north-east */
+		1px -1px 5px #DCDCDC,     /* south-west */
+		1px  1px 5px #DCDCDC;     /* south-east */
+
+	margin:.5em 0 .5em 0;
 }

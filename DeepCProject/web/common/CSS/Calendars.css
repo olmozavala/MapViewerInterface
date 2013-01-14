@@ -1,13 +1,24 @@
-/* These are all for the animation of the map */
-#p-animation{ visibility: hidden; }
+/* Display animation button */
+#p-animation{ 
+	text-align: center;
+	font-size: 12px;
+	visibility: visible;
+}
+
+/* Stop animation button */
 #s-animation{ 
-	visibility: hidden; 
-	position:absolute;
-	top:220px;
+	display:none;
 	cursor: pointer;
-	left:60px;
-	font-size:16px;
+	font-size:12px;
     z-index:1009;
+	white-space: nowrap;
+	text-align: center;
+}
+
+/* animation button that pops up when calendar dates have been selected */
+div.dispAnimation{
+	z-index:1000;
+	visibility: hidden;
 }
 
 /* This is the Loading text */
@@ -21,22 +32,39 @@
 	pointer-events: none;
 }
 
+#timeSelect{
+	display: inline-block;
+	width: 140px;
+}
 
-/*holds the start calendar  */
-div.startDateCal{
-    top: 50px;
+/* Calendars container */
+#CalendarsAndStopContainer{
+    top: 230px;
     left: 50px;
     position:absolute;
     z-index:1000;
-    visibility: hidden;
+	/*border-style: solid;*/
+	white-space: nowrap;
+	border-color: white;
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 10px;
+	opacity:0.85;
 }
 
+#hideOneDay, #hideOneDayEnd{
+	padding: 0px;
+	margin: 0px;
+	display: inline;
+}
+
+/*holds the start calendar  */
+div.startDateCal{
+	float:left;
+	display: inline-block;
+}
 /*holds the end calendar  */
 div.endDateCal{
-    top: 50px;
-    left: 220px;
-    position:absolute;
-    z-index:1000;
-    display:inline;
-    visibility: hidden;
+	float:right;
+	display: inline-block;
 }

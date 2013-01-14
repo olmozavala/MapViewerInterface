@@ -3,6 +3,27 @@
     Created on : Aug 3, 2012, 6:45:15 PM
     Author     : olmozavala
 --%>
+<!-- This are the Hover map instructions -->
+
+<span id="transParentHover" class="commonHover">
+	Change transparency of current base layer. 
+</span>
+<span style="text-align: left" id="transectParentHover" class="commonHover">
+	Displays vertical transects of current base layer. <br><br>
+	1) Select tool.<br>
+	2) Draw a line(s) by clicking on the map on different points and then double click to 
+	display the corresponding vertical transect.
+</span>
+<span id="palettesHover" class="commonHover">
+	Change the color ranges used by the current base layer
+	and choose the palette color of your choice.
+</span>
+<span id="elevationParentHover" class="commonHover">
+	Change the elevation/pressure level of the layer. Press on the text to select a specific level
+	or the '-' and '+' signs for adjacent levels.
+</span>
+<span id="mainKmlParentHover" class="commonHover" >Open current animation or base layer in Google Earth</span>
+
 <table align="center" >
     <tr>
         <td id="helpInstructions" >

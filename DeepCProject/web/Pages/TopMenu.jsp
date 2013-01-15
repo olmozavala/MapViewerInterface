@@ -14,9 +14,9 @@
 		<!--
 		<td valign="center">
 			<span id="mainMenuParent" onmouseover="hoverInstructions('mainMenuParentHover', '1')" onmouseout="hoverInstructions('mainMenuParentHover', '2')" >
-		${menuHelper:createMainMenu(MenuDelUsuario,language)}
-	</span>
-</td>-->
+				${menuHelper:createMainMenu(MenuDelUsuario,language)}
+			</span>
+		</td>-->
 
 		<td valign="middle">
 			<!-- Link to download kml files-->
@@ -56,7 +56,7 @@
 				<td id="downloadDataParent" valign="middle"><%@include file="Options/DownloadData.jsp" %></td>
 			</c:when>
 		</c:choose>
-		 <!-- Email -->
+		<!-- Email -->
 		<!--
 		<td id="emailParent" valign="middle">
 			<a href="mailto:osz09@fsu.edu">

@@ -22,7 +22,7 @@
 div.olPopupContent{
     background-image:url('../images/transBack2.png');
     border-radius: 10px;
-    overflow: hidden;
+    /*overflow: hidden;*/
     width: 190px;
 }
 

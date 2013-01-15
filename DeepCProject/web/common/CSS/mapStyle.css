@@ -75,8 +75,6 @@ div.layersMenu{
     border-bottom:white 1px solid;
     height:50px;
     width:100%;
-
-
 }
 /* Left fotter */
 div.leftFoot{
@@ -296,14 +294,14 @@ p /* This is the default font type for the letters in the page */
 
 }
 
+/* Estra style for the 
 .mainMenuOption{
-    color:#ffffff;
-    background-color: #444444;
+    color: black;
 }
 
 /* Buttons style, default style for buttons (used in transparency and xasis),
 and also the mainMenu dropdown options*/
-.buttonStyle, .mainMenu, .defaultOptions, select {
+.buttonStyle, .mainMenu, .defaultOptions, select, .mainMenuOption {
 	-moz-box-shadow:inset 0px 1px 0px 0px #0f020f;
 	-webkit-box-shadow:inset 0px 1px 0px 0px #0f020f;
 	box-shadow:inset 0px 1px 0px 0px #0f020f;

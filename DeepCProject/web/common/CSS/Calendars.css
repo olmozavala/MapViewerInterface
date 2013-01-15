@@ -30,6 +30,7 @@ div.dispAnimation{
     left:40%;
     z-index:1009;
 	pointer-events: none;
+	font-size: 18px;
 }
 
 #timeSelect{

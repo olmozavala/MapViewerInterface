@@ -39,7 +39,7 @@
 				<!--<span id="loadingAnimContainer" class="loadingAnimContainer" style="display:block;visibility:visible">-->
 
 				<div id="l-animation">
-					<p class="bigFontSize"> Loading 0 % <img src="${basepath}/common/images/load.gif" height="12" border="0" alt="loading" />	</A>	</p>
+					<p > Loading 0 % <img src="${basepath}/common/images/load.gif" height="12" border="0" alt="loading" />	</A>	</p>
 				</div>
 			</c:if>
 

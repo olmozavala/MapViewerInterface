@@ -7,7 +7,7 @@
 	
     <table cellpadding="0" border="0">
         <tr>
-            <td><button id="minusButtonTrans" class="minusButton" type="button" disabled="disabled" onclick="changeTranspManager(.15, 'topMenu');">
+            <td><button id="minusButtonTrans" class="minusButton"  type="button" disabled="disabled" onclick="changeTranspManager(.15, 'topMenu');">
                     -
 
                 </button></td>

@@ -18,7 +18,10 @@
 
 
 /* This is the style of the OpenLayers pop up (Layer details)
-        The font size has to be defined on JavaScript (I doesn't work here)*/
+   The font size has to be defined on JavaScript (I doesn't work here)
+	This style only works when using default PopUp types (not clouds)
+*/
+
 div.olPopupContent{
     background-image:url('../images/transBack2.png');
     border-radius: 10px;

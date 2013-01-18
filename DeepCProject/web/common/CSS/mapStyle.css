@@ -106,6 +106,10 @@ elevation options.*/
 	font-size: 12px; 
 	font-weight: bold;
 	vertical-align: top;
+        padding-left:2px;
+        padding-right:2px;
+        padding-top:0px;
+        padding-bottom: 0px;
 }
 /* This are also plus and minus buttons, but are
 smaller and doesn't have background. Currently are used

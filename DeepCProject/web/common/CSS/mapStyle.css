@@ -305,7 +305,7 @@ p /* This is the default font type for the letters in the page */
 
 /* Buttons style, default style for buttons (used in transparency and xasis),
 and also the mainMenu dropdown options*/
-.buttonStyle, .mainMenu, .defaultOptions, select, .mainMenuOption {
+.buttonStyle, .mainMenu, .defaultOptions, .mainMenuOption {
 	-moz-box-shadow:inset 0px 1px 0px 0px #0f020f;
 	-webkit-box-shadow:inset 0px 1px 0px 0px #0f020f;
 	box-shadow:inset 0px 1px 0px 0px #0f020f;
@@ -328,7 +328,7 @@ and also the mainMenu dropdown options*/
 	padding:6px 10px;
 	text-decoration:none;
 	text-shadow:1px 1px 0px #0a010a;
-}.buttonStyle:hover, .mainMenu:hover, .defaultOptions:hover, select:hover {
+}.buttonStyle:hover, .mainMenu:hover, .defaultOptions:hover, .mainMenuOption:hover{
 	/*background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #a396a3), color-stop(1, #444444) );*/
 	/*background:-moz-linear-gradient( center top, #a396a3 5%, #444444 100% );*/
 	/*filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#444444', endColorstr='#a396a3');*/
@@ -336,7 +336,7 @@ and also the mainMenu dropdown options*/
 	background:-moz-linear-gradient( center top, #333333 5%, #333333 100% );
 	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#333333', endColorstr='#333333');
 	background-color:#a396a3;
-}.buttonStyle:active, .mainMenu:active, .defaultOptions:active, select:active {
+}.buttonStyle:active, .defaultOptions:active{
 	position:relative;
 	top:1px;
 }
@@ -347,7 +347,7 @@ and also the mainMenu dropdown options*/
 }
 
 /* Extra styling for the mainlayer dropdowns */
-.mainMenu, select {
+.mainMenu {
 	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #AAAAAA), color-stop(1, #AAAAAA ) );
 	background:-moz-linear-gradient( center top, #AAAAAA 5%, #AAAAAA 100% );
 	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#AAAAAA', endColorstr='#AAAAAA');
@@ -358,12 +358,13 @@ and also the mainMenu dropdown options*/
 	display:block;
 	font-family:Calibri, Arial, sans-serif;
 	font-size:13px;
-	width: 110px;
+	width: 120px;
+	height: 2em;
 	color:black;
 
 	padding:3px 5px;
 	text-shadow:0px 0px 0px #FFFFFF;
-}.mainMenu:hover, select:hover{
+}.mainMenu:hover {
 	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #DDDDDD), color-stop(1, #DDDDDD) );
 	background:-moz-linear-gradient( center top, #DDDDDD 5%, #DDDDDD 100% );
 	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#DDDDDD', endColorstr='#DDDDDD');

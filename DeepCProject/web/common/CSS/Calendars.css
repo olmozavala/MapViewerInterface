@@ -40,7 +40,7 @@ div.dispAnimation{
 
 /* Calendars container */
 #CalendarsAndStopContainer{
-    top: 230px;
+    top: 260px;
     left: 50px;
     position:absolute;
     z-index:1000;
@@ -51,6 +51,8 @@ div.dispAnimation{
 	border-width: 1px;
 	border-radius: 10px;
 	opacity:0.85;
+        
+       
 }
 
 #hideOneDay, #hideOneDayEnd{
@@ -63,6 +65,7 @@ div.dispAnimation{
 div.startDateCal{
 	float:left;
 	display: inline-block;
+       
 }
 /*holds the end calendar  */
 div.endDateCal{

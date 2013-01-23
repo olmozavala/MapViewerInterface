@@ -16,23 +16,23 @@
     <!-- Divs that hold the start and end calendar plus the related texts -->
 
 	<div id="CalendarsAndStopContainer">
-		<table id="CalendarParent">
+		<table id="CalendarParent" >
 			<!--<tr><th colspan="2"><p class="defShadow">Dates range for Base layer</p></th></tr>-->
 			<tr>
-				<td><p id="hideOneDay" class="calTitle"> Start date (Current)</p></td>
-				<td><p id="hideOneDayEnd" class="calTitle"> End date </p></td>
+				<td><p id="hideOneDay" class="calTitle ie_shadow"> Start date (Current)</p></td>
+				<td><p id="hideOneDayEnd" class="calTitle ie_shadow"> End date </p></td>
 			</tr>
 			<tr>
 				<td> <div class="startDateCal" id="cal-start"> </div> </td>
 				<td> <div class="endDateCal" id="cal-end"> </div> </td>
 			</tr>
 			<tr>
-				<td colspan="2" style="text-align: center">
+				<td  style="text-align: center">
 					<div class="dispAnimation" id="p-animation">
 						<button type="button" style="display:inline" 
 								class="buttonStyle" onclick="dispAnimation();" > 
 							Display animation </button> 
-						&nbsp; &nbsp;
+                                        </td><td>
 						<select id="timeSelect" name="timeSelect">
 						</select>
 					</div>

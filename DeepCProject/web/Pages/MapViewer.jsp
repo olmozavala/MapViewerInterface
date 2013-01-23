@@ -14,13 +14,13 @@
         <%@include file="OpenLayersConfig.jsp" %>
     </head>
 
-    <body onload="setHoverPositions()" onresize="refreshWindow();">
+    <body onload="setHoverPositions()" onresize="refreshWindow();" >
 
 		<form id="baseForm" name="baseForm" action="${basepath}${names.acdmServlet}" method="post">
 			<!-- These are the dropdowns for the base layer-->
 			<span id="mainMenuParent" onmouseover="hoverInstructions('mainMenuParentHover', '1')" 
 				  onmouseout="hoverInstructions('mainMenuParentHover', '2')" >
-				<p class="defShadow" style="cursor:move"> Base Layers </p>
+				<p class="defShadow" style="cursor:move"> <span class="ie_shadow">Base Layers</span> </p>
 				${menuHelper:createMainMenu(MenuDelUsuario,language)}
 				<br>
 					<span id="mainMenuParentHover" class="commonHover"  >

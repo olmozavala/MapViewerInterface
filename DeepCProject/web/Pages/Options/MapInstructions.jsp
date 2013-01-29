@@ -33,10 +33,10 @@
                 <tr><td style="text-align:center;">
                         <table align="center" >
                             <tr><td style="border:none;">
-                                    <img src="${basepath}/common/JS/openlayers/img/zoom-plus-mini.png" >
+                                    <img src="${basepath}/common/images/OpenLayers/zoom-plus-mini.png" >
                                     <br><br>
 
-                                    <img src="${basepath}/common/JS/openlayers/img/zoom-minus-mini.png">
+                                    <img src="${basepath}/common/images/OpenLayers/zoom-minus-mini.png">
                                 </td>
                                 <td style="border:none;">
                                     <img src="${basepath}/common/images/icon/mouse_wheel.jpg" style="padding-left:30px;">
@@ -46,8 +46,9 @@
                     </td>
                     <td>
                         <b>Zoom map:</b>
-                        <BR/>- Use <img src="${basepath}/common/JS/openlayers/img/zoom-plus-mini.png" > 
-                        and <img src="${basepath}/common/JS/openlayers/img/zoom-minus-mini.png" > buttons located at the top left to zoom.
+                                  
+                        <BR/>- Use  <img src="${basepath}/common/images/OpenLayers/zoom-plus-mini.png" > 
+                        and <img src="${basepath}/common/images/OpenLayers/zoom-minus-mini.png" > buttons located at the top left to zoom.
                         <BR/>- Use mouse wheel to zoom in and out.
                     </td>
                 </tr>

@@ -8,4 +8,5 @@ FROM sites as s
 JOIN events as e on e.site_id = s.site_id
 JOIN eventtype as et on e.event_type_id = et.event_type_id
 JOIN activities as a on a.activity_id = e.activity_id
+WHERE s.geom <> ''
 ORDER BY e.event_date DESC

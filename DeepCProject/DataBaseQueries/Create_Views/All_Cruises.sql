@@ -6,4 +6,5 @@ SELECT (ROW_NUMBER() OVER (ORDER BY c.cruise_id ASC)) % 10 as color,
     p.first_name || ' ' || p.last_name as name
 FROM cruises as c
 JOIN people as p on c.chief_scientist = p.people_id
+WHERE c.geom <> ''
 

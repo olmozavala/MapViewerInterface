@@ -14,7 +14,7 @@ CREATE OR REPLACE FUNCTION createCruisePath(text) RETURNS void AS $$
 		events as e JOIN activities as a ON e.activity_id = a.activity_id
 		JOIN cruises as c ON c.activity_id = a.activity_id
 		JOIN sites as s ON s.site_id = e.site_id
-		WHERE c.cruise_id = $1
+		WHERE c.cruise_id = $1 and s.geom <> ''
 		ORDER BY e.event_date
 	) AS sites)
 	WHERE cruise_id = $1

@@ -30,23 +30,23 @@ $$ LANGUAGE SQL;
 
 
 ------------------------ VIEWS ------------------
---- This view has all the cruises
+-- This view has all the cruises
 CREATE OR REPLACE VIEW all_cruises AS 
 SELECT (ROW_NUMBER() OVER (ORDER BY c.cruise_id ASC)) % 10 as color,
     c.cruise_id as id, c.depart_date as dep, 
     c.return_date as ret, c.geom,
-    p.first_name || ' ' || p.last_name as name
+    p.first_name || ' ' || p.last_name as name,
+    EXTRACT(YEAR from c.depart_date) as year
 FROM cruises as c
 JOIN people as p on c.chief_scientist = p.people_id
 WHERE c.geom <> ''
-
 
 -- This view has all the sites and all the events
 -- realized on each site. The results are order by date
 CREATE OR REPLACE VIEW sites_events AS 
 SELECT a.activity_id,       e.event_type_id,        s.name as site, 
        e.event_id as event, e.event_date as date,   et.name as event_type, 
-       s.geom
+       s.geom, EXTRACT(YEAR from e.event_date) as year
 FROM sites as s 
 JOIN events as e on e.site_id = s.site_id
 JOIN eventtype as et on e.event_type_id = et.event_type_id

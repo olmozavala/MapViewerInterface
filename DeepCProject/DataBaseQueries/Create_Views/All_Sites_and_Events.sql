@@ -3,7 +3,7 @@
 CREATE OR REPLACE VIEW sites_events AS 
 SELECT a.activity_id,       e.event_type_id,        s.name as site, 
        e.event_id as event, e.event_date as date,   et.name as event_type, 
-       s.geom
+       s.geom, EXTRACT(YEAR from e.event_date) as year
 FROM sites as s 
 JOIN events as e on e.site_id = s.site_id
 JOIN eventtype as et on e.event_type_id = et.event_type_id

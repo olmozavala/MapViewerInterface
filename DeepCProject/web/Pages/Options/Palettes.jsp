@@ -35,7 +35,7 @@
 
 				</p>
 			</td>
-			<td valign="top"><button type="button" onclick="hidePalettes()">x</button></td>
+			<td valign="top"><button type="button" class="closeButton" onclick="hidePalettes()">x</button></td>
 		</tr>
 		<tr >
 			<td height="40px">

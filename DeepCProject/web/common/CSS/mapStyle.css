@@ -1,73 +1,73 @@
 /* Default style for the page */
 body {
-	font-family:Tahoma, Verdana, Arial, sans-serif;
-	margin: 0;
-	padding: 0;
-	text-align: center;
-	background-color: #296E8D;
-	overflow:hidden;
+    font-family:Tahoma, Verdana, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #296E8D;
+    overflow:hidden;
 }
 
 /* optional layers such as us state, DeepC, etc*/
 #optionalMenuParent
 {
-	position:absolute;
-	top:470px;
-	left:48px;
-	text-align:left;
-	z-index:1009;
+    position:absolute;
+    top:470px;
+    left:48px;
+    text-align:left;
+    z-index:1009;
 }
 
 /* This is the small Scale line in the bottom of the map */
 div.olControlScaleLine {
-	display:table;
-	table-layout:fixed;
-	font-size: 0.5em;
+    display:table;
+    table-layout:fixed;
+    font-size: 0.5em;
 
-	color:black;
-	left:48%;
-	bottom:40px;
+    color:black;
+    left:48%;
+    bottom:40px;
 
-	font-weight: bold;
-	text-align:left;
+    font-weight: bold;
+    text-align:left;
 }
 
 /* Div to display latitude and longitude*/
 div.layersLongLat{
-	position:absolute;
-	bottom:40px;
-	right:200px;
-	z-index:1000;
-	display:inline;
-	width: 145px;
-	height:25px;
-	padding-bottom:7px;
-	padding-left:6px;
-	text-align:left;
-	background-image:url('../images/transBack.png');
-	font-size: 13px;
-	border-style: solid;
-	border-width: thin;
-	border-color: black;
-	border-radius: 5px;
+    position:absolute;
+    bottom:40px;
+    right:200px;
+    z-index:1000;
+    display:inline;
+    width: 145px;
+    height:25px;
+    padding-bottom:7px;
+    padding-left:6px;
+    text-align:left;
+    background-image:url('../images/transBack.png');
+    font-size: 13px;
+    border-style: solid;
+    border-width: thin;
+    border-color: black;
+    border-radius: 5px;
 
-	pointer-events: none;
+    pointer-events: none;
 }
 /* Div where the specific data of the layers are displayed */
 div.layersData{
-	position:absolute;
-	z-index:1003;
-	display:inline;
-	width: 220px;
-	min-height:0px;
-	padding-bottom:2px;
-	padding-left:2px;
-	text-align:left;
-	background-image:url('../images/transBack.png');
+    position:absolute;
+    z-index:1003;
+    display:inline;
+    width: 220px;
+    min-height:0px;
+    padding-bottom:2px;
+    padding-left:2px;
+    text-align:left;
+    background-image:url('../images/transBack.png');
 }
 /* Main div for user menu options. Where the dropdown, vector layers etc are now topmenu */
 div.layersMenu{
-	background-image:url('../images/transBack.png');
+    background-image:url('../images/transBack.png');
     top:0px;
     left:0px;
     z-index:1002;
@@ -78,24 +78,24 @@ div.layersMenu{
 }
 /* Left fotter */
 div.leftFoot{
-	position:absolute;
-	bottom:1%;
-	left:2%;
-	z-index:1000;
-	display:inline;
-	color:black;
-	opacity:0.7;
+    position:absolute;
+    bottom:1%;
+    left:2%;
+    z-index:1000;
+    display:inline;
+    color:black;
+    opacity:0.7;
 }
 /* Main title */
 div.mapTitle{
-	position:absolute;
-	width: 100%;
-	top:55px;
-	left:0%;
-	z-index:1000;
-	display:inline;
-	text-align:center;
-	pointer-events: none;
+    position:absolute;
+    width: 100%;
+    top:55px;
+    left:0%;
+    z-index:1000;
+    display:inline;
+    text-align:center;
+    pointer-events: none;
 }
 
 /*These are the plus and minus images of the color ranges, 
@@ -103,32 +103,32 @@ and also the plus and minus buttons of the transparency and
 elevation options.*/
 .minusButton, .plusButton
 {
-	font-size: 12px; 
-	font-weight: bold;
-	vertical-align: top;
-        padding-left:2px;
-        padding-right:2px;
-        padding-top:0px;
-        padding-bottom: 0px;
+    font-size: 12px; 
+    font-weight: bold;
+    vertical-align: top;
+    padding-left:2px;
+    padding-right:2px;
+    padding-top:0px;
+    padding-bottom: 0px;
 }
 /* This are also plus and minus buttons, but are
 smaller and doesn't have background. Currently are used
 for transparency in the optional layers. */
 .minusButtonSmall, .plusButtonSmall
 {
-	font-size: 13px; 
-	font-weight: bolder;
-	vertical-align: top;
-	margin: 0;
-	padding: 0;
-	color: white;
-	background-color: transparent;
-	border: none;
-	cursor: pointer;
+    font-size: 13px; 
+    font-weight: bolder;
+    vertical-align: top;
+    margin: 0;
+    padding: 0;
+    color: white;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
 }
 .minusButtonSmall
 {
-	color: gray;
+    color: gray;
 }
 
 .middleText
@@ -138,163 +138,156 @@ for transparency in the optional layers. */
 
 a
 {
-	text-decoration: none;
+    text-decoration: none;
 }
 
 /* The 'MainMenu'(base layers dropdowns) container */
 #mainMenuParent{
-	top: 50px;
-	left: 50px;
-	position:absolute;
-	z-index:1000;
-	display:inline;
-	border-color: white;
-	border-style: solid;
-	border-width: 1px;
-	border-radius: 10px;
-	opacity:0.80;
+    top: 50px;
+    left: 50px;
+    position:absolute;
+    z-index:1000;
+    display:inline;
+    border-color: white;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 10px;
+    opacity:0.80;
 }
 
 
 
 /* Table that contains the menu for the base layers*/
 t_mainMenu{
-	margin:.5em 0 .5em 0;
+    margin:.5em 0 .5em 0;
 }
 
 /* Subtable that contains the optional layers */
 table.vectorLayer{
-	border-radius: 10px;
-	/*  background-image:url('../images/transBack.png');*/
-	background-color:black;
-	opacity:0.65;
-	font-size: 10px;
-	color:white;
-	font-weight: bold;
-	border: solid 1px white;
+    border-radius: 10px;
+    /*  background-image:url('../images/transBack.png');*/
+    background-color:black;
+    opacity:0.65;
+    font-size: 10px;
+    color:white;
+    font-weight: bold;
+    border: solid 1px white;
 }/* Subtable that contains the optional layers */
 
 
 /*part of the color pallete */
 td.waitBack{
-	/*	border-radius: 10px;*/
-	/*	background-image:url('../images/transBack.png'); */
-	valign: up;
+    /*	border-radius: 10px;*/
+    /*	background-image:url('../images/transBack.png'); */
+    valign: up;
 }
 
 .palMinMax{
-	font-size:13px;
+    font-size:13px;
 }
 
 
 input[type=text]{
-	font-size: 11px;
+    font-size: 11px;
 }
 
 p /* This is the default font type for the letters in the page */
 {
-	color:black;
-	font-size:18px;
-	text-shadow: 0px -1px 5px #DCDCDC,     /* north      */
-		0px  1px 5px #DCDCDC,     /* south      */
-		-1px  0px 5px #DCDCDC,     /* west       */
-		1px  0px 5px #DCDCDC,     /* east       */
-		-1px -1px 5px #DCDCDC,     /* north-west */
-		-1px  1px 5px #DCDCDC,     /* north-east */
-		1px -1px 5px #DCDCDC,     /* south-west */
-		1px  1px 5px #DCDCDC;     /* south-east */
+    color:black;
+    font-size:18px;
+    text-shadow: 0px -1px 5px #DCDCDC,     /* north      */
+        0px  1px 5px #DCDCDC,     /* south      */
+        -1px  0px 5px #DCDCDC,     /* west       */
+        1px  0px 5px #DCDCDC,     /* east       */
+        -1px -1px 5px #DCDCDC,     /* north-west */
+        -1px  1px 5px #DCDCDC,     /* north-east */
+        1px -1px 5px #DCDCDC,     /* south-west */
+        1px  1px 5px #DCDCDC;     /* south-east */
 
-	margin:.5em 0 .5em 0;
+    margin:.5em 0 .5em 0;
 }
 
 /*title on top of calendar */
 .calTitle{
-	font-size:13px;
+    font-size:13px;
 }
 
 .defShadow{ /* This font type inverts the color of the font and the shadow */
-	font-size:13px;
-	margin:.5em 0 .5em 0;
+    font-size:13px;
+    margin:.5em 0 .5em 0;
 }
 
 .invShadow{ /* This font type inverts the color of the font and the shadow */
-	font-size:13px;
-	color:#DCDCDC;
-	font-weight: bold;
-	text-shadow: 0px -1px 5px #000000,     /* north      */
-		0px  1px 5px #000000,     /* south      */
-		-1px  0px 5px #000000,     /* west       */
-		1px  0px 5px #000000,     /* east       */
-		-1px -1px 5px #000000,     /* north-west */
-		-1px  1px 5px #000000,     /* north-east */
-		1px -1px 5px #000000,     /* south-west */
-		1px  1px 5px #000000;     /* south-east */
+    font-size:13px;
+    color:#DCDCDC;
+    font-weight: bold;
+    text-shadow: 0px -1px 5px #000000,     /* north      */
+        0px  1px 5px #000000,     /* south      */
+        -1px  0px 5px #000000,     /* west       */
+        1px  0px 5px #000000,     /* east       */
+        -1px -1px 5px #000000,     /* north-west */
+        -1px  1px 5px #000000,     /* north-east */
+        1px -1px 5px #000000,     /* south-west */
+        1px  1px 5px #000000;     /* south-east */
 
-	margin:.5em 0 .5em 0;
+    margin:.5em 0 .5em 0;
 
-	/* The next lines are for IE */
-	/*	zoom: 1;*/
-	/*	filter:progid:DXImageTransform.Microsoft.Chroma(Color=#000000)*/
-	/*		progid:DXImageTransform.Microsoft.Glow(Strength=5, Color=#000000);*/
+    /* The next lines are for IE */
+    /*	zoom: 1;*/
+    /*	filter:progid:DXImageTransform.Microsoft.Chroma(Color=#000000)*/
+    /*		progid:DXImageTransform.Microsoft.Glow(Strength=5, Color=#000000);*/
 }
 .footNote{
-	font-size:12px;
-	display:inline;
-	padding-bottom: 5px;
+    font-size:12px;
+    display:inline;
+    padding-bottom: 5px;
 }
 
 
 /* Help display container */
 #helpInstructions
 {
-	border:solid black;
-	position:absolute;
-	left:50px;
-	visibility:hidden;
-	z-index:1009;
-	height:700px;
-	right:200px;
-	top:100px;
-	border-radius: 10px;
-	margin-top: 2em;
-	margin-bottom: 2em;
-	border:solid white 2px;
-	background-color: black;
-	font-size: 13px;
-	color:white;
-	width:70%;
+    border:solid black;
+    position:absolute;
+    left:50px;
+    visibility:hidden;
+    z-index:1009;
+    height:700px;
+    right:200px;
+    top:100px;
+    border-radius: 10px;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    border:solid white 2px;
+    background-color: black;
+    font-size: 13px;
+    color:white;
+    width:70%;
     cursor:move;
 
-	overflow-x:hidden;
-	overflow-y:auto;    
+    overflow-x:hidden;
+    overflow-y:auto;    
 
 }
 
 /*part of help instructions */
 #align_left td{
-	text-align: left;
-	border-bottom: dashed grey 1px;
+    text-align: left;
+    border-bottom: dashed grey 1px;
 }
 
-.helpTitle{
 
-	text-align:center;
-	font-size:16px;
-	font-weight: bold;
-	padding:7px;
-	margin:7px;
-	color:black;
-}
 
-/* cancel botton of help intructions*/
-.cancelButton{
-	font-size: 11px;
-	float:right;
+.helpClose{
+
+    float:right;
+
+
 }
 
 /* part of help instructions*/
 .no_hover{
-	background-color: #111;
+    background-color: #111;
 
 }
 
@@ -306,74 +299,74 @@ p /* This is the default font type for the letters in the page */
 /* Buttons style, default style for buttons (used in transparency and xasis),
 and also the mainMenu dropdown options*/
 .buttonStyle, .mainMenu, .defaultOptions, .mainMenuOption {
-	-moz-box-shadow:inset 0px 1px 0px 0px #0f020f;
-	-webkit-box-shadow:inset 0px 1px 0px 0px #0f020f;
-	box-shadow:inset 0px 1px 0px 0px #0f020f;
-	/*background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #444444), color-stop(1, #a396a3) );*/
-	/*background:-moz-linear-gradient( center top, #444444 5%, #a396a3 100% );*/
-	/*filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#444444', endColorstr='#a396a3');*/
-	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #555555), color-stop(1, #555555 ) );
-	background:-moz-linear-gradient( center top, #555555 5%, #555555 100% );
-	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#555555', endColorstr='#555555');
-	background-color:grey;
-	-moz-border-radius:6px;
-	-webkit-border-radius:6px;
-	border-radius:6px;
-	border:1px solid #080708;
-	display:block;
-	color:#ffffff;
-	font-family:Calibri, Arial, sans-serif;
-	font-size:13px;
+    -moz-box-shadow:inset 0px 1px 0px 0px #0f020f;
+    -webkit-box-shadow:inset 0px 1px 0px 0px #0f020f;
+    box-shadow:inset 0px 1px 0px 0px #0f020f;
+    /*background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #444444), color-stop(1, #a396a3) );*/
+    /*background:-moz-linear-gradient( center top, #444444 5%, #a396a3 100% );*/
+    /*filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#444444', endColorstr='#a396a3');*/
+    background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #555555), color-stop(1, #555555 ) );
+    background:-moz-linear-gradient( center top, #555555 5%, #555555 100% );
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#555555', endColorstr='#555555');
+    background-color:grey;
+    -moz-border-radius:6px;
+    -webkit-border-radius:6px;
+    border-radius:6px;
+    border:1px solid #080708;
+    display:block;
+    color:#ffffff;
+    font-family:Calibri, Arial, sans-serif;
+    font-size:13px;
 
-	padding:6px 10px;
-	text-decoration:none;
-	text-shadow:1px 1px 0px #0a010a;
+    padding:6px 10px;
+    text-decoration:none;
+    text-shadow:1px 1px 0px #0a010a;
 }.buttonStyle:hover, .mainMenu:hover, .defaultOptions:hover, .mainMenuOption:hover{
-	/*background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #a396a3), color-stop(1, #444444) );*/
-	/*background:-moz-linear-gradient( center top, #a396a3 5%, #444444 100% );*/
-	/*filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#444444', endColorstr='#a396a3');*/
-	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #333333), color-stop(1, #333333) );
-	background:-moz-linear-gradient( center top, #333333 5%, #333333 100% );
-	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#333333', endColorstr='#333333');
-	background-color:#a396a3;
+    /*background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #a396a3), color-stop(1, #444444) );*/
+    /*background:-moz-linear-gradient( center top, #a396a3 5%, #444444 100% );*/
+    /*filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#444444', endColorstr='#a396a3');*/
+    background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #333333), color-stop(1, #333333) );
+    background:-moz-linear-gradient( center top, #333333 5%, #333333 100% );
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#333333', endColorstr='#333333');
+    background-color:#a396a3;
 }.buttonStyle:active, .defaultOptions:active{
-	position:relative;
-	top:1px;
+    position:relative;
+    top:1px;
 }
 /*Extra styling for the 'transparency' and 'depth buttons'*/
 .defaultOptions{
-	font-size:15px;
-	padding:1px 5px;
+    font-size:15px;
+    padding:1px 5px;
 }
 
 /* Extra styling for the mainlayer dropdowns */
 .mainMenu {
-	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #AAAAAA), color-stop(1, #AAAAAA ) );
-	background:-moz-linear-gradient( center top, #AAAAAA 5%, #AAAAAA 100% );
-	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#AAAAAA', endColorstr='#AAAAAA');
-	-moz-border-radius:6px;
-	-webkit-border-radius:6px;
-	border-radius:4px;
-	border:1px solid #080708;
-	display:block;
-	font-family:Calibri, Arial, sans-serif;
-	font-size:13px;
-	width: 120px;
-	height: 2em;
-	color:black;
+    background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #AAAAAA), color-stop(1, #AAAAAA ) );
+    background:-moz-linear-gradient( center top, #AAAAAA 5%, #AAAAAA 100% );
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#AAAAAA', endColorstr='#AAAAAA');
+    -moz-border-radius:6px;
+    -webkit-border-radius:6px;
+    border-radius:4px;
+    border:1px solid #080708;
+    display:block;
+    font-family:Calibri, Arial, sans-serif;
+    font-size:13px;
+    width: 120px;
+    height: 2em;
+    color:black;
 
-	padding:3px 5px;
-	text-shadow:0px 0px 0px #FFFFFF;
+    padding:3px 5px;
+    text-shadow:0px 0px 0px #FFFFFF;
 }.mainMenu:hover {
-	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #DDDDDD), color-stop(1, #DDDDDD) );
-	background:-moz-linear-gradient( center top, #DDDDDD 5%, #DDDDDD 100% );
-	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#DDDDDD', endColorstr='#DDDDDD');
+    background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #DDDDDD), color-stop(1, #DDDDDD) );
+    background:-moz-linear-gradient( center top, #DDDDDD 5%, #DDDDDD 100% );
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#DDDDDD', endColorstr='#DDDDDD');
 }
 
 /*It is used for normal text or paragraph (with shadows)
 but the size of the font is larger */
 .bigFontSize{
-	font-size: 30px;
+    font-size: 30px;
 }
 
 .terco
@@ -384,57 +377,57 @@ but the size of the font is larger */
 /* area that holds loading button*/
 .loading_area
 {
-	border:solid red;
-	z-index:1008;
-	position:absolute;
-	top:300px;
-	left:300px;
+    border:solid red;
+    z-index:1008;
+    position:absolute;
+    top:300px;
+    left:300px;
 }
 
 #elevationSelector
 {
-	position: absolute;
-	top:45px;
-	left:40%;
+    position: absolute;
+    top:45px;
+    left:40%;
 
-	display:none;
+    display:none;
 
-	border:solid black;    
-	/*height:300px;*/
+    border:solid black;    
+    /*height:300px;*/
 
-	z-index:1009;    
-	border-radius: 10px;
-	margin-top: 2em;
-	margin-bottom: 2em;
+    z-index:1009;    
+    border-radius: 10px;
+    margin-top: 2em;
+    margin-bottom: 2em;
 
-	background-color:#444444 ;
-	font-size: 12px;
-	color:#ffffff;  
-	/*overflow-x:hidden;*/
-	/*overflow-y:scroll;*/ 
-	visibility: hidden;
+    background-color:#444444 ;
+    font-size: 12px;
+    color:#ffffff;  
+    /*overflow-x:hidden;*/
+    /*overflow-y:scroll;*/ 
+    visibility: hidden;
     padding:5px;
 
-	cursor: move;
+    cursor: move;
 }
 
 
 /* This are all the hover instructions of the menu options*/
 .commonHover
 {
-	border:1px solid;
-	padding:5px;
-	font-size: 11px;
-	background-image:url('../images/transBack.png');
-	background-color: darkkhaki;
-	position:absolute;
-	z-index:1002;
-	-moz-border-radius: 10px;
+    border:1px solid;
+    padding:5px;
+    font-size: 11px;
+    background-image:url('../images/transBack.png');
+    background-color: darkkhaki;
+    position:absolute;
+    z-index:1002;
+    -moz-border-radius: 10px;
     -webkit-border-radius: 10px;
     border-radius:10px;
-	top: 45px;
-	display: none;
-	width: 250px;
+    top: 45px;
+    display: none;
+    width: 250px;
 }
 #mainMenuParentHover{ top: 50px; left: 150px;}
 #transParentHover{ }
@@ -444,26 +437,57 @@ but the size of the font is larger */
 #mainKmlParentHover { }
 
 .linkElevPageDef{
-	font-size: 16px;
-	color: #F9FFCB;
+    font-size: 16px;
+    color: #F9FFCB;
 }
 .linkElevPageSelected{
-	font-size: 16px;
-	color: #BBA364;
+    font-size: 16px;
+    color: #BBA364;
 }
 
- /*Style for the 'contact' text. At the bottom of the page*/
+/*Style for the 'contact' text. At the bottom of the page*/
 #emailText{
-	font-size: 10px;
-	color:blue;
-	text-shadow: 0px -1px 5px #DCDCDC,     /* north      */
-		0px  1px 5px #DCDCDC,     /* south      */
-		-1px  0px 5px #DCDCDC,     /* west       */
-		1px  0px 5px #DCDCDC,     /* east       */
-		-1px -1px 5px #DCDCDC,     /* north-west */
-		-1px  1px 5px #DCDCDC,     /* north-east */
-		1px -1px 5px #DCDCDC,     /* south-west */
-		1px  1px 5px #DCDCDC;     /* south-east */
+    font-size: 10px;
+    color:blue;
+    text-shadow: 0px -1px 5px #DCDCDC,     /* north      */
+        0px  1px 5px #DCDCDC,     /* south      */
+        -1px  0px 5px #DCDCDC,     /* west       */
+        1px  0px 5px #DCDCDC,     /* east       */
+        -1px -1px 5px #DCDCDC,     /* north-west */
+        -1px  1px 5px #DCDCDC,     /* north-east */
+        1px -1px 5px #DCDCDC,     /* south-west */
+        1px  1px 5px #DCDCDC;     /* south-east */
 
-	margin:.5em 0 .5em 0;
+    margin:.5em 0 .5em 0;
 }
+
+
+
+
+.closeButton {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #fe1a00), color-stop(1, #ce0100) );
+	background:-moz-linear-gradient( center top, #fe1a00 5%, #ce0100 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#fe1a00', endColorstr='#ce0100');
+	background-color:#fe1a00;
+	border:1px solid #ffffff;
+	display:inline-block;
+	color:#ffffff;
+	font-family:arial;
+	font-size:11px;
+	font-weight:bold;
+	padding:0px 4px;
+	text-decoration:none;
+        cursor:default;
+}.closeButton:hover {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #ce0100), color-stop(1, #fe1a00) );
+	background:-moz-linear-gradient( center top, #ce0100 5%, #fe1a00 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ce0100', endColorstr='#fe1a00');
+	background-color:#ce0100;
+}.closeButton:active {
+	position:relative;
+	top:1px;
+}
+/* This imageless css button was generated by CSSButtonGenerator.com */
+
+
+

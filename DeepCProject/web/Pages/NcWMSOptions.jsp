@@ -9,8 +9,8 @@
 <c:if test='${netcdf}' >
     <!-- Holds the optional palettes -->
     <div class="palettesDiv" id="palettes-div">
-        <p class="defShadow">Select new palette <button type="button" class="cancelButton" onclick="displayPalettes()">x</button>
-        <table id="palettesTable"></table></p>
+        <span class="defShadow">Select new palette </span> <button type="button" class="closeButton" style="float:right;" onclick="displayPalettes()">x</button>
+        <table id="palettesTable"></table>
     </div>
 
     <!-- Divs that hold the start and end calendar plus the related texts -->
@@ -20,7 +20,8 @@
 			<!--<tr><th colspan="2"><p class="defShadow">Dates range for Base layer</p></th></tr>-->
 			<tr>
 				<td><p id="hideOneDay" class="calTitle ie_shadow"> Start date (Current)</p></td>
-				<td><p id="hideOneDayEnd" class="calTitle ie_shadow"> End date </p></td>
+				<td><p id="hideOneDayEnd" class="calTitle ie_shadow"> End date </p><span class="closeButton" style="float:right" onclick="hideCalendarFunc();">x</span></td>
+                                
 			</tr>
 			<tr>
 				<td> <div class="startDateCal" id="cal-start"> </div> </td>

@@ -7,11 +7,7 @@
 <div id="mapOverlayDiv" ><img id="mapOverlay" alt="map overlay" onload="javascript:animationLoaded();" /></div>
 
 <c:if test='${netcdf}' >
-    <!-- Holds the optional palettes -->
-    <div class="palettesDiv" id="palettes-div">
-        <span class="defShadow">Select new palette </span> <button type="button" class="closeButton" style="float:right;" onclick="displayPalettes()">x</button>
-        <table id="palettesTable"></table>
-    </div>
+ 
 
     <!-- Divs that hold the start and end calendar plus the related texts -->
 

@@ -21,9 +21,10 @@ and the color range*/
 
 /* Color paletts that pops with all the optional palettes */ 
 div.palettesDiv{
-	top: 25px;
-	right:225px;
-	position:absolute;
+        float:right;
+	
+	
+	
 	z-index:1008;
 	color: white;    
 	-moz-border-radius: 10px;
@@ -40,7 +41,7 @@ div.palettesDiv{
 #palettesParent
 {
 	position:absolute;
-	top:55px;
+	top:60px;
 	right: 10px;
 	width:200px;
 	z-index:1008;
@@ -50,6 +51,8 @@ div.palettesDiv{
 #palettes-div{
 	visibility: hidden;
 	cursor: move;
+        
+        
 }
 
 

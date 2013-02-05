@@ -16,11 +16,11 @@
     <!-- Divs that hold the start and end calendar plus the related texts -->
 
 	<div id="CalendarsAndStopContainer">
-		<table id="CalendarParent" >
+		<table id="CalendarParent" border="0">
 			<!--<tr><th colspan="2"><p class="defShadow">Dates range for Base layer</p></th></tr>-->
 			<tr>
-				<td><p id="hideOneDay" class="calTitle ie_shadow"> Start date (Current)</p></td>
-				<td><p id="hideOneDayEnd" class="calTitle ie_shadow"> End date </p><span class="closeButton" style="float:right" onclick="hideCalendarFunc();">x</span></td>
+				<td><span id="hideOneDay" class="calTitle ie_shadow"> Start date (Current)</span></td>
+                                <td><span id="hideOneDayEnd" class="calTitle ie_shadow" style="padding-right:0px;">End date </span><span class="closeButton" onclick="hideCalendarFunc();" style="position:absolute;right:5px;top:5px;">x</span></td>
                                 
 			</tr>
 			<tr>

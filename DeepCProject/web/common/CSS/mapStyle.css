@@ -210,6 +210,14 @@ p /* This is the default font type for the letters in the page */
 /*title on top of calendar */
 .calTitle{
     font-size:13px;
+        text-shadow: 0px -1px 5px #DCDCDC,     /* north      */
+        0px  1px 5px #DCDCDC,     /* south      */
+        -1px  0px 5px #DCDCDC,     /* west       */
+        1px  0px 5px #DCDCDC,     /* east       */
+        -1px -1px 5px #DCDCDC,     /* north-west */
+        -1px  1px 5px #DCDCDC,     /* north-east */
+        1px -1px 5px #DCDCDC,     /* south-west */
+        1px  1px 5px #DCDCDC;     /* south-east */
 }
 
 .defShadow{ /* This font type inverts the color of the font and the shadow */

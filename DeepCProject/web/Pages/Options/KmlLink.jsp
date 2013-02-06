@@ -3,6 +3,14 @@
     Created on : Aug 3, 2012, 6:34:03 PM
     Author     : olmozavala
 --%>
+
+<%-- 
+Download the link to view in Google Earth
+--%>
+
+
+
+
 <a  id="kmlLink" href="${linkKML}" style="text-align:center;" onclick="KMZDownAlert()">
 	<button type="button" class="buttonStyle" id="dynamicFont_kml" style="padding:0px 6px">
             <table><tr><td>

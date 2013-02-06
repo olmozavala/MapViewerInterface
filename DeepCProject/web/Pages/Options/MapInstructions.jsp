@@ -3,7 +3,7 @@
     Created on : Aug 3, 2012, 6:45:15 PM
     Author     : olmozavala
 --%>
-<!-- This are the Hover map instructions -->
+<!-- This are the map instructions -->
 
 <span id="transParentHover" class="commonHover">
 	Change transparency of current base layer. 
@@ -52,7 +52,7 @@
                         <BR/>- Use mouse wheel to zoom in and out.
                     </td>
                 </tr>
-                <tr><td style="text-align:center;"><button type="button" class="buttonStyle" disabled="disabled" style="cursor: default;">Transect Tool</button></td><td><b>Transect tool:</b><Br/>- With this tool you can choose different points under the map, and it will create two graphs. The first graph will show you how the variables (temperature, salinity, velocity, etc.) change as they move along the points you draw based on latitude and longitude. The second graph shows how the chosen variable changes through out different depths <br/>- First click on the Transect tool icon to get started.
+                <tr><td style="text-align:center;"><span class="buttonStyle no_hover" style="cursor:default;">Transect Tool</span></td><td><b>Transect tool:</b><Br/>- With this tool you can choose different points under the map, and it will create two graphs. The first graph will show you how the variables (temperature, salinity, velocity, etc.) change as they move along the points you draw based on latitude and longitude. The second graph shows how the chosen variable changes through out different depths <br/>- First click on the Transect tool icon to get started.
                         <Br/>- Then click some point in the map to select your starting point in the transect. Keep clicking around to create more points. Once the last point is chosen, double click it to pop up the graphs. 
                         <BR/>- To create another graph, simply make a new drawing and the last one will disappear.
                         <BR/>- To exit the transect tool click on the Unselect icon.
@@ -60,14 +60,14 @@
 
                 <tr><td style="text-align: center;">
 
-						<table cellpadding="1" border="0" class="defaultOptions" style="cursor: default">
+						<table cellpadding="1" border="0"  style="cursor: default" align="center">
 							<tr>
 								<td style="border:none;"><button type="button" class="minusButton" disabled="disabled">
 										-
 									</button></td>
 
 								<td style="border:none;">	
-									<span>Elevation</span>
+									<span class="buttonStyle no_hover" style="cursor:default;" >Depth</span>
 								</td>
 								<td style="border:none;">
 									<button class="plusButton" disabled="disabled" type="button" >
@@ -75,32 +75,16 @@
 									</button>
 								</td>
 							</tr>		       
-						</table><BR/><BR/>
-						<table cellpadding="1" border="0" class="defaultOptions" style="cursor: default">
-							<tr>
-								<td style="border:none;"><button type="button" class="minusButton" disabled="disabled">
-										-
-									</button></td>
-
-								<td style="border:none;">	
-									<span>Precipitation</span>
-								</td>
-								<td style="border:none;">
-									<button class="plusButton" disabled="disabled" type="button" >
-										+
-									</button>
-								</td>
-							</tr>		       
-						</table>
+						</table>	
 
 
-                        </td><td><b>Change Elevation or Precipitation:</b><BR/>- By default the application starts with the possible highest elevation/precipitation, if you click the + or - it will change the elevation/precipitation. If you click the elevation/precipitation text then a windows will pop up and will let you choose the desired elevation/precipitation. 
+                        </td><td><b>Change Depth or Precipitation:</b><BR/>- By default the application starts with the possible highest elevation/precipitation, if you click the + or - it will change the elevation/precipitation. If you click the elevation/precipitation text then a windows will pop up and will let you choose the desired elevation/precipitation. 
 
                     </td></tr>
 
                 <tr><td style="text-align: center;">
 
-						<table cellpadding="1" border="0" class="defaultOptions" style="cursor: default;">
+						<table cellpadding="1" border="0"  style="cursor: default;" align="center">
 							<tr>
 								<td style="border:none;"><button class="minusButton" type="button" disabled="disabled">
 										-
@@ -108,7 +92,7 @@
 									</button></td>
 
 								<td style="border:none;">
-									<span style="cursor: default;" class="transText">Transparency </span>
+									<span class="buttonStyle no_hover" style="cursor:default;" >Transparency </span>
 								</td>
 								<td style="border:none;">
 
@@ -131,15 +115,15 @@
 
                     </td><td><b>Current layer:</b><BR/>You can toggle between the different variable options for the layers such as temperature, salinity, velocity, etc. You can also specify the year of the data you would like to see. </td></tr>
 
-                <tr><td style="text-align:center;"><button type="button" class="buttonStyle" disabled="disabled" >
+                <tr><td style="text-align:center;"><span class="buttonStyle no_hover" style="cursor:default;" >
                             Color Tools
-                        </button>  </td><td><b>Change color range:</b><BR/>You can also choose a range of maximum and minimum values for the temperature, this will change the color ranges allowed in the map. The minimum temperature must always be lower than the maximum value. Once a desired number is chosen click the update button to see the changes in the map. <BR/>If you want to select a different palette color  such as gradient then click the <img src="${basepath}/common/images/icon/palette_help_topMenu.png"  height="70px"/> icon.
+                        </span>  </td><td><b>Change color range:</b><BR/>You can also choose a range of maximum and minimum values for the temperature, this will change the color ranges allowed in the map. The minimum temperature must always be lower than the maximum value. Once a desired number is chosen click the update button to see the changes in the map. <BR/>If you want to select a different palette color  such as gradient then click the <img src="${basepath}/common/images/icon/palette_help_topMenu.png"  height="70px"/> icon.
 
 
 					</td></tr>
 
 
-                <tr><td style="text-align:center;"><span class="buttonStyle no_hover" style="cursor:default;">
+                <tr><td style="text-align:center;"><span class="buttonStyle no_hover" style="cursor:default;" >
                             <img  border="0" src="${basepath}/common/images/kmz/google_earth_logo.png" width="35" height="32" alt="Descargar en KML" />
                             Kml data</span></td><td><b>Download Data:</b><BR/>- Click this button to download current dataset in a KMZ format which can be viewed with Google Earth.</td></tr>
                 <tr><td ><table class="vectorLayer" align="center">

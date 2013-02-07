@@ -14,7 +14,6 @@
     </div>
 
     <!-- Divs that hold the start and end calendar plus the related texts -->
-
 	<div id="CalendarsAndStopContainer">
 		<table id="CalendarParent" >
 			<!--<tr><th colspan="2"><p class="defShadow">Dates range for Base layer</p></th></tr>-->

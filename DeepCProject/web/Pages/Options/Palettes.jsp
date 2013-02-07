@@ -45,7 +45,6 @@
 				<button type="button" class="buttonStyle" style="font-size:11px;" onclick="setColorRangeFromMinMax();" >
 					Auto 
 				</button>
-			               
                 <button type="button" class="buttonStyle" style="font-size:11px;" onclick="DefaultPalette();" >
 					Default
 				</button>
@@ -73,7 +72,6 @@
 					     onmouseup="rollImage(this,'${basepath}/common/images/Menu/MinusInv.png' )"
 					     src="${basepath}/common/images/Menu/Minus.png" alt="DecTrans" width="20" height="20" />
 				</p>
-
 			</td>
 		</tr>
 	</table>

@@ -11,13 +11,6 @@
 			</c:when>
 		</c:choose>
 
-		<!--
-		<td valign="center">
-			<span id="mainMenuParent" onmouseover="hoverInstructions('mainMenuParentHover', '1')" onmouseout="hoverInstructions('mainMenuParentHover', '2')" >
-				${menuHelper:createMainMenu(MenuDelUsuario,language)}
-			</span>
-		</td>-->
-
 		<td valign="middle">
 			<!-- Link to download kml files-->
 			<span onmouseover="hoverInstructions('mainKmlParentHover', '1')" onmouseout="hoverInstructions('mainKmlParentHover', '2')"  > <%@include file="Options/KmlLink.jsp" %>

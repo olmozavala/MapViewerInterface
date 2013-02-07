@@ -58,28 +58,12 @@
 					&nbsp 
 					<a  href="http://www.noaa.gov/">
 						<img border="0" src="${basepath}/common/images/Logos/NOAA.png" alt="NOAA" width="30" height="30" /></a>
-
-						<!--
-					<a  href="http://www.fsu.edu/">
-						<img border="0" src="${basepath}/common/images/Logos/FSU.png" alt="FSU" width="61" height="60" /></a>
-					&nbsp;
-					<a  href="http://coaps.fsu.edu/">
-						<img border="0" src="${basepath}/common/images/Logos/COAPSoz.png" alt="COAPS" width="60" height="60" /></a>
-					&nbsp 
-					<a  href="http://www.deep-c.org/">
-						<img border="0" src="${basepath}/common/images/Logos/DeepC.png" alt="DeepC" width="102" height="60" /></a>
-					&nbsp 
-					<a  href="http://www.noaa.gov/">
-						<img border="0" src="${basepath}/common/images/Logos/NOAA.png" alt="NOAA" width="61" height="60" /></a>
-	  					-->
 					<p class="footNote" align="left">
 						&nbsp 
 						&copy; <script language="javascript">document.write(getDate("%Y"));</script>.  Deep-C Consortium. All Rights Reserved. &nbsp;
 					</p>
 					<a id="emailText" href="mailto:osz09@fsu.edu"> Contact </a>
-
 			</div>
-
 		</form>
     </body>
 

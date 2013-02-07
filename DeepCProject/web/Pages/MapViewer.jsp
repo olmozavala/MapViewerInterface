@@ -46,7 +46,9 @@ This is the main jsp file that forms the html webpage. It contains the skeleton 
                 <%@include file="NcWMSOptions.jsp" %>  <%-- This page has all the calendars, the animaton divs  --%>
 
                 <!-- Current palette and color range -->
-                <div id="palettesParent"> <%@include file="Options/Palettes.jsp" %> </div>
+                <!--<div id="palettesParent">-->
+					<%@include file="Options/Palettes.jsp" %> 
+				<!--</div>-->
                 <!--<span id="loadingAnimContainer" class="loadingAnimContainer" style="display:block;visibility:visible">-->
 
                 <div id="l-animation">

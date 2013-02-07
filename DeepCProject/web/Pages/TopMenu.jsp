@@ -59,13 +59,11 @@
 			</a>
 		</td>
 		-->
-
 		<td id="helpParent" valign="middle">
 			<!-- Map Instructions-->
 			<button type="button" class="buttonStyle" id="helpText" onclick="displayHelp();" atl="Help" />Help</button>
 
 		</td>
-
 		</tr>
 	</table>
 

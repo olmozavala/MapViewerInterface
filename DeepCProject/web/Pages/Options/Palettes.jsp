@@ -8,7 +8,7 @@
     <table border="0" id="palette" cellpadding="3">
         <tr>
             <td rowspan="3"> 
-                <img id="imgPalette" src="${paletteUrl}" onclick="displayPalettes();" 
+                <img id="imgPalette" src="${paletteUrl}" onclick="displayOptionalPalettes();" 
                      onmouseover="this.style.cursor ='pointer';"
                      onmouseout="this.style.cursor ='crosshair';" onload="getDefault()"/>
             </td>
@@ -33,7 +33,7 @@
 
                 </p>
             </td>
-            <td valign="top"><button type="button" class="closeButton" onclick="hidePalettes()">x</button></td>
+            <td valign="top"><button type="button" class="closeButton" onclick="showPalettes()">x</button></td>
         </tr>
         <tr >
             <td height="40px">
@@ -78,7 +78,7 @@
 
     <!-- Holds the optional palettes -->
     <div class="palettesDiv" id="palettes-div">
-        <span class="defShadow">Select new palette </span> <button type="button" class="closeButton" style="float:right;" onclick="displayPalettes()">x</button>
+        <span class="defShadow">Select new palette </span> 
         <table id="palettesTable"></table>
     </div>
 </c:if>

@@ -7,23 +7,26 @@
 		range of colors.
 */
 
-/* table that contains current palette
-and the color range*/
+/* table that contains current palette and the color range*/
+/* IMPORTANT we can't use ''right' because the windows doesn't drag properly*/
 #palette{
+	top: 55px;
+	position:absolute;
 	border-radius: 10px;
 	background-color:black;
 	border: solid 1px white;
 	visibility: hidden;
 	/*This is the hight of the palette image*/
-	/*min-height: 120px;*/
+	min-height: 120px;
     cursor:move;
+	z-index:1008;
 }
 
+/* Div of the optional palettes div */
 /* Color palettes that pops with all the optional palettes */ 
 /* IMPORTANT we can't use ''right' because the windows doesn't drag properly*/
 div.palettesDiv{
 	top: 25px;
-	left: 50%;
 	position:absolute;
 	z-index:1008;
 	color: white;    
@@ -35,8 +38,11 @@ div.palettesDiv{
 	background-color: black;
 	border:solid 1px white;
 	padding:3px;
+	visibility: hidden;
+	cursor: move;
 }
 
+/* Id of the div that contains both Palettes windows */
 #palettesParent
 {
 	position:absolute;
@@ -46,15 +52,6 @@ div.palettesDiv{
 	z-index:1008;
 	visibility: hidden;
 }
-
-/* Main parent div of the optional palettes */
-#palettes-div{
-	visibility: hidden;
-	cursor: move;
-        
-        
-}
-
 
 #imgPalette{
 }

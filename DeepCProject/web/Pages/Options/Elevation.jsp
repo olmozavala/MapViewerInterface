@@ -3,6 +3,15 @@
     Created on : Aug 3, 2012, 6:23:54 PM
     Author     : olmozavala
 --%>
+
+
+<%-- 
+This page controls the elevation of the displayed layer, it can be height or precipitation as well. 
+There is 3 options. Either '-' or '+' or click the button to choose the disired height or precipitation level. 
+--%>
+
+
+
 <span class="defaultOptions" style="cursor: pointer;"> 
     <table cellpadding="0" border="0">
         <tr>

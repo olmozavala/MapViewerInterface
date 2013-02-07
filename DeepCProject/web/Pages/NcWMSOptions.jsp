@@ -7,19 +7,16 @@
 <div id="mapOverlayDiv" ><img id="mapOverlay" alt="map overlay" onload="javascript:animationLoaded();" /></div>
 
 <c:if test='${netcdf}' >
-    <!-- Holds the optional palettes -->
-    <div class="palettesDiv" id="palettes-div">
-        <p class="defShadow">Select new palette <button type="button" class="cancelButton" onclick="displayPalettes()">x</button>
-        <table id="palettesTable"></table></p>
-    </div>
+ 
 
     <!-- Divs that hold the start and end calendar plus the related texts -->
 	<div id="CalendarsAndStopContainer">
-		<table id="CalendarParent" >
+		<table id="CalendarParent" border="0">
 			<!--<tr><th colspan="2"><p class="defShadow">Dates range for Base layer</p></th></tr>-->
 			<tr>
-				<td><p id="hideOneDay" class="calTitle ie_shadow"> Start date (Current)</p></td>
-				<td><p id="hideOneDayEnd" class="calTitle ie_shadow"> End date </p></td>
+				<td><span id="hideOneDay" class="calTitle ie_shadow"> Start date (Current)</span></td>
+                                <td><span id="hideOneDayEnd" class="calTitle ie_shadow" style="padding-right:0px;">End date </span><span class="closeButton" onclick="hideCalendarFunc();" style="position:absolute;right:5px;top:5px;">x</span></td>
+                                
 			</tr>
 			<tr>
 				<td> <div class="startDateCal" id="cal-start"> </div> </td>

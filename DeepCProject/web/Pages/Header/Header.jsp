@@ -3,6 +3,15 @@
     Created on : Aug 3, 2012, 5:45:27 PM
     Author     : olmozavala
 --%>
+
+<%-- 
+    This page contains all the links to the CSS, and the javascript 
+--%>
+
+
+
+
+
 		<link rel="icon" href="${basepath}/common/images/icon/Gulf.ico" type="image/x-icon" />
         <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
         <meta name="Description" content="Deep-C atlas" />

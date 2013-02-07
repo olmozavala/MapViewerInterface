@@ -40,7 +40,7 @@ div.palettesDiv{
 #palettesParent
 {
 	position:absolute;
-	top:55px;
+	top:60px;
 	right: 10px;
 	width:200px;
 	z-index:1008;
@@ -51,6 +51,8 @@ div.palettesDiv{
 #palettes-div{
 	visibility: hidden;
 	cursor: move;
+        
+        
 }
 
 

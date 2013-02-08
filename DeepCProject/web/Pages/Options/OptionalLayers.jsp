@@ -10,14 +10,14 @@
 		<tr> 
 			<td align="left">
 				<button id="minusButtonOptional${indice.count - 1}" class="minusButtonSmall" type="button" disabled="disabled" 
-						onmouseover ="changeText(this,1);" onmouseout ="changeText(this,0);" 
-						onmouseup ="changeText(this,1);" onmousedown ="changeText(this,2);"
+						onmouseover ="changeColor(this,1);" onmouseout ="changeColor(this,0);" 
+						onmouseup ="changeColor(this,1);" onmousedown ="changeColor(this,2);"
 						onclick="changeTranspOptionalLayers(layer${totalLayers - sizeVectLayers + indice.count - 1}, .20, ${indice.count -1},'minusButtonOptional'+${indice.count - 1},'plusButtonOptional'+${indice.count - 1}, 'checkBox'+${indice.count} ) ;">
 					&#8210	
 				</button>
 				<button id="plusButtonOptional${indice.count - 1}" type="button" class="plusButtonSmall" 
-						onmouseover ="changeText(this,1);" onmouseout ="changeText(this,0);" 
-						onmouseup ="changeText(this,1);" onmousedown ="changeText(this,2);"
+						onmouseover ="changeColor(this,1);" onmouseout ="changeColor(this,0);" 
+						onmouseup ="changeColor(this,1);" onmousedown ="changeColor(this,2);"
 						onclick="changeTranspOptionalLayers(layer${totalLayers - sizeVectLayers + indice.count - 1}, -.20, ${indice.count -1},'minusButtonOptional'+${indice.count - 1},'plusButtonOptional'+${indice.count - 1}, 'checkBox'+${indice.count});">
 					+
 				</button>

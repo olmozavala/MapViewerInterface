@@ -182,11 +182,6 @@ td.waitBack{
     valign: up;
 }
 
-.palMinMax{
-    font-size:13px;
-}
-
-
 input[type=text]{
     font-size: 11px;
 }
@@ -263,40 +258,6 @@ p /* This is the default font type for the letters in the page */
 }
 
 
-/* Help display container */
-#helpInstructions
-{
-    border:solid black;
-    position:absolute;
-    left:50px;
-    visibility:hidden;
-    z-index:1009;
-    height:700px;
-    right:200px;
-    top:100px;
-    border-radius: 10px;
-    margin-top: 2em;
-    margin-bottom: 2em;
-    border:solid white 2px;
-    background-color: black;
-    font-size: 13px;
-    color:white;
-    width:70%;
-    cursor:move;
-
-    overflow-x:hidden;
-    overflow-y:auto;    
-
-}
-
-/*part of help instructions */
-#align_left td{
-    text-align: left;
-    border-bottom: dashed grey 1px;
-}
-
-
-
 .helpClose{
 
     float:right;
@@ -304,11 +265,6 @@ p /* This is the default font type for the letters in the page */
 
 }
 
-/* part of help instructions*/
-.no_hover{
-    background-color: #111;
-
-}
 
 /* Estra style for the 
 .mainMenuOption{
@@ -431,29 +387,6 @@ but the size of the font is larger */
 }
 
 
-/* This are all the hover instructions of the menu options*/
-.commonHover
-{
-    border:1px solid;
-    padding:5px;
-    font-size: 11px;
-    background-image:url('../images/transBack.png');
-    background-color: darkkhaki;
-    position:absolute;
-    z-index:1002;
-    -moz-border-radius: 10px;
-    -webkit-border-radius: 10px;
-    border-radius:10px;
-    top: 45px;
-    display: none;
-    width: 250px;
-}
-#mainMenuParentHover{ top: 50px; left: 150px;}
-#transParentHover{ }
-#elevationParentHover{ }
-#transectParentHover{}
-#palettesHover{ }
-#mainKmlParentHover { }
 
 .linkElevPageDef{
     font-size: 16px;
@@ -479,9 +412,6 @@ but the size of the font is larger */
 
     margin:.5em 0 .5em 0;
 }
-
-
-
 
 
 .closeButton {

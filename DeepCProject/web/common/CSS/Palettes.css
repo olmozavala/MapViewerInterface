@@ -15,11 +15,13 @@
 	border-radius: 10px;
 	background-color:black;
 	border: solid 1px white;
-	visibility: hidden;
-	/*This is the hight of the palette image*/
-	min-height: 120px;
+	display:none;
     cursor:move;
 	z-index:1008;
+	border-spacing: 5px 2px;
+}
+#palette.th{
+	padding: 0;
 }
 
 /* Div of the optional palettes div */
@@ -66,3 +68,23 @@ Table that contains all the optional palettes
 #palettesTable{
     cursor: pointer;
 }
+
+
+/* Reduces the default padding for the button style. This 
+style is being used by the buttons inside the colorPaleteRangeOptions*/
+.reducedPadding{
+    padding: 3px 5px 3px;
+}
+/* This is a table that contains the header text and buttons
+of the optional palettes table*/
+#optionalPalettesHeader{	
+	width: 100%;
+}
+
+/* '+' and '-' Paragraph inside the color range palettes window */
+.palMinMax{
+	padding: 0;
+	margin: 0;
+    font-size:13px;
+}
+

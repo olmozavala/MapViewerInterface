@@ -7,11 +7,6 @@
 <%-- 
     This page contains all the links to the CSS, and the javascript 
 --%>
-
-
-
-
-
 		<link rel="icon" href="${basepath}/common/images/icon/Gulf.ico" type="image/x-icon" />
         <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
         <meta name="Description" content="Deep-C atlas" />
@@ -21,6 +16,7 @@
         <link href="${basepath}/common/CSS/Palettes.css" rel="stylesheet" type="text/css"/>
 		<link href="${basepath}/common/CSS/Calendars.css" rel="stylesheet" type="text/css"/>
 		<link href="${basepath}/common/CSS/OpenLayersRelated.css" rel="stylesheet" type="text/css"/>
+		<link href="${basepath}/common/CSS/MapInstructions.css" rel="stylesheet" type="text/css"/>
         <!--[if gte IE 6]>
         <link href="${basepath}/common/CSS/mapStyleIE.css" rel="stylesheet" type="text/css"/>
         <![endif]-->

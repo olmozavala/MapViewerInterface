@@ -38,5 +38,6 @@
         <link href="${basepath}/common/CSS/OpenLayersRelated.css" rel="stylesheet" type="text/css"/>
         <link href="${basepath}/common/CSS/Calendars.css" rel="stylesheet" type="text/css"/>
         <link href="${basepath}/common/CSS/Palettes.css" rel="stylesheet" type="text/css"/>
+        <link href="${basepath}/common/CSS/MapInstructions.css" rel="stylesheet" type="text/css"/>
 
         <title>Gulf of Mexico</title>

@@ -15,21 +15,33 @@ body {
     background-color: #296E8D;   
 }   
 
-/* Minus Button used on transparency and elevation */
-.minusButton{
+/*Plus Button and Minus Button used on transparency and elevation */
+.minusButton, .plusButton{
     font-size:10px;
     font-weight:bold;
-    padding:2px;
+    padding:1px;
     vertical-align:top;
     cursor:pointer;
 }
-/* Plus Button used on transparency and elevation */
-.plusButton{
-    font-size:10px;
-    font-weight:bold;
-    padding:2px;
-    cursor:pointer;
-    vertical-align:top;
+
+/* This are also plus and minus buttons, but are
+smaller and doesn't have background. Currently are used
+for transparency in the optional layers. */
+.minusButtonSmall, .plusButtonSmall
+{
+    font-size: 13px; 
+    font-weight: bolder;
+    vertical-align: top;
+    margin: 0;
+    padding: 0;
+    color: black;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+.minusButtonSmall
+{
+    color: gray;
 }
 
 #transText{
@@ -37,8 +49,6 @@ body {
 }
 
 .elevationTable{
-	width:100%;
-	text-align: center;
 }
 
 #elevationParent{
@@ -52,13 +62,8 @@ body {
 }
 
 
+/* Disp animation button */
 div.dispAnimation{
-    top: 240px;
-    left: 60px;
-    position:absolute;
-    z-index:1000;
-    display:inline;
-    visibility: hidden;
 }
 
 
@@ -94,6 +99,7 @@ div.layersLongLat{
     border-width: thin;
     border-color: black;
     pointer-events:none;
+	border-radius: 5px;
 }
 /* Div where the specific data of the layers are displayed */
 div.layersData{
@@ -116,7 +122,9 @@ div.layersData{
     display:inline;
     padding:3px;
     min-width: 170px;
-    opacity:0.85;
+    opacity:0.9;
+	-webkit-user-select:none;
+	-moz-user-select:none;
 }
 /* Left fotter */
 div.leftFoot{
@@ -177,8 +185,6 @@ a
 /* Subtable that contains the optional layers */
 table.vectorLayer{
     border-radius: 10px;
-    margin-top: 2em;
-    margin-bottom: 2em;
     width: 100%;
     background-image:url('../images/transBack.png'); 
     font-size: 12px;
@@ -198,7 +204,7 @@ input[type=text]{
     font-size: 11px;
 }
 
-p /* This is the default font type for the letters in the page */
+p/* This is the default font type for the letters in the page */
 {
     color:black;
     font-size:14px;    
@@ -216,14 +222,15 @@ p /* This is the default font type for the letters in the page */
 /* This class represent default options on the menu
  * that are not buttons, like Transparency or Elevation */
 .defaultOptions{
+	padding: 0px;
+	border: 0px;
 }
 .bigFontSize{
 	font-size: 24px;
 }
-.calTitle{
-}
-.palMinMax{
-}
+
+
+#hideOneDay{}
 .defShadow{ /* This font type inverts the color of the font and the shadow */
     margin:.5em 0 .5em 0;
 }
@@ -252,43 +259,6 @@ p /* This is the default font type for the letters in the page */
     padding-bottom: 5px;
 }
 
-.helpInstructions{   
-    position:absolute;	
-    min-width: 600px;
-    min-height: 400px;
-	width: 70%;
-	height: 80%;
-    right:200px;
-    top:50px;
-    display:inline;
-    visibility: hidden;    
-    border:solid black;
-    z-index:1005;
-    border-radius: 10px;
-    margin-top: 2em;
-    margin-bottom: 2em;
-    background-image:url('../images/transBack.png'); 
-    font-size: 12px;
-    color:black;
-    background-color: white;
-    overflow-y:scroll;
-    text-align: left;
-	padding: 10px;
-	margin: 7px;
-    cursor: move;
-}
-.helpInstructions td{
-}
-.helpInstructions th{
-    text-align:center;
-    font-size:16px;
-    font-weight: bold;
-    padding:7px;
-    margin:7px;
-    color:black;
-	vertical-align: top;
-	text-align:center;
-}
 
 #align_center {
     text-align:center;
@@ -329,26 +299,8 @@ p /* This is the default font type for the letters in the page */
     top:250px;
 }
 
-.buttonStyle, .buttonStyle:visited {
-    background: #444444 url('../images/overlayy.png') repeat-x;
-    display: inline-block;
-    padding: 5px 10px 6px;
-    color: #fff;
-    text-decoration: none;
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
-    border-radius:5px;
-    -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
-    -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
-    text-shadow: 0 -1px 1px rgba(0,0,0,0.25);
-    border-bottom: 1px solid rgba(0,0,0,0.25);
-    position: relative;
-    cursor: pointer;
-    font-family:Calibri, Arial, sans-serif;
-}
-
 /* Defines the style of all the buttons on the menu */
-.buttonStyle, .buttonStyle:visited {
+.buttonStyle, .buttonStyle:visited, .mainMenuOption {
 	background: #444444 url('../images/overlayy.png') repeat-x;
     display: inline-block;
     padding: 5px 10px 6px;
@@ -368,6 +320,12 @@ p /* This is the default font type for the letters in the page */
 }
 .buttonStyle:hover                            { background-color: #111; color: #fff; }
 .buttonStyle:active                            { top: 1px; }
+
+/* Reduces the default padding for the button style. This 
+style is being used by the buttons inside the colorPaleteRangeOptions*/
+.reducedPadding{
+    padding: 3px 5px 3px;
+}
 
 
 
@@ -431,4 +389,23 @@ p /* This is the default font type for the letters in the page */
 .linkElevPageSelected{
 	font-size: 16px;
 	color: #900000;
+}
+
+
+/* CSS for standard close button */
+.closeButton {
+	background-color:#ffffff;
+	border:1px solid #dcdcdc;
+	display:inline-block;
+	color:#666666;
+	font-family:arial;
+	font-size:11px;
+	font-weight:bold;
+	padding:0px 6px;
+	text-decoration:none;
+}.closeButton:hover {
+	background-color:#f6f6f6;
+}.closeButton:active {
+	position:relative;
+	top:1px;
 }

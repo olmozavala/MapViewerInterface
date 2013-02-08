@@ -6,20 +6,37 @@
 	This CSS should contain all the styles related 
     with the calendars and the buttons related with the
     animations.
- */
+*/
+
+/* Calendars container */
+#CalendarsAndStopContainer{
+    top: 70px;
+    left: 50px;
+    position:absolute;
+    z-index:1000;
+	/*border-style: solid;*/
+	white-space: nowrap;
+	border-color: white;
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 10px;
+	opacity:0.85;
+	padding:5px;
+	cursor:move;
+}
 
 /* Is the div that shows the 'Display animation'
  * button and the frame range with the dates */
-#p-animation{ visibility: hidden; }
+#p-animation{ }
 
 /* The 'Stop animation' span */
-#s-animation{
-    visibility: hidden;
-    top: 25px;
-    left: 70px;
-    position:absolute;
-    z-index:1008;
-    display:inline;
+#s-animation{ 
+	display:none;
+	cursor: pointer;
+	font-size:12px;
+    z-index:1009;
+	white-space: nowrap;
+	text-align: center;
 }
 
 /* The span that displays 'Loading...' for the animations */
@@ -33,31 +50,32 @@
 	pointer-events: none;
 }
 
-/*Hide, show span calendar */
-#hideCalendarParent{
-    top: 25px;
-    left: 70px;
-    position:absolute;
-    z-index:1008;
-    display:inline;
-}
 
 /* Div for the Start calendar */
 div.startDateCal{
     top: 60px;
     left: 50px;
-    position:absolute;
-    z-index:1000;
-    visibility: hidden;
 }
 
 /* Div for the End calendar */
 div.endDateCal{
     top: 60px;
     left: 220px;
-    position:absolute;
-    z-index:1000;
     display:inline;
-    visibility: hidden;
 }
 
+/* Title on top of the calendars */
+.calTitle{
+    color:black;
+    font-size:14px;    
+    text-shadow: 0px -1px 5px #DCDCDC,     /* north      */
+        0px  1px 5px #DCDCDC,     /* south      */
+        -1px  0px 5px #DCDCDC,     /* west       */
+        1px  0px 5px #DCDCDC,     /* east       */
+        -1px -1px 5px #DCDCDC,     /* north-west */
+        -1px  1px 5px #DCDCDC,     /* north-east */
+        1px -1px 5px #DCDCDC,     /* south-west */
+        1px  1px 5px #DCDCDC;     /* south-east */ 
+
+    margin:.5em 0 .5em 0;
+}

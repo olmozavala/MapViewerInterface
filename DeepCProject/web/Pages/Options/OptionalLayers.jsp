@@ -22,7 +22,7 @@
 					+
 				</button>
 				<input id="checkBox${indice.count}" type="checkbox" name="vectorLayersSelected"  
-					   value="${vectorLayer.node.id}" onclick="manageOptionalLayers(layer${totalLayers - sizeVectLayers + indice.count - 1},this.checked)"
+					   value="${vectorLayer.node.id}" onclick="manageOptionalLayers(layer${totalLayers - sizeVectLayers + indice.count - 1},this.checked); DisableTranspOptionalLayers(${indice.count -1},'minusButtonOptional'+${indice.count - 1},'plusButtonOptional'+${indice.count - 1}, 'checkBox'+${indice.count} ); "
 		<c:if test='${vectorLayer.selected}'> checked </c:if>
 		/> 
 		${menuHelper:transName(vectorLayer,language)} 
@@ -34,9 +34,10 @@
 					 onmouseout="rollImage(this,'${basepath}/common/images/kmz/kmz.png' )"
 					 onmousedown="rollImage(this,'${basepath}/common/images/kmz/kmz_over_click.png' )"
 					 onmouseup="rollImage(this,'${basepath}/common/images/kmz/kmz_over.png' )"
-					 border="0" alt="Descargar KMZ" onload="CreateArraysOptional(${indice.count -1})"></A>
+					 border="0" alt="Descargar KMZ" onload="CreateArraysOptional(${indice.count -1});  DisableTranspOptionalLayers(${indice.count -1},'minusButtonOptional'+${indice.count - 1},'plusButtonOptional'+${indice.count - 1}, 'checkBox'+${indice.count} ); "></A>
 			&nbsp;
 		</td> 
-		</tr>
+		</tr>             
+               
 	</c:forEach>
 </table>

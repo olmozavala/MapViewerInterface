@@ -81,7 +81,7 @@ This is the main jsp file that forms the html webpage. It contains the skeleton 
             </div>
 
         </form>
-		>>>>>>> b758ce1fc0deec872c582bace96aea7aef1dbb4f
+		
     </body>
 
 </html>

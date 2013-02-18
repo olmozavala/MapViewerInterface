@@ -5,11 +5,7 @@
 --%>
 <!-- This tables displayes the current palette and the color range used on it -->
 <c:if test='${netcdf}'>
-	<%-- 
-    Document   : Palettes
-    Created on : Aug 3, 2012, 6:26:56 PM
-    Author     : olmozavala
-	--%>
+
 	<!-- This tables displayes the current palette and the color range used on it -->
 	<table border="0" id="palette" class="draggableWindow" >
 		<tr>

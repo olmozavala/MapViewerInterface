@@ -49,3 +49,8 @@ div.olControlZoomPanel{
     position:absolute;
     top:110px;
 }
+
+/* Defines to not display anything if the layer was not found*/
+.olImageLoadError{
+	display: none !important;
+}

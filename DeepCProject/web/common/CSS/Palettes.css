@@ -11,14 +11,7 @@
 /* IMPORTANT we can't use ''right' because the windows doesn't drag properly*/
 #palette{
 	top: 55px;
-	position:absolute;
-	border-radius: 10px;
-	background-color:black;
-	border: solid 1px white;
 	display:none;
-    cursor:move;
-	z-index:1008;
-	border-spacing: 5px 2px;
 }
 #palette.th{
 	padding: 0;
@@ -27,21 +20,9 @@
 /* Div of the optional palettes div */
 /* Color palettes that pops with all the optional palettes */ 
 /* IMPORTANT we can't use ''right' because the windows doesn't drag properly*/
-div.palettesDiv{
-	top: 25px;
-	position:absolute;
-	z-index:1008;
-	color: white;    
-	-moz-border-radius: 10px;
-	-webkit-border-radius: 10px;
-	border-radius:10px;
-	margin-top: 2em;
-	margin-bottom: 2em;
-	background-color: black;
-	border:solid 1px white;
-	padding:3px;
+#palettes-div{
+	top: 45px;
 	visibility: hidden;
-	cursor: move;
 }
 
 /* Id of the div that contains both Palettes windows */

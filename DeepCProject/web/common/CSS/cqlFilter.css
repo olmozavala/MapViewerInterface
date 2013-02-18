@@ -1,0 +1,71 @@
+/* 
+    Document   : cqlFilter
+    Created on : Feb 18, 2013, 10:59:11 AM
+    Author     : olmozavala
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* CQL custom filter parent (of textbox and 'apply' button) */
+#ocqlFilterInputTextParent{
+	display: none;
+	left: 200px;
+	top: 30px;
+	padding: 2px 5px;
+}
+
+/* Input text for CQL filter */
+#idOcqlFilterInputText{
+	width:60%;
+}
+
+
+
+/* Button to show and hide CQL filter text box*/
+#ocqlMenuButtonParent{
+	position: relative;
+	left: 10%;
+}
+
+/* 'Apply' button for CQL filter */
+#idOcqlFilterButton{
+	display:inline;
+}
+
+/* Span to input some error text */
+#ocqlErrorParent{
+	display:none;
+	top: 200px;
+}
+/* Error text id */
+#ocqlErrorText{
+	color: red;
+}
+
+/* CQL filter parent of all the instructions*/
+#ocqlFilterText{
+	color:black;
+	text-align: left;
+	top: 70px;
+	padding: 10px;
+}
+
+/* Table containing options */
+table.cqlFilterExampleTable{
+	border-style: solid;
+	border-width: 1px;
+	border-collapse: collapse;
+}
+table.cqlFilterExampleTable th{
+	border-width: 1px;
+	border-style: solid;
+	text-align: center;
+	background-color: #CBC361;
+	padding: 2px 4px;
+}
+table.cqlFilterExampleTable td{
+	padding: 6px;
+	border-width: 1px;
+	border-style: solid;
+	text-align: center;
+}

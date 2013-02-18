@@ -75,8 +75,9 @@
     top: 45px;
     display: none;
     width: 250px;
+	color:black;
 }
-#mainMenuParentHover{ top: 50px; left: 150px;}
+#mainMenuParentHover{ top: 100px; left: 150px;}
 #transParentHover{ }
 #elevationParentHover{ }
 #transectParentHover{}

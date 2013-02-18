@@ -17,6 +17,7 @@
 		<link href="${basepath}/common/CSS/Calendars.css" rel="stylesheet" type="text/css"/>
 		<link href="${basepath}/common/CSS/OpenLayersRelated.css" rel="stylesheet" type="text/css"/>
 		<link href="${basepath}/common/CSS/MapInstructions.css" rel="stylesheet" type="text/css"/>
+		<link href="${basepath}/common/CSS/cqlFilter.css" rel="stylesheet" type="text/css"/>
         <!--[if gte IE 6]>
         <link href="${basepath}/common/CSS/mapStyleIE.css" rel="stylesheet" type="text/css"/>
         <![endif]-->
@@ -39,6 +40,7 @@
         <script type="text/javascript" src="${basepath}/common/JS/validation.js"> </script>
         <script type="text/javascript" src="${basepath}/common/JS/ajax/ajax.js"> </script>
 		<script type="text/javascript" src="${basepath}/common/JS/mapDisplay/Palettes.js"> </script>
+		<script type="text/javascript" src="${basepath}/common/JS/mapDisplay/CQL.js"> </script>
 
         <script type="text/javascript" src="${basepath}/common/JS/calendar/jscal2.js"></script>
         <script type="text/javascript" src="${basepath}/common/JS/calendar/lang/en.js"></script>

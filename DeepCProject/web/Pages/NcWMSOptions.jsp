@@ -10,7 +10,7 @@
 
 
     <!-- Divs that hold the start and end calendar plus the related texts -->
-    <div id="CalendarsAndStopContainer">
+    <div class="draggableWindow" id="CalendarsAndStopContainer">
         <table id="CalendarParent" border="0">
             <!--<tr><th colspan="2"><p class="defShadow">Dates range for Base layer</p></th></tr>-->
             <tr>

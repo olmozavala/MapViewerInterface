@@ -11,7 +11,7 @@
     Author     : olmozavala
 	--%>
 	<!-- This tables displayes the current palette and the color range used on it -->
-	<table border="0" id="palette" >
+	<table border="0" id="palette" class="draggableWindow" >
 		<tr>
 			<td rowspan="3"> 
 				<img id="imgPalette" src="${paletteUrl}" onclick="displayOptionalPalettes();" 
@@ -71,7 +71,7 @@
 		</tr>
 	</table>
     <!-- Holds the optional palettes -->
-	<div class="palettesDiv" id="palettes-div">
+	<div class="draggableWindow" id="palettes-div">
 		<table id="optionalPalettesHeader">
 			<tr>
 				<td> <p class="defShadow">Select new palette </p> </td>

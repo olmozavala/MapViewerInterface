@@ -15,7 +15,7 @@
             <!--<tr><th colspan="2"><p class="defShadow">Dates range for Base layer</p></th></tr>-->
             <tr>
                 <td><span id="hideOneDay" class="calTitle ie_shadow"> Start date (Current)</span></td>
-                <td><span id="hideOneDayEnd" class="calTitle ie_shadow" style="padding-right:0px;">End date </span><span class="closeButton" onclick="hideCalendarFunc();" style="position:absolute;right:5px;top:5px;">x</span></td>
+                <td><span id="hideOneDayEnd" class="calTitle ie_shadow" style="padding-right:0px;">End date </span><span class="minimizeButton" onclick="minimizeWindow('calendarsMinimize', 'CalendarsAndStopContainer')" style="position:absolute;right:25px;top:5px;">-</span><span class="closeButton" onclick="hideCalendarFunc();" style="position:absolute;right:5px;top:5px;">x</span></td>
 
             </tr>
             <tr>

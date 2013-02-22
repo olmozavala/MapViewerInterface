@@ -420,7 +420,8 @@ for the main layers, the color palettes, the optional layers, the calendars etc.
 	font-weight: bold;
 	padding:0px 3px;
 	text-decoration:none;
-        cursor:pointer;
+	cursor:pointer;
+	float: right;
 }.closeButton:hover, .minimizeButton:hover , .maximizeButton:hover {
 	background-color:#f6f6f6;
 }.closeButton:active, .minimizeButton:active, maximizeButton:active{
@@ -436,12 +437,6 @@ for the main layers, the color palettes, the optional layers, the calendars etc.
 
 }    
 
-
-
-
-
-
-
 #optionalsMinimize, #calendarsMinimize, #mainMenuMinimize
 {
     z-index: 1008;
@@ -453,4 +448,7 @@ for the main layers, the color palettes, the optional layers, the calendars etc.
     
 }
 
-
+/* Simple class to avoid margin of a paragraph */
+.smallMargin{
+	margin: 2px;
+}

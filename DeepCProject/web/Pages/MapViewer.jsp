@@ -9,10 +9,10 @@ This is the main jsp file that forms the html webpage. It contains the skeleton 
 <jsp:useBean id="globals" class="com.mapviewer.model.Globals" scope="page"> </jsp:useBean>
 
 <!DOCTYPE HTML PUBLIC "-//W3C//Dtd HTML 4.01 Transitional//EN"
-    "http://www.w3.org/tr/html4/loose.dtd">
+	"http://www.w3.org/tr/html4/loose.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 
-    <head>
+	<head>
         <%@include file="Header/GlobalJavaScript.jsp" %> <%-- Sets all the javascript global variables that are initiated by the java application --%>
 
         <%@include file="Header/Header.jsp" %> <%-- contains all the css links and javascript links --%>
@@ -77,7 +77,6 @@ This is the main jsp file that forms the html webpage. It contains the skeleton 
 
 
 
-
             <!-- Foot page --> 
             <div id="pieDePaginaIzq" class="leftFoot">
                 &nbsp;
@@ -99,18 +98,14 @@ This is the main jsp file that forms the html webpage. It contains the skeleton 
                         &copy; <script language="javascript">document.write(getDate("%Y"));</script>.  Deep-C Consortium. All Rights Reserved. &nbsp;
                     </p>
                     <a id="emailText" href="mailto:osz09@fsu.edu, aahmed@coaps.fsu.edu"> Contact </a>
-
-
-
             </div>
         </form>
 
-                        <!-- minimizable windows file -->
-                        <%@include file="Options/MinimizeWindows.jsp" %>
-                        
+		<!-- minimizable windows file -->
+		<%@include file="Options/MinimizeWindows.jsp" %>
 
+		<!-- Special link that -->
+		<!-- <div id="wcslink"> </div> -->
     </body>
-
-
 </html>
 

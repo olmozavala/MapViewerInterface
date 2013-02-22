@@ -7,10 +7,11 @@
 <span class="draggableWindow" id="ocqlFilterInputTextParent" 
 	  onmouseover="hoverInstructions('ocqlFilterText', '1')" 
 	  onmouseout="hoverInstructions('ocqlFilterText', '2')"  >
-	<!--<p class="defShadow"> Base layer filter <br> </p>-->
 
-	<!-- The avoidRefresh() is necessary because for some reason when you
- press enter inside the text box the webpage gets refreshed -->
+	<p class="defShadow smallMargin"> Custom filter </b>
+		<span class="closeButton" onclick="toggleCustomFilterTextBox();" >x</span>
+	</p>	
+
 	<input type="text" id="idOcqlFilterInputText" onkeyup="applyFilterOnEnter();"
 		   name="ocqlFilterInputText">
 

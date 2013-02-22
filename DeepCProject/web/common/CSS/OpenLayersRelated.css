@@ -16,12 +16,14 @@
     margin: auto;
 }
 
-
+/* Thic class controls the complete popup (the content plust the close button area*/
+.olPopup{
+    border-radius: 10px;
+}
 /* This is the style of the OpenLayers pop up (Layer details)
    The font size has to be defined on JavaScript (I doesn't work here)
 	This style only works when using default PopUp types (not clouds)
 */
-
 div.olPopupContent{
     background-image:url('../images/transBack2.png');
     border-radius: 10px;
@@ -53,4 +55,10 @@ div.olControlZoomPanel{
 /* Defines to not display anything if the layer was not found*/
 .olImageLoadError{
 	display: none !important;
+}
+
+/* This is the class that the punctual data from geoserver uses 
+in most of their text */
+.map_content{
+    pointer-events: none;
 }

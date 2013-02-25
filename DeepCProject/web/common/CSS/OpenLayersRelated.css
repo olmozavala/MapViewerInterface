@@ -14,6 +14,7 @@
     text-align: center;
     display: inline;
     margin: auto;
+	font-weight: normal;
 }
 
 /* Thic class controls the complete popup (the content plust the close button area*/

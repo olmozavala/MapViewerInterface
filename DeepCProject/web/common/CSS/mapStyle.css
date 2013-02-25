@@ -38,13 +38,14 @@ div.layersLongLat{
     right:200px;
     z-index:1000;
     display:inline;
-    width: 145px;
+    width: 150px;
     height:25px;
     padding-bottom:7px;
     padding-left:6px;
     text-align:left;
     background-image:url('../images/transBack.png');
-    font-size: 13px;
+    font-size: 12px;
+	font-weight: normal;
     border-style: solid;
     border-width: thin;
     border-color: black;

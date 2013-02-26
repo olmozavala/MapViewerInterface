@@ -20,7 +20,7 @@ This is the main jsp file that forms the html webpage. It contains the skeleton 
     </head>
 
 
-    <body onload="setHoverPositions()" onresize="refreshWindow();" >
+    <body id="bodyClass" onload="setHoverPositions()" onresize="refreshWindow();" >
         <%-- Main form of the application (main menu), it executes a new page everytime a new menu item is chosen --%>
 
         <form id="baseForm" name="baseForm" action="${basepath}${names.acdmServlet}" method="post">

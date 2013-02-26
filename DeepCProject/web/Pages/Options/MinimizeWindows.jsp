@@ -3,8 +3,7 @@
     Created on : Feb 19, 2013, 4:32:14 PM
     Author     : khan
 --%>
-
-<table align="center" border="1"   width="400" cellpadding="5" >
+<table align="center" border="0"   width="400" cellpadding="5" style="position:absolute;bottom:0;left:0px;">
     <tr>
         
         

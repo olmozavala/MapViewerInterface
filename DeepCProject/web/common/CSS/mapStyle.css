@@ -12,6 +12,7 @@ body {
 #optionalMenuParent
 {
     top:410px;
+    width:160px;
     left:48px;
     text-align:left;
 	background-color: black;
@@ -80,7 +81,7 @@ div.layersMenu{
 div.leftFoot{
     position:absolute;
     bottom:1%;
-    left:2%;
+    right:2%;
     z-index:1000;
     display:inline;
     color:black;

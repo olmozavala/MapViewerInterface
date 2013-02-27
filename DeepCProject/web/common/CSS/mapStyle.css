@@ -11,6 +11,8 @@ body {
 /* optional layers such as us state, DeepC, etc*/
 #optionalMenuParent
 {
+    
+    width:160px;
     top:490px;
     left:48px;
     text-align:left;

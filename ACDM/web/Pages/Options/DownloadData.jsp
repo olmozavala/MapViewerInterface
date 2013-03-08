@@ -4,6 +4,6 @@
     Author     : olmozavala
 --%>
 <!-- Link to download the real data (Geotiff file) -->
-<p id="downloadData" class="defShadow" onclick="getWCSV1Ajax('${basepath}');" onmouseover="changeShadow(this,2)" 
-   onmouseout="changeShadow(this,1)">Download data</p>
+<p id="downloadData" class="buttonStyle" onclick="getWCSV1Ajax('${basepath}');" >Download data</p>
+</a>
 <div id="wcslink"> </div>

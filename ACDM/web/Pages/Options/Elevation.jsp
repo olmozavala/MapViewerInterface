@@ -3,15 +3,29 @@
     Created on : Aug 3, 2012, 6:23:54 PM
     Author     : olmozavala
 --%>
-<p class="alphaText"> 
+<table class="elevationTable" border="0">
+	<tr>
+		<td style="text-align: right;">
+			<img class="minusButton" id="minusButtonElevation" onclick="changeElevation('-',getMainLayer());" 
+				 onmouseover="rollImage(this,'${basepath}/common/images/Menu/MinusInv.png' )"
+				 onmouseout="rollImage(this,'${basepath}/common/images/Menu/Minus.png' )"
+				 onmousedown="rollImage(this,'${basepath}/common/images/Menu/MinusPressed.png' )"
+				 onmouseup="rollImage(this,'${basepath}/common/images/Menu/MinusInv.png' )"
+				 src="${basepath}/common/images/Menu/Minus.png" alt="DecTrans" width="15" height="15" />
+		</td>
+		<td>
+			<p id="elevationText" class="buttonStyle" onclick="displayElevationSelector();" onmouseover="hoverInstructions('elevationParentHover', '1')" onmouseout="hoverInstructions('elevationParentHover', '2')">
+				Depth	
 
-	<img id="alphaText_elevminus" border="0" onclick="changeElevation('-', layer1);" 
-		 onmouseover="rollImage(this,'${basepath}/common/images/Menu/MinusInv.png' )"
-		 onmouseout="rollImage(this,'${basepath}/common/images/Menu/Minus.png' )"
-		 src="${basepath}/common/images/Menu/Minus.png" alt="DecElevation" width="20" height="20" />
-	Elevation 
-	<img id="alphaText_elevplus" border="0" onclick="changeElevation('+', layer1);"
-		 onmouseover="rollImage(this,'${basepath}/common/images/Menu/PlusInv.png' )"
-		 onmouseout="rollImage(this,'${basepath}/common/images/Menu/Plus.png' )"
-		 src="${basepath}/common/images/Menu/Plus.png" alt="IncElevation" width="20" height="20" />
-</p>
+			</p>
+		</td>
+		<td style="text-align: left;">
+			<img class="plusButton" id="plusButtonElevation" onclick="changeElevation('+',getMainLayer());" 
+				 onmouseover="rollImage(this,'${basepath}/common/images/Menu/PlusInv.png' )"
+				 onmouseout="rollImage(this,'${basepath}/common/images/Menu/Plus.png' )"
+				 onmousedown="rollImage(this,'${basepath}/common/images/Menu/PlusPressed.png' )"
+				 onmouseup="rollImage(this,'${basepath}/common/images/Menu/PlusInv.png' )"
+				 src="${basepath}/common/images/Menu/Plus.png" alt="IncTrans" width="15" height="15" />
+		</td>
+	</tr>
+</table>

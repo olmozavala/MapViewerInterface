@@ -1,0 +1,49 @@
+/* 
+    Document   : MapInstructions
+    Created on : Feb 8, 2013, 2:15:40 PM
+    Author     : olmozavala
+    Description:
+		This CSS contains all the styling for the User Guide instructions.
+*/
+
+
+/* Class for the main container of help instructions.
+ 	The size of this container is set by JavaScript on mapDisplay.js*/
+.helpInstructionsParentTable{   
+	user-select: none;
+    position:absolute;	
+    right:200px;
+    top:50px;
+    display:inline;
+    visibility: hidden;    
+    border:solid black;
+    z-index:1005;
+    border-radius: 10px;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    background-image:url('../images/transBack.png'); 
+    font-size: 12px;
+    color:black;
+    background-color: white;
+    text-align: left;
+	padding: 10px;
+	margin: 7px;
+    cursor: move;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+}
+.helpInstructionsParentTable td{
+}
+.helpInstructionsParentTable th{
+    text-align:center;
+    font-size:16px;
+    font-weight: bold;
+    padding:7px;
+    margin:7px;
+    color:black;
+	vertical-align: top;
+	text-align:center;
+}
+.helpInstructionsContent{
+	overflow-x: auto;
+}

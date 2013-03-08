@@ -4,32 +4,63 @@
     Author     : olmozavala
 --%>
 <!-- This tables displayes the current palette and the color range used on it -->
-
-<c:if test='${netcdf}'>
-<table border="0" class="palette" align="center">
+<table border="0" id="palette" cellpadding="3">
 	<tr>
-		<td> 
-			<img id="imgPalette" src="${paletteUrl}" onclick="displayPalettes();" 
+		<td rowspan="3"> 
+			<img id="imgPalette" src="${paletteUrl}" onclick="displayOptionalPalettes();" 
 				 onmouseover="this.style.cursor ='pointer';"
-				 onmouseout="this.style.cursor ='crosshair';"/>
+				 onmouseout="this.style.cursor ='crosshair';" onload="getDefault();"/>
 		</td>
-		<td class="waitBack">
+		<td >
 			<p class="palMinMax">
-				&nbsp; 
-				max: <input id="maxPal" name="maxPal" type="text" size="2" /> 
-				&nbsp;
-                        </p>
-				<br><p class="small awesome" style="font-size:11px;" onclick="UpdatePalette(mappalette);" >
-							Update 
-						</p>
-                        
-                                <br><BR/>
-                                	<p class="palMinMax">
-				&nbsp;
-				min: <input  id="minPal" name="minPal" type="text" size="2" />
-				&nbsp;
+				Max:<input onblur="UpdatePalette(mappalette);" onfocus="keyboardnav.deactivate();" 
+						   onkeydown="if(event.keyCode == 13) UpdatePalette(mappalette);"
+						   id="maxPal" name="maxPal" type="text" size="4" /><br>
+				<img class="plusButton" id="plusButtonElevation" onclick="increaseMaxColorRange(1);" 
+					 onmouseover="rollImage(this,'${basepath}/common/images/Menu/PlusInv.png' )"
+					 onmouseout="rollImage(this,'${basepath}/common/images/Menu/Plus.png' )"
+					 onmousedown="rollImage(this,'${basepath}/common/images/Menu/PlusPressed.png' )"
+					 onmouseup="rollImage(this,'${basepath}/common/images/Menu/PlusInv.png' )"
+					 src="${basepath}/common/images/Menu/Plus.png" alt="IncTrans" width="15" height="15" />
+
+				<img class="minusButton" id="minusButtonElevation" onclick="increaseMaxColorRange(-1);" 
+					 onmouseover="rollImage(this,'${basepath}/common/images/Menu/MinusInv.png' )"
+					 onmouseout="rollImage(this,'${basepath}/common/images/Menu/Minus.png' )"
+					 onmousedown="rollImage(this,'${basepath}/common/images/Menu/MinusPressed.png' )"
+					 onmouseup="rollImage(this,'${basepath}/common/images/Menu/MinusInv.png' )"
+					 src="${basepath}/common/images/Menu/Minus.png" alt="DecTrans" width="15" height="15" />
+
 			</p>
 		</td>
 	</tr>
+	<tr >
+		<td height="40px">
+			<p class="buttonStyle reducedPadding" id="updateColorRangeButton" onclick="UpdatePalette(mappalette);" > Update </p>
+			<p class="buttonStyle reducedPadding" id="autoColorRangeButton"  onclick="setColorRangeFromMinMax();" > Auto</p>	
+		</td>
+	</tr>
+	<tr>
+		<td >
+			<p class="palMinMax">
+				<img class="plusButton" id="plusButtonElevation" onclick="decreaseMinColorRange(-1);" 
+					 onmouseover="rollImage(this,'${basepath}/common/images/Menu/PlusInv.png' )"
+					 onmouseout="rollImage(this,'${basepath}/common/images/Menu/Plus.png' )"
+					 onmousedown="rollImage(this,'${basepath}/common/images/Menu/PlusPressed.png' )"
+					 onmouseup="rollImage(this,'${basepath}/common/images/Menu/PlusInv.png' )"
+					 src="${basepath}/common/images/Menu/Plus.png" alt="IncTrans" width="15" height="15" />
+
+				<img class="minusButton" id="minusButtonElevation" onclick="decreaseMinColorRange(1);" 
+					 onmouseover="rollImage(this,'${basepath}/common/images/Menu/MinusInv.png' )"
+					 onmouseout="rollImage(this,'${basepath}/common/images/Menu/Minus.png' )"
+					 onmousedown="rollImage(this,'${basepath}/common/images/Menu/MinusPressed.png' )"
+					 onmouseup="rollImage(this,'${basepath}/common/images/Menu/MinusInv.png' )"
+					 src="${basepath}/common/images/Menu/Minus.png" alt="DecTrans" width="15" height="15" />
+				<br>
+				Min: <input onblur="UpdatePalette(mappalette);" onfocus="keyboardnav.deactivate();" 
+							onkeydown="if(event.keyCode == 13) UpdatePalette(mappalette);"
+							id="minPal" name="minPal" type="text" size="4" />
+			</p>
+
+		</td>
+	</tr>
 </table>
-</c:if>

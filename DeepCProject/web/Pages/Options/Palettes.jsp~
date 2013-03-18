@@ -5,9 +5,13 @@
 --%>
 <!-- This tables displayes the current palette and the color range used on it -->
 <c:if test='${netcdf}'>
-
+	<%-- 
+    Document   : Palettes
+    Created on : Aug 3, 2012, 6:26:56 PM
+    Author     : olmozavala
+	--%>
 	<!-- This tables displayes the current palette and the color range used on it -->
-	<table border="0" id="palette" class="draggableWindow" >
+	<table border="0" id="palette" >
 		<tr>
 			<td rowspan="3"> 
 				<img id="imgPalette" src="${paletteUrl}" onclick="displayOptionalPalettes();" 
@@ -18,9 +22,7 @@
 				<p class="palMinMax">
 					Max:<input onblur="UpdatePalette(mappalette);" onfocus="keyboardnav.deactivate();" 
 							   onkeydown="if(event.keyCode == 13) UpdatePalette(mappalette);"
-							   id="maxPal" name="maxPal" type="text" size="4" />
-					<span class="closeButton" onclick="showPalettes();" >x</span>
-					<br>
+							   id="maxPal" name="maxPal" type="text" size="4" /><br>
 					<img class="plusButton" id="plusButtonElevation" onclick="increaseMaxColorRange(1);" 
 						 onmouseover="rollImage(this,'${basepath}/common/images/Menu/PlusInv.png' )"
 						 onmouseout="rollImage(this,'${basepath}/common/images/Menu/Plus.png' )"
@@ -34,6 +36,7 @@
 						 onmousedown="rollImage(this,'${basepath}/common/images/Menu/MinusPressed.png' )"
 						 onmouseup="rollImage(this,'${basepath}/common/images/Menu/MinusInv.png' )"
 						 src="${basepath}/common/images/Menu/Minus.png" alt="DecTrans" width="15" height="15" />
+
 				</p>
 			</td>
 		</tr>
@@ -68,7 +71,7 @@
 		</tr>
 	</table>
     <!-- Holds the optional palettes -->
-	<div class="draggableWindow" id="palettes-div">
+	<div class="palettesDiv" id="palettes-div">
 		<table id="optionalPalettesHeader">
 			<tr>
 				<td> <p class="defShadow">Select new palette </p> </td>

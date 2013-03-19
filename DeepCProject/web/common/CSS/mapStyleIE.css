@@ -90,11 +90,20 @@ p /* This is the default font type for the letters in the page */
 }
 
 
+/* Palette related fields*/
+
 #palette, div.palettesDiv{
     color:white;
     background-color:white;
     border:solid black 2px;
 }
+
+#palettes-div
+{    
+    background-color: white;    
+    border:solid black 2px;
+}
+
 
 
 .buttonStyle .mainMenu, .defaultOptions, .mainMenuOption{

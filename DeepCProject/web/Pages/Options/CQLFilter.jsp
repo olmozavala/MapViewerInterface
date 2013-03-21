@@ -36,6 +36,7 @@
 			</tr>
 		</table>
 		<br> <b>Examples</b>:
+		<br> &nbsp;&nbsp;&nbsp;&nbsp; time <b>></b> '2013-01-01'
 		<br> &nbsp;&nbsp;&nbsp;&nbsp; year <b>></b> 2008 <b>AND </b>year <b><</b> 2011
 		<br> &nbsp;&nbsp;&nbsp;&nbsp; temperature <b>></b> 10 <b>OR</b> salinity <b>>=</b> 1
 		<br> &nbsp;&nbsp;&nbsp;&nbsp; year <b>IN</b> (2012,2013) <b>AND</b> date < '8/10/2013'

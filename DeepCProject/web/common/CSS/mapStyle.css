@@ -402,7 +402,7 @@ for the main layers, the color palettes, the optional layers, the calendars etc.
 	border:solid 1px white;
 	padding:3px;
 	cursor: move;
-    opacity:0.85;
+    opacity:0.95;
 	position:absolute;
 	border-spacing: 5px 2px;
     font-size: 12px;

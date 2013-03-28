@@ -35,7 +35,7 @@ div.olControlScaleLine {
 /* Div to display latitude and longitude*/
 div.layersLongLat{
     position:absolute;
-    bottom:40px;
+    bottom:80px;
     right:200px;
     z-index:1000;
     display:inline;
@@ -454,3 +454,4 @@ for the main layers, the color palettes, the optional layers, the calendars etc.
 .smallMargin{
 	margin: 2px;
 }
+

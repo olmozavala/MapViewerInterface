@@ -59,24 +59,29 @@
 
 }
 
-/* This are all the hover instructions of the menu options*/
-.commonHover
-{
-    border:1px solid;
+
+#hoverCorner{
+    top:65px;
+    position:absolute;
+    right:2%;
+  border:1px solid;
     padding:5px;
     font-size: 11px;
     background-image:url('../images/transBack.png');
     background-color: darkkhaki;
-    position:absolute;
-    z-index:1002;
+   
+    z-index:1009;
     -moz-border-radius: 10px;
     -webkit-border-radius: 10px;
     border-radius:10px;
-    top: 45px;
-    display: none;
-    width: 250px;
+   text-align: left;
+   width:150px;
+    font-size: 12px;
 	color:black;
+    display:none;
 }
+
+
 #mainMenuParentHover{ top: 100px; left: 150px;}
 #transParentHover{ }
 #elevationParentHover{ }

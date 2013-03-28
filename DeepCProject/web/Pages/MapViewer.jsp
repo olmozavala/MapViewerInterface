@@ -20,7 +20,7 @@ This is the main jsp file that forms the html webpage. It contains the skeleton 
     </head>
 
 
-    <body id="bodyClass" onload="setHoverPositions()" onresize="refreshWindow();" >
+    <body id="bodyClass" onresize="refreshWindow();" >
         <%-- Main form of the application (main menu), it executes a new page everytime a new menu item is chosen --%>
 
         <form id="baseForm" name="baseForm" action="${basepath}${names.acdmServlet}" method="post">
@@ -45,9 +45,7 @@ This is the main jsp file that forms the html webpage. It contains the skeleton 
                         </span>
                     </c:if>
 
-                    <span id="mainMenuParentHover" class="commonHover"  >
-                        Base layer selection. Mostly raster data.
-                    </span>
+                   
             </span>
 
             <c:if test="${cqlfilter}">

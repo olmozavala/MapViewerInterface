@@ -38,6 +38,10 @@
 						<span id="transectParent">
 							<button type="button" name="type" value="line" id="lineToggle" class="buttonStyle" 
 									onclick="toggleControl(this);" >Transect Tool</button>
+                                                    
+                                                   
+	
+
 						</span>
 					</td>
 				</c:when>
@@ -52,6 +56,9 @@
 			</td>
         </tr>
     </table>
+                                
+                                
+                                <span id="hoverCorner" class="commonHover"></span>
 </div>
 
 

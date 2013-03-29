@@ -8,11 +8,11 @@ This is the main jsp file that forms the html webpage. It contains the skeleton 
 <jsp:useBean id="names" class="com.mapviewer.model.PagesNames" scope="page"> </jsp:useBean>
 <jsp:useBean id="globals" class="com.mapviewer.model.Globals" scope="page"> </jsp:useBean>
 
-<!DOCTYPE HTML PUBLIC "-//W3C//Dtd HTML 4.01 Transitional//EN"
-	"http://www.w3.org/tr/html4/loose.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+	<!DOCTYPE HTML PUBLIC "-//W3C//Dtd HTML 4.01 Transitional//EN"
+		"http://www.w3.org/tr/html4/loose.dtd">
+	<html xmlns="http://www.w3.org/1999/xhtml">
 
-	<head>
+		<head>
         <%@include file="Header/GlobalJavaScript.jsp" %> <%-- Sets all the javascript global variables that are initiated by the java application --%>
 
         <%@include file="Header/Header.jsp" %> <%-- contains all the css links and javascript links --%>
@@ -44,8 +44,10 @@ This is the main jsp file that forms the html webpage. It contains the skeleton 
                                     onclick="toggleCustomFilterTextBox();" >Custom filter</button>
                         </span>
                     </c:if>
-
-                   
+					<span id="mainMenuParentHover" class="commonHover">
+						Select from these hierarchically organized<br>
+							base layers.
+					</span>
             </span>
 
             <c:if test="${cqlfilter}">
@@ -101,6 +103,9 @@ This is the main jsp file that forms the html webpage. It contains the skeleton 
 
 		<!-- minimizable windows file -->
 		<%@include file="Options/MinimizeWindows.jsp" %>
+
+		<!-- Help texts file -->
+		<%@include file="Help/HelpTexts.jsp" %>
 
 		<!-- Special link that -->
 		<!-- <div id="wcslink"> </div> -->

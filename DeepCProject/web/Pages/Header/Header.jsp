@@ -32,6 +32,7 @@
 		<script src="http://code.jquery.com/ui/1.9.1/jquery-ui.js"></script>
 
         <script type="text/javascript" src="${basepath}/common/JS/utilities.js"> </script>
+        <script type="text/javascript" src="${basepath}/common/JS/mapDisplay/HelpInstructions.js"> </script>
         <script type="text/javascript" src="${basepath}/common/JS/mapDisplay/mapDisplay.js"> </script>
 		<script type="text/javascript" src="${basepath}/common/JS/mapDisplay/Calendars.js"> </script>
 		<script type="text/javascript" src="${basepath}/common/JS/mapDisplay/Elevation.js"> </script>

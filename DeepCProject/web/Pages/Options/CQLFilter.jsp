@@ -35,7 +35,7 @@
 				<td>% (any) </td>
 			</tr>
 		</table>
-		<br> <b>Examples</b>:
+		<br> <b>Examples (review available filters)</b>:
 		<br> &nbsp;&nbsp;&nbsp;&nbsp; time <b>></b> '2013-01-01'
 		<br> &nbsp;&nbsp;&nbsp;&nbsp; year <b>></b> 2008 <b>AND </b>year <b><</b> 2011
 		<br> &nbsp;&nbsp;&nbsp;&nbsp; temperature <b>></b> 10 <b>OR</b> salinity <b>>=</b> 1

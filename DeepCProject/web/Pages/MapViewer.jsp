@@ -3,6 +3,7 @@ This is the main jsp file that forms the html webpage. It contains the skeleton 
 --%>
 
 <%@page pageEncoding="iso-8859-1"%>
+<%@page errorPage="Error/ErrorPage.jsp" %>
 <%@ taglib prefix="menuHelper" uri="/WEB-INF/TLD/htmlStaticFunctions.tld" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <jsp:useBean id="names" class="com.mapviewer.model.PagesNames" scope="page"> </jsp:useBean>

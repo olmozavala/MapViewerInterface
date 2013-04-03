@@ -31,5 +31,6 @@
 		</span>
 		<span id="downloadDataParentHover" class="commonHover">
 			Downloads the base layer in GIS format <br> 
-			(shape if vector, geotiff ir raster).
+			(shape if it is a vector layer, <br> 
+			geotiff if it is a raster layer).
 		</span>

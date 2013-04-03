@@ -10,7 +10,7 @@
 		<link rel="icon" href="${basepath}/common/images/icon/Gulf.ico" type="image/x-icon" />
         <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
         <meta name="Description" content="Deep-C atlas" />
-        <meta name="Keywords" content="Climatic atlas" />
+        <meta name="Keywords" content="DeepC, GIS, COAPS, map viewer, Deep-C, Oceanography" />
 
         <link href="${basepath}/common/CSS/mapStyle.css" rel="stylesheet" type="text/css"/>
         <link href="${basepath}/common/CSS/Palettes.css" rel="stylesheet" type="text/css"/>
@@ -46,4 +46,4 @@
         <script type="text/javascript" src="${basepath}/common/JS/calendar/jscal2.js"></script>
         <script type="text/javascript" src="${basepath}/common/JS/calendar/lang/en.js"></script>
 
-        <title>Gulf of Mexico</title>
+        <title>Deep-C Web Map Viewer</title>

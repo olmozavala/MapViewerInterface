@@ -106,7 +106,7 @@ This is the main jsp file that forms the html webpage. It contains the skeleton 
 		<%@include file="Options/MinimizeWindows.jsp" %>
 
 		<!-- Help texts file -->
-		<%@include file="Help/HelpTexts.jsp" %>
+		<!--<%@include file="Help/HelpTexts.jsp" %>-->
 
 		<!-- Special link that -->
 		<!-- <div id="wcslink"> </div> -->

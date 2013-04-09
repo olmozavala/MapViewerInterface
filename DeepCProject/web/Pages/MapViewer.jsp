@@ -31,7 +31,17 @@ This is the main jsp file that forms the html webpage. It contains the skeleton 
             </span> 
 
             <!-- List of optional layers -->
-            <span class="draggableWindow" id="optionalMenuParent"><%@include file="Options/OptionalLayers.jsp" %></span>
+            <span class="draggableWindow" id="optionalMenuParent" 
+				  onmouseover="hoverInstructions('optionalLayersParentHover', '1')" 
+                  onmouseout="hoverInstructions('optionalLayersParentHover', '2')" >
+				<%@include file="Options/OptionalLayers.jsp" %>
+					<span id="optionalLayersParentHover" class="commonHover">
+						Click on the check box to enable an optional layer. 
+							The '+' and '-' buttons change the transparency and 
+								use the <img src="${basepath}/common/images/kmz/kmz.png">
+									image to download the layer as 'kmz' file (for Google Earth).
+					</span>
+			</span>
 
             <!-- These are the dropdowns for the base layer-->
             <span class="draggableWindow" id="mainMenuParent" onmouseover="hoverInstructions('mainMenuParentHover', '1')" 
@@ -106,10 +116,7 @@ This is the main jsp file that forms the html webpage. It contains the skeleton 
 		<%@include file="Options/MinimizeWindows.jsp" %>
 
 		<!-- Help texts file -->
-		<!--<%@include file="Help/HelpTexts.jsp" %>-->
-
-		<!-- Special link that -->
-		<!-- <div id="wcslink"> </div> -->
+		<%@include file="Help/HelpTexts.jsp" %>
     </body>
 </html>
 

@@ -2,6 +2,7 @@
 <div id="layersMenu" class="layersMenu">
     <table name="menuTable" border="0" align="center" cellpadding="2" >
         <tr>
+			<!--
 		<c:choose>
 			<c:when test='${netcdf}'>
 				<td id="hideCalendarButtonParent" valign="center" >
@@ -9,6 +10,7 @@
 				</td>
 			</c:when>
 		</c:choose>
+   				-->
 		<td valign="middle">
 			<!-- Link to download kml files-->
 			<span id="kmlLinkParent" onmouseover="hoverInstructions('mainKmlParentHover', '1')" 

@@ -8,21 +8,19 @@ body {
     overflow:hidden;
 }
 
-
-
 /* optional layers such as us state, DeepC, etc*/
 #optionalMenuParent
 {
-    top:410px;
-    min-width:160px;
-    left:48px;
+
+
+
     text-align:left;
-	background-color: black;
+    background-color: black;
 }
 
 /* This is the small Scale line in the bottom of the map */
 div.olControlScaleLine {
-    display:table;
+    display:none;
     table-layout:fixed;
     font-size: 0.5em;
 
@@ -48,12 +46,12 @@ div.layersLongLat{
     text-align:left;
     background-image:url('../images/transBack.png');
     font-size: 12px;
-	font-weight: normal;
+    font-weight: normal;
     border-style: solid;
     border-width: thin;
     border-color: black;
     border-radius: 5px;
-
+    display:none;
     pointer-events: none;
 }
 /* Div where the specific data of the layers are displayed */
@@ -68,7 +66,7 @@ div.layersData{
     text-align:left;
     background-image:url('../images/transBack.png');
 }
-/* Main div for user menu options. topmenu */
+/* Main div for user menu options. Where the dropdown, vector layers etc are now topmenu */
 div.layersMenu{
     background-image:url('../images/transBack.png');
     top:0px;
@@ -93,7 +91,7 @@ div.leftFoot{
 div.mapTitle{
     position:absolute;
     width: 100%;
-    top:55px;
+    top:70px;
     left:0%;
     z-index:1000;
     display:inline;
@@ -119,7 +117,7 @@ smaller and doesn't have background. Currently are used
 for transparency in the optional layers. */
 .minusButtonSmall, .plusButtonSmall
 {
-    font-size: 13px; 
+    font-size: 70px; 
     font-weight: bolder;
     vertical-align: top;
     margin: 0;
@@ -144,11 +142,6 @@ a
     text-decoration: none;
 }
 
-/* The 'MainMenu'(base layers dropdowns) container */
-#mainMenuParent{
-    top: 30px;
-    left: 50px;
-}
 
 
 
@@ -162,6 +155,7 @@ table.vectorLayer{
     /*  background-image:url('../images/transBack.png');*/
     font-size: 10px;
     font-weight: bold;
+
 }
 
 /*part of the color pallete */
@@ -193,8 +187,8 @@ p /* This is the default font type for the letters in the page */
 
 /*title on top of calendar */
 .calTitle{
-    font-size:13px;
-        text-shadow: 0px -1px 5px #DCDCDC,     /* north      */
+    font-size:30px;
+    text-shadow: 0px -1px 5px #DCDCDC,     /* north      */
         0px  1px 5px #DCDCDC,     /* south      */
         -1px  0px 5px #DCDCDC,     /* west       */
         1px  0px 5px #DCDCDC,     /* east       */
@@ -205,9 +199,9 @@ p /* This is the default font type for the letters in the page */
 }
 
 .defShadow{ /* This font type inverts the color of the font and the shadow */
-    font-size:13px;
- color:black;
-  
+    
+    color:black;
+
     text-shadow: 0px -1px 5px #DCDCDC,     /* north      */
         0px  1px 5px #DCDCDC,     /* south      */
         -1px  0px 5px #DCDCDC,     /* west       */
@@ -311,11 +305,11 @@ and also the mainMenu dropdown options*/
     -moz-border-radius:6px;
     -webkit-border-radius:6px;
     border-radius:4px;
-    border:1px solid #080708;
+    border:5px solid #080708;
     display:block;
     font-family:Calibri, Arial, sans-serif;
-    font-size:13px;
-    width: 120px;
+    font-size:30px;
+    width: 100%;
     height: 2em;
     color:black;
 
@@ -350,12 +344,12 @@ but the size of the font is larger */
 
 #elevationSelector
 {
-    top:45px;
-    left:40%;
-
-    display:none;
-    visibility: hidden;
-	background-color: black;
+    top:80px;
+    left:35px;
+    position:absolute;
+    
+    
+    background-color: black;
 }
 
 
@@ -392,8 +386,27 @@ but the size of the font is larger */
 /* This is the CSS for a default dragabble window. It should be used
 for the main layers, the color palettes, the optional layers, the calendars etc.*/ 
 .draggableWindow{
-	/*background-color:black;*/
-	position:absolute;
+    /*background-color:black;*/
+    
+    z-index:1008;
+    color: white;    
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius:10px;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    border:solid 5px white;
+    padding:3px;
+    cursor: move;
+    opacity:0.95;
+    background-color:#000000;
+    border-spacing: 5px 2px;
+    font-size: 12px;
+}
+
+.WindowMobile{
+    	background-color:black;
+	
 	z-index:1008;
 	color: white;    
 	-moz-border-radius: 10px;
@@ -401,13 +414,13 @@ for the main layers, the color palettes, the optional layers, the calendars etc.
 	border-radius:10px;
 	margin-top: 2em;
 	margin-bottom: 2em;
-	border:solid 1px white;
+	border:solid 3px white;
 	padding:3px;
-	cursor: move;
-    opacity:0.95;
+	
+   
 	position:absolute;
 	border-spacing: 5px 2px;
-    font-size: 12px;
+   
 }
 
 
@@ -415,28 +428,28 @@ for the main layers, the color palettes, the optional layers, the calendars etc.
 
 
 .closeButton, .maximizeButton, .minimizeButton {
-	background-color:#ffffff;
-	border:1px solid #dcdcdc;
-	display:inline-block;
-	color:#333333;
-	font-family:arial;
-	font-size:10px;
-	font-weight: bold;
-	padding:0px 3px;
-	text-decoration:none;
-	cursor:pointer;
-	float: right;
+    background-color:#ffffff;
+    border:1px solid #dcdcdc;
+    display:none;
+    color:#333333;
+    font-family:arial;
+    font-size:10px;
+    font-weight: bold;
+    padding:0px 3px;
+    text-decoration:none;
+    cursor:pointer;
+    float: right;
 }.closeButton:hover, .minimizeButton:hover , .maximizeButton:hover {
-	background-color:#f6f6f6;
+    background-color:#f6f6f6;
 }.closeButton:active, .minimizeButton:active, maximizeButton:active{
-	position:relative;
-	top:1px;
+    position:relative;
+    top:1px;
 }
 
 
 .minimizeButton
 {
-	padding:0px 4px;
+    padding:0px 4px;
 
 
 }    
@@ -444,19 +457,304 @@ for the main layers, the color palettes, the optional layers, the calendars etc.
 #optionalsMinimize, #calendarsMinimize, #mainMenuMinimize
 {
     z-index: 1008;
-   text-align:center;
+    text-align:center;
     background-color:black;
     bottom:-34px;
     display:none;
     cursor: default;
-    
+
 }
 
 /* Simple class to avoid margin of a paragraph */
 .smallMargin{
-	margin: 2px;
+    margin: 2px;
+}
+
+#mobileLevel1{
+
+
+    top:5px;
+    
+    text-align: center;
+    z-index:1002;
+    position:absolute;
+    left:5px;
+
+   
+
+}
+
+.mobileButton {
+    background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #ad4242), color-stop(1, #1a1a1a) );
+    background:-moz-linear-gradient( center top, #ad4242 5%, #1a1a1a 100% );
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ad4242', endColorstr='#1a1a1a');
+    background-color:#ad4242;
+    -moz-border-radius:6px;
+    -webkit-border-radius:6px;
+    border-radius:6px;
+    border:4px solid #fffcff;
+
+    color:#fff5ff;
+    font-family:arial;
+    font-size:40px;
+    font-weight:bold;
+    text-align:center;
+    text-decoration:none;
+    text-shadow: none;
+
+}.mobileButton:hover {
+    background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #1a1a1a), color-stop(1, #ad4242) );
+    background:-moz-linear-gradient( center top, #1a1a1a 5%, #ad4242 100% );
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#1a1a1a', endColorstr='#ad4242');
+    background-color:#1a1a1a;
+}.mobileButton:active {
+    position:relative;
+    top:1px;
+}
+
+#mobileLev1optClose
+{
+
+    display:none;
+}
+
+
+#level3Calendars
+{
+    display:none;
+
+    position:absolute;
+   
+    top:0px;
+    left:150px;
+
+}
+
+#mobileLevel2{
+
+
+    display:none;
+    z-index:1002;
+    position:absolute;
+
+     background-color:#ad4242;
+  
+   
+    text-align:left;
+    top:0;
+    left:0px;
+
+
+}
+
+#mobileLevel3{
+
+
+    display:none;
+    z-index:1002;
+    position:absolute;
+    width:100px;
+    height:100px;
+  
+    text-align:left;
+    top:0px;
+    left:0px;
+   
+
 }
 
 
 
+
+
+
+
+#level3OptionalLayers
+{
+
+    display:none;
+    left:150px;
+    position:absolute;
+    top:0px;
+
+
+}
+
+
+
+#level3MainLayers
+{
+    display:none;
+    width:300px;
+    position:absolute;
+    top:-10px;
+    left:150px;
+
+
+}
+
+#level3Transparency
+{
+
+    display:none;
+    width:300px;
+    position:absolute;
+    top:0px;
+    left:150px;
+
+}
+
+#level3Depth
+{
+    display:none;
+    width:300px;
+    position:absolute;
+    top:0px;
+    left:150px;
+   
+
+}
+
+
+
+#mobileLev3Back
+{
+    display:none;
+    position:absolute;
+    top:10px;  
+    left:20px;
+}
+
+#level3ColorPalette
+{
+    display:none;
+    position:absolute;
+    top:0px;  
+    left:150px;
     
+}
+
+#level3Transect
+{
+    
+    display:none;
+    position:absolute;
+    top:5px;  
+    right:5px;
+    
+}
+
+
+input[type=checkbox]
+{
+    /* Double-sized Checkboxes */
+    -ms-transform: scale(3); /* IE */
+    -moz-transform: scale(3); /* FF */
+    -webkit-transform: scale(3); /* Safari and Chrome */
+    -o-transform: scale(3); /* Opera */
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+input[type=radio]
+{
+    /* Double-sized Checkboxes */
+    -ms-transform: scale(2); /* IE */
+    -moz-transform: scale(2); /* FF */
+    -webkit-transform: scale(2); /* Safari and Chrome */
+    -o-transform: scale(2); /* Opera */
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+input[type=text]
+{
+    font-size:25px;
+}
+
+
+
+
+
+#pTitleText
+{
+   
+   font-size:30px;
+
+}
+
+#mainMenuTitle
+{
+    font-size:35px;
+    text-align:center;
+
+}
+
+.transText{
+
+    font-size:30px;
+
+}
+
+#transectParent{
+    
+    position:absolute;
+    z-index:1009;
+    top:2px;
+    left:2px;
+    
+    display:none;
+   
+}
+
+.elevationSelector
+{
+    color:white;
+    font-size:30px;
+    border:solid white;
+    left:0px;
+    
+    
+    
+}
+
+.linkElevPageSelected
+{
+    font-size:30px;
+}
+
+.linkElevPageDef
+{
+    font-size:30px;
+}
+
+.mobileButtonDisabled
+{
+
+        
+        
+        
+          background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, grey), color-stop(1, grey) );
+    background:-moz-linear-gradient( center top, grey 5%, grey 100% );
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='grey', endColorstr='grey');
+    background-color:grey;
+    -moz-border-radius:6px;
+    -webkit-border-radius:6px;
+    border-radius:6px;
+    border:4px solid #fffcff;
+
+    color:#fff5ff;
+    font-family:arial;
+    font-size:40px;
+    font-weight:bold;
+    text-align:center;
+    text-decoration:none;
+    text-shadow: none;
+}
+
+#depthCheck
+{
+  font-size:40px;
+    
+}

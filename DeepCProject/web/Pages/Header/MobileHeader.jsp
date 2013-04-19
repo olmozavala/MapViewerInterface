@@ -12,13 +12,12 @@
         <meta name="Description" content="Deep-C atlas" />
         <meta name="Keywords" content="DeepC, GIS, COAPS, map viewer, Deep-C, Oceanography" />
 
-        <link href="${basepath}/common/CSS/mapStyle.css" rel="stylesheet" type="text/css"/>
-        <link href="${basepath}/common/CSS/Palettes.css" rel="stylesheet" type="text/css"/>
-		<link href="${basepath}/common/CSS/Calendars.css" rel="stylesheet" type="text/css"/>
-		<link href="${basepath}/common/CSS/OpenLayersRelated.css" rel="stylesheet" type="text/css"/>
+        <link href="${basepath}/common/CSS/mobileStyle.css" rel="stylesheet" type="text/css"/>
+        <link href="${basepath}/common/CSS/MobilePalettes.css" rel="stylesheet" type="text/css"/>
+		<link href="${basepath}/common/CSS/MobileCalendars.css" rel="stylesheet" type="text/css"/>
+		<link href="${basepath}/common/CSS/MobileOpenLayersRelated.css" rel="stylesheet" type="text/css"/>
 		<link href="${basepath}/common/CSS/MapInstructions.css" rel="stylesheet" type="text/css"/>
 		<link href="${basepath}/common/CSS/cqlFilter.css" rel="stylesheet" type="text/css"/>
-              
         <!--[if gte IE 6]>
         <link href="${basepath}/common/CSS/mapStyleIE.css" rel="stylesheet" type="text/css"/>
         <![endif]-->
@@ -35,9 +34,9 @@
         <script type="text/javascript" src="${basepath}/common/JS/utilities.js"> </script>
         <script type="text/javascript" src="${basepath}/common/JS/mapDisplay/HelpInstructions.js"> </script>
         <script type="text/javascript" src="${basepath}/common/JS/mapDisplay/mapDisplay.js"> </script>
-          
+          <script type="text/javascript" src="${basepath}/common/JS/mapDisplay/mobile.js"> </script>
 		<script type="text/javascript" src="${basepath}/common/JS/mapDisplay/Calendars.js"> </script>
-		<script type="text/javascript" src="${basepath}/common/JS/mapDisplay/Elevation.js"> </script>
+		<script type="text/javascript" src="${basepath}/common/JS/mapDisplay/MobileElevation.js"> </script>
 		<script type="text/javascript" src="${basepath}/common/JS/mapDisplay/OpenLayersRelated.js"> </script>
         <script type="text/javascript" src="${basepath}/common/JS/mapDisplay/animation.js"> </script>
         <script type="text/javascript" src="${basepath}/common/JS/validation.js"> </script>
@@ -48,4 +47,4 @@
         <script type="text/javascript" src="${basepath}/common/JS/calendar/jscal2.js"></script>
         <script type="text/javascript" src="${basepath}/common/JS/calendar/lang/en.js"></script>
 
-        <title><fmt:message key="header.title" /></title>
+        <title>Deep-C Web Map Viewer</title>

@@ -11,7 +11,7 @@
 			<div style="overflow: hidden">
 				<table style="width:100%">
 					<tr>
-						<td style="text-align: center"><font color="white" size="5" >Help</font> </td>
+						<td style="text-align: center"><font color="white" size="5" ><fmt:message key="main.help" /></font> </td>
 						<td>
 							<span type="button" class="closeButton helpClose" onclick="displayHelp()">x</span>
 						</td>
@@ -27,7 +27,8 @@
 					<tr>
 						<td id="helpInstructions" >
 							<table border="0" cellpadding="5" cellmargin="7" align="center" id="align_left">
-								<tr><td width="210" style="text-align:center;"><img src="${basepath}/common/images/icon/mouse_cursor.png"></td><td><b>Move map:</b><BR/> - Click the map with the mouse, while holding the mouse button and drag around the map.</td></tr>
+								<tr><td width="210" style="text-align:center;">
+										<img src="${basepath}/common/images/icon/mouse_cursor.png"></td><td><b>Move map:</b><BR/> - Click the map with the mouse, while holding the mouse button and drag around the map.</td></tr>
 								<tr><td style="text-align:center;">
 										<table align="center" >
 											<tr><td style="border:none;">
@@ -65,7 +66,7 @@
 													</button></td>
 
 												<td style="border:none;">	
-													<span class="buttonStyle no_hover" style="cursor:default;" >Depth</span>
+													<span class="buttonStyle no_hover" style="cursor:default;" ><fmt:message key="ncwms.depth" /></span>
 												</td>
 												<td style="border:none;">
 													<button class="plusButton" disabled="disabled" type="button" >

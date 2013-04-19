@@ -10,6 +10,6 @@
 <div id="map"> </div>      
 <div class="layersLongLat">
 	<!-- This div displays the specific data of the map -->
-	<b>Longitude:&nbsp;&nbsp;Latitude: &nbsp;</b>
+	<b><fmt:message key="main.lon" />:&nbsp;&nbsp;<fmt:message key="main.lat" />: &nbsp;</b>
 	<div id="location" ></div>
 </div>    

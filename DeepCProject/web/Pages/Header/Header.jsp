@@ -48,4 +48,4 @@
         <script type="text/javascript" src="${basepath}/common/JS/calendar/jscal2.js"></script>
         <script type="text/javascript" src="${basepath}/common/JS/calendar/lang/en.js"></script>
 
-        <title>Deep-C Web Map Viewer</title>
+        <title><fmt:message key="header.title" /></title>

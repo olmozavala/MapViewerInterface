@@ -33,13 +33,13 @@
 				</td>
 				<td valign="middle" id="palettesMenuParent" onmouseover="hoverInstructions('palettesHover', '1')" onmouseout="hoverInstructions('palettesHover', '2')">
 					<button type="button" class="buttonStyle" onclick="showPalettes()" id="dynamicFont_color"  >
-						Color Palette
+						<fmt:message key="ncwms.pal" />
 					</button>
 				</td>
 				<td valign="middle" onmouseover="hoverInstructions('transectParentHover', '1')" onmouseout="hoverInstructions('transectParentHover', '2')">
 					<span id="transectParent">
 						<button type="button" name="type" value="line" id="lineToggle" class="buttonStyle" 
-								onclick="toggleControl(this);" >Transect Tool</button>
+								onclick="toggleControl(this);" ><fmt:message key="ncwms.transect" /></button>
 					</span>
 				</td>
 			</c:when>
@@ -55,7 +55,7 @@
 			<!-- Map Instructions-->
 			<button type="button" class="buttonStyle" id="helpText" onmouseover="hoverInstructions('mapInstrucParentHover', '1');"
 						onmouseout="hoverInstructions('mapInstrucParentHover', '2')"
-				onclick="displayHelp();" atl="Help" />Help</button>
+				onclick="displayHelp();" atl="Help" /><fmt:message key="main.help" /></button>
 		</td>
         </tr>
     </table>

@@ -14,10 +14,11 @@
         <table id="CalendarParent" border="0">
             <!--<tr><th colspan="2"><p class="defShadow">Dates range for Base layer</p></th></tr>-->
             <tr>
-                <td><span id="hideOneDay" class="calTitle ie_shadow"> Start date (Current)</span></td>
-                <td><span id="hideOneDayEnd" class="calTitle ie_shadow" style="padding-right:0px;">End date </span><span class="minimizeButton" onclick="minimizeWindow('calendarsMinimize', 'CalendarsAndStopContainer')" style="position:absolute;right:25px;top:5px;">-</span><span class="closeButton" onclick="hideCalendarFunc();" style="position:absolute;right:5px;top:5px;">x</span></td>
-
-            </tr>
+                <td><span id="hideOneDay" class="calTitle ie_shadow"> <fmt:message key="ncwms.cal.start" /></span></td>
+                <td><span id="hideOneDayEnd" class="calTitle ie_shadow" style="padding-right:0px;"><fmt:message key="ncwms.cal.end" /></span>
+					<span class="minimizeButton" onclick="minimizeWindow('calendarsMinimize', 'CalendarsAndStopContainer')" 
+						  style="position:absolute;right:25px;top:5px;">-</span>
+					<span class="closeButton" onclick="hideCalendarFunc();" style="position:absolute;right:5px;top:5px;">x</span></td>
             <tr>
                 <td> <div class="startDateCal" id="cal-start"> </div> </td>
                 <td> <div class="endDateCal" id="cal-end"> </div> </td>
@@ -27,8 +28,11 @@
                     <div class="dispAnimation" id="p-animation">
                         <button type="button" style="display:inline" 
                                 class="buttonStyle" onclick="dispAnimation();" > 
-                            Display animation </button> 
-                </td><td>
+                           <fmt:message key="ncwms.dispanim" />
+					    </button> 
+					</div>
+                </td>
+				<td>
                     <!-- This select is filled in by javascript  -->
                     <select id="timeSelect" name="timeSelect">
                     </select>
@@ -42,7 +46,7 @@
         <div id="s-animation" > 
             <button type="button" 
                     onclick="stopAnimation();" 
-                    class="buttonStyle" >Stop Animation</button>
+                    class="buttonStyle" ><fmt:message key="ncwms.stopanim" /></button>
         </div> 
     </div>
 </c:if>

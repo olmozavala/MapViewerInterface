@@ -39,8 +39,8 @@
 		</tr>
 		<tr >
 			<td >
-				<p class="buttonStyle reducedPadding" id="updateColorRangeButton" onclick="UpdatePalette(mappalette);" > Update </p>
-				<p class="buttonStyle reducedPadding" id="autoColorRangeButton"  onclick="setColorRangeFromMinMax();" > Auto</p>	
+				<p class="buttonStyle reducedPadding" id="updateColorRangeButton" onclick="UpdatePalette(mappalette);" > <fmt:message key="ncwms.update" /></p>
+				<p class="buttonStyle reducedPadding" id="autoColorRangeButton"  onclick="setColorRangeFromMinMax();" > <fmt:message key="ncwms.auto" /></p>	
 			</td>
 		</tr>
 		<tr>
@@ -71,7 +71,7 @@
 	<div class="draggableWindow" id="palettes-div">
 		<table id="optionalPalettesHeader">
 			<tr>
-				<td> <p class="defShadow">Select new palette </p> </td>
+				<td> <p class="defShadow"><fmt:message key="ncwms.newpal" /></p> </td>
 				<td>
 					<p class="buttonStyle reducedPadding" 
 					   id="defaultColorRangeButton" onclick="DefaultPalette();"> Default</p>	

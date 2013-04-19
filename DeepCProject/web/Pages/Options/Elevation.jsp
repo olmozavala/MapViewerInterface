@@ -18,9 +18,10 @@ There is 3 options. Either '-' or '+' or click the button to choose the disired 
             <td><button type="button" id="minusButtonElevation" style="cursor: pointer;"  class="minusButton" onclick="changeElevation('-', layer1);">
                     -
                 </button></td>
-
             <td>	
-                <span style="cursor: pointer;" id="elevationText"  class ="middleText" onclick ="displayElevationSelector() " onmouseover="hoverInstructions('elevationParentHover', '1')" onmouseout="hoverInstructions('elevationParentHover', '2')" >Depth</span>
+                <span style="cursor: pointer;" id="elevationText"  class ="middleText" onclick ="displayElevationSelector() " 
+					  onmouseover="hoverInstructions('elevationParentHover', '1')" onmouseout="hoverInstructions('elevationParentHover', '2')" >
+					<fmt:message key="ncwms.depth" /></span>
             </td>
             <td>
                 <button class="plusButton" disabled="disabled" id="plusButtonElevation" style="cursor: pointer;" type="button"  onclick="changeElevation('+', layer1);">

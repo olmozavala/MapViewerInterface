@@ -6,12 +6,17 @@ This is the main jsp file that forms the html webpage. It contains the skeleton 
 <%@page errorPage="Error/ErrorPage.jsp" %>
 <%@ taglib prefix="menuHelper" uri="/WEB-INF/TLD/htmlStaticFunctions.tld" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"  %>
 <jsp:useBean id="names" class="com.mapviewer.model.PagesNames" scope="page"> </jsp:useBean>
 <jsp:useBean id="globals" class="com.mapviewer.model.Globals" scope="page"> </jsp:useBean>
 
+<!--This part is used to change the texts depending on the language of the user browser-->
+<fmt:setLocale value="${language}" />
+<fmt:setBundle basename="com.mapviewer.messages.text" />
+
 	<!DOCTYPE HTML PUBLIC "-//W3C//Dtd HTML 4.01 Transitional//EN"
 		"http://www.w3.org/tr/html4/loose.dtd">
-	<html xmlns="http://www.w3.org/1999/xhtml">
+	<html xmlns="http://www.w3.org/1999/xhtml" lang="${language}">
 
 		<head>
         <%@include file="Header/GlobalJavaScript.jsp" %> <%-- Sets all the javascript global variables that are initiated by the java application --%>
@@ -36,28 +41,26 @@ This is the main jsp file that forms the html webpage. It contains the skeleton 
                   onmouseout="hoverInstructions('optionalLayersParentHover', '2')" >
 				<%@include file="Options/OptionalLayers.jsp" %>
 					<span id="optionalLayersParentHover" class="commonHover">
-						Click on the check box to enable an optional layer. 
-							The '+' and '-' buttons change the transparency and 
-								use the <img src="${basepath}/common/images/kmz/kmz.png">
-									image to download the layer as 'kmz' file (for Google Earth).
+						<fmt:message key="help.optional.layers1" />
+						 <img src="${basepath}/common/images/kmz/kmz.png"> 
+						<fmt:message key="help.optional.layers2" />
 					</span>
 			</span>
 
             <!-- These are the dropdowns for the base layer-->
             <span class="draggableWindow" id="mainMenuParent" onmouseover="hoverInstructions('mainMenuParentHover', '1')" 
                   onmouseout="hoverInstructions('mainMenuParentHover', '2')" >
-                <p class="defShadow" style="cursor:move"> <span class="ie_shadow">Base Layers</span><span class="minimizeButton" onclick="minimizeWindow('mainMenuMinimize', 'mainMenuParent')" style="position:absolute;right:7px;top:7px;">-</span> </p>
+                <p class="defShadow" style="cursor:move"> <span class="ie_shadow"><fmt:message key="main.base" /></span><span class="minimizeButton" onclick="minimizeWindow('mainMenuMinimize', 'mainMenuParent')" style="position:absolute;right:7px;top:7px;">-</span> </p>
                 ${menuHelper:createMainMenu(MenuDelUsuario,language)}
                 <br>
                     <c:if test="${cqlfilter}">
                         <span id="ocqlMenuButtonParent">
                             <button type="button" name="type" id="idOcqlMenuButton" class="buttonStyle" 
-                                    onclick="toggleCustomFilterTextBox();" >Custom filter</button>
+                                    onclick="toggleCustomFilterTextBox();" ><fmt:message key="cql.custom" /></button>
                         </span>
                     </c:if>
 					<span id="mainMenuParentHover" class="commonHover">
-						Select from these hierarchically organized<br>
-							base layers.
+						<fmt:message key="help.mainlayers" />
 					</span>
             </span>
 
@@ -82,7 +85,7 @@ This is the main jsp file that forms the html webpage. It contains the skeleton 
                 <!--<span id="loadingAnimContainer" class="loadingAnimContainer" style="display:block;visibility:visible">-->
 
                 <div id="l-animation">
-                    <p > Loading 0 % <img src="${basepath}/common/images/load.gif" height="12" border="0" alt="loading" />	</A>	</p>
+                    <p class="bigFontSize"> <fmt:message key="ncwms.loading" /> <span id="loadperc">0</span> % <img src="${basepath}/common/images/load.gif" height="12" border="0" alt="loading" />	</p>
                 </div>
             </c:if>
 
@@ -106,9 +109,9 @@ This is the main jsp file that forms the html webpage. It contains the skeleton 
 
                     <p class="footNote" align="left">
                         &nbsp 
-                        &copy; <script language="javascript">document.write(getDate("%Y"));</script>.  Deep-C Consortium. All Rights Reserved. &nbsp;
+                        &copy; <script language="javascript">document.write(getDate("%Y"));</script>.  <fmt:message key="main.copyr" /> &nbsp;
                     </p>
-                    <a id="emailText" href="mailto:osz09@fsu.edu, aahmed@coaps.fsu.edu"> Contact </a>
+                    <a id="emailText" href="mailto:osz09@fsu.edu, aahmed@coaps.fsu.edu"> <fmt:message key="main.contact" /></a>
             </div>
         </form>
 

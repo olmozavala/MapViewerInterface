@@ -18,23 +18,15 @@ but a service offered by the OpenLayers Library.
         <tr>
             <td><button id="minusButtonTrans" class="minusButton"  type="button" disabled="disabled" onclick="changeTranspManager(.15, 'topMenu');">
                     -
-
                 </button></td>
-
             <td>
-                <span style="cursor: default;" id="transText" class="transText middleText">Transparency </span>
+                <span style="cursor: default;" id="transText" class="transText middleText"><fmt:message key="ncwms.trans" /></span>
             </td>
             <td>
-
-
                 <button id="plusButtonTrans" type="button" class="plusButton" onclick="changeTranspManager(-.15, 'topMenu');">
                     +
-
                 </button>
-
             </td>
         </tr>
     </table>
-
-
 </span>

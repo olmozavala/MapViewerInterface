@@ -9,6 +9,11 @@ This is the main jsp file that forms the html webpage. It contains the skeleton 
 <jsp:useBean id="names" class="com.mapviewer.model.PagesNames" scope="page"> </jsp:useBean>
 <jsp:useBean id="globals" class="com.mapviewer.model.Globals" scope="page"> </jsp:useBean>
 
+<!--This part is used to change the texts depending on the language of the user browser-->
+<fmt:setLocale value="${language}" />
+<fmt:setBundle basename="com.mapviewer.messages.text" />
+
+
 <!DOCTYPE HTML PUBLIC "-//W3C//Dtd HTML 4.01 Transitional//EN"
     "http://www.w3.org/tr/html4/loose.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -56,8 +61,8 @@ This is the main jsp file that forms the html webpage. It contains the skeleton 
 
                 <!--<span id="loadingAnimContainer" class="loadingAnimContainer" style="display:block;visibility:visible">-->
 
-                <div id="l-animation">
-                    <p > Loading 0 % <img src="${basepath}/common/images/load.gif" height="12" border="0" alt="loading" />	</A>	</p>
+                 <div id="l-animation">
+                    <p class="bigFontSize"> <fmt:message key="ncwms.loading" /> <span id="loadperc">0</span> % <img src="${basepath}/common/images/load.gif" height="12" border="0" alt="loading" />	</p>
                 </div>
             </c:if>
 

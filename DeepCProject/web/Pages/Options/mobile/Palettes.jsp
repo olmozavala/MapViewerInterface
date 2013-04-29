@@ -31,8 +31,8 @@
 
         <tr >
             <td >
-                <span class="mobileButton" id="updateColorRangeButton" onclick="UpdatePalette(mappalette);" > Update </span><BR/><BR/>
-                <span class="mobileButton" id="autoColorRangeButton"  onclick="setColorRangeFromMinMax();" > Auto</span>	<BR/>
+                <span class="mobileButton" id="updateColorRangeButton" onclick="UpdatePalette(mappalette);" ><fmt:message key="ncwms.update" /></span><BR/><BR/>
+                <span class="mobileButton" id="autoColorRangeButton"  onclick="setColorRangeFromMinMax();" > <fmt:message key="ncwms.auto" /></span>	<BR/>
             </td>
         </tr>
 
@@ -59,7 +59,7 @@
                 <td> <p class="defShadow">Select new palette </p> </td>
                 <td>
                     <p class="mobileButton" 
-                       id="defaultColorRangeButton" onclick="DefaultPalette();"> Default</p>	
+                       id="defaultColorRangeButton" onclick="DefaultPalette();"><fmt:message key="ncwms.default" /> </p>	
                 </td>
                
             </tr>

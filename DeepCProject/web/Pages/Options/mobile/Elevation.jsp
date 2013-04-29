@@ -20,7 +20,7 @@ There is 3 options. Either '-' or '+' or click the button to choose the disired 
                 </button></td>
 
             <td>	
-                <span  id="elevationText"  class ="mobileButton middleText">Depth</span>
+                <span  id="elevationText"  class ="mobileButton middleText"><fmt:message key="ncwms.depth" /></span>
             </td>
             <td>
                 <button class="mobileButton" id="plusButtonElevation" style="cursor: pointer;" type="button"  onclick="changeElevationMobile('+', layer1);">

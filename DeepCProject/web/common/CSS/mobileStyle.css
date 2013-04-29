@@ -759,3 +759,10 @@ input[type=text]
   font-size:40px;
     
 }
+
+#mobileLev1HideTitleOff
+{
+    display: none;
+    
+    
+}

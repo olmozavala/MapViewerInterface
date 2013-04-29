@@ -10,7 +10,7 @@ This is the main jsp file that forms the html webpage. It contains the skeleton 
 <jsp:useBean id="names" class="com.mapviewer.model.PagesNames" scope="page"> </jsp:useBean>
 <jsp:useBean id="globals" class="com.mapviewer.model.Globals" scope="page"> </jsp:useBean>
 
-<!--This part is used to change the texts depending on the language of the user browser-->
+    <!--This part is used to change the texts depending on the language of the user browser-->
 <fmt:setLocale value="${language}" />
 <fmt:setBundle basename="com.mapviewer.messages.text" />
 
@@ -62,7 +62,7 @@ This is the main jsp file that forms the html webpage. It contains the skeleton 
 
                 <!--<span id="loadingAnimContainer" class="loadingAnimContainer" style="display:block;visibility:visible">-->
 
-                 <div id="l-animation">
+                <div id="l-animation">
                     <p class="bigFontSize"> <fmt:message key="ncwms.loading" /> <span id="loadperc">0</span> % <img src="${basepath}/common/images/load.gif" height="12" border="0" alt="loading" />	</p>
                 </div>
             </c:if>
@@ -70,11 +70,15 @@ This is the main jsp file that forms the html webpage. It contains the skeleton 
 
             <table id="mobileLevel1" cellpadding="5px"  border="0">
                 <tr >                        
-                    <td id="mobileLev1optClose"><span  style="font-size:50px;" class="mobileButton"  onclick="hideMobileMenuLevel1(1)">Open</span></td>
-                    <td id="mobileLev1Hide"><span  style="font-size:50px;padding-left:2px;padding-right:2px;" class="mobileButton" onclick="hideMobileMenuLevel1(0)">Close</span></td>
-                    <td id="mobileLev1Tools"><span style="font-size:50px;" class="mobileButton" onclick="hideMobileMenuLevel1(2)">Tools</span></td>
-                    <td id="mobileLev1HideTitle"><span  style="font-size:50px;" class="mobileButton" onclick="hideMobileMenuLevel1('titleON')" id="titleOnText">Title On</span></td>
-                    <td id="mobileLev1Help"><span  style="font-size:50px;" class="mobileButton" >Help?</span></td>
+                    <td id="mobileLev1optClose"><span  style="font-size:50px;" class="mobileButton"  onclick="hideMobileMenuLevel1(1)"><fmt:message key="mobile.open" /></span></td>
+                    <td id="mobileLev1Hide"><span  style="font-size:50px;padding-left:2px;padding-right:2px;" class="mobileButton" onclick="hideMobileMenuLevel1(0)"><fmt:message key="mobile.close" /></span></td>
+                    <td id="mobileLev1Help"><span  style="font-size:50px;" class="mobileButton" ><fmt:message key="mobile.help" />?</span></td>
+                    <td id="mobileLev1Tools"><span style="font-size:50px;" class="mobileButton" onclick="hideMobileMenuLevel1(2)"><fmt:message key="mobile.tools" /></span></td>
+                    
+                    
+                    <td id="mobileLev1HideTitleOn"><span  style="font-size:50px;" class="mobileButton" onclick="showMobileTitle(1)" id="titleOnText"><fmt:message key="mobile.title.on" /></span></td>
+                    <td id="mobileLev1HideTitleOff"><span  style="font-size:50px;" class="mobileButton" onclick="showMobileTitle(2)" id="titleOnText"><fmt:message key="mobile.title.off" /></span></td>
+                    
 
 
 
@@ -86,26 +90,26 @@ This is the main jsp file that forms the html webpage. It contains the skeleton 
             <span id="transectParent">
                 <button type="button" name="type" value="line" id="lineToggle" class="mobileButton" 
                         onclick="hideMobileMenuLevel1('mobileLev3Back');
-                            toggleControlMobile(this);" >Transect Tool</button>
+                            toggleControlMobile(this);" ><fmt:message key="ncwms.transect" /></button>
             </span>
 
             <table id="mobileLevel2" border="3" width="100%" height="100%">
 
                 <tr>
-                    <td id="mobileLev2MainLayers" class="mobileButton level2button" onclick="hideMobileMenuLevel1('mainLayers')">Main Layers</td>
+                    <td id="mobileLev2MainLayers" class="mobileButton level2button" onclick="hideMobileMenuLevel1('mainLayers')"><fmt:message key="main.base" /></td>
 
-                    <td id="mobileLev2OptionalLayers" class="mobileButton level2button" onclick="hideMobileMenuLevel1('optionalLayers')">Optional Layers</td>
+                    <td id="mobileLev2OptionalLayers" class="mobileButton level2button" onclick="hideMobileMenuLevel1('optionalLayers')"><fmt:message key="main.optional" /></td>
 
                 </tr>
 
 
                 <tr>
                     <c:if test='${netcdf}'>
-                        <td id="mobileLev2Calendars" class="level2button mobileButton" onclick="hideMobileMenuLevel1('calendars')">Calendars</td>
+                        <td id="mobileLev2Calendars" class="level2button mobileButton" onclick="hideMobileMenuLevel1('calendars')"><fmt:message key="ncwms.cal.title" /></td>
                     </c:if>
 
                     <c:if test='${!netcdf}'>
-                        <td  id="mobileLev2Calendars" class="level2button mobileButtonDisabled" onclick="notAvailableOption()">Calendars</td>
+                        <td  id="mobileLev2Calendars" class="level2button mobileButtonDisabled" onclick="notAvailableOption()"><fmt:message key="ncwms.cal.title" /></td>
                     </c:if>
 
 
@@ -119,61 +123,61 @@ This is the main jsp file that forms the html webpage. It contains the skeleton 
                 </tr>
 
                 <tr>
-                    <td id="mobileLev2Transparency" class="level2button mobileButton"  onclick="hideMobileMenuLevel1('transparency')">Transparency</td>
+                    <td id="mobileLev2Transparency" class="level2button mobileButton"  onclick="hideMobileMenuLevel1('transparency')"><fmt:message key="ncwms.trans" /></td>
 
                     <c:if test='${netcdf}'>
                         <script>
-                        if (layerDetails.zaxis === undefined) {
+                            if (layerDetails.zaxis === undefined) {
                             
-                             document.write('<td id="mobileLev2Depth" class="level2button mobileButtonDisabled"  onclick="notAvailableOption();" >Depth </td>');
+                                document.write('<td id="mobileLev2Depth" class="level2button mobileButtonDisabled"  onclick="notAvailableOption();" ><fmt:message key="ncwms.depth" /> </td>');
                             
-                        }
+                            }
                         else{
                        
-                                document.write('<td id="mobileLev2Depth" class="level2button mobileButton"  onclick="hideMobileMenuLevel1(\'depth\')" >Depth </td>');
+                            document.write('<td id="mobileLev2Depth" class="level2button mobileButton"  onclick="hideMobileMenuLevel1(\'depth\')" ><fmt:message key="ncwms.depth" /> </td>');
                         }
                                         
                 
                         </script>
 
-                        </c:if>
-                    
-                    <c:if test='${!netcdf}'>
-                        <td id="mobileLev2Depth" class="level2button mobileButtonDisabled"  onclick="notAvailableOption()" >Depth </td> 
                     </c:if>
-                    
-                    
-                    
+
+                    <c:if test='${!netcdf}'>
+                        <td id="mobileLev2Depth" class="level2button mobileButtonDisabled"  onclick="notAvailableOption()" ><fmt:message key="ncwms.depth" /></td> 
+                    </c:if>
+
+
+
                 </tr>
 
                 <c:if test='${netcdf}'>
                     <tr>
 
-                        <td id="mobileLev2ColorPalette"  class="level2button mobileButton " onclick="hideMobileMenuLevel1('colorPalette')">Color Palette</td>
+                        <td id="mobileLev2ColorPalette"  class="level2button mobileButton " onclick="hideMobileMenuLevel1('colorPalette')"><fmt:message key="ncwms.pal" /></td>
 
                         <td id="mobileLev2TransectTool" class="level2button mobileButton" onclick="toggleControlMobile(this);
-                            hideMobileMenuLevel1('transect')">Transect Tool</td>
+                        hideMobileMenuLevel1('transect')"><fmt:message key="ncwms.transect" /></td>
 
                     </tr>
                 </c:if>
-                            
-                 <c:if test='${!netcdf}'>
+
+                <c:if test='${!netcdf}'>
                     <tr>
 
-                        <td id="mobileLev2ColorPalette" class="level2button mobileButtonDisabled " onclick="notAvailableOption()">Color Palette</td>
+                        <td id="mobileLev2ColorPalette" class="level2button mobileButtonDisabled " onclick="notAvailableOption()"><fmt:message key="ncwms.pal" /></td>
 
                         <td id="mobileLev2TransectTool" class="level2button mobileButtonDisabled" onclick="notAvailableOption()">Transect Tool</td>
 
                     </tr>
                 </c:if>            
-                            
-                            
-                            
+
+
+
                 <tr>
                     <td id="mobileLev2ZoomOptions" class="level2button mobileButton" onclick="hideMobileMenuLevel1('zoom')">Zoom Options</td>
 
 
-                    <td id="mobileLev2CloseMenu"  class="level2button mobileButton" onclick="hideMobileMenuLevel1(3)">Close Menu</td>
+                    <td id="mobileLev2CloseMenu"  class="level2button mobileButton" onclick="hideMobileMenuLevel1(3)"><fmt:message key="mobile.close" /></td>
 
 
 
@@ -186,14 +190,14 @@ This is the main jsp file that forms the html webpage. It contains the skeleton 
 
                 <tr>
 
-                    <td id="mobileLev3Back"><span  class="mobileButton"  onclick="hideMobileMenuLevel1('mobileLev3Back')">Back</span></td>
+                    <td id="mobileLev3Back"><span  class="mobileButton"  onclick="hideMobileMenuLevel1('mobileLev3Back')"><fmt:message key="mobile.back" /></span></td>
 
 
 
 
 
                     <td  id="level3MainLayers"><span class="WindowMobile" id="mainMenuParent">
-                            <div class="ie_shadow" id="mainMenuTitle">Base Layers</div>
+                            <div class="ie_shadow" id="mainMenuTitle"><fmt:message key="main.base" /></div>
                             ${menuHelper:createMainMenu(MenuDelUsuario,language)}
                             <br>
                                 <c:if test="${cqlfilter}">
@@ -277,9 +281,9 @@ This is the main jsp file that forms the html webpage. It contains the skeleton 
 
             </table>
 
-            
+
         </form>
 
-     
+
     </body>
 </html>

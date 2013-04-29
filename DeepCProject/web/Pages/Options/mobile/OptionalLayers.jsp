@@ -5,7 +5,7 @@
 --%>
 <!-- This sections generate the menu of optional layers, normally vector layers -->
 <table class="vectorLayer" border="0" cellpadding="0" width="400px">
-    <tr><td colspan="4" ><p class="invShadow" style="text-align: center; cursor:move;font-size:30px;padding-right:15px;">Optional Layers</p></td><tr>
+    <tr><td colspan="4" ><p class="invShadow" style="text-align: center; cursor:move;font-size:30px;padding-right:15px;"><fmt:message key="main.optional" /></p></td><tr>
     <c:forEach var="vectorLayer" items="${vectorLayers.childs}" varStatus="indice">
         <tr> 
             <td align="left" style="text-align:center">

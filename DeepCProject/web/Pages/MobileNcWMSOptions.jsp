@@ -14,8 +14,8 @@
         <table id="CalendarParent" border="0">
             <!--<tr><th colspan="2"><p class="defShadow">Dates range for Base layer</p></th></tr>-->
             <tr>
-                <td><span id="hideOneDay" class="calTitle ie_shadow"> Start date (Current)</span></td>
-                <td><span id="hideOneDayEnd" class="calTitle ie_shadow" style="padding-right:0px;">End date </span></td>
+                <td><span id="hideOneDay" class="calTitle ie_shadow"><fmt:message key="ncwms.cal.start" /></span></td>
+                <td><span id="hideOneDayEnd" class="calTitle ie_shadow" style="padding-right:0px;"><fmt:message key="ncwms.cal.end" /></span></td>
 
             </tr>
             <tr>
@@ -27,7 +27,7 @@
                     <div class="dispAnimation" id="p-animation">
                         <button type="button" style="display:inline" 
                                 class="mobileButton" onclick="dispAnimation();" > 
-                            Display animation </button> 
+                             <fmt:message key="ncwms.dispanim" /> </button> 
                 </td><td>
                     <!-- This select is filled in by javascript  -->
                     <select id="timeSelect" name="timeSelect" style="width:100%">
@@ -42,7 +42,7 @@
         <div id="s-animation" > 
             <button type="button" 
                     onclick="stopAnimation();" 
-                    class="mobileButton" >Stop Animation</button>
+                    class="mobileButton" ><fmt:message key="ncwms.stopanim" /></button>
         </div> 
     </div>
 </c:if>

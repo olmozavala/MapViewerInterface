@@ -1,12 +1,19 @@
 <%@page pageEncoding="iso-8859-1"%>
+<%@page errorPage="Error/ErrorPage.jsp" %>
 <%@ taglib prefix="menuHelper" uri="/WEB-INF/TLD/htmlStaticFunctions.tld" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"  %>
 <jsp:useBean id="names" class="com.mapviewer.model.PagesNames" scope="page"> </jsp:useBean>
 <jsp:useBean id="globals" class="com.mapviewer.model.Globals" scope="page"> </jsp:useBean>
 
+<!--This part is used to change the texts depending on the language of the user browser-->
+<fmt:setLocale value="${language}" />
+<fmt:setBundle basename="com.mapviewer.messages.text" />
+
 <!DOCTYPE HTML PUBLIC "-//W3C//Dtd HTML 4.01 Transitional//EN"
 	"http://www.w3.org/tr/html4/loose.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="${language}">
 
 	<head>
         <%@include file="Header/GlobalJavaScript.jsp" %>
@@ -14,7 +21,7 @@
         <%@include file="OpenLayersConfig.jsp" %>
     </head>
 
-	<body onload="setHoverPositions()" onresize="refreshWindow();" >
+	<body onresize="refreshWindow();" >
 
         <%@include file="RequiredDivs.jsp" %>
         <c:if test='${netcdf}'>
@@ -47,7 +54,7 @@
                     </tr>
 
                     <!-- Transparency -->
-                    <tr id="transParag"  onmouseover="hoverInstructions('transParentHover', '1')" onmouseout="hoverInstructions('transParentHover', '2')" >
+                    <tr id="transParent"  onmouseover="hoverInstructions('transParentHover', '1')" onmouseout="hoverInstructions('transParentHover', '2')" >
                         <!-- Container should have id='transParent-->
                         <td align="center" ><%@include file="Options/Transparency.jsp" %>
                         </td>
@@ -65,19 +72,22 @@
                                 </td> </tr>
 
                             <!-- Current palette and color range -->
-                            <tr> <td align="center" id="palettesParent"  onmouseover="hoverInstructions('palettesHover', '1')" 
+                            <tr> <td align="center" id="palettesMenuParent"  onmouseover="hoverInstructions('palettesHover', '1')" 
 									 onmouseout="hoverInstructions('palettesHover', '2')">
 									<%@include file="Options/Palettes.jsp" %>
 								</td> 
 							</tr>
 							<td id="hideCalendarButtonParent" valign="center" >
-								<p class="buttonStyle" id="hideCalendar" onclick="hideCalendarFunc();">Hide Calendar</p>
+								<p class="buttonStyle" id="hideCalendar" 
+									onmouseover="hoverInstructions('hideCalendarHover', '1')" 
+									onmouseout="hoverInstructions('hideCalendarHover', '2')"
+								   onclick="hideCalendarFunc();">Hide Calendar</p>
 							</td>
-							</c:when>
-							<c:when test='${!netcdf}'>
-								<!-- Download data-->
-								<tr id="download"><td><%@include file="Options/DownloadData.jsp" %></td></tr>
-							</c:when>
+						</c:when>
+						<c:when test='${!netcdf}'>
+							<!-- Download data-->
+							<tr id="download"><td><%@include file="Options/DownloadData.jsp" %></td></tr>
+						</c:when>
 					</c:choose>
 
 					<!-- Link to download kml files-->
@@ -90,22 +100,11 @@
 					<!--This part shows the animation options-->
 					<!-- List of optional layers -->
 					<tr>
-						<td id="optionalMenuParent"> 
+						<td id="optionalMenuParent" onmouseover="hoverInstructions('optionalMenuParentHover', '1')" 
+							onmouseout="hoverInstructions('optionalMenuParentHover', '2')"> 
 							<%@include file="Options/OptionalLayers.jsp" %>
 						</td>
 					</tr>
-					<!-- Email -->
-					<!--
-					<tr>
-						<td id="emailParent">
-							<a href="mailto:osz09@gmail.com">
-								<p id="emailText" class="buttonStyle" onclick="MapViewersubmitForm();" >
-									Contact
-								</p>
-							</a> 
-						</td>
-					</tr>-->
-
 					<!-- Map Instructions-->
 					<tr>
 						<td id="helpParent">

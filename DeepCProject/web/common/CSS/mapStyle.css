@@ -189,6 +189,7 @@ table.vectorLayer{
     background-image:url('../images/transBack.png'); 
     font-size: 12px;
     color:black;
+	text-align: left;
 }/* Subtable that contains the optional layers */
 
 table.palette{
@@ -371,12 +372,6 @@ style is being used by the buttons inside the colorPaleteRangeOptions*/
 	display:none;
 }
 
-#mainMenuParentHover { top:80px; }
-#transParentHover{ top:200px; } 
-#elevationParentHover{ top:230px; } 
-#transectParentHover{ top:270px;} 
-#palettesHover{ top:350px;} 
-#mainKmlParentHover { top:480px; } 
 
 /* Links for the pagination
 	of the zAxis options */

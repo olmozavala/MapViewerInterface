@@ -5,9 +5,8 @@
 --%>
 
 <!-- This are the Hover map instructions -->
-<span id="mainMenuParentHover" class="commonHover"  >
-	Base layers selection. Mostly raster data.
-</span>
+<span id="mainMenuParentHover" class="commonHover"  > Base layers selection. Mostly raster data.  </span>
+<span id="optionalMenuParentHover" class="commonHover"  > Optional layers selection. Mostly vector data.  </span>
 <span id="transParentHover" class="commonHover">
 	Change transparency of current base layer. 
 </span>
@@ -26,6 +25,8 @@
 	or the '-' and '+' signs for adjacent levels.
 </span>
 <span id="mainKmlParentHover" class="commonHover" >Open current animation or base layer in Google Earth</span>
+<span id="hideCalendarHover" class="commonHover" >Hides and shows the calendars</span>
+<span id="downloadDataHover" class="commonHover" >Downloads raw data as shape or geotiff files</span>
 
 <table class="helpInstructionsParentTable" id="helpInstructions" border="0" >
 	<tr>

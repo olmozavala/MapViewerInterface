@@ -1,0 +1,42 @@
+/* 
+    Document   : OptionalLayersMenu
+    Created on : May 14, 2013, 11:42:18 AM
+    Author     : olmozavala
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/*List of optional layers*/
+.opt_lay_list_root{
+	padding-left: 0px;
+	list-style-type: none;
+}
+
+.opt_lay_list{
+	list-style-type: none;
+	padding-left: 10px;
+	display: none;
+}
+
+/*Single menu on the optional layers menu*/
+.opt_lay_menu{
+}
+
+/*A title in the optional menu layers*/
+.opt_lay_title{
+    font-size:14px;
+	font-weight: bold;
+	margin: 5px 0px 0px 0px;
+	cursor: pointer;
+	color: #0D3D52;
+}
+
+/*Default format for each menu as paragraph*/
+.opt_lay_par{
+	width: 155px;
+	height: 20px;
+	margin: 0px;
+	color: black;
+    font-size:12px;
+    text-shadow: none;
+}

@@ -8,13 +8,18 @@ body {
     overflow:hidden;
 }
 
+treeVectMenu{
+	color: red;
+}
 
+.liVect{
+}
 
 /* optional layers such as us state, DeepC, etc*/
 #optionalMenuParent
 {
     top:410px;
-    min-width:160px;
+    min-width:150px;
     left:48px;
     text-align:left;
 	background-color: black;
@@ -456,7 +461,3 @@ for the main layers, the color palettes, the optional layers, the calendars etc.
 .smallMargin{
 	margin: 2px;
 }
-
-
-
-    

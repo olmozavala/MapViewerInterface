@@ -388,19 +388,42 @@ style is being used by the buttons inside the colorPaleteRangeOptions*/
 
 
 /* CSS for standard close button */
-.closeButton {
+.closeButton, .maximizeButton, .minimizeButton {
 	background-color:#ffffff;
 	border:1px solid #dcdcdc;
 	display:inline-block;
-	color:#666666;
+	color:#333333;
 	font-family:arial;
-	font-size:11px;
-	font-weight:bold;
-	padding:0px 6px;
+	font-size:10px;
+	font-weight: bold;
+	padding:0px 3px;
 	text-decoration:none;
-}.closeButton:hover {
+	cursor:pointer;
+	float: right;
+}.closeButton:hover, .minimizeButton:hover , .maximizeButton:hover {
 	background-color:#f6f6f6;
-}.closeButton:active {
+}.closeButton:active, .minimizeButton:active, maximizeButton:active{
 	position:relative;
 	top:1px;
+}
+
+/* This is the CSS for a default dragabble window. It should be used
+for the main layers, the color palettes, the optional layers, the calendars etc.*/ 
+.draggableWindow{
+	/*background-color:black;*/
+	position:absolute;
+	z-index:1008;
+	color: white;    
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius:10px;
+	margin-top: 2em;
+	margin-bottom: 2em;
+	border:solid 1px white;
+	padding:3px;
+	cursor: move;
+    opacity:0.95;
+	position:absolute;
+	border-spacing: 5px 2px;
+    font-size: 12px;
 }

@@ -11,8 +11,6 @@
 		<td colspan="4" >
 			<p class="invShadow" style="text-align: center; cursor:move; font-size: 12px;padding-right:5px;">
 															<fmt:message key="main.optional" /></p>
-			<span class="minimizeButton" onclick="minimizeWindow('optionalsMinimize', 'optionalMenuParent')" 
-				  style="position:absolute;right:7px;top:7px;">-</span>
 		</td>
 	<tr>
 	<tr>

@@ -31,14 +31,20 @@
 
         <!-- Simple text that shows 'Loading...' -->
         <c:if test='${netcdf}'>
-            <span id="l-animation"> <p  class="bigFontSize"> Loading 
-                    <img src="${basepath}/common/images/load.gif" height="12" border="0" alt="loading"/> </p> 
-            </span>
+			<div id="l-animation">
+				<p class="bigFontSize"> <fmt:message key="ncwms.loading" /> 
+					<span id="loadperc">0</span> % <img src="${basepath}/common/images/load.gif" height="12" border="0" alt="loading" />	</p>
+			</div>
             <span id="s-animation">
                 <p class="buttonStyle" onclick="stopAnimation();" > Stop animation </p>
             </span>
             <%@include file="Options/OptionalPalettes.jsp" %>
         </c:if>
+
+		<c:if test="${cqlfilter}">
+			<%-- CQL Custom filter buttons and text field. --%>
+			<%@include file="Options/CQLFilter.jsp" %> 
+		</c:if>
 
         <!-- This is the div that contains all of the user options, drop down of
           main layers, vector layers, kml data, etc. -->
@@ -52,6 +58,16 @@
                             ${menuHelper:createMainMenu(MenuDelUsuario,language)} 
                         </td>
                     </tr>
+					<c:if test="${cqlfilter}">
+						<tr>
+							<td id="ocqlMenuButtonParent">
+								<p id="idOcqlMenuButton" class="buttonStyle" onclick="toggleCustomFilterTextBox();">
+									<fmt:message key="cql.custom" />
+								</p>
+							</td>
+						</tr>
+					</c:if>
+
 
                     <!-- Transparency -->
                     <tr id="transParent"  onmouseover="hoverInstructions('transParentHover', '1')" onmouseout="hoverInstructions('transParentHover', '2')" >
@@ -79,8 +95,8 @@
 							</tr>
 							<td id="hideCalendarButtonParent" valign="center" >
 								<p class="buttonStyle" id="hideCalendar" 
-									onmouseover="hoverInstructions('hideCalendarHover', '1')" 
-									onmouseout="hoverInstructions('hideCalendarHover', '2')"
+								   onmouseover="hoverInstructions('hideCalendarHover', '1')" 
+								   onmouseout="hoverInstructions('hideCalendarHover', '2')"
 								   onclick="hideCalendarFunc();">Hide Calendar</p>
 							</td>
 						</c:when>

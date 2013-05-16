@@ -71,7 +71,7 @@
 
                     <!-- Transparency -->
                     <tr id="transParent"  onmouseover="hoverInstructions('transParentHover', '1')" onmouseout="hoverInstructions('transParentHover', '2')" >
-                        <!-- Container should have id='transParent-->
+                        <!-- Container should have id='transParent'-->
                         <td align="center" ><%@include file="Options/Transparency.jsp" %>
                         </td>
                     </tr>
@@ -113,7 +113,7 @@
 							<%@include file="Options/KmlLink.jsp" %>
 						</td>
 					</tr>
-					<!--This part shows the animation options-->
+
 					<!-- List of optional layers -->
 					<tr>
 						<td id="optionalMenuParent" onmouseover="hoverInstructions('optionalMenuParentHover', '1')" 

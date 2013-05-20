@@ -12,7 +12,7 @@
         <meta name="Description" content="Deep-C atlas" />
         <meta name="Keywords" content="DeepC, GIS, COAPS, map viewer, Deep-C, Oceanography" />
 
-        <link href="${basepath}/common/CSS/mobileStyle.css" rel="stylesheet" type="text/css"/>
+        <link href="${basepath}/common/CSS/MobileStyle.css" rel="stylesheet" type="text/css"/>
         <link href="${basepath}/common/CSS/MobilePalettes.css" rel="stylesheet" type="text/css"/>
 		<link href="${basepath}/common/CSS/MobileCalendars.css" rel="stylesheet" type="text/css"/>
 		<link href="${basepath}/common/CSS/MobileOpenLayersRelated.css" rel="stylesheet" type="text/css"/>

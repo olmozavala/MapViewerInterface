@@ -1,10 +1,26 @@
 /* 
     Document   : OptionalLayersMenu
     Created on : May 14, 2013, 11:42:18 AM
-    Author     : olmozavala
+    Author     : Olmo Zavala Romero
     Description:
         Purpose of the stylesheet follows.
 */
+/* optional layers such as us state, DeepC, etc*/
+#optionalMenuParent
+{
+    top:65px;
+    min-width:185px;
+    left:78%;
+    text-align:left;
+	background-color: black;
+}
+
+/* Subtable that contains the optional layers */
+table.vectorLayer{
+    /*  background-image:url('../images/transBack.png');*/
+    font-size: 10px;
+    font-weight: bold;
+}
 
 /*List of optional layers*/
 .opt_lay_list_root{
@@ -40,3 +56,4 @@
     font-size:10px;
     text-shadow: none;
 }
+

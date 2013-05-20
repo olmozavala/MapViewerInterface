@@ -15,16 +15,6 @@ treeVectMenu{
 .liVect{
 }
 
-/* optional layers such as us state, DeepC, etc*/
-#optionalMenuParent
-{
-    top:410px;
-    min-width:150px;
-    left:48px;
-    text-align:left;
-	background-color: black;
-}
-
 /* This is the small Scale line in the bottom of the map */
 div.olControlScaleLine {
     display:table;
@@ -155,18 +145,9 @@ a
     left: 50px;
 }
 
-
-
 /* Table that contains the menu for the base layers*/
 t_mainMenu{
     margin:.5em 0 .5em 0;
-}
-
-/* Subtable that contains the optional layers */
-table.vectorLayer{
-    /*  background-image:url('../images/transBack.png');*/
-    font-size: 10px;
-    font-weight: bold;
 }
 
 /*part of the color pallete */

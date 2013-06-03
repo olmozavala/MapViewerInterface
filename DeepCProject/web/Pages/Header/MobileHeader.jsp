@@ -18,6 +18,7 @@
 		<link href="${basepath}/common/CSS/MobileOpenLayersRelated.css" rel="stylesheet" type="text/css"/>
 		<link href="${basepath}/common/CSS/MapInstructions.css" rel="stylesheet" type="text/css"/>
 		<link href="${basepath}/common/CSS/cqlFilter.css" rel="stylesheet" type="text/css"/>
+                <link href="${basepath}/common/CSS/MobileOptionalLayersMenu.css" rel="stylesheet" type="text/css"/>
         <!--[if gte IE 6]>
         <link href="${basepath}/common/CSS/mapStyleIE.css" rel="stylesheet" type="text/css"/>
         <![endif]-->
@@ -36,6 +37,9 @@
         <script type="text/javascript" src="${basepath}/common/JS/mapDisplay/HelpInstructions.js"> </script>
         <script type="text/javascript" src="${basepath}/common/JS/mapDisplay/mapDisplay.js"> </script>
           <script type="text/javascript" src="${basepath}/common/JS/mapDisplay/Mobile.js"> </script>
+          
+          
+          
 
 		<script type="text/javascript" src="${basepath}/common/JS/mapDisplay/Calendars.js"> </script>
 		<script type="text/javascript" src="${basepath}/common/JS/mapDisplay/Elevation.js"> </script>
@@ -45,6 +49,7 @@
         <script type="text/javascript" src="${basepath}/common/JS/ajax/ajax.js"> </script>
 		<script type="text/javascript" src="${basepath}/common/JS/mapDisplay/Palettes.js"> </script>
 		<script type="text/javascript" src="${basepath}/common/JS/mapDisplay/CQL.js"> </script>
+                	<script type="text/javascript" src="${basepath}/common/JS/mapDisplay/OptionalLayersMenu.js"> </script>
 		<script type="text/javascript" src="${basepath}/common/JS/mapDisplay/VisualizationTools.js"> </script>
 
         <script type="text/javascript" src="${basepath}/common/JS/calendar/jscal2.js"></script>

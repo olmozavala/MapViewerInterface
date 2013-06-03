@@ -9,7 +9,7 @@
 <table class="vectorLayer" border="0">
     <tr>
 		<td colspan="4" >
-			<p class="invShadow" style="text-align: center; cursor:move; font-size: 12px;">
+			<p class="invShadow optionalTitle" style="text-align: center; cursor:move;">
 															<fmt:message key="main.optional" /></p>
 			<span class="minimizeButton" onclick="minimizeWindow('optionalsMinimize', 'optionalMenuParent')" 
 				  style="position:absolute;right:7px;top:7px;">-</span>

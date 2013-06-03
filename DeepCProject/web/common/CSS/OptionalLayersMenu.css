@@ -15,6 +15,13 @@
 	background-color: black;
 }
 
+.optionalTitle
+{
+    
+    font-size:12px;
+    
+}
+
 /* Subtable that contains the optional layers */
 table.vectorLayer{
     /*  background-image:url('../images/transBack.png');*/

@@ -50,6 +50,13 @@ Table that contains all the optional palettes
     cursor: pointer;
 }
 
+#palettesTable img:active{
+   position:relative;
+    top:2px;
+}
+
+
+
 
 /* Reduces the default padding for the button style. This 
 style is being used by the buttons inside the colorPaleteRangeOptions*/

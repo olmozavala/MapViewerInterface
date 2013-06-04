@@ -17,7 +17,7 @@
 		<link href="${basepath}/common/CSS/MobileCalendars.css" rel="stylesheet" type="text/css"/>
 		<link href="${basepath}/common/CSS/MobileOpenLayersRelated.css" rel="stylesheet" type="text/css"/>
 		<link href="${basepath}/common/CSS/MapInstructions.css" rel="stylesheet" type="text/css"/>
-		<link href="${basepath}/common/CSS/cqlFilter.css" rel="stylesheet" type="text/css"/>
+		<link href="${basepath}/common/CSS/MobilecqlFilter.css" rel="stylesheet" type="text/css"/>
                 <link href="${basepath}/common/CSS/MobileOptionalLayersMenu.css" rel="stylesheet" type="text/css"/>
         <!--[if gte IE 6]>
         <link href="${basepath}/common/CSS/mapStyleIE.css" rel="stylesheet" type="text/css"/>

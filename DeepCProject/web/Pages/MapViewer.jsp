@@ -10,15 +10,15 @@ This is the main jsp file that forms the html webpage. It contains the skeleton 
 <jsp:useBean id="names" class="com.mapviewer.model.PagesNames" scope="page"> </jsp:useBean>
 <jsp:useBean id="globals" class="com.mapviewer.model.Globals" scope="page"> </jsp:useBean>
 
-<!--This part is used to change the texts depending on the language of the user browser-->
+    <!--This part is used to change the texts depending on the language of the user browser-->
 <fmt:setLocale value="${language}" />
 <fmt:setBundle basename="com.mapviewer.messages.text" />
 
-	<!DOCTYPE HTML PUBLIC "-//W3C//Dtd HTML 4.01 Transitional//EN"
-		"http://www.w3.org/tr/html4/loose.dtd">
-	<html xmlns="http://www.w3.org/1999/xhtml" lang="${language}">
+<!DOCTYPE HTML PUBLIC "-//W3C//Dtd HTML 4.01 Transitional//EN"
+    "http://www.w3.org/tr/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="${language}">
 
-		<head>
+    <head>
         <%@include file="Header/GlobalJavaScript.jsp" %> <%-- Sets all the javascript global variables that are initiated by the java application --%>
 
         <%@include file="Header/Header.jsp" %> <%-- contains all the css links and javascript links --%>
@@ -37,21 +37,21 @@ This is the main jsp file that forms the html webpage. It contains the skeleton 
 
             <!-- List of optional layers -->
             <span class="draggableWindow" id="optionalMenuParent" 
-				  onmouseover="hoverInstructions('optionalLayersParentHover', '1')" 
+                  onmouseover="hoverInstructions('optionalLayersParentHover', '1')" 
                   onmouseout="hoverInstructions('optionalLayersParentHover', '2')" >
-				<%@include file="Options/OptionalLayers.jsp" %>
-					<span id="optionalLayersParentHover" class="commonHover">
-						<fmt:message key="help.optional.layers1" />
-						 <img src="${basepath}/common/images/kmz/kmz.png"> 
-						<fmt:message key="help.optional.layers2" />
-					</span>
-			</span>
+                <%@include file="Options/OptionalLayers.jsp" %>
+                <span id="optionalLayersParentHover" class="commonHover">
+                    <fmt:message key="help.optional.layers1" />
+                    <img src="${basepath}/common/images/kmz/kmz.png"> 
+                        <fmt:message key="help.optional.layers2" />
+                </span>
+            </span>
 
             <!-- These are the dropdowns for the base layer-->
             <span class="draggableWindow" id="mainMenuParent" onmouseover="hoverInstructions('mainMenuParentHover', '1')" 
                   onmouseout="hoverInstructions('mainMenuParentHover', '2')" >
                 <p class="defShadow" style="cursor:move"> <span class="ie_shadow"><fmt:message key="main.base" /></span><span class="minimizeButton" onclick="minimizeWindow('mainMenuMinimize', 'mainMenuParent')" style="position:absolute;right:7px;top:7px;">-</span> </p>
-                ${menuHelper:createMainMenu(MenuDelUsuario,language)}
+                        ${menuHelper:createMainMenu(MenuDelUsuario,language)}
                 <br>
                     <c:if test="${cqlfilter}">
                         <span id="ocqlMenuButtonParent">
@@ -59,9 +59,9 @@ This is the main jsp file that forms the html webpage. It contains the skeleton 
                                     onclick="toggleCustomFilterTextBox();" ><fmt:message key="cql.custom" /></button>
                         </span>
                     </c:if>
-					<span id="mainMenuParentHover" class="commonHover">
-						<fmt:message key="help.mainlayers" />
-					</span>
+                    <span id="mainMenuParentHover" class="commonHover">
+                        <fmt:message key="help.mainlayers" />
+                    </span>
             </span>
 
             <c:if test="${cqlfilter}">
@@ -115,11 +115,11 @@ This is the main jsp file that forms the html webpage. It contains the skeleton 
             </div>
         </form>
 
-		<!-- minimizable windows file -->
-		<%@include file="Options/MinimizeWindows.jsp" %>
+        <!-- minimizable windows file -->
+        <%@include file="Options/MinimizeWindows.jsp" %>
 
-		<!-- Help texts file -->
-		<%@include file="Help/HelpTexts.jsp" %>
+        <!-- Help texts file -->
+        <%@include file="Help/HelpTexts.jsp" %>
     </body>
 </html>
 

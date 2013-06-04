@@ -4,19 +4,19 @@
     Author     : olmozavala
 --%>
 
-<span class="draggableWindow" id="ocqlFilterInputTextParent" 
+<span class="cqlFilterTable" id="ocqlFilterInputTextParent" 
 	  onmouseover="hoverInstructions('ocqlFilterText', '1')" 
 	  onmouseout="hoverInstructions('ocqlFilterText', '2')"  >
 
 	<p class="defShadow smallMargin"> Custom filter </b>
-		<span class="closeButton" onclick="toggleCustomFilterTextBox();" >x</span>
+		<span onclick="toggleCustomFilterTextBox();" style="float:right;" ><img src="${basepath}/common/images/close.gif" /></span>
 	</p>	
 
 	<input type="text" id="idOcqlFilterInputText" onkeyup="applyFilterOnEnter();"
 		   name="ocqlFilterInputText">
 
 	<button type="button" name="type" id="idOcqlFilterButton" class="buttonStyle" 
-			onclick="applyCqlFilter();" >Apply</button>
+			onclick="applyCqlFilter();" ><fmt:message key="main.apply" /></button>
 
 	<p id="availableFiltersText" class="defShadow"> Available filters: <b>${cqlcols}</b> </p>	
 

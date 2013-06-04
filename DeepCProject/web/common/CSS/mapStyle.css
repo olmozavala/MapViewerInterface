@@ -400,7 +400,7 @@ for the main layers, the color palettes, the optional layers, the calendars etc.
 
 
 
-.closeButton, .maximizeButton, .minimizeButton {
+.maximizeButton, .minimizeButton {
 	background-color:#ffffff;
 	border:1px solid #dcdcdc;
 	display:inline-block;
@@ -412,9 +412,14 @@ for the main layers, the color palettes, the optional layers, the calendars etc.
 	text-decoration:none;
 	cursor:pointer;
 	float: right;
-}.closeButton:hover, .minimizeButton:hover , .maximizeButton:hover {
+}
+
+.minimizeButton:hover , .maximizeButton:hover {
 	background-color:#f6f6f6;
-}.closeButton:active, .minimizeButton:active, maximizeButton:active{
+}
+
+
+.minimizeButton:active, maximizeButton:active{
 	position:relative;
 	top:1px;
 }
@@ -426,6 +431,10 @@ for the main layers, the color palettes, the optional layers, the calendars etc.
 
 
 }    
+
+
+
+
 
 #optionalsMinimize, #calendarsMinimize, #mainMenuMinimize
 {

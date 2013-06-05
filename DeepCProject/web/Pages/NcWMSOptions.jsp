@@ -23,6 +23,15 @@
                 <td> <div class="startDateCal" id="cal-start"> </div> </td>
                 <td> <div class="endDateCal" id="cal-end"> </div> </td>
             </tr>
+			<tr>
+				<td colspan="2">
+					 <p class="middleText noMargin"> Resolution: 
+						 <input type="radio" value="high" name="video_res" checked>High
+						 <input type="radio" value="normal" name="video_res" >Medium (fast)
+						<input type="radio" value="low" name="video_res" >Low (faster) 
+					 </p>
+				</td>
+			</tr>
             <tr>
                 <td  style="text-align: center">
                     <div class="dispAnimation" id="p-animation">

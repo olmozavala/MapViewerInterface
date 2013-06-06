@@ -20,7 +20,7 @@
                                onkeydown="if (event.keyCode == 13)
                                             UpdatePalette(mappalette);"
                                id="maxPal" name="maxPal" type="text" size="4" />
-                    <span onclick="showPalettes();" ><img src="${basepath}/common/images/close.gif" /></span>
+                    <span onclick="showPalettes();" ><img class="closeButton" src="${basepath}/common/images/close.gif" /></span>
                     <br>
                     <img class="plusButton" id="plusButtonElevation" onclick="increaseMaxColorRange(1);" 
                          onmouseover="rollImage(this, '${basepath}/common/images/Menu/PlusInv.png')"
@@ -79,7 +79,7 @@
                    id="defaultColorRangeButton" onclick="DefaultPalette();"> Default</p>	
             </td>
             <td>
-                <span onclick="displayOptionalPalettes();" ><img src="${basepath}/common/images/close.gif" /></span>
+                <span onclick="displayOptionalPalettes();" ><img class="closeButton" src="${basepath}/common/images/close.gif" /></span>
             </td>
             </tr>
         </table>

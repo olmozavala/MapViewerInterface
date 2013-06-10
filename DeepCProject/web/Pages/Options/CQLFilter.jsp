@@ -9,7 +9,7 @@
 	  onmouseout="hoverInstructions('ocqlFilterText', '2')"  >
 
 	<p class="defShadow smallMargin"> Custom filter </b>
-		<span onclick="toggleCustomFilterTextBox();" style="float:right;" ><img src="${basepath}/common/images/close.gif" /></span>
+		<span onclick="closeCustomFilterTextBox();" style="float:right;" ><img src="${basepath}/common/images/close.gif" /></span>
 	</p>	
 
 	<input type="text" id="idOcqlFilterInputText" onkeyup="applyFilterOnEnter();"

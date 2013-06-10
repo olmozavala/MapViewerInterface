@@ -27,6 +27,7 @@
     color:white;
     width:70%;
     cursor:move;
+    text-align:left;
 
     overflow-x:hidden;
     overflow-y:auto;    
@@ -87,3 +88,11 @@
 #transectParentHover{}
 #palettesHover{ }
 #mainKmlParentHover { }
+
+
+.helpChild
+{
+    
+    font-weight:bold;
+    
+}

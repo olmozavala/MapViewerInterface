@@ -32,7 +32,7 @@ This is the main jsp file that forms the html webpage. It contains the skeleton 
         <form id="baseForm" name="baseForm" action="${basepath}${names.acdmServlet}" method="post">
 
             <span id="helpDiv" style="border-radius: 10px;">
-                <%@include file="Options/MapInstructions.jsp" %>
+                <%@include file="Options/MapInstructionsLatest.jsp" %>
             </span> 
 
             <!-- List of optional layers -->

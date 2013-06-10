@@ -6,13 +6,13 @@
         <meta name="Description" content="Deep-C atlas" />
         <meta name="Keywords" content="DeepC, GIS, COAPS, map viewer, Deep-C, Oceanography" />
 
-        <link href="${basepath}/common/CSS/MobileStyle.css" rel="stylesheet" type="text/css"/>
-        <link href="${basepath}/common/CSS/MobilePalettes.css" rel="stylesheet" type="text/css"/>
-		<link href="${basepath}/common/CSS/MobileCalendars.css" rel="stylesheet" type="text/css"/>
-		<link href="${basepath}/common/CSS/MobileOpenLayersRelated.css" rel="stylesheet" type="text/css"/>
+        <link href="${basepath}/common/CSS/MobileCSS/MobileStyle.css" rel="stylesheet" type="text/css"/>
+        <link href="${basepath}/common/CSS/MobileCSS/MobilePalettes.css" rel="stylesheet" type="text/css"/>
+		<link href="${basepath}/common/CSS/MobileCSS/MobileCalendars.css" rel="stylesheet" type="text/css"/>
+		<link href="${basepath}/common/CSS/MobileCSS/MobileOpenLayersRelated.css" rel="stylesheet" type="text/css"/>
 		<link href="${basepath}/common/CSS/MapInstructions.css" rel="stylesheet" type="text/css"/>
-		<link href="${basepath}/common/CSS/MobilecqlFilter.css" rel="stylesheet" type="text/css"/>
-                <link href="${basepath}/common/CSS/MobileOptionalLayersMenu.css" rel="stylesheet" type="text/css"/>
+		<link href="${basepath}/common/CSS/MobileCSS/MobilecqlFilter.css" rel="stylesheet" type="text/css"/>
+                <link href="${basepath}/common/CSS/MobileCSS/MobileOptionalLayersMenu.css" rel="stylesheet" type="text/css"/>
         <!--[if gte IE 6]>
         <link href="${basepath}/common/CSS/mapStyleIE.css" rel="stylesheet" type="text/css"/>
         <![endif]-->

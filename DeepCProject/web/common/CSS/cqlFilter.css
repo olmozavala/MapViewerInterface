@@ -92,5 +92,6 @@ table.cqlFilterExampleTable td{
     border-spacing: 5px 2px;
     font-size: 12px;
     width:500px;
+    position:absolute;
 
 }

@@ -48,5 +48,12 @@
 <td><fmt:message key="help.palette" /></td>
 </tr>
 
+<tr>
+    <td class="helpChild"><fmt:message key="cql.custom" /></td>
+<td><fmt:message key="help.cql" /></td>
+</tr>
+
+
+
 
 </table>

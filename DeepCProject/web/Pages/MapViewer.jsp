@@ -107,10 +107,11 @@ This is the main jsp file that forms the html webpage. It contains the skeleton 
                     <a  href="http://www.noaa.gov/">
                         <img border="0" src="${basepath}/common/images/Logos/NOAA.png" alt="NOAA" width="30" height="30" /></a>
 
+                    <a  href="http://deep-c.org/copyright">
                     <p class="footNote" align="left">
                         &nbsp 
                         &copy; <script language="javascript">document.write(getDate("%Y"));</script>.  <fmt:message key="main.copyr" /> &nbsp;
-                    </p>
+                    </p></a>
                     <a id="emailText" href="mailto:osz09@fsu.edu, aahmed@coaps.fsu.edu"> <fmt:message key="main.contact" /></a>
             </div>
         </form>

@@ -10,7 +10,7 @@
 /* table that contains current palette and the color range*/
 /* IMPORTANT we can't use ''right' because the windows doesn't drag properly*/
 #palette{
-	top: 55px;
+	top: 245px;
 	display:none;
 }
 #palette.th{
@@ -21,7 +21,7 @@
 /* Color palettes that pops with all the optional palettes */ 
 /* IMPORTANT we can't use ''right' because the windows doesn't drag properly*/
 #palettes-div{
-	top: 45px;
+	top: 245px;
 	visibility: hidden;
 }
 

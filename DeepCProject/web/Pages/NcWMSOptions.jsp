@@ -25,10 +25,10 @@
             </tr>
 			<tr>
 				<td colspan="2">
-					 <p class="middleText noMargin"> Resolution: 
-						 <input type="radio" value="high" name="video_res" checked>High
-						 <input type="radio" value="normal" name="video_res" >Medium (fast)
-						<input type="radio" value="low" name="video_res" >Low (faster) 
+					 <p class="middleText noMargin"> <fmt:message key='ncwms.resolution'/>
+                                          <input type="radio" value="high" name="video_res" checked><fmt:message key='ncwms.resolutionHigh'/>
+						 <input type="radio" value="normal" name="video_res" ><fmt:message key='ncwms.resolutionMiddle'/>
+						<input type="radio" value="low" name="video_res" ><fmt:message key='ncwms.resolutionLow'/>
 					 </p>
 				</td>
 			</tr>

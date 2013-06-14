@@ -396,10 +396,6 @@ for the main layers, the color palettes, the optional layers, the calendars etc.
     font-size: 12px;
 }
 
-
-
-
-
 .maximizeButton, .minimizeButton {
 	background-color:#ffffff;
 	border:1px solid #dcdcdc;
@@ -408,7 +404,7 @@ for the main layers, the color palettes, the optional layers, the calendars etc.
 	font-family:arial;
 	font-size:10px;
 	font-weight: bold;
-	padding:0px 3px;
+	/*padding:0px 3px;*/
 	text-decoration:none;
 	cursor:pointer;
 	float: right;

@@ -5,11 +5,14 @@
     Description:
         Purpose of the stylesheet follows.
 */
-/* optional layers such as us state, DeepC, etc*/
+
+/* optional layers such as us state, DeepC, etc
+* main window
+*/
+
 #optionalMenuParent
 {
     top:65px;
-    min-width:185px;
     left:78%;
     text-align:left;
 	background-color: black;
@@ -56,7 +59,7 @@ table.vectorLayer{
 
 /*Default format for each menu as paragraph*/
 .opt_lay_par{
-	width: 155px;
+	width: 175px;
 	height: 20px;
 	margin: 0px;
 	color: white;

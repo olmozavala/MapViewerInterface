@@ -17,7 +17,7 @@
                 <td><span id="hideOneDay" class="calTitle ie_shadow"> <fmt:message key="ncwms.cal.start" /></span></td>
                 <td><span id="hideOneDayEnd" class="calTitle ie_shadow" style="padding-right:0px;"><fmt:message key="ncwms.cal.end" /></span>
 					<span class="minimizeButton" onclick="minimizeWindow('calendarsMinimize', 'CalendarsAndStopContainer')" 
-						  style="position:absolute;right:25px;top:5px;">-</span>
+						  style="position:absolute;right:25px;top:5px;">&ndash;</span>
 					</td>
             <tr>
                 <td> <div class="startDateCal" id="cal-start"> </div> </td>

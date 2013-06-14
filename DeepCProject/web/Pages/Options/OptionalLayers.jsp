@@ -10,13 +10,14 @@
     <tr>
 		<td>
 			<p class="invShadow optionalTitle noMargin" style="text-align: center; cursor:move;">
-															<fmt:message key="main.optional" /></p>
-			<span class="minimizeButton" onclick="minimizeWindow('optionalsMinimize', 'optionalMenuParent')" 
-				  style="position:absolute;right:7px;top:7px;">-</span>
+				<fmt:message key="main.optional" /></p>
+		</td>
+		<td>
+			<span class="minimizeButton" onclick="minimizeWindow('optionalsMinimize', 'optionalMenuParent')" >&ndash;</span>
 		</td>
 	<tr>
 	<tr>
-		<td>
+		<td colspan="2">
 			${menuHelper:createOptionalLayersMenu(vectorLayers,language, basepath)}
 		</td>
 	</tr>

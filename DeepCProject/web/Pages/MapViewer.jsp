@@ -50,7 +50,7 @@ This is the main jsp file that forms the html webpage. It contains the skeleton 
             <!-- These are the dropdowns for the base layer-->
             <span class="draggableWindow" id="mainMenuParent" onmouseover="hoverInstructions('mainMenuParentHover', '1')" 
                   onmouseout="hoverInstructions('mainMenuParentHover', '2')" >
-                <p class="defShadow" style="cursor:move"> <span class="ie_shadow"><fmt:message key="main.base" /></span><span class="minimizeButton" onclick="minimizeWindow('mainMenuMinimize', 'mainMenuParent')" style="position:absolute;right:7px;top:7px;">-</span> </p>
+                <p class="defShadow" style="cursor:move"> <span class="ie_shadow"><fmt:message key="main.base" /></span><span class="minimizeButton" onclick="minimizeWindow('mainMenuMinimize', 'mainMenuParent')" style="position:absolute;right:7px;top:7px;">&ndash;</span> </p>
                         ${menuHelper:createMainMenu(MenuDelUsuario,language)}
                 <br>
                     <c:if test="${cqlfilter}">

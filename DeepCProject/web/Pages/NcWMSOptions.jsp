@@ -16,8 +16,8 @@
             <tr>
                 <td><span id="hideOneDay" class="calTitle ie_shadow"> <fmt:message key="ncwms.cal.start" /></span></td>
                 <td><span id="hideOneDayEnd" class="calTitle ie_shadow" style="padding-right:0px;"><fmt:message key="ncwms.cal.end" /></span>
-					<span class="minimizeButton" onclick="minimizeWindow('calendarsMinimize', 'CalendarsAndStopContainer')" 
-						  style="position:absolute;right:25px;top:5px;">&ndash;</span>
+					<span class="minimizeButton" onclick="minimizeWindow('calendarsMinimize', 'CalendarsAndStopContainer')" >
+						&ndash;</span>
 					</td>
             <tr>
                 <td> <div class="startDateCal" id="cal-start"> </div> </td>
@@ -26,8 +26,8 @@
 			<tr>
 				<td colspan="2">
 					 <p class="middleText noMargin"> <fmt:message key='ncwms.resolution'/>
-                                          <input type="radio" value="high" name="video_res" checked><fmt:message key='ncwms.resolutionHigh'/>
-						 <input type="radio" value="normal" name="video_res" ><fmt:message key='ncwms.resolutionMiddle'/>
+                                          <input type="radio" value="high" name="video_res" ><fmt:message key='ncwms.resolutionHigh'/>
+						 <input type="radio" value="normal" name="video_res" checked><fmt:message key='ncwms.resolutionMiddle'/>
 						<input type="radio" value="low" name="video_res" ><fmt:message key='ncwms.resolutionLow'/>
 					 </p>
 				</td>

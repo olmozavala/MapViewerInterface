@@ -9,38 +9,39 @@
 /* optional layers such as us state, DeepC, etc
 * main window
 */
-
 #optionalMenuParent
 {
-    top:65px;
-    left:78%;
+    top:70px;
+    left:73%;
     text-align:left;
 	background-color: black;
 }
 
+/* Title for optional layers draggable window */
 .optionalTitle
-{
-    
-    font-size:12px;
-    
-}
+{ }
 
 /* Subtable that contains the optional layers */
 table.vectorLayer{
     /*  background-image:url('../images/transBack.png');*/
-    font-size: 10px;
-    font-weight: bold;
+	width:185px;
+}
+td.vectorLayer{
+	padding: 0px;
+	margin: 0px;
 }
 
-/*List of optional layers*/
+/*Root list of optional layers*/
 .opt_lay_list_root{
-	padding-left: 0px;
+	padding: 0px;
+	margin: 0px;
 	list-style-type: none;
 }
 
 .opt_lay_list{
 	list-style-type: none;
 	padding-left: 10px;
+	margin: 0px;
 	display: none;
 }
 
@@ -48,10 +49,11 @@ table.vectorLayer{
 .opt_lay_menu{
 }
 
-/*A title in the optional menu layers*/
+/*A title in the optional menu layers tree */
 .opt_lay_title{
     font-size:12px;
 	font-weight: bold;
+	padding: 0px;
 	margin: 5px 0px 0px 0px;
 	cursor: pointer;
 	color: #CDF1FA;
@@ -59,11 +61,11 @@ table.vectorLayer{
 
 /*Default format for each menu as paragraph*/
 .opt_lay_par{
-	width: 175px;
-	height: 20px;
+	width: 100%;
+	height: 19px;
 	margin: 0px;
 	color: white;
-    font-size:10px;
+    font-size:11px;
     text-shadow: none;
 }
 

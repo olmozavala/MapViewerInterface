@@ -82,17 +82,25 @@
 }
 
 #mainMenuParentHover{ top: 20px; left: 140px;}
-#optionalLayersParentHover{ top: 0px; right:195px}
+#optionalLayersParentHover{ top: 0px; right:210px}
 #transParentHover{ }
 #elevationParentHover{ }
 #transectParentHover{}
 #palettesHover{ }
 #mainKmlParentHover { }
 
-
 .helpChild
 {
-    
     font-weight:bold;
-    
+}
+
+#helpHoverSpan{
+	position: absolute;
+	top:4px;
+	right:0px;
+	display: inline;
+    z-index:1019;
+}
+#helpIconHover{
+	right:10px;
 }

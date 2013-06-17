@@ -44,6 +44,8 @@ This is the main jsp file that forms the html webpage. It contains the skeleton 
                     <fmt:message key="help.optional.layers1" />
                     <img src="${basepath}/common/images/kmz/kmz.png"> 
                         <fmt:message key="help.optional.layers2" />
+                    <img src="${basepath}/common/images/Download/LayerDownload.png"> 
+                        <fmt:message key="help.optional.layers3" />
                 </span>
             </span>
 

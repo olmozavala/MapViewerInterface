@@ -62,10 +62,32 @@ td.vectorLayer{
 /*Default format for each menu as paragraph*/
 .opt_lay_par{
 	width: 100%;
-	height: 19px;
+	height: 20px;
 	margin: 0px;
 	color: white;
     font-size:11px;
     text-shadow: none;
 }
 
+/* This are also plus and minus buttons, but are
+smaller and doesn't have background. Currently are used
+for transparency in the optional layers. */
+.minusButtonSmall, .plusButtonSmall
+{
+    font-size: 13px; 
+    font-weight: bolder;
+    vertical-align: top;
+    margin: 0px;
+    padding: 0px;
+    color: white;
+    background-color: transparent;
+    border: 0px;
+    cursor: pointer;
+}
+.minusButtonSmall
+{
+    color: gray;
+}
+
+/* Next line is need it to remove extra space that Firefox puts into buttons */
+button::-moz-focus-inner { margin: -1px; padding: 0; }

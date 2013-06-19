@@ -30,8 +30,8 @@
 
         <!--<script type="text/javascript" src="${basepath}/common/JS/openlayers/OpenLayers.js"> </script>-->
 		<script type="text/javascript" src="http://openlayers.org/api/OpenLayers.js"></script>
-        <script src="http://code.jquery.com/jquery-1.8.2.js" type="text/javascript"> </script>
-		<script src="http://code.jquery.com/ui/1.9.1/jquery-ui.js"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+		<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
 
         <script type="text/javascript" src="${basepath}/common/JS/utilities.js"> </script>
 		<script type="text/javascript" src="${basepath}/common/JS/mapDisplay/InterfaceDependent.js"> </script>

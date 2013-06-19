@@ -4,7 +4,7 @@
     cursor:crosshair;
     margin-left: auto ;
     margin-right: auto ;
-
+	-moz-user-select: none
 }
 
 /* Used by open layers to display longitude and latitude */

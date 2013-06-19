@@ -36,7 +36,7 @@ This is the main jsp file that forms the html webpage. It contains the skeleton 
             </span> 
 
             <!-- List of optional layers -->
-            <span class="draggableWindow" id="optionalMenuParent" 
+            <div class="draggableWindow" id="optionalMenuParent" 
                   onmouseover="hoverInstructions('optionalLayersParentHover', '1')" 
                   onmouseout="hoverInstructions('optionalLayersParentHover', '2')" >
                 <%@include file="Options/OptionalLayers.jsp" %>
@@ -47,7 +47,7 @@ This is the main jsp file that forms the html webpage. It contains the skeleton 
                     <img src="${basepath}/common/images/Download/LayerDownload.png"> 
                         <fmt:message key="help.optional.layers3" />
                 </span>
-            </span>
+            </div>
 
             <!-- These are the dropdowns for the base layer-->
             <span class="draggableWindow" id="mainMenuParent" onmouseover="hoverInstructions('mainMenuParentHover', '1')" 

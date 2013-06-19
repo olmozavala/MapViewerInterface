@@ -8,6 +8,15 @@ body {
     overflow:hidden;
 }
 
+/* Used to avoid selecting text (Chrome)*/
+::selection{
+	background: transparent;
+}
+/* Used to avoid selecting text (Firefox)*/
+::-moz-selection{
+	background: transparent;
+}
+
 treeVectMenu{
 	color: red;
 }
@@ -109,25 +118,7 @@ elevation options.*/
     padding-top:0px;
     padding-bottom: 0px;
 }
-/* This are also plus and minus buttons, but are
-smaller and doesn't have background. Currently are used
-for transparency in the optional layers. */
-.minusButtonSmall, .plusButtonSmall
-{
-    font-size: 13px; 
-    font-weight: bolder;
-    vertical-align: top;
-    margin: 0;
-    padding: 0;
-    color: white;
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-}
-.minusButtonSmall
-{
-    color: gray;
-}
+
 
 .middleText
 {
@@ -148,6 +139,7 @@ a
 /* Table that contains the menu for the base layers*/
 t_mainMenu{
     margin:.5em 0 .5em 0;
+	background-color: transparent;
 }
 
 /*part of the color pallete */
@@ -245,12 +237,6 @@ p /* This is the default font type for the letters in the page */
     float:right;
 
 
-}
-
-
-/* Estra style for the 
-.mainMenuOption{
-    color: black;
 }
 
 /* Buttons style, default style for buttons (used in transparency and xasis),
@@ -389,11 +375,8 @@ for the main layers, the color palettes, the optional layers, the calendars etc.
 	position:absolute;
 	z-index:1008;
 	color: white;    
-	-moz-border-radius: 10px;
-	-webkit-border-radius: 10px;
 	border-radius:10px;
 	margin-top: 2em;
-	margin-bottom: 2em;
 	border:solid 1px white;
 	padding:3px;
 	cursor: move;
@@ -435,19 +418,14 @@ for the main layers, the color palettes, the optional layers, the calendars etc.
 
 }    
 
-
-
-
-
 #optionalsMinimize, #calendarsMinimize, #mainMenuMinimize
 {
     z-index: 1008;
-   text-align:center;
+    text-align:center;
     background-color:black;
-    bottom:-34px;
+    bottom:-10px;
     display:none;
     cursor: default;
-    
 }
 
 /* Simple class to avoid margin of a paragraph */

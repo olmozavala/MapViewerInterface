@@ -24,42 +24,6 @@ treeVectMenu{
 .liVect{
 }
 
-/* This is the small Scale line in the bottom of the map */
-div.olControlScaleLine {
-    display:table;
-    table-layout:fixed;
-    font-size: 0.5em;
-
-    color:black;
-    left:48%;
-    bottom:40px;
-
-    font-weight: bold;
-    text-align:left;
-}
-
-/* Div to display latitude and longitude*/
-div.layersLongLat{
-    position:absolute;
-    bottom:80px;
-    right:200px;
-    z-index:1000;
-    display:inline;
-    width: 150px;
-    height:25px;
-    padding-bottom:7px;
-    padding-left:6px;
-    text-align:left;
-    background-image:url('../images/transBack.png');
-    font-size: 12px;
-	font-weight: normal;
-    border-style: solid;
-    border-width: thin;
-    border-color: black;
-    border-radius: 5px;
-
-    pointer-events: none;
-}
 /* Div where the specific data of the layers are displayed */
 div.layersData{
     position:absolute;
@@ -87,7 +51,7 @@ div.layersMenu{
 div.leftFoot{
     position:absolute;
     bottom:1%;
-    right:2%;
+    right:1%;
     z-index:1000;
     display:inline;
     color:black;
@@ -97,7 +61,7 @@ div.leftFoot{
 div.mapTitle{
     position:absolute;
     width: 100%;
-    top:55px;
+    top:40px;
     left:0%;
     z-index:1000;
     display:inline;
@@ -327,6 +291,8 @@ but the size of the font is larger */
     left:300px;
 }
 
+/* Defines the position of the draggable window that
+selects the zaxis value*/
 #elevationSelector
 {
     top:45px;

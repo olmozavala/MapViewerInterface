@@ -8,6 +8,10 @@ SELECT AddGeometryColumn('sites','geom','4326','POINT','2')
 -- Add the Geometry column into the cruises table 
 SELECT AddGeometryColumn('cruises','geom','4326','LINESTRING','2')
 
+--------------- Sailbuoy table -----------------------
+-- Add the Geometry column into the sailbuoy table 
+SELECT AddGeometryColumn('sailbuoy','geom','4326','POINT','2')
+
 -- This function receives a 'cruise_id' and searchs for
 -- the sites of that cruise and updates its 'path'
 CREATE OR REPLACE FUNCTION createCruisePath(text) RETURNS void AS $$
@@ -53,3 +57,82 @@ JOIN eventtype as et on e.event_type_id = et.event_type_id
 JOIN activities as a on a.activity_id = e.activity_id
 WHERE s.geom <> ''
 ORDER BY e.event_date DESC
+
+-- This script creates a view with only one row, the
+-- path of the sailbuoy
+CREATE OR REPLACE VIEW sailbuoypathview AS 
+SELECT St_MakeLine(sailbuoy.track) AS sailbuoypath FROM(
+	SELECT geometry(s.geom) as track
+	FROM 
+	sailbuoy as s	
+	ORDER BY s.time
+) AS sailbuoy;
+
+
+-- This query builds a view with only two rows, one is the
+-- start position of the sailbuoy, and the other one the last position.
+CREATE OR REPLACE VIEW sailbuoyendsites AS
+(SELECT "time", cttemperature as CT_Temperature, 
+	ctconductivity as CT_Conductivity,
+	oxy_oxygen as Oxygen, 
+	oxy_saturation as Saturation, 
+	oxy_temperature as Oxy_Temperature, 
+	geom,
+	salinity as salinity,
+	0 as endpos
+ FROM sailbuoy 
+        ORDER BY time  LIMIT 1)
+UNION
+(SELECT "time", cttemperature as CT_Temperature, 
+	ctconductivity as CT_Conductivity,
+	oxy_oxygen as Oxygen, 
+	oxy_saturation as Saturation, 
+	oxy_temperature as Oxy_Temperature, 
+	geom,
+	salinity as salinity,
+	1 as endpos
+ FROM sailbuoy 
+    WHERE "time" < (current_timestamp + interval '2 hour')
+        ORDER BY time DESC LIMIT 1)
+
+-- This view filters some columns and change the names of the sailbuoy table
+CREATE OR REPLACE VIEW sailbuoyview AS 
+SELECT "time", cttemperature as CT_Temperature, 
+       ctconductivity as CT_Conductivity,
+     oxy_oxygen as Oxygen, 
+    oxy_saturation as Saturation, 
+    oxy_temperature as Oxy_Temperature, 
+       geom,
+    salinity as salinity,
+    ROW_NUMBER() OVER (ORDER BY time) as site_order
+  FROM sailbuoy
+    WHERE "time" < (current_timestamp + interval '2 hour');
+
+-- This view has all the moorings positions and
+-- the corresponding PI
+CREATE OR REPLACE VIEW moorings_view AS 
+SELECT m.mooring_id as name, event_date as evdate, 
+    p.first_name as pi_name, p.last_name as pi_last, 
+        geom as geom
+        FROM mooring as m
+        JOIN events as e on e.event_id = m.deployment_event_id
+        JOIN sites as s on e.site_id = s.site_id
+        JOIN peoplemooring as pm on m.mooring_id = pm.mooring_id
+        JOIN people as p on pm.people_id = p.people_id
+        WHERE s.geom <> ''
+        ORDER BY m.mooring_id
+
+-- This view has all the moorings positions and
+-- the corresponding device associated with the mooring.
+CREATE OR REPLACE VIEW moorings_device_view AS 
+SELECT m.mooring_id as name, md.device_type as mtype,
+    nominal_depth as depth,
+    geom as geom
+    FROM mooring as m
+    JOIN events as e on e.event_id = m.deployment_event_id
+    JOIN sites as s on e.site_id = s.site_id
+    JOIN mooring_devices as md on m.mooring_id = md.mooring_id
+    WHERE s.geom <> ''
+    ORDER BY m.mooring_id
+
+
